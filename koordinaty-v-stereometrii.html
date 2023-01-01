@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Координаты в стереометрии</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="koordinaty-v-stereometrii">
+			<div class="koordinaty-v-stereometrii__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="koordinaty-v-stereometrii__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-5.2.webp" type="image/webp"><img
+									src="img/themes-11/content-5.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Координаты в стереометрии</div>
+							<div class="info__subtitle">
+								В планиметрии мы уже рассматривали прямоугольную систему координат. Ее образовывали 2
+								перпендикулярные
+								друг другу оси –
+								Ох и Оу. С ее помощью можно было определить положение любой точки на координатной плоскости,
+								просто
+								указав две ее
+								координаты – абсциссу х и ординату у. В стереометрии необходимо определять положение точки уже
+								не на
+								плоскости, а в
+								пространстве. Для этого добавляется третья ось Оz, которую ещё называют осью апликат. Каждые
+								пара осей
+								образует свою
+								отдельную координатную плоскость, всего получается три таких плос-ти: Оху, Охz и Oуz.
+							</div>
+						</div>
+					</div>
+					<div class="koordinaty-v-stereometrii__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="koordinaty-v-stereometrii.html#1">Прямоугольная система
+								координат</a></p>
+						<p><a href="koordinaty-v-stereometrii.html#2">Координаты вектора</a></p>
+						<p><a href="koordinaty-v-stereometrii.html#3">Координаты середины отрезка</a>
+						</p>
+						<p><a href="koordinaty-v-stereometrii.html#4">Вычисление длины векторов и
+								расстояния
+								между точками</a></p>
+						<p><a href="koordinaty-v-stereometrii.html#5">Коллинеарность векторов</a></p>
+						<p><a href="koordinaty-v-stereometrii.html#6">Определение компланарности
+								векторов</a></p>
+						<p><a href="koordinaty-v-stereometrii.html#7">Скалярное произведение
+								векторов</a></p>
+					</div>
+					<h2 id="1">Прямоугольная система координат</h2>
+					<p>В планиметрии мы уже рассматривали прямоугольную систему координат. Ее образовывали 2
+						перпендикулярные друг другу оси – Ох и Оу. С ее помощью можно было определить положение любой точки на
+						координатной плоскости, просто указав две ее координаты – абсциссу х и ординату у.</p>
+					<p>В стереометрии необходимо определять положение точки уже не на плоскости, а в пространстве. Для этого
+						добавляется третья ось Оz, которую ещё называют осью апликат. Каждые пара осей образует свою отдельную
+						координатную плоскость, всего получается три таких плос-ти: Оху, Охz и Oуz.</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/1-ploskosti.webp" type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/1-ploskosti.webp" alt="1 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Точка О именуется началом координат. Она делит каждую ось на два луча, один из которых – это
+						положительная
+						полуось, а второй – отрицательная полуось.</p>
+					<p>Для каждой точки в пространстве можно указать три координаты, однозначно определяющие ее положение в
+						пространстве. Пусть в пространстве есть некоторая точка М. Опустим из нее перпендикуляры на
+						координатные
+						плоскости. В свою очередь из этих проекций точки М опустим перпендикуляры уже на координатные оси. В
+						результате
+						будет построен прямоугольный параллелепипед. Измерения этого параллелепипеда и будут координатами
+						точки М:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/2-parallelepiped-v-prostranstve.webp"
+								type="image/webp"><img src="img/koordinaty-v-stereometrii/2-parallelepiped-v-prostranstve.webp"
+								alt="2 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Если точка M находится в одной из координатных плоскостей, то одна из ее координат будет нулевой.
+						Например,
+						если М принадлежит плоскости Охz, то нулю будет равна координата у. Если же точка располагается на
+						одной из
+						координатных осей, то у нее уже две координаты будут нулевыми. Так, если точка находится на оси Ох, то
+						только
+						координата х может быть ненулевой, а у и z окажутся нулевыми координатами.</p>
+					<p>На показанном рисунке ребра параллелепипеда лежат на положительных полуосях, поэтому все координаты
+						положительны. Если же какие-то ребра будут лежать на отрицательных полуосях, то и соответствующие
+						координаты
+						будут отрицательными.</p>
+					<h2 id="2">Координаты вектора</h2>
+					<p>Введем в пространстве прямоугольную систему коорд-т, а далее от ее начала отложим вектора i, j и k,
+						которые
+						соответственно будут лежать на координатных осях Ох, Оу и Оz, и длина которых составит единицу. Эти
+						вектора
+						именуют координатными векторами, единичными векторами или просто <a
+							href="https://100urokov.ru/predmety/urok-1-metod-koordinat" target="_blank"
+							rel="noopener noreferrer">ортами</a>.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/3-koordinaty-v-prostranstve.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/3-koordinaty-v-prostranstve.webp"
+								alt="3 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Ясно, что орты находятся в разных плоскостях, то есть они образуют тройку некомпланарных векторов. Это
+						означает, что любой вектор а в пространстве можно разложить на орты:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/4-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/4-koordinaty-v-stereometrii.webp"
+								alt="4 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>где х, у и z – какие-то действительные числа. Они как раз и считаются координатами вектора а.
+						Записываются
+						коорд-ты вектора в фигурных скобках. На следующем рисунке показан вектор а{3; – 2; – 4}.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/5-koordinaty-v-prostranstve.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/5-koordinaty-v-prostranstve.webp"
+								alt="5 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Разложите на орты вектор</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/6-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/6-koordinaty-v-stereometrii.webp"
+								alt="6 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Если начало вектора ОМ располагается в начале системы координат О, то вектор ОМ именуют
+						радиус-вектором. В
+						таком случае коорд-ты точки конца вектора, то есть точки М, совпадают с коорд-тами самого вектора ОМ.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/7-radius-vektor.webp" type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/7-radius-vektor.webp" alt="7 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Это свойство радиус-вектора <a href="https://100urokov.ru/predmety/urok-1-metod-koordinat"
+							target="_blank" rel="noopener noreferrer">мы уже изучали в 9 классе</a> в планиметрии, и в
+						стереометрии оно сохраняется.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. О – начало координат, а точка М имеет коорд-ты (2; 5; – 3). Найдите коорд-ты вектора
+							ОМ.</strong></p>
+					<p>Решение. Всё очень просто – коорд-ты вектора будут совпадать с коорд-тами его конца, так его начало
+						совпадает с
+						началом коорд-т:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/8-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/8-koordinaty-v-stereometrii.webp"
+								alt="8 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Также в стереометрии остаются справедливыми ещё несколько правил, которые были доказаны в курсе
+						планиметрии:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/9-ravnye-vektora-imejut-ravnye-koordinaty.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/9-ravnye-vektora-imejut-ravnye-koordinaty.webp"
+								alt="9 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите сначала сумму, а потом разность векторов а{3; 7; 5} и b{2; 4; 6}.</strong>
+					</p>
+					<p>Решение. Будем обозначать коорд-ты векторов через индексы. Например, коорд-ты вектора а – это
+						х<sub>а</sub>,
+						у<sub>а</sub> и z<sub>а</sub>. Пусть сумма векторов будет вектором с, а их разность – вектором d. Для
+						вычисления суммы надо складывать соответствующие координаты:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/10-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/10-koordinaty-v-stereometrii.webp"
+								alt="10 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Для вычисления разности надо из коорд-т вектора а вычитать коорд-ты вектора b:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/11-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/11-koordinaty-v-stereometrii.webp"
+								alt="11 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите коорд-ты вектора р, зная, что:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/12-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/12-koordinaty-v-stereometrii.webp"
+								alt="12 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Для вычисления координат надо в выражении для вектора р сами векторы заменить на их
+						координаты:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/13-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/13-koordinaty-v-stereometrii.webp"
+								alt="13 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Получается, что вектор p имеет координаты {0; – 2; 3}.</p>
+					<p>Теперь мы можем доказать ещё одно утверждение, уже известное из курса планиметрии:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/14-kazhdaja-koordinata-vektora-ravna-raznosti.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/14-kazhdaja-koordinata-vektora-ravna-raznosti.webp"
+								alt="14 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть некоторый вектор АВ, причем коорд-ты точек А и В известны. Построим
+						радиус-вектора OА
+						и OВ:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/15-postroim-radius-vektora.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/15-postroim-radius-vektora.webp"
+								alt="15 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Координаты радиус-векторов будут совпадать с координатами их концов:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/16-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/16-koordinaty-v-stereometrii.webp"
+								alt="16 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>ч. т. д.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Определите коорд-ты вектора CD, если даны коорд-ты точек С и D: С(3; 8; – 5) и D(5;
+							4;
+							1).</strong></p>
+					<p>Решение. Здесь надо просто из коорд-т точки D, являющейся концом вектора, вычесть коорд-ты точки С:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/17-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/17-koordinaty-v-stereometrii.webp"
+								alt="17 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. От точки K(10; 6; 13) отложен вектор m{3; 2; 5}, конец совпал в точку H. Найдите
+							коорд-ты
+							точки H.</strong></p>
+					<p>Решение. Коорд-ты вектора m и его концов связаны формулами:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/18-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/18-koordinaty-v-stereometrii.webp"
+								alt="18 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<h2 id="3">Координаты середины отрезка</h2>
+					<p>Пусть в пространстве есть отрезок АВ, и координаты его концов известны. Точка М – середина этого
+						отрезка. Как
+						вычислить ее координаты? Рассмотрим взаимосвязь векторов АМ, МВ и АВ:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/19-radius-vektor.webp" type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/19-radius-vektor.webp" alt="19 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Раз М – середина АВ, то вектора АМ и МВ имеют равные длины, и при этом они находятся на одной прямой.
+						Значит,
+						эти вектора равны и потому у них одинаковые коорд-ты:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/20-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/20-koordinaty-v-stereometrii.webp"
+								alt="20 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Аналогично можно получить аналогичные формулы для коорд-т у и z:</p>
+					<p>
+						<picture>
+							<source
+								srcset="img/koordinaty-v-stereometrii/21-1-koordinaty-serediny-otrezka-ravny-polusumme_edited.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/21-1-koordinaty-serediny-otrezka-ravny-polusumme_edited.webp"
+								alt="21 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/koordinaty-v-stereometrii/21-2-koordinaty-serediny-otrezka-ravny-polusumme_edited.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/21-2-koordinaty-serediny-otrezka-ravny-polusumme_edited.webp"
+								alt="21 2 koordinaty serediny otrezka ravny polusumme edited">
+						</picture>
+					</p>
+					<p>Рассмотрим несколько задач на координаты точек.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите коорд-ты середины отрезка, соединяющего точки А(3; 7; 12) и В(1; 5; –
+							4).</strong></p>
+					<p>Решение. Просто используем только что выведенные формулы. Середину также обозначаем буквой М:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/22-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/22-koordinaty-v-stereometrii.webp"
+								alt="22 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Известно, что K середина отрезка CD. Даны координаты точек С и K: С(12; 9; – 3) и
+							K(15; 7; 3).
+							Найдите коорд-ты D.</strong></p>
+					<p>Решение. Сначала запишем формулу для коорд-ты х:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/23-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/23-koordinaty-v-stereometrii.webp"
+								alt="23 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<h2 id="4">Вычисление длины векторов и расстояния между точками</h2>
+					<p>Рассмотрим радиус-вектор ОМ с коорд-тами {x; у; z}. Попытаемся найти его длину. Мы можем построить
+						прямоугольный параллелепипед, в котором этот вектор окажется диагональю:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/24-parallelepiped-v-prostranstve.webp"
+								type="image/webp"><img src="img/koordinaty-v-stereometrii/24-parallelepiped-v-prostranstve.webp"
+								alt="24 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Напомним, что квадрат длины <a href="https://100urokov.ru/predmety/dvugrannyj-ugol" target="_blank"
+							rel="noopener noreferrer">диагонали в прямоугольном параллелепипеде</a> равен сумме квадратов его
+						измерений.
+						Но в полученном параллелепипеде измерения – это коорд-ты х, у и z, поэтому можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/25-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/25-koordinaty-v-stereometrii.webp"
+								alt="25 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Так как равные вектора имеют как одинаковы и коорд-ты, и длина, то ясно, что каждый вектор с
+						коорд-тами {x; y;
+						z} будет равен рассмотренному радиус-вектору, а значит и его длина будет рассчитываться по такой же
+						формуле.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/26-dlina-vektora-s-koordinatami.webp"
+								type="image/webp"><img src="img/koordinaty-v-stereometrii/26-dlina-vektora-s-koordinatami.webp"
+								alt="26 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите длину вектора m{– 2; 9; 6}.</strong></p>
+					<p>Решение. Просто используем формулу:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/27-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/27-koordinaty-v-stereometrii.webp"
+								alt="27 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Рассмотрим отрезок АВ с известными коорд-тами его концов. Можно построить вектор АВ, его коорд-ты
+						будут
+						определяться так:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/28-1-dlina-otrezka-vychisljaetsja_edited.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/28-1-dlina-otrezka-vychisljaetsja_edited.webp"
+								alt="28 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/28-2-dlina-otrezka-vychisljaetsja_edited.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/28-2-dlina-otrezka-vychisljaetsja_edited.webp"
+								alt="28 2 dlina otrezka vychisljaetsja edited">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите расстояние между точкой K(10; 15; 5) и M(16; 21; – 2).</strong></p>
+					<p>Решение. Просто подставляем коорд-ты точек в формулу:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/29-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/29-koordinaty-v-stereometrii.webp"
+								alt="29 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите длину медианы </strong><strong>KM в </strong><strong>∆ </strong><strong>KPN,
+							если
+							известны коорд-ты его вершин: </strong><strong>P(2; 5; 8), </strong><strong>N (6; 9; 12) и
+						</strong><strong>K(16; 11; 13).</strong></p>
+					<p>Решение. Для нахождения длины медианы достаточно знать коорд-ты ее концов. Коорд-ты K уже известны, а
+						M –
+						середина PN, что позволяет вычислить и ее коорд-ты:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/30-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/30-koordinaty-v-stereometrii.webp"
+								alt="30 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<h2 id="5">Коллинеарность векторов</h2>
+					<p>Напомним, что если два вектора а и b коллинеарны друг другу, то должно существовать такое число k, что
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/31-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/31-koordinaty-v-stereometrii.webp"
+								alt="31 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/32-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/32-koordinaty-v-stereometrii.webp"
+								alt="32 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Полученное отношение (1) является одновременно и признаком коллинеарных векторов, и их свойством.
+						Слово
+						«признак» означает, что любые вектора, чьи координаты соответствуют условию (1), будут коллинеарны.
+						Слово
+						«свойство» означает обратное – если известно, что вектора коллинеарны, то для них обязательно
+						выполняется
+						условие (1). В таких случаях в математике может использоваться словосочетание «тогда и только тогда»:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/33-dva-vektora-s-nenulevymi-koordinatami.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/33-dva-vektora-s-nenulevymi-koordinatami.webp"
+								alt="33 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Очень важно то, что это правило действует только в случае, если все коорд-ты векторов ненулевые.
+						Теперь
+						рассмотрим случай, когда какие-то коорд-ты вектора b (одна или две из них) равны нулю. Например, пусть
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/34-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/34-koordinaty-v-stereometrii.webp"
+								alt="34 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>В результате мы выяснили, что если коорд-та одного вектора нулевая, то и у любого вектора,
+						коллинеарному ему,
+						эта же коорд-та также должна быть нулевой. Особняком стоит случай с нулевым вектором с коорд-тами {0;
+						0; 0}. Он
+						условно признается коллинеарным любому вектору.</p>
+					<p><strong>Задание. Выясните, какие из этих пар векторов коллинеарны:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/35-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/35-koordinaty-v-stereometrii.webp"
+								alt="35 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. В первом задании просто делим друг на друга соответствующие коорд-ты и находим значение
+						коэффициента
+						k:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/36-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/36-koordinaty-v-stereometrii.webp"
+								alt="36 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Значение коэффициента k оказалось одинаковым для каждой пары коорд-т, значит, вектора коллинеарны.</p>
+					<p>Повторяем эти действия в задании б):</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/37-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/37-koordinaty-v-stereometrii.webp"
+								alt="37 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>На этот раз коэффициенты k оказались различными, значит, вектора неколлинеарны.</p>
+					<p>В задании в) у вектора е коорд-та z нулевая. Значит, если и у вектора f, если он коллинеарен z, эта
+						координата
+						должна быть нулевой, но это не так. Значит, вектора e и f неколлинеарны.</p>
+					<p>В задании г) снова указаны вектора с нулевыми коорд-тами. Но у обоих векторов коорд-та z нулевая,
+						поэтому они
+						могут быть коллинеарными. Однако необходимо проверить, что отношение ненулевых координат одинаково:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/38-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/38-koordinaty-v-stereometrii.webp"
+								alt="38 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Коэффициент k получился одинаковым, поэтому вектора коллинеарны.</p>
+					<p>В последнем задании д) вектор n – нулевой, ведь все его коорд-ты нулевые. Нулевой вектор всегда
+						коллинеарен
+						другим векторам, в том числе и в этом задании.</p>
+					<p>Ответ: а) да; б) нет; в) нет; г) да; д) да.</p>
+					<p><strong>Задание. Выясните, располагаются ли на одной прямой точки А(3; 5; 12), В(5; 7; 16) и С(0; 2;
+							6).</strong></p>
+					<p>Решение. Ясно, что если эти точки находятся на одной прямой, то вектора АВ и ВС будут коллинеарными.
+						Если же
+						эти вектора неколлинеарны, то и точки должны находиться на разных прямых.</p>
+					<p>Сначала вычислим коорд-ты векторов АВ и ВС:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/39-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/39-koordinaty-v-stereometrii.webp"
+								alt="39 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Теперь проверяем, коллинеарны ли эти вектора:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/40-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/40-koordinaty-v-stereometrii.webp"
+								alt="40 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Коэффициенты k одинаковы, а потому АВ и ВС – коллинеарные векторы. Значит, точки А, В и С находятся на
+						одной
+						прямой.</p>
+					<h2 id="6">Определение компланарности векторов</h2>
+					<p>Пусть у нас есть три вектора с известными коорд-тами:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/41-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/41-koordinaty-v-stereometrii.webp"
+								alt="41 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Как определить, компланарны ли эти вектора, то есть располагаются ли они в одной плоскости? Если эти
+						вектора
+						компланарны, то, по признаку компаланарности, вектор а можно разложить на вектора b и с:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/42-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/42-koordinaty-v-stereometrii.webp"
+								alt="42 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>где х и y – некоторые числа. Но если такое разложение существует, то коорд-ты векторов а, b и с будут
+						связаны
+						равенствами:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/43-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/43-koordinaty-v-stereometrii.webp"
+								alt="43 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Получили систему из 3 уравнений с двумя неизвестными (х и y). Если такая система имеет решение, то
+						вектора
+						компланарны. Если же решения нет, то вектора не компланарны.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Определите, компланарны ли вектора</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/44-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/44-koordinaty-v-stereometrii.webp"
+								alt="44 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/45-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/45-koordinaty-v-stereometrii.webp"
+								alt="45 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Имеем систему с тремя уравнениями. Из последних двух уравнений очевидно, что его решением может быть
+						только
+						пара чисел:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/46-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/46-koordinaty-v-stereometrii.webp"
+								alt="46 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Значит, рассмотренная тройка векторов компланарна.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Располагаются ли в одной плос-ти вектора:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/47-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/47-koordinaty-v-stereometrii.webp"
+								alt="47 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Нам надо проверить компаланарность векторов, поэтому действуем также, как и в предыдущей
+						задаче. Если
+						вектора компланарны, то существует разложение:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/48-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/48-koordinaty-v-stereometrii.webp"
+								alt="48 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Получилось неверное равенство. Это означает, что у системы уравнений решения нет, и потому тройка
+						векторов
+						некомпланарна.</p>
+					<p>&nbsp;</p>
+					<h2 id="7">Скалярное произведение векторов</h2>
+					<p>В 9 классе <a href="https://100urokov.ru/predmety/skalyarnoe-proizvedenie" target="_blank"
+							rel="noopener noreferrer">мы уже изучали</a> скалярное произведение векторов.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/49-skaljarnoe-proizvedenie-vektorov.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/49-skaljarnoe-proizvedenie-vektorov.webp"
+								alt="49 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Для нахождения угла между векторами необходимо отложить их от одной точки, тогда они образуют такой
+						угол.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Угол между векторами с и </strong><strong>d составляет 60°, а их длины соответственно
+							равны 5
+							и 6. Найдите их скалярное произведение.</strong></p>
+					<p>Решение. Здесь для расчета просто перемножаем длины векторов и косинус 60°:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/50-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/50-koordinaty-v-stereometrii.webp"
+								alt="50 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Напомним несколько уже известных нам фактов о скалярном произведении, остающихся верными и в
+						стереометрии:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/51-skaljarnoe-proizvedenie.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/51-skaljarnoe-proizvedenie.webp"
+								alt="51 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/52-dlja-ljubyh-vektorov.webp" type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/52-dlja-ljubyh-vektorov.webp"
+								alt="52 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Формула для расчета скалярного произведения по коорд-там векторов, используемая в стереометрии,
+						несколько
+						отличается от формулы из курса планиметрии. Напомним, что в планиметрии произведение векторов
+						а{x<sub>а</sub>;
+						у<sub>а</sub>} и b{х<sub>b</sub>; y<sub>b</sub>} можно было рассчитать так:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/53-1-skaljarnoe-proivzedenie-vektorov_edited.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/53-1-skaljarnoe-proivzedenie-vektorov_edited.webp"
+								alt="53 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/53-2-skaljarnoe-proivzedenie-vektorov_edited.webp"
+								type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/53-2-skaljarnoe-proivzedenie-vektorov_edited.webp"
+								alt="53 2 skaljarnoe proivzedenie vektorov edited">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Вычислите скалярное произведение векторов:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/54-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/54-koordinaty-v-stereometrii.webp"
+								alt="54 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>На практике скалярное произведение обычно используется для расчета углов между векторами, а также
+						отрезками и
+						прямыми. Рассмотрим несколько задач.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Вычислите угол между векторами:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/55-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/55-koordinaty-v-stereometrii.webp"
+								alt="55 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Теперь через скалярное произведение возможно рассчитать косинус искомого нами угла, а затем и сам
+						угол, который
+						мы обозначим как α:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/56-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/56-koordinaty-v-stereometrii.webp"
+								alt="56 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Рассчитайте углы в </strong><strong>∆АВС, зная коорд-ты его вершин: А(1; – 1; 3),
+							В(3; – 1; 1)
+							и С(– 1; 1; 3).</strong></p>
+					<p>Решение. Чтобы найти ∠В, необходимо просто рассчитать угол между векторами ВС и ВА также, как это
+						сделано в
+						предыдущей задаче. Но сначала найдем коорд-ты векторов ВС и ВА и их длины:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/57-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/57-koordinaty-v-stereometrii.webp"
+								alt="57 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Далее рассчитываем скалярное произведение векторов:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/58-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/58-koordinaty-v-stereometrii.webp"
+								alt="58 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Теперь найдем угол А, который представляет собой угол между векторам AВ и AС. Вектор AВ – это вектор,
+						противоположный ВA, то у него та же длина, но противоположный знак у коорд-т:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/59-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/59-koordinaty-v-stereometrii.webp"
+								alt="59 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/60-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/60-koordinaty-v-stereometrii.webp"
+								alt="60 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. В прямоугольном параллелепипеде
+							АВС</strong><strong>DA<sub>1</sub></strong><strong>B<sub>1</sub></strong><strong>C<sub>1</sub></strong><strong>D<sub>1</sub>
+							ребра имеют длину:</strong></p>
+					<p>AB = 1</p>
+					<p>BC = 2</p>
+					<p>BB<sub>1</sub> = 2</p>
+					<p><strong>Рассчитайте угол между векторами </strong><strong>DB<sub>1</sub> и
+						</strong><strong>BC<sub>1</sub>.</strong></p>
+					<p>Решение. Введем систему коорд-т Охуz и расположим в нем параллелепипед следующим образом:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/61-parallelepiped.webp" type="image/webp"><img
+								src="img/koordinaty-v-stereometrii/61-parallelepiped.webp" alt="61 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>При этом построении граничные точки векторов будут иметь следующие коорд-ты:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/62-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/62-koordinaty-v-stereometrii.webp"
+								alt="62 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Находим коорд-ты векторов, а также их длины:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/63-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/63-koordinaty-v-stereometrii.webp"
+								alt="63 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Рассчитываем скалярное произведение DB<sub>1</sub> и BC<sub>1</sub>:</p>
+					<p>
+						<picture>
+							<source srcset="img/koordinaty-v-stereometrii/64-koordinaty-v-stereometrii.webp" type="image/webp">
+							<img src="img/koordinaty-v-stereometrii/64-koordinaty-v-stereometrii.webp"
+								alt="64 koordinaty v stereometrii">
+						</picture>
+					</p>
+					<p>Получили ноль. Из этого вытекает, что вектора перпендикулярны, то есть искомый нами угол составляет
+						90°.</p>
+					<p>Ответ: 90°</p>
+					<p>Сегодня мы научились использовать координаты для решения стереометрических задач. Почти все формулы,
+						используемые в методе координаты, аналогичны тем формулам, которые были выведены ещё в курсе
+						планиметрии. Надо
+						лишь учитывать существование ещё одной, третьей координаты z.</p>
+					<p>&nbsp;</p>
+
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

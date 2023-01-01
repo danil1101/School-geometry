@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Перпендикулярность</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="perpendikulyarnost">
+			<div class="perpendikulyarnost__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="perpendikulyarnost__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-5.2.webp" type="image/webp"><img
+									src="img/themes-10/content-5.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Перпендикулярность в пространстве</div>
+							<div class="info__subtitle">Мы уже сталкивались с перпендикулярными прямыми в планиметрии. В
+								стереометрии
+								это понятие расширяется.
+							</div>
+						</div>
+					</div>
+					<div class="perpendikulyarnost__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="perpendikulyarnost.html#1">Перпендикулярность прямых</a></p>
+						<p><a href="perpendikulyarnost.html#2">Перпендикулярность прямой и плоскости</a>
+						</p>
+						<p><a href="perpendikulyarnost.html#3">Признак перпендикулярности прямой и
+								плоскости</a>
+						</p>
+						<p><a href="perpendikulyarnost.html#4">Задачи на перпендикулярность</a></p>
+
+					</div>
+					<h2 id="1">Перпендикулярность прямых</h2>
+					<p>Напомним, что планиметрии две прямые перпендикулярны, если угол между ними – прямой (то есть его
+						величина
+						составляет 90°).</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/1-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/1-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="1 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Однако в стереометрии угол измеряется и между скрещивающимися двумя прямыми в пространстве, у которых
+						общих
+						точек нет. Если он составляет 90°, то прямые также именуются перпендикулярными.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/2-dve-prjamye-perpendikuljarny.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/2-dve-prjamye-perpendikuljarny.webp" alt="2 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Как же проверить, перпендикулярны ли скрещивающиеся прямые или нет? Для этого может быть использована
+						специальная теорема, которую можно считать признаком перпендикулярности прямых.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/perpendikulyarnost/3-prjamaja-perpendikuljarnaja-odnoj-iz-dvuh-parallelnyh-prjamyh.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/3-prjamaja-perpendikuljarnaja-odnoj-iz-dvuh-parallelnyh-prjamyh.webp"
+								alt="3 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть прямые m, n и p, причем р||n и m⊥n. Требуется показать, что также m⊥p. Для
+						этого
+						выберем в пространстве какую-нибудь точку К и проведем через нее две такие прямые m’ и n’, что m’||m и
+						n’||n:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/4-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/4-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="4 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>По определению угла между прямыми из того факта, что m⊥n, вытекает, что и m’⊥n’. Так как p||n и n||n’,
+						то в <a href="https://100urokov.ru/predmety/parallelnost" target="_blank"
+							rel="noopener noreferrer">силу
+							транзитивности параллельности</a>, можно сделать вывод, что и р||n’. Но тогда угол между m’ и n’
+						одновременно является углом между m и p. А разm’⊥n’, то и m⊥p, ч. т. д.</p>
+					<p>Проиллюстрируем это правило на примере простого кубика:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/5-prostoj-kub.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/5-prostoj-kub.webp" alt="5 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Ребра ВС и AD параллельны как стороны квадрата АВСD. В свою очередь ВС⊥СG. Тогда по доказанной теореме
+						можно
+						утверждать, что и AD⊥CG.</p>
+					<h2 id="2">Перпендикулярность прямой и плоскости</h2>
+					<p>Из реальной жизни мы знаем, что палку в землю можно вставить так, что она будет стоять строго
+						вертикально. В
+						таких случаях говорят, что палка располагается перпендикулярно земле. Также гвоздь, «ровно» забитый в
+						стену,
+						оказывается перпендикулярным стене. Колонны, которые архитекторы используют при строительстве, также
+						перпендикулярны плоскости пола в этих зданиях.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/6-perpendikuljarnost-v-zhizni.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/6-perpendikuljarnost-v-zhizni.webp" alt="6 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>По аналогии и в геометрии прямая может быть перпендикулярна плоскости. На рисунке такая ситуация будет
+						выглядеть так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/7-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/7-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="7 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Сформулируем строгое определение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/8-prjamaja-perpendikuljarna-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/8-prjamaja-perpendikuljarna-ploskosti.webp"
+								alt="8 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Так, на следующем рисунке перпендикулярны прямая m и плоскость α. Это значит, что m перпендикулярна
+						каждой
+						прямым, находящимся в α:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/9-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/9-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="9 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Ясно, что прямая m, перпендикулярная плоскости α, должна пересекать ее. Действительно, если бы это
+						было не так,
+						то m либо полностью лежала бы в α, либо была бы ей параллельна. В обоих случаях в α можно было бы
+						построить
+						прямую n, параллельную m. В этом случае m и n уже не были бы перпендикулярны, а значит, что m уже не
+						будет
+						перпендикулярна к α.</p>
+					<p>Сформулируем две теоремы, связанные с перпендикулярностью прямой и плоскости.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/perpendikulyarnost/10-esli-odna-iz-dvuh-parallelnyh-prjamyh-perpendikuljarnaja-ploskosti.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/10-esli-odna-iz-dvuh-parallelnyh-prjamyh-perpendikuljarnaja-ploskosti.webp"
+								alt="10 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть прямые m и n, и m||n. Также есть плоскость α, и α⊥m. Проведем в α
+						какую-нибудь прямую
+						р:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/11-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/11-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="11 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>По определению перпендикулярности (опр. 2) ясно, что m⊥p. Тогда по теор. 1 и n⊥p, ведь m||n. Прямая р
+						была
+						выбрана произвольно, поэтому получается, что n перпендикулярно любой произвольной прямой в α. Это как
+						раз и
+						значит, что n⊥α.</p>
+					<p>Теперь перейдем ко второй теореме, которая по сути обратна первой:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/perpendikulyarnost/12-esli-dve-prjamye-perpendikuljarny-odnoj-i-toj-zhe-ploskosti.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/12-esli-dve-prjamye-perpendikuljarny-odnoj-i-toj-zhe-ploskosti.webp"
+								alt="12 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Для доказательства выберем на n точку К, не находящуюся в плоскости α. Через нее можно построить
+						прямую р,
+						параллельную m. Нам надо показать, что р и n – это одна и та же прямая. Пусть это не так, тогда р
+						будет
+						перпендикулярна α по теор. 2. Если n и р – различные прямые, то они должны пересекать α в разных
+						точках,
+						которые мы обозначим буквами Н и Т соответственно:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/13-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/13-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="13 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Прямая ТН будет перпендикулярна и n, и р. Тогда в ∆ТНК есть два прямых угла, ∠Н и∠Т, что невозможно.
+						Значит, на
+						самом деле прямые n и p совпадают. Так как p||m, то и n||m, ч. т. д.</p>
+					<h2 id="3">Признак перпендикулярности прямой и плоскости</h2>
+					<p>Заметим,что проверять перпендикулярность прямой и плоскости с помощью определения неудобно, ведь в
+						любой
+						плоскости находится бесконечно большое количество прямых. Поэтому на практике используется более
+						простой
+						признак перпендикулярности прямой и плоскости:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/14-priznak-perpendikuljarnosti-prjamoj-i-ploskosti.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/14-priznak-perpendikuljarnosti-prjamoj-i-ploskosti.webp"
+								alt="14 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Доказательство. Пусть есть прямые m, n и р, причем m⊥n и m⊥p. При этом n и р пересекаются в
+						какой-нибудь точке
+						О, и через них проходит плоскость α.Надо продемонстрировать, что m также будет перпендикулярна и любой
+						произвольной прямой k, принадлежащей α:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/15-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/15-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="15 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Если k||nили k||р, то k⊥m по теор. 1. Тогда надо рассмотреть случай, когда k пересекается с n и р.
+						Проведем
+						через О прямую k’, параллельную k.</p>
+					<p>Далее на прямой m отложим точки А и В так, чтобы ОА = АВ. Также проведем прямую s, пересекающую р, n,
+						k’ в
+						точках Р, L и Q соответственно:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/16-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/16-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="16 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>В результате такого построения прямые n и р оказались серединными перпендикулярами для отрезка АВ.
+						Тогда по <a href="https://100urokov.ru/predmety/urok-11-okruzhnosti" target="_blank"
+							rel="noopener noreferrer">свойству
+							серединного перпендикуляра</a> мы можем прийти к выводу, что</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/17-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/17-perpendikulyarnost.webp" alt="17 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Теперь мы можем сравнить ∆АРQ и ∆BPQ, которые также оказываются равными:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/18-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/18-perpendikulyarnost.webp" alt="18 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Отсюда вытекает, что отрезки АQ и BQ одинаковы, поэтому ∆АВQ – равнобедренный. Теперь заметим, что в
+						∆АВQ
+						отрезок OQ представляет собой медиану, ведь О – середина АВ. Но медиана в равнобедренном треугольнике
+						– это ещё
+						и высота, поэтому АВ⊥OQ. Это как раз и значит, что k’⊥m. Наконец, отсюда по теор. 1 выходит, что и
+						k⊥m, ч. т.
+						д.</p>
+					<p>Надо также рассмотреть и второй случай, когда изначально m НЕ проходит через О. В таком случае мы
+						можем
+						провести через О прямую m’, чтобы m’||m:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/19-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/19-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="19 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>В этом случае по аналогии с предыдущим доказательством получаем, что m’⊥k. Тогда по теор. 1 и m⊥k, ч.
+						т. д.</p>
+					<p>Покажем, как можно применить доказанный признак. Снова рассмотрим куб:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/20-kub.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/20-kub.webp" alt="20 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Докажем, что, например, ребро DH перпендикулярно грани АВСD. Действительно,DH⊥AD и DH⊥CD. Значит, в
+						плоскости
+						АВСD есть две пересекающиеся прямые (это AD и CD), каждая из которых перпендикулярна DH. По
+						доказанному
+						признаку (теор. 4) этого достаточно для того, чтобы DH⊥ABCD. Аналогично можно показать, что ребра BF,
+						AE, СG
+						также перпендикулярны АВСD.</p>
+					<p>Докажем ещё несколько важных и вместе с тем очевидных теорем.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/perpendikulyarnost/21-cherez-ljubuju-tochku-v-prostranstve-mozhno-postroit-ploskost.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/21-cherez-ljubuju-tochku-v-prostranstve-mozhno-postroit-ploskost.webp"
+								alt="21 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть прямая m и точка K. Здесь мы рассмотрим случай, когда K не находится на m.
+						Тогда
+						через m и K&nbsp;<a href="https://100urokov.ru/predmety/stereometriya" target="_blank"
+							rel="noopener noreferrer">можно построить</a> единственную плоскость α:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/22-perpendikuljarnye-ploskosti.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/22-perpendikuljarnye-ploskosti.webp" alt="22 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Дальше выполним следующие построения:</p>
+					<p>1) Проведем в плоскости α через К прямую n, такую, что n⊥m. Она пересечет m в какой-то точке Т.</p>
+					<p>2) Построим через m плоскость β, не совпадающую с α. То есть m окажется границей между α и β.</p>
+					<p>3) Через точку Т уже в плоскости β построим прямую р так, чтобы р⊥m.</p>
+					<p>4) Построим плоскость γ, проходящую пересекающиеся прямые р и n (эта плоскость будет единственной).
+					</p>
+					<p>В итоге мы получили плоскость γ, в которой располагаются две прямые, р и n, каждая из которых
+						перпендикулярна
+						m. Тогда и вся плоскость γ будет перпендикулярна прямой m по теор. 4. То есть γ удовлетворяет условию
+						теоремы.
+					</p>
+					<p>В случае, когда точка К находится непосредственно на прямой m, плоскости α и β будут просто двумя
+						различными
+						плоскостями, проходящими через m. В каждой из них через К можно будет построить перпендикуляры к m,
+						которые и
+						будут играть роль прямых pи n.</p>
+					<p>Осталось убедиться, что γ – единственная плоскость, удовлетворяющая условию теоремы. В самом деле,
+						пусть через
+						некоторую точку К можно построить хотя бы две несовпадающие плоскости, перпендикулярные прямой m:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/23-perpendikuljarnye-ploskosti.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/23-perpendikuljarnye-ploskosti.webp" alt="23 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Обозначим буквами Т и Р точки, где m пересекает эти две плоскости. Тогда по опр. 2 получится, что РК⊥m
+						и KT⊥m.
+						Теперь рассмотрим ∆KPT. У него сразу два прямых угла – это ∠Р и ∠Т. Треугольник с двумя прямыми углами
+						существовать не может, значит, на самом деле через K нельзя провести две плоскости, перпендикулярных
+						m.</p>
+					<p>Прямым следствием из только что доказанной теоремы является следующее утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/perpendikulyarnost/24-esli-dve-ploskosti-perpendikuljarny-odnoj-i-toj-zhe-prjamoj.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/24-esli-dve-ploskosti-perpendikuljarny-odnoj-i-toj-zhe-prjamoj.webp"
+								alt="24 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Действительно, пусть существуют такие плоскости α и β и прямая m, что m⊥α, m⊥β. Предположим, что α и β
+						пересекаются по какой-нибудь прямой n. Тогда получается, что через каждую точку, принадлежащую n,
+						проведены
+						сразу 2 плоскости, перпендикулярные m, а это невозможно по теор. 5. Значит, α и β не пересекаются, то
+						есть они
+						параллельны.</p>
+					<p>Следующее утверждение часто называют теоремой о прямой, перпендикулярной плоскости:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/perpendikulyarnost/25-cherez-ljubuju-tochku-prostranstva-mozhno-provesti-prjamuju.webp"
+								type="image/webp"><img
+								src="img/perpendikulyarnost/25-cherez-ljubuju-tochku-prostranstva-mozhno-provesti-prjamuju.webp"
+								alt="25 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Возьмем произвольные плоскость α и точку К. Далее в α выберем какую-нибудь прямую m. Мы можем провести
+						через К
+						такую плоскость β, что β⊥m (по теор. 5):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/26-perpendikuljarnye-ploskosti.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/26-perpendikuljarnye-ploskosti.webp" alt="26 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Прямую, по которой пересекутся α и β, обозначим буквой n. Теперь мы можем в плоскости β опустить
+						перпендикуляр
+						из К на n. Этот перпендикуляр обозначим буквой р.</p>
+					<p>Получается, что р⊥n,но также и р⊥m (ведь m⊥β, а р находится в β). Тогда по признаку перпендикулярности
+						(теор.
+						4) получаем, что р⊥α, то есть р – это как раз искомая прямая.</p>
+					<p>Осталось показать, что р – единственная такая прямая. Действительно, пусть через К построили две
+						прямых, каждая
+						из которых перпендикулярна α. Тогда, по теореме 3, они окажутся параллельными. Но при этом у них будет
+						общая
+						точка K, а параллельные прямые общих точек не имеют. Поэтому р – единственная прямая, удовлетворяющая
+						условию
+						теоремы.</p>
+					<h2 id="4">Задачи на перпендикулярность</h2>
+					<p>Прежде, чем смотреть решение задач, постарайтесь решить их самостоятельно.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Ребра ВС и </strong><strong>AD в тетраэдре АВС</strong><strong>D перпендикулярны.
+						</strong><strong>M и </strong><strong>N – это середины ребер АВ и АС. Докажите, что
+						</strong><strong>MN</strong><strong>⊥</strong><strong>AD.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/27-perpendikuljarnost-figur.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/27-perpendikuljarnost-figur.webp" alt="27 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Решение.MN по определению оказывается средней линией в ∆АВС. Это значит, что MN||ВС. Тогда, по теор.
+						1, можно
+						утверждать, что и АD⊥MN, ч. т. д.</p>
+					<p><strong>Задание. Диагонали квадрата, чья сторона имеет длина а, пересекаются в точке О. Через О
+							проведена
+							прямая ОК, перпендикулярная плоскости квадрата, причем отрезок ОК имеет длину </strong><strong>b.
+							Найдите
+							расстояние от какой-нибудь вершины квадрата до точки К.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/28-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/28-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="28 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Обозначим вершины квадрата буквами А, В, С и D. Найдем длину его диагонали, например, АС. Для этого
+						используем
+						теорему Пифагору и прямоугольный ∆АСD:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/29-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/29-perpendikulyarnost.webp" alt="29 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Точка пересечения диагоналей квадрата одновременно является серединой каждой диагонали, то есть
+						отрезок ОС
+						вдвое короче АС:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/30-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/30-perpendikulyarnost.webp" alt="30 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Теперь заметим, что если ОК перпендикулярна плоскости квадрата, то также ОК⊥ОС (опр. 2). Значит, ∆КОС
+						–
+						прямоугольный, и для него справедлива теорема Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/31-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/31-perpendikulyarnost.webp" alt="31 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Аналогично можно показать, что расстояние и до других вершин вычисляется по такой же формуле.</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/32-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/32-perpendikulyarnost.webp" alt="32 perpendikulyarnost">
+						</picture>
+					</p>
+					<p><strong>Задание. В кубе найдите угол между прямыми АС и </strong><strong>DH:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/33-kub-perpendikuljarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/33-kub-perpendikuljarnost.webp" alt="33 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Решение. Заметим, что DH⊥АD и DH⊥CD, при этом AD и CD находятся в плоскости грани АВСD. Тогда по теор.
+						4
+						получаем, что DH перпендикулярна этой грани. В свою очередь из опр. 2 вытекает, что DH перпендикулярна
+						любой
+						прямой, принадлежащей грани, в том числе и АС. То есть угол между этими прямыми составляет 90°.</p>
+					<p>Ответ: 90°.</p>
+					<p><strong>Задание. Ребро куба имеет длину, равную единице. Какова длина его диагонали
+						</strong><strong>FD?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/34-kub.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/34-kub.webp" alt="34 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Решение. Предварительно найдем длину диагонали FC (эта диагональ называется не диагональю куба, а
+						диагональю
+						грани ВСGF). Ее можно найти из прямоугольного ∆FCG:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/35-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/35-perpendikulyarnost.webp" alt="35 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Далее заметим, что СD⊥BC и CD⊥CG, то есть по теор. 4 ребро CD перпендикулярно всей грани BCGF. Это
+						значит, что
+						и ∠FCD– прямой, а ∆FCD – прямоугольный. Применим и к нему теорему Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/36-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/36-perpendikulyarnost.webp" alt="36 perpendikulyarnost">
+						</picture>
+					</p>
+					<p><strong>Задание. Какой угол в кубе с единичным ребром образуют диагональ куба и его ребро?</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/37-kub.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/37-kub.webp" alt="37 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Решение. Используем рисунок предыдущей задачи и полученные в ней результаты. Нам надо найти ∠FDC. Мы
+						уже
+						рассчитали длины всех сторон в ∆FDC:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/38-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/38-perpendikulyarnost.webp" alt="38 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Тогда ∠FDC легко найти с помощью <a href="https://100urokov.ru/predmety/urok-4-trigonometriya"
+							target="_blank" rel="noopener noreferrer">теоремы косинусов</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/39-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/39-perpendikulyarnost.webp" alt="39 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Примечание. Несложно показать, что ровно такой же угол диагональ куба образует и со всеми остальными
+						ребрами
+						куба. Также можно показать, что это угол никак не зависит от длины ребра.</p>
+					<p><strong>Задание. Отрезок </strong><strong>PQ и плоскость </strong><strong>α параллельны. Через точку
+						</strong><strong>P и </strong><strong>Q построены прямые, перпендикулярные </strong><strong>α. Они
+							пересекают
+						</strong><strong>α в точках Р<sub>1</sub> и </strong><strong>Q<sub>1</sub>. Докажите, что отрезки
+						</strong><strong>PQ и </strong><strong>P<sub>1</sub></strong><strong>Q<sub>1</sub> одинаковы.</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/40-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/40-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="40 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Решение. По условию РР<sub>1</sub>⊥α и QQ<sub>1</sub>⊥α. Тогда по теор. 3 можно утверждать, что
+						РР<sub>1</sub>||QQ<sub>1</sub>. Это значит, что отрезки РР<sub>1</sub> и QQ<sub>1</sub>, в том числе и
+						точки Р,
+						Р<sub>1</sub>, Q, Q<sub>1&nbsp;</sub>располагаются в одной плоскости. Тогда
+						РQQ<sub>1</sub>P<sub>1</sub>– это
+						плоский четырехугольник.</p>
+					<p>Заметим, что PQ||P<sub>1</sub>Q<sub>1</sub>, ведь если бы они пересекались, то точка их пересечения
+						была бы
+						общей для PQ и α, и тогда PQ и α не были бы параллельны. С учетом того факта, что и
+						РР<sub>1</sub>||QQ<sub>1</sub>, получаем, что в четырехугольнике РQQ<sub>1</sub>P<sub>1</sub>
+						противоположные
+						стороны параллельны. То есть он представляет собой параллелограмм.</p>
+					<p>Так как РР<sub>1</sub>⊥α и QQ<sub>1</sub>⊥α, то</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/41-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/41-perpendikulyarnost.webp" alt="41 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Получается, что все углы в РQQ<sub>1</sub>P<sub>1</sub> – прямые, то есть это прямоугольник. Из этого
+						вытекает,
+						что PQиP<sub>1</sub>Q<sub>1</sub> – одинаковые отрезки, ч. т. д. Попутно мы также убедились, что также
+						РР<sub>1</sub> и QQ<sub>1&nbsp;</sub>одинаковы.</p>
+					<p><strong>Задание. Есть плоскости </strong><strong>α и </strong><strong>β, параллельные друг другу.
+							Прямая
+						</strong><strong>m перпендикулярна </strong><strong>α. Верно ли, что также </strong><strong>m
+							перпендикулярна и
+						</strong><strong>β?</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/42-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/42-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="42 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Пусть α и m пересекаются в точке Р. Заметим, что m обязательно должна пересекаться и с β в
+						какой-нибудь точке
+						М. Действительно, m не может полностью принадлежать β, ведь тогда бы точка Р также находилась в β, то
+						есть
+						существовала бы общая точка Р у параллельных плоскостей, что невозможно. Если бы m и β были
+						параллельны, то
+						тогда в β можно провести такую прямую m’, что m’||m. Раз m пересекает α, то и m’ должна пересекаться с
+						α (по
+						теор. 3 <a href="https://100urokov.ru/predmety/parallelnost" target="_blank"
+							rel="noopener noreferrer">из
+							этого
+							урока</a>). Но m’ с α не может пересечься, так как m’ находится в β и потому общих точек с α не
+						имеет. Это
+						противоречие показывает, что m пересекает β в точке, обозначенной нами как М.</p>
+					<p>Предположим, что утверждение в условии ошибочно и на самом деле β и m не перпендикулярны. Тогда через
+						М можно
+						провести третью плоскость γ, перпендикулярную m (по теор. 5). Проанализируем расположение плоскостей
+						α, β и γ.
+						Раз α⊥m и γ⊥m, то по теор. 6 можно утверждать, что α||γ. По условию α||β. Тогда в силу транзитивности
+						параллельности и β||γ. Но это невозможно, ведь уβ и γ есть общая точка М. Значит, на самом деле β и m
+						всё же
+						перпендикулярны, ч. т. д.</p>
+					<p><strong>Задание. Прямые&nbsp;</strong><strong>AD, АС, АВ попарно параллельны. Известно, что</strong>
+					</p>
+					<p>BC = 26</p>
+					<p>AB = 24</p>
+					<p>BD = 25</p>
+					<p><strong>Найдите длину отрезка </strong><strong>CD.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/43-perpendikuljarnye-ploskosti.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/43-perpendikuljarnye-ploskosti.webp" alt="43 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Решение. В задаче есть сразу три прямоугольных треугольника: ∆АВС, ∆АВD и ∆АСD. Для каждого из них
+						можно
+						записать теорему Пифагора, что позволит найти длины отрезков АС, АD и СD. Начнем с ∆АВС:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/44-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/44-perpendikulyarnost.webp" alt="44 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Теперь можно найти и длину CD c помощью ∆АСD:</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/45-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/45-perpendikulyarnost.webp" alt="45 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. На прямой&nbsp;</strong><strong>m отмечена точка М. Через точку </strong><strong>M
+							проведены
+							плоскость </strong><strong>α и прямая </strong><strong>n, причем
+						</strong><strong>m</strong><strong>⊥</strong><strong>α и
+						</strong><strong>m</strong><strong>⊥</strong><strong>n. Докажите, что </strong><strong>n обязательно
+							принадлежит </strong><strong>α.</strong></p>
+					<p>Решение. Так как m и n пересекаются, то через них можно построить плоскость β:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/46-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/46-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="46 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Так как у α и β есть общая точка М, то они должны пересекаться по некоторой прямой р. При этом р
+						находится в α,
+						а m⊥α, то m⊥n (по опр. 2). Тогда получается, что в плоскости β через точку M проходят две прямые, n и
+						p,
+						которые перпендикулярны m. Но в одной плоскости через точку прямой можно построить строго один
+						перпендикуляр к
+						ней. То есть n и p совпадают. Это значит, что n, как и p, полностью находится в α, ч. т. д.</p>
+					<p><strong>Задание. Отрезок АВ не пересекает плоскость </strong><strong>α, а отрезок С</strong><strong>D
+							принадлежит </strong><strong>α. Известно, что отрезки АС и </strong><strong>BD перпендикулярны
+						</strong><strong>α. Также известны длины:</strong></p>
+					<p>AC = 3</p>
+					<p>BD = 2</p>
+					<p>CD = 2,4</p>
+					<p><strong>Какова длина АВ?</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/47-perpendikuljarnye-linii-na-ploskosti.webp"
+								type="image/webp"><img src="img/perpendikulyarnost/47-perpendikuljarnye-linii-na-ploskosti.webp"
+								alt="47 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Если АС⊥α и BD⊥α, то АС||BD (по теор. 3). Это значит, что через АВ и СD можно провести плоскость, то
+						есть АВСD
+						– плоский четырехугольник. При этом∠С и ∠D прямые (по опр. 2). Построим отдельно этот четырехугольник
+						и
+						проведем некоторые построения:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/perpendikulyarnost/48-perpendikuljarnye-ploskosti.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/48-perpendikuljarnye-ploskosti.webp" alt="48 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>Опустим из В перпендикуляр ВК на АС. Так как в четырехугольнике СDBK три угла прямые (∠С, ∠D и ∠K), то
+						и
+						четвертый угол также прямой, то есть СDBK – прямоугольник. Это значит, что</p>
+					<p>
+						<picture>
+							<source srcset="img/perpendikulyarnost/49-perpendikulyarnost.webp" type="image/webp"><img
+								src="img/perpendikulyarnost/49-perpendikulyarnost.webp" alt="49 perpendikulyarnost">
+						</picture>
+					</p>
+					<p>В ходе сегодняшнего урока мы узнали о перпендикулярных прямых в пространстве, а также о том, что
+						перпендикулярны могут быть также прямая и плоскость. На основе простейших теорем о перпендикулярности
+						возможно
+						определять длину диагонали в кубе и углы, которые образует его диагональ с ребрами куба.</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

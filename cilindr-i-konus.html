@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Цилиндр и конус</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="cilindr-i-konus">
+			<div class="cilindr-i-konus__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="cilindr-i-konus__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-6.2.webp" type="image/webp"><img
+									src="img/themes-11/content-6.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Цилиндр и конус</div>
+							<div class="info__subtitle">
+								Существуют объемные фигуры, не являющиеся многогранниками. Простейшими из них являются цилиндр и
+								конус.</div>
+						</div>
+					</div>
+					<div class="cilindr-i-konus__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="cilindr-i-konus#1">Понятие цилиндра</a></p>
+						<p><a href="cilindr-i-konus#2">Понятие конуса</a></p>
+						<p><a href="cilindr-i-konus#3">Усеченный конус</a></p>
+					</div>
+
+					<h2 id="1">Понятие цилиндра</h2>
+					<p>Построим на некоторой плоскости α окружность L, центр которой находится в точке О, а ее радиус
+						обозначим как r.
+						Далее через каждую точку этой окруж-ти проведем прямую, которая будет перпендикулярна к α. Все вместе
+						эти
+						прямые образуют поверхность, которую принято называть цилиндрической поверхностью (может
+						использоваться
+						сокращение поверх-ть). Введем несколько понятий:</p>
+					<ul>
+						<li>Окружность, построенная в плос-ти α, именуется основанием цилиндрической поверх-ти;</li>
+						<li>Каждая прямая, проходящая через эту окруж-ть L и перпендикулярная α – это образующая
+							цилиндрической
+							поверх-ти;</li>
+						<li>Прямая, проходящая через точку О и также перпендикулярная α, именуется осью цилиндрической
+							поверх-ти.</li>
+					</ul>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/1-os-cilindricheskoj-poverhnosti.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/1-os-cilindricheskoj-poverhnosti.webp" alt="1 cilindr i konus">
+						</picture>
+					</p>
+					<p>Примечание. Заметьте, что в стереометрии при изображении окружности на плос-ти она выглядит как эллипс
+						(овал).
+					</p>
+					<p>Заметим, что так как все образующие и ось цилиндрической поверх-ти перпендикулярны одной и той же
+						плос-ти α, то
+						они будут параллельны друг другу.</p>
+					<p>Далее проведем плос-ть β, параллельную α. Так как образующие и ось пересекали α, то они должны
+						пересекать и β.
+						В результате они образуют в плос-ти β какую-то плоскую линию L<sub>1</sub>. Докажем, что L<sub>1</sub>
+						– это
+						также окружность.</p>
+					<p>Действительно, пусть ось цилиндрической поверх-ти пересекает плос-ти α и β в точках О и О<sub>1</sub>
+						соответственно. Произвольная образующая пересекает эти же плос-ти в точках А и А<sub>1</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/2-cilindr-na-ploskosti.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/2-cilindr-na-ploskosti.webp" alt="2 cilindr i konus">
+						</picture>
+					</p>
+					<p>Так как ОО<sub>1</sub>||АА<sub>1</sub>, то ОО<sub>1</sub>А<sub>1</sub>А – это плоский четырехугольник.
+						ОО<sub>1</sub>⊥α и ОО<sub>1</sub>⊥β, поэтому углы ∠АОО<sub>1</sub> и ∠А<sub>1</sub>О<sub>1</sub>О –
+						прямые.
+						АА<sub>1</sub>⊥α и АА<sub>1</sub>⊥β, поэтому прямыми будут и углы ∠ОАА<sub>1</sub> и
+						∠О<sub>1</sub>А<sub>1</sub>А. Получается, что ОО<sub>1</sub>А<sub>1</sub>А – это прямоугольник, и
+						поэтому
+						отрезки ОА и О<sub>1</sub>А<sub>1</sub> одинаковы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/3-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/3-cilindr-i-konus.webp" alt="3 cilindr i konus">
+						</picture>
+					</p>
+					<p>Итак, точка А<sub>1</sub> находится на расстоянии r от О<sub>1</sub>. Аналогично и для любой другой
+						точки на
+						линии L<sub>1</sub> можно показать, что она находится на расстоянии r от О<sub>1</sub>. То есть все
+						точки
+						L<sub>1</sub> равноудалены от О<sub>1</sub>, и поэтому L<sub>1</sub> – это окруж-ть с центром в точке
+						О<sub>1</sub>, ч. т. д.</p>
+					<p>Обратите внимание, что окруж-ти L и L<sub>1</sub> имеют одинаковые радиусы, то есть это одинаковые
+						окруж-ти.
+					</p>
+					<p>Объемная фигура, образованная окруж-тями L и L<sub>1</sub>, именуется цилиндром. Рассмотрим его
+						основные
+						элементы:</p>
+					<ul>
+						<li>круги L<sub>1</sub> и L – это основания цилиндра;</li>
+						<li>отрезок ОО<sub>1</sub> – ось цилиндра;</li>
+						<li>отрезки образующих, заключенные между основаниями, именуются образующими цилиндра;</li>
+						<li>часть цилиндрической поверх-ти, заключенную между основаниями цилиндра, именуют боковой
+							поверхностью
+							цилиндра.</li>
+					</ul>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/4-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/4-cilindr.webp" alt="4 cilindr i konus">
+						</picture>
+					</p>
+					<p>Напомним, что отрезки параллельных прямых, заключенные между параллельными плос-тями, имеют одинаковую
+						длину.
+						Отсюда вытекает тот факт, что образующие цилиндра одинаковы.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/5-obrazujuschie-cilindra-ravny-i-parallelny.webp"
+								type="image/webp"><img
+								src="img/cilindr-i-konus/5-obrazujuschie-cilindra-ravny-i-parallelny.webp"
+								alt="5 cilindr i konus">
+						</picture>
+					</p>
+					<p>Введем ещё два термина:</p>
+					<ul>
+						<li>длина образующей именуется высотой цилиндра;</li>
+						<li>радиус оснований цилиндра именуется радиусом цилиндра.</li>
+					</ul>
+					<p>Отметим, что на самом деле мы рассмотрели только частный случай цилиндра – так называемый прямой
+						круговой
+						цилиндр. Его основания – это круги (поэтому он именуется круговым), а его образующие образуют с
+						основаниями
+						прямой угол(поэтому он именуется прямым). Можно построить наклонный цилиндр (его также называют
+						косым), у
+						которого образующие не перпендикулярны основанию. Также существуют и цилиндры, у которых основаниями
+						являются
+						не окруж-ти, а другие фигуры, например параболы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/6-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/6-cilindr.webp" alt="6 cilindr i konus">
+						</picture>
+					</p>
+					<p>В принципе любую <a href="https://100urokov.ru/predmety/mnogogranniki" target="_blank"
+							rel="noopener noreferrer">призму</a> (а значит и любой параллелепипед) можно считать цилиндром.
+						Однако в
+						дальнейшем в курсе школьной стереометрии под цилиндром будет подразумеваться исключительно прямой
+						круговой
+						цилиндр, если специально не оговорено иное.</p>
+					<p>В реальной жизни очень многие предметы имеют форму цилиндра. Колонны в зданиях, ножки стульев, бочки,
+						рулоны
+						бумаги представляют собой цилиндры. Даже дерево можно условно считать цилиндром.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/7-cilindry-v-realnosti.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/7-cilindry-v-realnosti.webp" alt="7 cilindr i konus">
+						</picture>
+					</p>
+					<p>Рассмотрим сечение цилиндра плос-тью, перпендикулярной его основаниям.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/8-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/8-cilindr.webp" alt="8 cilindr i konus">
+						</picture>
+					</p>
+					<p>Пусть сечение пересекает нижнее основание цилиндра в точках А<sub>1</sub> и В<sub>1</sub>. Тогда
+						перпендикуляры
+						к основанию, проходящие через эти точки, будут принадлежать этому сечению. Но эти перпендикуляры –
+						одновременно
+						и образующие цилиндра А<sub>1</sub>А и В<sub>1</sub>В. Значит, сечение проходит и через точки А и В.
+						Раз
+						АА<sub>1</sub> и ВВ<sub>1</sub> – перпендикуляры к обоим основаниям цилиндра, то</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/9-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/9-cilindr-i-konus.webp" alt="9 cilindr i konus">
+						</picture>
+					</p>
+					<p>Итак, в четырехугольнике АВВ<sub>1</sub>А<sub>1</sub> все углы прямые, то есть он представляет собой
+						прямоугольник. Более того, можно утверждать, что любое сечение, проходящее через образующую цилиндра,
+						будет
+						прямоугольником, ведь такое сечение будет перпендикулярно основаниям, так как оно содержит
+						перпендикуляр к ним.
+						Сечение, проходящее через цилиндрическую ось, именуется осевым сечением. Оно также имеет форму
+						прямоугольника.
+					</p>
+					<p>Далее рассмотрим сечение цилиндра плос-тью, параллельной основаниям:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/10-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/10-cilindr.webp" alt="10 cilindr i konus">
+						</picture>
+					</p>
+					<p>Пусть секущей будет плос-ть γ, а нижнее основание располагается в плос-ти α. Тогда по определению
+						фигура,
+						«зажатая» между этими двумя плос-тями – это цилиндр, а потому сечение должно иметь форму круга.
+						Получается, что
+						сечение γ разбивает цилиндр на два цилиндра.</p>
+					<p>Рассмотрим боковую поверх-ть цилиндра. Она представляет собой замкнутую поверхность. Если ее условно
+						«разрезать» по образующей цилиндра и развернуть, то получится прямоугольник:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/11-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/11-cilindr.webp" alt="11 cilindr i konus">
+						</picture>
+					</p>
+					<p>Длина одной стороны такого прямоугольника (он называется разверткой боковой поверх-ти цилиндра) – это
+						длина
+						образующей цилиндра, то есть его высота. Длина второй стороны совпадает с длиной окруж-ти, лежащей в
+						основании
+						цилиндра. Если радиус цилиндра обозначен как r, то длина этой окруж-ти составляет 2πr. Тогда площадь
+						боковой
+						поверх-ти можно рассчитать как площадь прямоугольника:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/12-ploschad-bokovoj-poverhnosti-cilindra.webp"
+								type="image/webp"><img src="img/cilindr-i-konus/12-ploschad-bokovoj-poverhnosti-cilindra.webp"
+								alt="12 cilindr i konus">
+						</picture>
+					</p>
+					<p>Площадь полной поверх-ти цилиндра – это сумма площадей его оснований и его боковой поверх-ти. Так как
+						площадь
+						круга рассчитывается по формуле</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/13-ploschad-polnoj-poverhnosti-cilindra.webp"
+								type="image/webp"><img src="img/cilindr-i-konus/13-ploschad-polnoj-poverhnosti-cilindra.webp"
+								alt="13 cilindr i konus">
+						</picture>
+					</p>
+					<p>Рассмотрим ещё несколько важных понятий. В цилиндр может быть вписана прямая призма. В таком случае
+						основания
+						призмы находятся в тех же плос-тях, что и основания цилиндра, а её боковые грани – это образующие
+						цилиндра.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/14-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/14-cilindr.webp" alt="14 cilindr i konus">
+						</picture>
+					</p>
+					<p>Если плос-ть содержит образующую цилиндра, но не пересекает его основания, то такая плос-ть именуется
+						касательной к цилиндру. Можно сказать, что касательная плос-ть – это такая плос-ть, которая имеет
+						ровно по
+						одной общей точке с каждым основанием цилиндром.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/15-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/15-cilindr.webp" alt="15 cilindr i konus">
+						</picture>
+					</p>
+					<p>Если каждая боковая грань призмы – это касательная к цилиндру, а основания призмы находятся в тех же
+						плос-тях,
+						что и основания цилиндра, то говорят, что цилиндр вписан в призму.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/16-vyrezat-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/16-vyrezat-cilindr.webp" alt="16 cilindr i konus">
+						</picture>
+					</p>
+					<p>Естественно, что если цилиндр вписан в призму, то его основания оказываются вписанными в те
+						многоугольники,
+						которые являются основаниями призмы. Если же призма вписана в цилиндр, то основания цилиндра – это уже
+						окруж-ти, описанные около этих многоугольников.</p>
+					<p>Рассмотрим несколько задач, в которых фигурируют цилиндры.</p>
+					<p><strong>Задание. Найдите боковую и полную площади цилиндра, если его радиус составляет 2 м, а высота –
+							3
+							м.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/17-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/17-cilindr.webp" alt="17 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Какова длина диагонали осевого сечения цилиндра, с высотой 4 м и радиусом 1,5
+							м?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/18-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/18-cilindr.webp" alt="18 cilindr i konus">
+						</picture>
+					</p>
+					<p>Решение. Осевое сечение цилиндра – это прямоугольник, обозначим его как АВСD. Сторона АВ – это высота
+						цилиндра,
+						а AD – это диаметр нижнего основания, ведь AD проходит через центр окруж-ти О. Тогда длина AD вдвое
+						больше
+						радиуса цилиндра:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/19-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/19-cilindr-i-konus.webp" alt="19 cilindr i konus">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Осевое сечение цилиндра – это квадрат, площадь которого обозначена буквой
+						</strong><strong>Q.
+							Какова площадь основания цилиндра?</strong></p>
+					<p>Решение. Обозначим сторону сечения-квадрата буквой а. Зная площадь сечения, легко найдем и сторону:
+					</p>
+					<p><strong>Задание. Высота цилиндра составляет 8 см, а его радиус – 5 см. Через его образующую проведено
+							сечение,
+							которое имеет форму квадрата. Каково расстояние между этим сечением и осью цилиндра?</strong></p>
+					<p>Решение. Обозначим сечение как АВСD. Так как и это сечение, и ось цилиндра перпендикулярны основаниям
+						цилиндра,
+						то они должны быть параллельны друг другу. Расстояние между ними – это длина перпендикуляра
+						О<sub>1</sub>К,
+						опущенного из центра основания на сторону ВС:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/21-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/21-cilindr.webp" alt="21 cilindr i konus">
+						</picture>
+					</p>
+					<p>Отрезок АВ имеет длину 8 см, ведь это высота цилиндра. Так как АВСD – квадрат, то и ВС имеет такую же
+						длину. ВС
+						– это хорда в окруж-ти с центром в точке О<sub>1</sub>. Напомним, что <a
+							href="https://100urokov.ru/predmety/urok-9-okruzhnost" target="_blank"
+							rel="noopener noreferrer">перпендикуляр к
+							хорде</a>, опущенный из центра окруж-ти, делит ее
+						пополам, поэтому
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/22-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/22-cilindr-i-konus.webp" alt="22 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Диаметр цилиндра равен его высоте. На верхнем основании, центр которого находится в
+							точке О,
+							отмечены точки А и В так, что </strong><strong>∠АОВ составляет 60°. Отрезок АА<sub>1</sub> –
+							образующая
+							цилиндра. Найдите тангенс угла </strong><strong>∠ВА<sub>1</sub>А.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/23-cilindr.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/23-cilindr.webp" alt="23 cilindr i konus">
+						</picture>
+					</p>
+					<p>Решение. Рассмотрим ∆АОВ. Он равнобедренный, ведь радиусы АО и ОВ одинаковы. Но если в равнобедренном
+						треугольнике один из углов составляет 60°, то и все углы будут также будут по 60°, то есть это
+						равносторонний
+						треугольник. Тогда, если радиус цилиндра обозначен как r, то</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/24-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/24-cilindr-i-konus.webp" alt="24 cilindr i konus">
+						</picture>
+					</p>
+					<h2 id="2">Понятие конуса</h2>
+					<p>Построим на плос-ти α окруж-ть L с центром в точке О. Далее через О проведем перпендикуляр к α и
+						отметим на нем
+						точку Р. Если мы отрезками соединим точку Р с каждой точкой окруж-ти L, то получим поверх-ть, которая
+						именуется
+						конической поверхностью. При этом:</p>
+					<ul>
+						<li>прямая ОР – это ось конической поверх-ти;</li>
+						<li>прямые, соединяющие Р с точками на окруж-ти L, именуются образующими конической поверх-ти;</li>
+						<li>сама точка Р – это вершина конической поверх-ти.</li>
+					</ul>
+					<p>Объемное тело, ограниченное окруж-тью L и конической поверх-тью, именуется конусом. Соответственно
+						вершина
+						конической поверх-ти, её ось и образующие будут одновременно являться вершиной, осью и образующими
+						конуса.
+						Окруж-ть L – это основание конуса.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/25-stroenie-konusa.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/25-stroenie-konusa.webp" alt="25 cilindr i konus">
+						</picture>
+					</p>
+					<p>Ещё несколько терминов:</p>
+					<ul>
+						<li>коническая поверх-ть конуса именуется его боковой поверх-тью;</li>
+						<li>если же к этой площади прибавить ещё и площадь основания, то в итоге получится полная площадь
+							конуса;</li>
+						<li>отрезок ОР – это не только ось конуса, но и высота конуса.</li>
+					</ul>
+					<p>Как и в случае с цилиндром, мы в данном случае рассматриваем особый случай конуса – прямой круговой
+						конус. В
+						более общем случае ось конуса может не быть перпендикуляром к плос-ти основания (так называемый косой
+						конус).
+						Также в его основании может находиться не окруж-ть, а другая плоская фигура.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/26-konusy.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/26-konusy.webp" alt="26 cilindr i konus">
+						</picture>
+					</p>
+					<p>В общем случае любая пирамида может рассматриваться как частный случай конуса. Однако в рамках
+						школьного курса
+						под конусом подразумевается исключительно прямой круговой конус, если только не обговорено иное.</p>
+					<p>Докажем важное утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/27-obrazujuschie-konusa-ravny.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/27-obrazujuschie-konusa-ravny.webp" alt="27 cilindr i konus">
+						</picture>
+					</p>
+					<p>Действительно, рассмотрим две произвольные образующие РА и РВ у конуса с вершиной Р, у которой О –
+						центр
+						основания:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/28-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/28-konus.webp" alt="28 cilindr i konus">
+						</picture>
+					</p>
+					<p>Так как ось ОР перпендикулярна основанию, то ∆РОА и ∆РОВ – прямоугольные. У них общий катет РО, а
+						катеты АО и
+						ОВ одинаковы как радиусы окруж-ти. Тогда ∆РОА и ∆РОВ равны, поэтому одинаковы и образующие РА и РВ, ч.
+						т. д.
+					</p>
+					<p>Заметим, что конус получается при вращении прямоугольного треуг-ка вокруг его катета. Так, на
+						следующем рисунке
+						конус получается при вращении ∆РОА с прямым углом О относительно катета РО:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/29-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/29-konus.webp" alt="29 cilindr i konus">
+						</picture>
+					</p>
+					<p>Если сечение конуса проходит через его ось, то оно именуется осевым сечением. Ясно, что это сечение
+						будет
+						являться треуг-ком, причем две его стороны – это образующие конуса, а третья сторона диаметр
+						основания.
+						Образующие конуса одинаковы, поэтому осевое сечение будет равнобедренным треуг-ком.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/30-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/30-konus.webp" alt="30 cilindr i konus">
+						</picture>
+					</p>
+					<p>Теперь рассмотрим сечение, параллельное плос-ти основания. Пусть оно пересекает ось РО в какой-то
+						точке
+						О<sub>1</sub>. Также пусть А<sub>1</sub> – точка пересечения образующей АР исходного конуса с секущей
+						плос-тью
+						α:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/31-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/31-srezannyj-konus.webp" alt="31 cilindr i konus">
+						</picture>
+					</p>
+					<p>Заметим, что раз ось РО перпендикулярна основанию, то она также будет перпендикулярна и секущей
+						плос-ти, ведь
+						основание и плос-ть α параллельны. Тогда ∠РО<sub>1</sub>А<sub>1</sub> будет прямым.</p>
+					<p>Теперь рассмотрим ∠РОА и ∠РО<sub>1</sub>А<sub>1</sub>. Они прямоугольные и у них есть общие угол ∠АРО.
+						Значит,
+						это подобные треуг-ки. Обозначим радиус ОА как r, а длину А<sub>1</sub>О<sub>1</sub> как
+						r<sub>1</sub>. Тогда
+						из подобия получаем:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/32-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/32-cilindr-i-konus.webp" alt="32 cilindr i konus">
+						</picture>
+					</p>
+					<p>Рассмотрим теперь другую образующую ВР, которая пересекает секущую плос-ть в точке В<sub>1</sub>.
+						Отрезки АО и
+						ОВ одинаковы. Повторяя предыдущие рассуждения, легко доказать подобие ∆РОВ и
+						∆РО<sub>1</sub>В<sub>1</sub>,
+						откуда можно вычислить длину О<sub>1</sub>В<sub>1</sub>:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/33-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/33-cilindr-i-konus.webp" alt="33 cilindr i konus">
+						</picture>
+					</p>
+					<p>Получили, что точки А<sub>1</sub>и В<sub>1</sub> находятся на одинаковом расстоянии r<sub>1</sub> от
+						точки
+						О<sub>1</sub>. Мы выбрали точки А и В произвольно, поэтому для любых двух точек, принадлежащих сечению
+						конуса,
+						можно утверждать, что они равноудалены от точки О<sub>1</sub>. Это значит, что все точки сечения лежат
+						на
+						окруж-ти с центром в точке О<sub>1</sub> и радиусом r<sub>1</sub>, то есть сечение имеет форму
+						окруж-ти.</p>
+					<p>Как определить площадь боковой поверхности конуса? Для этого ее надо «разрезать» вдоль одной из
+						образующих и
+						развернуть на плос-ти. В результате получится круговой сектор.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/34-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/34-srezannyj-konus.webp" alt="34 cilindr i konus">
+						</picture>
+					</p>
+					<p>Напомним, что <a href="https://100urokov.ru/predmety/dlina-okruzhnosti" target="_blank"
+							rel="noopener noreferrer">площадь сектора</a> может быть рассчитана по формуле</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/35-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/35-cilindr-i-konus.webp" alt="35 cilindr i konus">
+						</picture>
+					</p>
+					<p>Теперь обозначим длину образующей буквой l, а радиус основания конуса как r. Тогда</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/36-ploschad-bokovoj-poverhnosti-konusa.webp" type="image/webp">
+							<img src="img/cilindr-i-konus/36-ploschad-bokovoj-poverhnosti-konusa.webp"
+								alt="36 cilindr i konus">
+						</picture>
+					</p>
+					<p>Для вычисления полной площади конуса к боковой поверх-ти необходимо добавить ещё и площадь основания:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/37-ploschad-polnoj-poverhnosti.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/37-ploschad-polnoj-poverhnosti.webp" alt="37 cilindr i konus">
+						</picture>
+					</p>
+					<h2 id="3">Усеченный конус</h2>
+					<p>Ранее мы уже изучали сечение конуса плос-тью, параллельной его основанию. Такое сечение разбивает
+						конус на две
+						фигуры. Одна из них – это конус меньших размеров, а вторая именуется усеченным конусом:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/38-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/38-srezannyj-konus.webp" alt="38 cilindr i konus">
+						</picture>
+					</p>
+					<p>Введем несколько понятий и отметим очевидные факты:</p>
+					<ul>
+						<li>боковая поверхность усеченного конуса – это коническая поверх-ть;</li>
+						<li>у усеченного конуса есть два основания, имеющих форму окруж-ти;</li>
+						<li>те отрезки образующих конической поверх-ти, которые заключены между основаниями усеченного конуса,
+							именуются образующими усеченного конуса;</li>
+						<li>отрезок, соединяющий центры оснований, именуется высотой усеченного конуса, или его осью.</li>
+					</ul>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/39-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/39-srezannyj-konus.webp" alt="39 cilindr i konus">
+						</picture>
+					</p>
+					<p>В предыдущем параграфе мы уже выяснили, что радиусы оснований усеченного конуса связаны с высотами
+						исходного
+						конуса и того конуса, который получается при проведении секущей плос-ти:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/40-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/40-srezannyj-konus.webp" alt="40 cilindr i konus">
+						</picture>
+					</p>
+					<p>Заметим, что любые две образующие усеченного конуса одинаковы. Действительно, пусть усеченный конус с
+						образующими АА<sub>1</sub> и ВВ<sub>1</sub> получен их исходного конуса с образующими АР и ВР:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/41-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/41-srezannyj-konus.webp" alt="41 cilindr i konus">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/42-obrazujuschie-usechennogo-konusa-ravny.webp"
+								type="image/webp"><img src="img/cilindr-i-konus/42-obrazujuschie-usechennogo-konusa-ravny.webp"
+								alt="42 cilindr i konus">
+						</picture>
+					</p>
+					<p>Заметим, что осевое сечение усеченного конуса – это равнобедренная трапеция:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/43-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/43-srezannyj-konus.webp" alt="43 cilindr i konus">
+						</picture>
+					</p>
+					<p>Действительно, построим осевое сечение исходного конуса, которое пройдет через образующие РА и РВ.
+						Пусть эти
+						образующие пересекают плос-ть верхнего основания усеченного конуса в точках А<sub>1</sub> и
+						В<sub>1</sub>
+						соответственно. Тогда АА<sub>1</sub>В<sub>1</sub>В будет осевым сечением усеченного конуса. Точки А,
+						А<sub>1</sub>, В<sub>1</sub> и В располагаются в одной плос-ти РАВ, то есть
+						АА<sub>1</sub>В<sub>1</sub>В –
+						плоский четырехугольник. Его стороны АВ и А<sub>1</sub>В<sub>1</sub> не могут пересекаться, ведь они
+						принадлежат параллельным основаниям, поэтому АВ||А<sub>1</sub>В<sub>1</sub>. Стороны АА<sub>1</sub> и
+						ВВ<sub>1</sub> одинаковы как образующие, при этом прямые АА<sub>1</sub> и ВВ<sub>1</sub>
+						непараллельны, ведь
+						они пересекаются в точке Р. В итоге получается, что АА<sub>1</sub>В<sub>1</sub>В – равнобедренная
+						трапеция.
+						Отдельно отметим, что ось ОО<sub>1</sub> делит эту равнобедренную трапецию на две прямоугольных
+						трапеции.</p>
+					<p>Теперь выведем формулы для рассчета площади боковой поверх-ти усеченного конуса. Ясно, что развертка
+						усеченного
+						конуса – это часть развертки поверх-ти исходного конуса:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/44-razvernutyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/44-razvernutyj-konus.webp" alt="44 cilindr i konus">
+						</picture>
+					</p>
+					<p>Нам надо найти площадь фигуры АА<sub>1</sub>А<sub>1</sub>’А’ (показана желтым цветом). Ее можно найти
+						как
+						разность площадей секторов РАА’и РА<sub>1</sub>А<sub>1</sub>’. Но эти площади можно вычислить по
+						формуле
+						боковых поверх-тей конусов:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/45-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/45-cilindr-i-konus.webp" alt="45 cilindr i konus">
+						</picture>
+					</p>
+					<p>Обозначим длину образующей АА<sub>1</sub> как l. Далее выразим А<sub>1</sub>P через r, r<sub>1</sub> и
+						l. ∆АОР
+						и ∆РА<sub>1</sub>О<sub>1</sub> подобны, поэтому можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/46-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/46-cilindr-i-konus.webp" alt="46 cilindr i konus">
+						</picture>
+					</p>
+					<p>Подставляем полученное выражение в (1) и получаем:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/cilindr-i-konus/47-ploschad-bokovoj-poverhnosti-usechennogo-konusa-rasschityvaetsja.webp"
+								type="image/webp"><img
+								src="img/cilindr-i-konus/47-ploschad-bokovoj-poverhnosti-usechennogo-konusa-rasschityvaetsja.webp"
+								alt="47 cilindr i konus">
+						</picture>
+					</p>
+					<p>Чтобы посчитать полную площадь поверх-ти усеченного конуса, необходимо к боковой поверх-ти добавить
+						площади
+						верхнего и нижнего основания:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/48-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/48-cilindr-i-konus.webp" alt="48 cilindr i konus">
+						</picture>
+					</p>
+					<p>Рассмотрим несколько задач про конусы.</p>
+					<p><strong>Задание. Высота конуса составляет 15 см, а его радиус – 8 см. Вычислите длину его
+							образующей.</strong>
+					</p>
+					<p>Решение. Обозначим вершину конуса буквой Р, буквой О – центр основания, а буквой А – произвольную
+						точку на
+						окруж-ти. Тогда высотой конуса будет отрезок ОР, радиусом – отрезок ОА, а образующей окажется отрезок
+						АР:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/49-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/49-konus.webp" alt="49 cilindr i konus">
+						</picture>
+					</p>
+					<p>Высота ОР перпендикулярна плос-ти основания, поэтому ∠РОА – прямой, а ∆РОА – прямоугольный. Тогда АР
+						можно
+						найти по теореме Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/50-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/50-cilindr-i-konus.webp" alt="50 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Угол между образующей конуса и плос-тью основания составляет 30°, а длина образующей
+							– 12 см.
+							Какова площадь основания конуса?</strong></p>
+					<p>Решение. Обозначим образующую как АР, а высоту конуса как ОР. Тогда радиус ОА будет проекцией АР на
+						плос-ть
+						основания, то именно ∠РАО будет составлять 30°:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/51-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/51-konus.webp" alt="51 cilindr i konus">
+						</picture>
+					</p>
+					<p>Для вычисления площади основания надо найти радиус АО. Это можно сделать через прямоугольный ∆РОА:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/52-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/52-cilindr-i-konus.webp" alt="52 cilindr i konus">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Осевое сечение конуса имеет площадь 6, а площадь основания равна 8. Вычислите его
+							высоту.</strong></p>
+					<p>Решение. Пусть осевым сечением будет ∆РАВ, а РО – искомая высота:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/53-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/53-konus.webp" alt="53 cilindr i konus">
+						</picture>
+					</p>
+					<p>Зная площадь основания, легко найдем радиус конуса ОА, а потом и диаметр АВ:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/54-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/54-cilindr-i-konus.webp" alt="54 cilindr i konus">
+						</picture>
+					</p>
+					<p>Так как РО – высота для ∆РАВ, то площадь этого треуг-ка может быть рассчитана так:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/55-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/55-cilindr-i-konus.webp" alt="55 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите площадь боковой и полной поверх-ти конуса, если образующая имеет длину 8, а
+							радиус
+							основания составляет 5.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/56-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/56-konus.webp" alt="56 cilindr i konus">
+						</picture>
+					</p>
+					<p>Решение. В этой задаче надо просто применить формулу для вычисления площадей:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/57-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/57-cilindr-i-konus.webp" alt="57 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Дан конус. Развертка его конической поверх-ти – это сектор, чья дуга составляет 60°.
+							Р –
+							вершина конуса, а Р</strong><strong>AB – осевое сечение. Вычислите </strong><strong>∠АРВ.</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/58-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/58-srezannyj-konus.webp" alt="58 cilindr i konus">
+						</picture>
+					</p>
+					<p>Решение. Длину образующих РА и РВ обозначим как L. Сначала находим длину дуги АА’:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/59-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/59-cilindr-i-konus.webp" alt="59 cilindr i konus">
+						</picture>
+					</p>
+					<p>Теперь искомый нами ∠АРВ можно найти с помощью <a
+							href="https://100urokov.ru/predmety/urok-4-trigonometriya" target="_blank"
+							rel="noopener noreferrer">теоремы косинусов</a>, записанной для ∆АРВ:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/60-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/60-cilindr-i-konus.webp" alt="60 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите длину образующей усеченного конуса, если радиусы его оснований составляют 6
+							см и 3 см,
+							а его высота – 4 см.</strong></p>
+					<p>Решение. Обозначим искомую образующую как АВ, а буквами О и О<sub>1</sub> обозначим центры нижнего и
+						верхнего
+						оснований соответственно:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/61-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/61-srezannyj-konus.webp" alt="61 cilindr i konus">
+						</picture>
+					</p>
+					<p>При изучении осевого сечения усеченного конуса мы уже выяснили, что АВО<sub>1</sub>О – прямоугольная
+						трапеция.
+						Опустим в ней высоту ВН, которая будет иметь ту же длину, что и высота конуса ОО<sub>1</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/62-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/62-cilindr-i-konus.webp" alt="62 cilindr i konus">
+						</picture>
+					</p>
+					<p>Ответ: 5 см.</p>
+					<p><strong>Задание. Радиусы оснований усеченного конуса обозначены буквами </strong><strong>R и
+						</strong><strong>r
+							(</strong><strong>R &gt; </strong><strong>r). Образующая конуса образует с нижним основанием угол
+							45°.
+							Составьте формулу, по которой можно найти площадь осевого сечения этого конуса.</strong></p>
+					<p>Решение. Осевым сечением будет равнобедренная трапеция А<sub>1</sub>АВВ<sub>1</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/63-srezannyj-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/63-srezannyj-konus.webp" alt="63 cilindr i konus">
+						</picture>
+					</p>
+					<p>Проведем высоту А<sub>1</sub>Н. Вычислим АН:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/64-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/64-cilindr-i-konus.webp" alt="64 cilindr i konus">
+						</picture>
+					</p>
+					<p>Теперь <a href="https://100urokov.ru/predmety/urok-4-ploshchad-mnogougolnikov" target="_blank"
+							rel="noopener noreferrer">площадь трапеции</a> А<sub>1</sub>АВВ<sub>1</sub> можно посчитать по
+						формуле:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/cilindr-i-konus/65-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/65-cilindr-i-konus.webp" alt="65 cilindr i konus">
+						</picture>
+					</p>
+					<p><strong>Задание. Основания усеченного конуса – окружности с радиусами 6 и 7 см. Длина образующей – 5
+							см.
+							Вычислите площадь его боковой и полной поверх-ти.</strong></p>
+					<p>Решение. Здесь надо просто подставить данные из условия в формулы для вычисления площадей:</p>
+					<p>
+						<picture>
+							<source srcset="img/cilindr-i-konus/66-cilindr-i-konus.webp" type="image/webp"><img
+								src="img/cilindr-i-konus/66-cilindr-i-konus.webp" alt="66 cilindr i konus">
+						</picture>
+					</p>
+					<p>Ответ: 65π см<sup>2</sup>, 150π см<sup>2</sup>.</p>
+					<p>Сегодня мы узнали две новые объемные фигуры – цилиндр и конус. Эти фигуры иногда называют телами
+						вращения, ведь
+						они получаются вращением плоских фигур вокруг одной из их сторон. Важно помнить, что у всех тел
+						вращения есть
+						такие элементы, как основание (иногда не одно), ось и образующие.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

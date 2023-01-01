@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Правильные многоугольники</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="pravilnye-mnogogranniki">
+			<div class="pravilnye-mnogogranniki__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="pravilnye-mnogogranniki__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-1.2.webp" type="image/webp"><img
+									src="img/themes-11/content-1.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Правильные многогранники</div>
+							<div class="info__subtitle">
+								Среди многогранников особо выделяет 5 пространственных фигур, которые называются правильными
+								многогранниками.
+							</div>
+						</div>
+					</div>
+					<div class="pravilnye-mnogogranniki__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="pravilnye-mnogogranniki.html#1">Понятие правильного
+								многогранника</a></p>
+						<p><a href="pravilnye-mnogogranniki.html#2">Пять правильных многогранников</a>
+						</p>
+						<p><a href="pravilnye-mnogogranniki.html#3">Задачи на правильные
+								многогранники</a></p>
+					</div>
+					<h2 id="1">Понятие правильного многогранника</h2>
+					<p>Ранее мы уже рассматривали такой выпуклый многогранник, как куб. Легко заметить, что каждая грань куба
+						– это
+						квадрат, то есть правильный многоугольник. Более того, все грани куба одинаковы, а из каждой вершины
+						исходит
+						одинаковое количество ребер (по три ребра).</p>
+					<p>Однако куб – не единственная фигура, обладающая такими свойствами. Так же нам знаком правильный
+						тетраэдр. У
+						него каждая грань – это равносторонний треугольник (а это правильный многоуг-к), а из каждой вершины
+						также
+						выходит по 3 ребра тетраэдра.</p>
+					<p>И куб, и правильный тетраэдр являются примерами так называемых правильных многогранников. Дадим
+						определение
+						понятию правильного многогранника:</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/1-chto-takoe-pravilnyj-mnogogrannik.webp"
+								type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/1-chto-takoe-pravilnyj-mnogogrannik.webp"
+								alt="1 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Иногда правильные многогранники именуют иначе – платоновыми телами. Дело в том, что древнегреческий
+						философ
+						Платон использовал их в своей философии, однако огромный вклад в их исследование внес другой ученый –
+						Теэтет
+						Афинский.</p>
+					<p>Ясно, что все ребра правильных многогранников имеют одинаковую длину. Можно доказать, что и двугранные
+						углы,
+						образованные смежными гранями таких многогранников, также одинаковы.</p>
+					<h2 id="2">Пять правильных многогранников</h2>
+					<p>Вероятно, куб и правильный тетраэдр являются первыми правильными многогранниками, открытыми
+						человечеством. Уже
+						во времена Пифагора люди знали и о третьем правильном многограннике – октаэдре. Каждая его грань – это
+						равносторонний треуг-к, но, в отличие от тетраэдра, из каждой его вершины исходит уже не три, а четыре
+						ребра.
+						Выглядит правильный октаэдр так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/2-oktaedr.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/2-oktaedr.webp" alt="2 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Можно доказать, что октаэдр состоит из двух правильных пирамид, у которых общее основание, но вершины
+						располагаются по разные стороны от плоскости основания. Название октаэдра происходит от греческого
+						слова
+						«окта», означающее число 8. Легко увидеть, что у октаэдра как раз 8 граней. Также видно, что он имеет
+						6 вершин
+						и 12 ребер.</p>
+					<p>Следующие два правильных многогранника как раз и были открыты Теэтетем Афинским. Это икосаэдр и
+						додекаэдр.
+						Икосаэдр также состоит из равносторонних треуг-ков, но каждая его вершина принадлежит сразу 5
+						ребрам.Правильный
+						икосаэдр довольно сложно нарисовать на плоскости, поэтому его внешний вид мы покажем с помощью
+						анимации:</p>
+					<p style="text-align: center;"><img src="img/pravilnye-mnogogranniki/4-kak-vygljadit-oktaedr.gif"
+							alt="4d10ff62b8f1a774dbd65dac0e68f87f"></p>
+					<p>Гранями додекаэдра являются правильные пятиугольники, причем в каждой его вершине соприкасаются ровно
+						3 грани,
+						и, соответственно, сходятся 3 ребра. Нарисовать правильный додекаэдр ещё тяжелее, поэтому снова
+						посмотрим на
+						него с помощью gif-анимации:</p>
+					<p style="text-align: center;"><img src="img/pravilnye-mnogogranniki/5-dodekaedr.gif"
+							alt="91301d36a738b74a878b16451ef9e7e4"></p>
+					<p>Для подсчета количества ребер, граней и вершин у додекаэдра и икосаэдра можно применить теорему
+						Эйлера. Начнем
+						с икосаэдра. Обозначим количество его граней буквой Г. Теперь подсчитаем ребра (Р), принадлежащие
+						каждой грани.
+						Так как эти грани являются треуг-ками, то получится 3Г ребер. Но при этом каждое ребро мы посчитали
+						дважды,
+						ведь ребра принадлежат строго двум граням. То есть у икосаэдра количество ребер равно 3Г/2 = 1,5Г.</p>
+					<p>Также подсчитаем и вершины (В), находящиеся вокруг граней. На каждую грань приходится 3 вершины, но
+						при этом
+						каждая вершины принадлежит уже 5 граням. Тогда общее количество вершин составит 3Г/5 = 0,6Г.</p>
+					<p>Записываем теорему Эйлера и подставляем в ней полученные значения:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/5-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/5-pravilnye-mnogogranniki.webp"
+								alt="5 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь проведем аналогичные расчеты для додекаэдра. Его грани – пятиугольники, поэтому количество его
+						ребер
+						составляет 5Г/2. В каждой вершине додекаэдра сходятся три грани, а потому количество вершин составит
+						5Г/3.
+						Используем теорему Эйлера:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/6-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/6-pravilnye-mnogogranniki.webp"
+								alt="6 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь составим таблицу, в которой отразим основные сведения о пяти известным нам правильных
+						многогранниках:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/7-tablica-pravilnyh-mnogogrannikov.webp"
+								type="image/webp"><img src="img/pravilnye-mnogogranniki/7-tablica-pravilnyh-mnogogrannikov.webp"
+								alt="7 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Возникает вопрос – существуют ли ещё какие-нибудь правильные многогранники? Оказывается, что нет.
+						Действительно, каждая вершина правильного многогранника является одновременно и вершиной многогранного
+						угла.
+						Напомним, что сумма плоских углов в многогранном угле всегда меньше 360°. Легко подсчитать, что в
+						правильном
+						шестиугольнике каждый угол составляет 120°, а в многоуг-ках с большим количеством сторон
+						(семиугольник,
+						восьмиугольник…) этот угол ещё больше. Это значит, что если трехгранный угол образован тремя
+						шестигранниками,
+						то сумма его плоских углов составит ровно 120°•3 = 360°, что невозможно. Также невозможно, чтобы
+						трехгранный
+						угол и любой другой многогранный угол был образован правильными семиугольниками, восьмиугольниками и
+						т. д. То
+						есть грани правильного многогранника могут быть исключительно треуг-ками, четырехуг-ками или
+						пятиугольниками.
+					</p>
+					<p>Рассмотрим случай, когда грани – это треуг-ки. У равностороннего треуг-ка угол составляет 60°. У
+						тетраэдра в
+						вершине смыкаются 3 грани, у октаэдра – 4 грани, а у икосаэдра – 5 граней. А 6 треуг-ков уже не могут
+						образовать многогранный угол, ведь сумма углов составит 6•60° = 360°.</p>
+					<p>Теперь рассмотрим случай с четырехуг-ком. Правильный четырехуг-к – это квадрат с углом 90°. Варианту с
+						3
+						смыкающимися квадратами соответствует куб, а 4 квадрата уже не образуют многогранный угол, ведь сумма
+						углов
+						снова составит 4•90° = 360°.</p>
+					<p>Остался случай с пятиугольником. У правильного пятиугольника угол равен 108°. Значит, 4 таких фигуры
+						не смогут
+						сомкнуться и образовать многогранный угол, а варианту с тремя пятиугольниками соответствует додекаэдр.
+					</p>
+					<p>Итак, мы рассмотрели все возможные варианты, и оказалось, что никаких других правильных
+						многогранников, кроме
+						пяти описанных, существовать не может, ч. т. д. Отметим также, что этот факт можно доказать и без
+						применения
+						свойства многогранного угла, используя только теорему Эйлера.</p>
+					<h2 id="3">Задачи на правильные многогранники</h2>
+					<p><strong>Задание. Центры смежных граней куба со стороной, равной единице, соединили отрезками.
+							Докажите, что
+							получившийся в результате этого многогранник – это октаэдр, и найдите длину его стороны.</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/8-grani-kuba.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/8-grani-kuba.webp" alt="8 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Решение. Грани куба – это квадраты. Напомним, что у любого правильного многоуг-ка, в том числе и
+						квадрата,
+						можно опустить из центра перпендикуляры на стороны, которые будут радиусами вписанной окружности. Все
+						эти
+						радиусы будут иметь одну и ту же длину, при этом они будут падать на середины сторон многоуг-ка. При
+						этом у
+						квадрата радиус вписанной окружности будет вдвое меньше стороны квадрата. В частности, у
+						рассматриваемого куба
+						перпендикуляры, опущенные на середины ребер, будут иметь длину 1:2 = 0,5:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/9-okruzhnost.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/9-okruzhnost.webp" alt="9 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь возьмем любые два центра смежных граней А и В и опустим из них перпендикуляры на ребро, по
+						которому эти
+						грани пересекаются. Перпендикуляры упадут в одну точку – середину ребра Н:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/10-grani-kuba.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/10-grani-kuba.webp" alt="10 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>В результате мы получили прямоугольный ∆АВН. Найдем длину его гипотенузы АВ:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/11-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/11-pravilnye-mnogogranniki.webp"
+								alt="11 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Так как мы выбрали центры смежных граней произвольно, то ясно, что расстояние между любыми двумя
+						другими
+						вершинами многогранника, вписанного в куб, будет иметь такую же длину. Тогда каждая его грань
+						оказывается
+						равносторонним треуг-ком. В каждой вершине смыкается 4 ребра, поэтому многогранник оказывается
+						октаэдром.</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/12-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/12-pravilnye-mnogogranniki.webp"
+								alt="12 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите площадь поверхности икосаэдра, если его ребро имеет длину 1.</strong></p>
+					<p>Решение. Найдем площадь одной грани икосаэдра. Она представляет собой равносторонний треуг-к со
+						стороной 1.
+						Удобно вычислить его площадь по <a href="https://100urokov.ru/predmety/urok-5-teorema-pifagora"
+							target="_blank" rel="noopener noreferrer">формуле Герона</a>. Сначала найдем полупериметр треуг-ка:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/13-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/13-pravilnye-mnogogranniki.webp"
+								alt="13 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите двугранный угол, который образуют грани правильного тетраэдра</strong></p>
+					<p>Решение. Обозначим вершины тетраэдра буквами А, В, С и D. Далее соединим середину ребра АС,
+						обозначенную как М,
+						с вершинами B и D:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/14-piramida.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/14-piramida.webp" alt="14 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Так как М – середина АС, то ВМ и DM будут медианами ∆АВС и ∆ADC. Но эти треуг-ки равносторонние,
+						поэтому ВМ и
+						DM ещё и высоты. То есть ВМ⊥АС и DM⊥АС. Тогда по определению ∠DMB и будет плоским углом двугранного
+						угла, то
+						есть его как раз и надо вычислить. Предварительно обозначим длину грани тетраэдра буквой а.</p>
+					<p>∠ВАС составляет 60° как угол равностороннего ∆АВС. Тогда ВМ можно найти из прямоугольного ∆АВМ:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/15-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/15-pravilnye-mnogogranniki.webp"
+								alt="15 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Аналогично из ∆DMC получаем, что и DM имеет такую же длину.</p>
+					<p>Теперь используем <a href="https://100urokov.ru/predmety/urok-4-trigonometriya" target="_blank"
+							rel="noopener noreferrer">теорему косинусов</a> для ∆BDM:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/16-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/16-pravilnye-mnogogranniki.webp"
+								alt="16 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите двугранный угол, который образуют смежные грани октаэдра</strong></p>
+					<p>Решение. Мы уже говорили, что октаэдр состоит из двух правильных четырехугольных пирамид с общим
+						основанием.
+						Поэтому нам надо просто найти двугранный угол между двумя боковыми гранями такой пирамиды:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/17-piramida.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/17-piramida.webp" alt="17 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Для этого на ребре АЕ отметим середину М и соединим ее с вершинами B и D. Как и в предыдущей задаче с
+						тетраэдром, ВМ и МD окажутся медианами и высотами в равносторонних ∆АЕВ и ∆АЕD, а потому ∠ВМD является
+						искомым.
+					</p>
+					<p>Обозначим сторону октаэдра буквой а. Тогда длина ВМ и МD, медиан в равносторонних треуг-ках будет
+						такой же, как
+						и в предыдущей задаче:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/18-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/18-pravilnye-mnogogranniki.webp"
+								alt="18 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите двугранный угол, образованный смежными гранями додекаэдра</strong></p>
+					<p>Решение. Нет необходимости строить весь додекаэдр для решения задачи. Построим только трехгранный
+						угол,
+						образованный ребрами, выходящими из одной вершины. То есть нам достаточно рассмотреть только область,
+						выделенную на додекаэдре красным цветом:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/19-trehgrannyj-ugol.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/19-trehgrannyj-ugol.webp" alt="19 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Каждый плоский угол такого трехгранного угла будет равен углу правильного пятиугольника, который в
+						свою очередь
+						рассчитывается так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/20-pjatiugolnik.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/20-pjatiugolnik.webp" alt="20 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Итак, надо найти двугранный угол между гранями ADC и ADB. Они пересекаются по прямой AD. Опустим из В
+						и С
+						перпендикуляры на AD. ∆ABD и ∆ADC равны, ведь у них есть одинаковый угол 108°, сторона AD– общая, а BD
+						и DC
+						одинаковы как ребра правильного многогранника. Это значит, что перпендикуляры на AD упадут в одну
+						точку,
+						которую мы обозначим как H. Нам надо вычислить ∠BНС.Обратите внимание, что так как ∆ABD и ∆ADC
+						тупоугольные, то
+						точка Н будет находиться не на отрезке AD, а на его продолжении.</p>
+					<p>Обозначим длину ребра додекаэдра буквой а. Мы можем найти ∠HDC:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/21-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/21-pravilnye-mnogogranniki.webp"
+								alt="21 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Примечание. Здесь мы использовали одну из тригонометрических <a
+							href="https://100urokov.ru/predmety/urok-3-preobrazovanie-trigonometricheskie" target="_blank"
+							rel="noopener noreferrer">формул приведения</a>.</p>
+					<p>Аналогично из ∆BHD получаем, что BH имеет такую же длину. Теперь из ∆BDC вычисляем величину
+						ВС<sup>2</sup>:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/22-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/22-pravilnye-mnogogranniki.webp"
+								alt="22 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите площадь поверхность додекаэдра, если его ребро имеет длину 1</strong></p>
+					<p>Решение. Каждая грань додекаэдра – правильный пятиугольник. Для нахождения его площади используем <a
+							href="https://100urokov.ru/predmety/pravilnye-mnogougolniki" target="_blank"
+							rel="noopener noreferrer">уже
+							известные нам формулы для правильных многоугольников</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/23-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/23-pravilnye-mnogogranniki.webp"
+								alt="23 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Здесь n – число сторон у многоуг-ка, Р – его периметр, S – площадь, a<sub>n</sub> – длина стороны, R и
+						r –
+						радиусы соответственно описанной и вписанной окружности. По условию</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/24-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/24-pravilnye-mnogogranniki.webp"
+								alt="24 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь вспомним, что у додекаэдра 12 граней. Значит, площадь всей его поверхности будет в 12 раз
+						больше:</p>
+					<p>
+						<picture>
+							<source srcset="img/pravilnye-mnogogranniki/25-pravilnye-mnogogranniki.webp" type="image/webp"><img
+								src="img/pravilnye-mnogogranniki/25-pravilnye-mnogogranniki.webp"
+								alt="25 pravilnye mnogogranniki">
+						</picture>
+					</p>
+					<p>Ответ: ≈ 20,646.</p>
+					<p>Сегодня мы познакомились с особыми телами – правильными многогранниками. Важно запомнить, что
+						существует всего
+						5 типов правильных многогранников. Эти фигуры встречаются не только в геометрии, но и в других науках.
+						Например, атомы в никеле и меди могут выстраиваться в форме октаэдра, а оболочки некоторых вирусов
+						похожи на
+						икосаэдр. Правильные многогранники могут использоваться в настольных играх в качестве игральных
+						костей. Чаще
+						всего применяются кости в виде куба, но встречаются кости в виде додекаэдра и икосаэдра.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

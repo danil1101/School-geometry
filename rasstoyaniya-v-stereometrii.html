@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Расстояние в стереометрии</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="rasstoyaniya-v-stereometrii">
+			<div class="rasstoyaniya-v-stereometrii__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="rasstoyaniya-v-stereometrii__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-6.2.webp" type="image/webp"><img
+									src="img/themes-10/content-6.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Перпендикуляры и расстояния в стереометрии</div>
+							<div class="info__subtitle">Мы уже сталкивались с перпендикулярными прямыми в планиметрии. В
+								стереометрии
+								это понятие расширяется.
+
+							</div>
+						</div>
+					</div>
+					<div class="rasstoyaniya-v-stereometrii__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="rasstoyaniya-v-stereometrii.html#1">Понятие перпендикуляра</a></p>
+						<p><a href="rasstoyaniya-v-stereometrii.html#2">Расстояния между плоскостями и
+								прямыми</a></p>
+						<p><a href="rasstoyaniya-v-stereometrii.html#3">Теорема о трех
+								перпендикулярах</a></p>
+						<p><a href="rasstoyaniya-v-stereometrii.html#4">Угол между прямой и
+								плоскостью</a></p>
+						<p><a href="rasstoyaniya-v-stereometrii.html#5">Задачи на перпендикуляры,
+								наклонные,
+								расстояния</a></p>
+					</div>
+					<h2 id="1">Понятие перпендикуляра</h2>
+					<p>Пусть есть некоторая плоскость α и точка М в пространстве, не лежащая на α. Проведем через М прямую,
+						перпендикулярную α. Она пересечет α в какой-нибудь точке К. Отрезок МК именуют перпендикуляром к
+						плоскости α.
+					</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/1-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/1-perpendikuljar-na-ploskosti.webp"
+								alt="1 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Если через М мы проведем ещё одну прямую, пересекающую α, то она пересечет α в какой-нибудь точке Н. В
+						результате мы получим прямоугольный ∆МНК:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/2-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/2-perpendikuljar-na-ploskosti.webp"
+								alt="2 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Запомним некоторые геометрические термины. В таком построении:</p>
+					<ul>
+						<li>отрезок МН – это наклонная;</li>
+						<li>отрезок НК – это проекция наклонной, или просто проекция;</li>
+						<li>К – основание перпендикуляра;</li>
+						<li>Н – основание наклонной.</li>
+					</ul>
+					<p>Заметим, что в ∆МНК отрезок МН – это гипотенуза, а МК – это катет. Напомним, что катет всегда меньше
+						гипотенузы. Отсюда вытекает вывод – длина перпендикуляра всегда меньше длины наклонной (конечно, если
+						они
+						проведены из одной точки).</p>
+					<p>Это значит, что из всех отрезков, которыми можно соединить точку и плоскость, именно перпендикуляр
+						будет
+						кратчайшим. Поэтому его называют расстоянием между точкой и плоскостью.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/3-perpendikuljar-opuschennyj-iz-tochki.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/3-perpendikuljar-opuschennyj-iz-tochki.webp"
+								alt="3 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<h2 id="2">Расстояния между плоскостями и прямыми</h2>
+					<p>Докажем довольно очевидный факт:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/rasstoyaniya-v-stereometrii/4-esli-dve-ploskosti-parallelny-to-kazhdaja-tochka.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/4-esli-dve-ploskosti-parallelny-to-kazhdaja-tochka.webp"
+								alt="4 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Действительно, пусть α и β – параллельные плоскости. Выберем на α произвольные точки М и Р, а далее
+						опустим
+						перпендикуляры из точек М и Р на β, которые пересекут β в точках Н и К соответственно:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/5-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/5-perpendikuljar-na-ploskosti.webp"
+								alt="5 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Так как МН и РК перпендикулярны плоскости α, то они параллельны. Но также и α||β. Тогда, по <a
+							href="https://100urokov.ru/predmety/parallelnost" target="_blank" rel="noopener noreferrer">теореме
+							12 из
+							этого урока</a>, отрезки МН и РК одинаковы, ч. т. д.</p>
+					<p>Этот факт позволяет ввести понятия расстояния между параллельными плоскостями.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/6-rasstojanie-ot-proizvolnoj-tochki.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/6-rasstojanie-ot-proizvolnoj-tochki.webp"
+								alt="6 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Уточним, что если плоскости пересекаются, то расстояние между ними не может быть определено.</p>
+					<p>Далее рассмотрим случай с плоскостью α и параллельной ей прямой m. Оказывается, и в этом случае точки
+						прямой
+						равноудалены от плоскости.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/7-esli-prjamaja-i-ploskost-parallelny.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/7-esli-prjamaja-i-ploskost-parallelny.webp"
+								alt="7 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Действительно, отметим на m произвольную точку К. Далее через K проведем такую плоскость β, что α||β.
+						Так как
+						точки β равноудалены от α, то нам достаточно показать, что m будет полностью принадлежать β:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/8-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/8-perpendikuljar-na-ploskosti.webp"
+								alt="8 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Так как m и β уже имеют общую точку K, то они m либо пересекает β, либо лежит в ней. Будем рассуждать
+						от
+						противного и предположим, что m и β пересекаются. Так как m||α, то в α можно построить прямую n,
+						параллельную
+						m. Если m пересекает β, то и nтакже должна ее пересекать (по <a
+							href="https://100urokov.ru/predmety/parallelnost" target="_blank" rel="noopener noreferrer">теореме
+							3 из
+							этого урока</a>). Но если n пересекает β, то точка их пересечения будет одновременно принадлежать и
+						β, и α.
+						То есть у этих плоскостей будет общая точка. Но α и β параллельны и потому не могут иметь общих точек.
+						Значит,
+						на самом деле m и β НЕ пересекаются. Остается один вариант – m принадлежит β, ч. т. д.</p>
+					<p>Из этой теоремы вытекает понятие расстояния между прямой и плоскостью.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/rasstoyaniya-v-stereometrii/9-rasstojanie-ot-proizvolnoj-tochki-prjamoj-do-parallelnoj.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/9-rasstojanie-ot-proizvolnoj-tochki-prjamoj-do-parallelnoj.webp"
+								alt="9 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Уточним, что если плоскость и прямая не параллельны, то расстояние между ними определить нельзя.</p>
+					<p>Осталось понять, как определять расстояние между прямыми в пространстве. Для параллельных прямых
+						определение
+						расстояния известно ещё из <a href="https://100urokov.ru/predmety/urok-4-parallelnye-pryamye"
+							target="_blank" rel="noopener noreferrer">курса планиметрии</a>. Естественно, что для
+						пересекающихся прямых расстояние
+						определить невозможно. Остается только случай скрещивающихся прямых.</p>
+					<p>Пусть прямые m и n скрещиваются. Тогда через n можно построить плоскость α, параллельную m. И
+						наоборот, через m
+						возможно провести плоскость β, параллельную n:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/10-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/10-perpendikuljar-na-ploskosti.webp"
+								alt="10 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Далее опустим из какой-нибудь точки m перпендикуляр на α. Обозначим этот перпендикуляр как р. Тогда
+						через
+						пересекающиеся прямые m и р можно провести единственную плоскость γ:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/11-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/11-perpendikuljar-na-ploskosti.webp"
+								alt="11 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Заметим, что плоскости α и γ обязательно пересекутся по некоторой прямой m’, причем m’||m.
+						Действительно, m’ и
+						m не могут скрещиваться, ведь они находятся в одной плоскости γ. Не могут они и пересекаться, ведь в
+						противном
+						случае точка их пересечения была бы общей для m и α, а они параллельны и общих точек не имеют.</p>
+					<p>Также заметим, что прямые n и m’ пересекаются, ведь они располагаются в одной плоскости α.
+						Параллельными они
+						быть не могут, ведь тогда по свойству транзитивности параллельности получилось бы, что и n||m, а это
+						не так.
+						Обозначим точку пересечения n и m’ буквой K.</p>
+					<p>Далее через K в плоскости γ проведем прямую р’, параллельную р:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/12-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/12-perpendikuljar-na-ploskosti.webp"
+								alt="12 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Теперь начнем рассуждения. Если р⊥α, то также р⊥m’. Так как р’||р, то и р’⊥m’, ведь прямая,
+						перпендикулярная
+						одной из параллельных прямых, будет перпендикулярна и второй прямой. По этому же правилу из того
+						факта, что
+						m’||m и р’⊥m’ вытекает, что и m⊥р’. Наконец, если р⊥α, то р⊥n. Для ясности отметим все найденные нами
+						прямые
+						углы на рисунке:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/13-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/13-perpendikuljar-na-ploskosti.webp"
+								alt="13 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>В итоге получилось, что отрезок HK перпендикулярен и n, и m. По этой причине его называют общим
+						перпендикуляром
+						к прямым n и m. Именно он и считается расстоянием между скрещивающимися прямыми m и n.</p>
+					<p>Отдельно отметим, что HK – это ещё и общий перпендикуляр к α и β. Понятно, что так как р⊥α и р’||р, то
+						и р’⊥α,
+						то есть HK – перпендикуляр к α.</p>
+					<p>Теперь через точку H проведем прямую n’, параллельную n. Так как β||n, то n’ будет находиться в β (<a
+							href="https://100urokov.ru/predmety/parallelnost" target="_blank" rel="noopener noreferrer">по
+							теор. 6 в
+							этом уроке</a>).</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/14-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/14-perpendikuljar-na-ploskosti.webp"
+								alt="14 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Раз n||n’ и р’⊥n, то и р’⊥n’. Тогда получается, что в β есть сразу две пересекающихся прямых (это m и
+						n’),
+						которые перпендикулярны р’. Поэтому можно утверждать, что р’⊥β, то есть HK– перпендикуляр к β.</p>
+					<p>Отсюда сразу вытекает ещё один важный вывод – плоскости α и β параллельны, так как имеют общий
+						перпендикуляр.
+					</p>
+					<p>Итак, мы показали, что общий перпендикуляр можно построить для любых двух скрещивающихся прямых. Но
+						можно
+						построить ещё один такой перпендикуляр? Нельзя, и это можно показать.</p>
+					<p>Сначала заметим, что второй перпендикуляр нельзя провести через точку К, ведь в таком случае
+						получалось бы, что
+						к m проведены два различных перпендикуляра из одной и той же точки, что невозможно. Аналогично
+						перпендикуляр не
+						может проходить и через Н.</p>
+					<p>Предположим тогда, что второй перпендикуляр проходит через точки С и D, причем С находится на m, а D
+						находится
+						на n. То есть CD⊥m и СD⊥n:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/15-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/15-perpendikuljar-na-ploskosti.webp"
+								alt="15 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Проведем через С прямую n’’, параллельную n. Раз СD⊥n и n||n’’, то и СD⊥n’’. При этом n’’ находится в
+						β (это
+						доказывается также, как и в случае с n’). Тогда получается, что в β есть две прямые, n’’ и m, каждая
+						из которых
+						перпендикулярна СD, и при этом n’’ и m пересекаются. Тогда CD⊥β. Из этого вытекает, что СD и HK
+						параллельны, а
+						потому через них можно провести плоскость δ. Этой плоскости будут принадлежать точки С, H, К и D. Но
+						тогда в
+						этой плоскости должны находиться прямые m и n, ведь они имеют с ней по две общих точки. Но m и n –
+						скрещивающиеся прямые, то есть они никак не могут находиться в одной плоскости. Это противоречие
+						означает, что
+						второй общий перпендикуляр CD не существует.</p>
+					<p>Итак, из всех наших рассуждений мы можем сделать следующие выводы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/rasstoyaniya-v-stereometrii/16-dlja-ljubyh-dvuh-skreschivajuschihsja-prjamyh.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/16-dlja-ljubyh-dvuh-skreschivajuschihsja-prjamyh.webp"
+								alt="16 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<h2 id="3">Теорема о трех перпендикулярах</h2>
+					<p>Сформулируем важное утверждение, которое называют теоремой о трех перпендикулярах.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/rasstoyaniya-v-stereometrii/17-esli-prjamaja-prohodjaschaja-v-ploskosti-cherez-osnovanie-naklonnoj.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/17-esli-prjamaja-prohodjaschaja-v-ploskosti-cherez-osnovanie-naklonnoj.webp"
+								alt="17 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Проиллюстрируем теорему с помощью картинки:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/18-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/18-perpendikuljar-na-ploskosti.webp"
+								alt="18 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Доказательство этой теоремы очень простое. Так как МК⊥α, то также МК⊥m. Теперь рассмотрим расположение
+						плоскости МНК и прямой m. МК⊥m и HK⊥m. Тогда по признаку перпендикулярности можно утверждать, что m
+						перпендикулярна всей плоскости HM, то есть каждой находящейся в ней прямой. В частности, m⊥HK, ч. т.
+						д.</p>
+					<p>Оказывается, верно и обратное утверждение (так называемая обратная теорема о трех перпендикулярах):
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/19-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/19-perpendikuljar-na-ploskosti.webp"
+								alt="19 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Доказательство аналогично предыдущему. Так как m⊥MH и m⊥MK, то m⊥HMK. Отсюда вытекает, что и m⊥HK.</p>
+					<h2 id="4">Угол между прямой и плоскостью</h2>
+					<p>Проекция наклонной позволяет ввести такое понятие, как угол между прямой и плоскостью.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/20-ugol-mezhdu-prjamoj-i-ploskostju.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/20-ugol-mezhdu-prjamoj-i-ploskostju.webp"
+								alt="20 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Пусть надо определить угол между прямой HM и плоскостью α:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/21-perpendikuljar-na-ploskosti.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/21-perpendikuljar-na-ploskosti.webp"
+								alt="21 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Здесь надо просто построить перпендикуляр МК. В результате появится отрезок HK– проекция HM на α.
+						Тогда угол
+						между HM и HK, то есть ∠MHK, как раз и будет углом между HM и α.</p>
+					<p>Однако не всегда таким образом можно построить проекцию прямой. Проблемы возникнут, если прямая либо
+						параллельна, либо перпендикулярна плоскости. В таких случаях используются такие правила:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/22-esli-prjamaja-perpendikuljarnaja-ploskosti.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/22-esli-prjamaja-perpendikuljarnaja-ploskosti.webp"
+								alt="22 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<h2 id="5">Задачи на перпендикуляры, наклонные, расстояния</h2>
+					<p>Рассмотрим несколько задач, в каждой из которых рассматривается куб АВСDEFGH. При этом предполагается,
+						что
+						ребро такого куба имеет длину, равную единице.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. В кубе АВС</strong><strong>DEFGH найдите расстояние между точкой А и гранью
+						</strong><strong>CDHG:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/23-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/23-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="23 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Ребро AD перпендикулярно грани DH (так как AD⊥DH и AD⊥CD). Поэтому как раз АD и является
+						расстоянием
+						между А и СDHG. Значит, оно равно единице.</p>
+					<p>Ответ: 1.</p>
+					<p>&nbsp;</p>
+					<p>Примечание. Для решения следующих задач запомним, что ребро DH перпендикулярно грани АВСD. Вообще в
+						кубе все
+						ребра, пересекающиеся с гранями, перпендикулярны таким граням.</p>
+					<p><strong>Задание. Найдите в кубе расстояние между вершиной А и плоскостью
+						</strong><strong>BDH:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/24-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/24-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="24 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Проведем на грани АВСD перпендикуляр АК из А к прямой BD:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/25-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/25-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="25 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Докажем, что АК – перпендикуляр в BDH. Для этого надо найти две прямые в BDH, перпендикулярные АК.
+						Первая такая
+						прямая – это BD (мы специально провели АК⊥BD). Вторая такая прямая – это DH. Действительно, DH
+						перпендикулярна
+						всей грани АВСD, а значит, и прямой АК.</p>
+					<p>Теперь найдем длину АК. Ее можно вычислить из прямоугольного ∆АКD. В нём ∠ADB =45°, ведь это угол
+						между
+						стороной квадрата АВСD и его диагональю.</p>
+					<p>Найти АК можно с помощью <a href="https://100urokov.ru/predmety/urok-8-funkcii-trigonometricheskie"
+							target="_blank" rel="noopener noreferrer">тригонометрии</a> в ∆АКD:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/26-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/26-rasstoyaniya-v-stereometrii.webp"
+								alt="26 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите расстояние от H до плоскости EDG:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/27-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/27-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="27 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Обозначим середину отрезка ЕD буквой М.Далее в ∆МНG опустим высоту из НК на сторону MG:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/28-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/28-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="28 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Попытаемся доказать, что HK – это перпендикуляр к EDG. Заметим, что ∆HDG и ∆EHG равны, ведь у них
+						одинаковую
+						длину имеют ребра DH, EH, ребро GH – общее, а ∠DHG и ∠EHG прямые. Тогда одинаковы отрезки EG и DG. Это
+						означает, что ∆EGD – равнобедренный.</p>
+					<p>В ∆EGDMG– это медиана. Так как ∆EGD – равнобедренный, то MG одновременно ещё и высота, поэтому MD⊥MG.
+					</p>
+					<p>Аналогично ∆EHD– равнобедренный (EH = HD), а потому MH в нем – и медиана, и высота. Поэтому MD⊥MH.</p>
+					<p>Получили, что MD перпендикулярен и MH, и MG, то есть двум прямым в плоскости MHG. Тогда MD
+						перпендикулярен всей
+						плоскости MHG, и, в частности, отрезку HK: HK⊥MD.</p>
+					<p>Но также MD⊥MG. Получается, KH перпендикулярен двум прямым в плоскости EDG, и потому он является
+						перпендикуляром к плоскости EDG. Значит, именно его длину нам и надо найти.</p>
+					<p>Рассмотрим ∆MDH. Он прямоугольный, а ∠MDH = 45° (угол между стороной и диагональю квадрата). Тогда
+						длину MH
+						можно найти так:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/29-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/29-rasstoyaniya-v-stereometrii.webp"
+								alt="29 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Так как ребро GH перпендикулярно грани АЕНD, то ∆MHG – прямоугольный. Тогда по теореме Пифагора можно
+						найти MG:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/30-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/30-rasstoyaniya-v-stereometrii.webp"
+								alt="30 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p>Далее можно найти HK разными способами, но проще воспользоваться подобием ∆MHG и ∆MKH. Они оба –
+						прямоугольные,
+						и у них есть общий угол ∠KMH, этого <a
+							href="https://100urokov.ru/predmety/urok-6-podobnye-treugolniki" target="_blank"
+							rel="noopener noreferrer">достаточно для подобия</a> треугольников. Записываем пропорцию:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/31-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/31-rasstoyaniya-v-stereometrii.webp"
+								alt="31 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Здесь слева записано отношение сторон, лежащих против ∠KMH, а справа – отношение сторон, лежащих
+						против прямых
+						углов (то есть отношение гипотенуз). Используем пропорцию дальше:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/32-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/32-rasstoyaniya-v-stereometrii.webp"
+								alt="32 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите расстояние между прямыми ВС и </strong><strong>DH:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/33-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/33-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="33 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. ВС и DH – скрещивающиеся. Надо найти общий перпендикуляр к ним. В данном случае он очевиден –
+						это
+						отрезок CD. Действительно, CD⊥ВС как стороны квадрата АВСD, но и DH⊥CD как стороны в другом квадрате,
+						СDHG..
+						Длина же ребра CD равна единице, ведь у куба все ребра одинаковы.</p>
+					<p>Ответ: 1.</p>
+					<p><strong>Задание. Каково расстояние между прямыми ВС и </strong><strong>DG:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/34-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/34-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="34 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение.На грани СDHG опустим из С перпендикуляр СК на диагональ GD:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/35-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/35-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="35 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Будет ли СК являться расстоянием между ВС и DG? Ясно, что СК⊥DG. При этом ребро ВС перпендикулярно
+						грани СGHD,
+						так как ВС⊥СG и ВС⊥СD. Значит, также ВС⊥СК. То есть СК – общий перпендикуляр к ВС и DG, и по
+						определению как
+						раз и является искомым расстоянием.</p>
+					<p>Длину СК найдем из прямоугольного ∆СKG. ∠СGK составляет 45°, ведь это угол между диагональю DG и
+						стороной
+						квадрата СG. Тогда можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/36-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/36-rasstoyaniya-v-stereometrii.webp"
+								alt="36 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите расстояние между ребрами АВ и </strong><strong>HG:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/37-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/37-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="37 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Здесь ребра АВ и HG параллельны, так как каждая их них параллельна ребру CD. Проведем отрезок
+						АН. Так
+						как и АВ, и HG перпендикулярны грани АЕНD, то эти ребра одновременно перпендикулярны и АН. То есть АН
+						– общий
+						перпендикуляр к АВ и HG, и поэтому именно его длину и надо найти.</p>
+					<p>Сделать это можно из прямоугольного ∆АНD, в котором ∠НАD составляет 45°:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/38-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/38-rasstoyaniya-v-stereometrii.webp"
+								alt="38 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p><strong>Задание. Чему равно расстояние между ребром </strong><strong>AB и диагональю
+						</strong><strong>FD:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/39-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/39-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="39 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Пусть А<sub>1</sub>, D<sub>1</sub>, H<sub>1&nbsp;</sub>и Е<sub>1</sub> – середины ребер АВ,
+						DC, HG, и
+						EF соответственно. Проведем через А<sub>1</sub>, D<sub>1</sub>, H<sub>1&nbsp;</sub>плоскость.
+						Диагональ FD
+						пересечет ее в какой-нибудь точке К:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/40-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/40-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="40 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Сначала покажем, что плоскости α и ADH (то есть нижняя грань) параллельны.</p>
+					<p>Заметим, что в четырехугольнике АА<sub>1</sub>D<sub>1</sub>D стороны АА<sub>1</sub> и
+						DD<sub>1&nbsp;</sub>параллельны (ведь они лежат на сторонах квадрата АВСD) и одинаковы (ведь они
+						составляют
+						половину от длины ребер АВ и CD, то есть имеют длину 0,5). Тогда АА<sub>1</sub>D<sub>1</sub>D –
+						параллелограмм.
+						Более того, раз у него есть прямые углы ∠А<sub>1</sub>АDи ∠АDD<sub>1</sub>, то можно утверждать, что
+						АА<sub>1</sub>D<sub>1</sub>D – прямоугольник. Тогда АD||A<sub>1</sub>D<sub>1</sub>. Аналогично можно
+						показать,
+						что DHH<sub>1</sub>D<sub>1&nbsp;</sub>– прямоугольник, и DH||D<sub>1</sub>H<sub>1</sub>.</p>
+					<p>Далее можно действовать разными способами. Первый способ – это использование признака параллельности
+						плоскостей
+						(<a href="https://100urokov.ru/predmety/parallelnost" target="_blank"
+							rel="noopener noreferrer">теорема 9 из
+							этого урока</a>). Так как в α есть пересекающиеся прямые А<sub>1</sub>D<sub>1</sub>и
+						D<sub>1</sub>H<sub>1</sub>, а в плоскости ADH находятся прямые AD и DH, и
+						АD||A<sub>1</sub>D<sub>1</sub>, и
+						DH||D<sub>1</sub>H<sub>1</sub>, то по этому признаку α||ADH.</p>
+					<p>Однако, если этот признак вдруг оказался «забыт», то можно использовать отрезок DD<sub>1</sub>. Он
+						перпендикулярен и грани ADHE, и плоскости α, ведь в каждой из них есть по две прямых, перпендикулярных
+						ему. Это
+						AD и DH на грани ADHE и A<sub>1</sub>D<sub>1</sub>и D<sub>1</sub>H<sub>1&nbsp;</sub>в α. Тогда α и ADH
+						перпендикулярны одной и той же прямой, а потому они параллельны. Так или иначе, мы выяснили, что
+						α||ADH.</p>
+					<p>Отсюда вытекает, что α должна проходить через середину Е<sub>1</sub>. Действительно, расстояние между
+						параллельными плоскостями не зависит от выбора точек измерения. В данном случае оно равно отрезку
+						АА<sub>1</sub>, то есть 0,5. Но FE– это также общий перпендикуляр к α и ADH. Значит, α пересекает FE в
+						точке,
+						находящейся на расстоянии 0,5 от Е. А это как раз и есть середина FE, то есть точка Е<sub>1</sub>.</p>
+					<p>Далее докажем, что точка К, в которой прямая FD пересекает α – это середина отрезка
+						Е<sub>1</sub>D<sub>1</sub>.
+						Для этого удобно отдельно показать плоскость, проходящую через параллельные ребра FE и CD, то есть
+						четырехугольник FEDC:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/41-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/41-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="41 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Заметим, так как ребра FE и CD перпендикулярны верхней и нижней грани, то они перпендикулярны и
+						отрезкам FC и
+						ED, то есть FEDC прямоугольник. Тогда FC||ED, и ∠Е<sub>1</sub>FD = ∠D<sub>1</sub>DF (<a
+							href="https://100urokov.ru/predmety/urok-4-parallelnye-pryamye" target="_blank"
+							rel="noopener noreferrer">накрест
+							лежащие углы</a> при секущей FD). ∠FKE<sub>1&nbsp;</sub>и
+						∠DKD<sub>1</sub>
+						одинаковы уже как вертикальные углы. Тогда ∆FKE<sub>1</sub> и ∆DKD<sub>1&nbsp;</sub><a
+							href="https://100urokov.ru/predmety/urok-6-podobnye-treugolniki" target="_blank"
+							rel="noopener noreferrer">подобны
+							по 2 углам</a>. Но отрезки FE<sub>1&nbsp;</sub>и
+						DD<sub>1&nbsp;</sub>одинаковы как половины равных ребер FE и CD. Получается, что
+						∆FKE<sub>1&nbsp;</sub>и
+						∆DKD<sub>1&nbsp;</sub>равны, и поэтому Е<sub>1</sub>К = KD<sub>1</sub>. Это и значит, что К – середина
+						Е<sub>1</sub>D<sub>1</sub>.</p>
+					<p>Также отметим, что Е<sub>1</sub>D<sub>1</sub> – диагональ в четырехугольнике
+						А<sub>1</sub>Е<sub>1</sub>Н<sub>1</sub>D<sub>1</sub>. Докажем, что
+						А<sub>1</sub>Е<sub>1</sub>Н<sub>1</sub>D –
+						это квадрат. Ранее мы уже показали, что АА<sub>1</sub>D<sub>1</sub>D и DHH<sub>1</sub>D<sub>1</sub> –
+						прямоугольники. Аналогично можно продемонстрировать, что прямоугольниками являются также
+						АА<sub>1</sub>Е<sub>1</sub>Е и ЕЕ<sub>1</sub>Н<sub>1</sub>Н. Из этого вытекает равенство сторон:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/42-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/42-rasstoyaniya-v-stereometrii.webp"
+								alt="42 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>То есть в А<sub>1</sub>Е<sub>1</sub>Н<sub>1</sub>D<sub>1&nbsp;</sub>все стороны одинаковы, и эта
+						фигура – ромб.
+						Теперь надо показать, что и углы в этом четырехугольнике составляют 90°. Продемонстрируем это на
+						примере
+						∠А<sub>1</sub>D<sub>1</sub>H<sub>1</sub>. AD⊥CDHG и AD||A<sub>1</sub>D<sub>1</sub>, поэтому
+						А<sub>1</sub>D<sub>1</sub>⊥CDHG. Значит, также А<sub>1</sub>D перпендикулярна любой прямой на грани
+						CDHG, в том
+						числе и D<sub>1</sub>H<sub>1</sub>. То есть ∠А<sub>1</sub>D<sub>1</sub>H<sub>1</sub> = 90°. Но если в
+						ромбе
+						хотя бы один угол прямой, то он является квадратом.</p>
+					<p>Итак, мы выяснили, что А<sub>1</sub>Е<sub>1</sub>Н<sub>1</sub>D<sub>1</sub> – квадрат, а К – середина
+						его
+						диагонали Е<sub>1</sub>D<sub>1</sub>. Получается, что К – точка пересечения диагоналей квадрата
+						А<sub>1</sub>Е<sub>1</sub>Н<sub>1</sub>D<sub>1</sub>, ведь эта точка пересечения как раз делит
+						диагонали
+						пополам.</p>
+					<p>Теперь мы можем наконец доказать, что А<sub>1</sub>К – это и есть искомое расстояние. Действительно,
+						так как АВ
+						– перпендикуляр к α, та А<sub>1</sub>К принадлежит α, то А<sub>1</sub>К⊥АВ. Но как же доказать, что
+						А<sub>1</sub>К⊥FD. Здесь поможет теорема о трех перпендикулярах. Е<sub>1</sub>К – это проекция FK на
+						α, и
+						Е<sub>1</sub>К⊥А<sub>1</sub>К, ведь диагонали квадрата пересекаются под прямым углом. Раз отрезок
+						А<sub>1</sub>К перпендикулярен проекции, то он перпендикулярен и самой наклонной, то есть
+						А<sub>1</sub>К⊥FK.
+					</p>
+					<p>Осталось лишь вычислить длину А<sub>1</sub>К. Для этого по аналогии с предыдущими задачами используем
+						прямоугольный∆А<sub>1</sub>Е<sub>1</sub>К, в котором ∠А<sub>1</sub>Е<sub>1</sub>К = 45°:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/43-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/43-rasstoyaniya-v-stereometrii.webp"
+								alt="43 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p>Отвлечемся от куба и рассмотрим другую задачу.</p>
+					<p><strong>Задание. В </strong><strong>∆АВС вписана окружность. Через центр этой окружности (точку О)
+							проведена
+							прямая ОН, причем она перпендикулярна плоскости АВС. Верно ли, что точка Н находится на одинаковом
+							расстоянии от прямых АВ, АС и ВС?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/44-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/44-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="44 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Пусть N, K и M – точки касания окружности и сторон АВ, АС и ВС соответственно. Тогда ОN, OK и
+						OM–
+						радиусы, а они должны быть перпендикулярны касательным, то есть</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/45-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/45-rasstoyaniya-v-stereometrii.webp"
+								alt="45 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Заметим, что ОN, OK и OM – это также проекции прямых HN, HK и HM соответственно. Раз отрезки АВ, АС и
+						ВС
+						перпендикулярны этим проекциям, то они должны быть перпендикулярны и наклонным:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/46-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/46-rasstoyaniya-v-stereometrii.webp"
+								alt="46 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Это значит, что HN, HK и HM– это расстояния от H до сторон ∆АВС. Осталось показать, что они одинаковы.
+						Это
+						можно сделать с помощью ∆HON, ∆HOK и ∆HOM. Они все прямоугольные, причем катет OH– общий, а катеты ON,
+						OM и OK
+						одинаковы как радиусы одной окружности. Отсюда вытекает вывод, что эти треугольники равны, то есть
+						одинаковы и
+						их гипотенузы HN, HKи HM, ч. т. д.</p>
+					<p>&nbsp;</p>
+					<p>Теперь снова вернемся к кубу, чтобы на практике научиться определять угол между прямой и плоскостью.
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите угол между ребром куба </strong><strong>BD и гранью
+							С</strong><strong>DHG:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/47-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/47-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="47 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. ВС – это перпендикуляр к грани СDHG, поэтому CD– проекция BD на грань СDHG. Тогда нам надо
+						найти ∠BDC.
+						Он составляет 45°, так как это угол между стороной и диагональю квадрата АВСD:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/48-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/48-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="48 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Ответ: 45°.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Вычислите угол между ребром </strong><strong>CD и плоскостью
+						</strong><strong>BDHF:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/49-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/49-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="49 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. Нам надо из С опустить перпендикуляр на BDHF. Несложно догадаться, что для этого надо на
+						грани ABCD
+						опустить перпендикуляр СК на диагональ BD:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/50-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/50-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="50 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Действительно, СK⊥BD. Надо найти ещё одну прямую в BDHF, перпендикулярную СК. И такой прямой может
+						быть BF. Так
+						как BF перпендикулярна всей грани АВСD, то она обязательно перпендикулярна и СК. Получаем, что СК⊥BF и
+						CK⊥BD, и
+						тогда СK⊥BDHF.</p>
+					<p>Если СK– перпендикуляр, то KD – это проекция СD. Тогда искомый нами угол – это ∠СDK. Он равен 45°,
+						ведь BD –
+						диагональ квадрата АВСD, а CD – его сторона.</p>
+					<p>Ответ: 45°</p>
+					<p><strong>Задание. Чему равен угол между прямой </strong><strong>BD и плоскостью
+						</strong><strong>ABGH:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/51-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/51-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="51 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Решение. На нижней грани АЕНD опустим на АН перпендикуляр DK:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/52-zadacha-na-perpendikuljar-v-kube.webp"
+								type="image/webp"><img
+								src="img/rasstoyaniya-v-stereometrii/52-zadacha-na-perpendikuljar-v-kube.webp"
+								alt="52 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Заметим, что ребро АВ перпендикулярно грани АЕНD, поэтому KD⊥АВ. Но также KD⊥AH (мы специально
+						построили так
+						KD). Тогда можно утверждать, что KD – это перпендикуляр ко всей плоскости АВGH.</p>
+					<p>В таком случае BK – это проекция BD на AB. Значит, нам необходимо вычислить ∠DBK. Его можно найти из
+						прямоугольного ∆DBK, но сперва надо вычислить длины сторон KD и BD.</p>
+					<p>ВD найдем из прямоугольного ∆ABD:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/53-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/53-rasstoyaniya-v-stereometrii.webp"
+								alt="53 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>Теперь мы можем найти ∠DBK, а точнее его синус, из ∆DBK:</p>
+					<p>
+						<picture>
+							<source srcset="img/rasstoyaniya-v-stereometrii/54-rasstoyaniya-v-stereometrii.webp"
+								type="image/webp"><img src="img/rasstoyaniya-v-stereometrii/54-rasstoyaniya-v-stereometrii.webp"
+								alt="54 rasstoyaniya v stereometrii">
+						</picture>
+					</p>
+					<p>По таблице синусов легко определить, что ∠DBK = 30°.</p>
+					<p>Ответ: 30°.</p>
+					<p>&nbsp;</p>
+					<p>В ходе сегодняшнего урока мы узнали о перпендикуляре к плоскости. Перпендикуляры используются для
+						определения
+						расстояний в стереометрии, а также угла между прямой и плоскостью.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

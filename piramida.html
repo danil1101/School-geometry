@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Пирамида</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="piramida">
+			<div class="piramida__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="piramida__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-2.2.webp" type="image/webp"><img
+									src="img/themes-11/content-2.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Пирамида</div>
+							<div class="info__subtitle">
+								Пирамида – это один из видов многогранника, известный с глубокой древности.</div>
+						</div>
+					</div>
+					<div class="piramida__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="piramida.html#1">Понятие пирамиды</a></p>
+						<p><a href="piramida.html#2">Правильная пирамида</a></p>
+						<p><a href="piramida.html#3">Усеченная пирамида</a></p>
+						<p><a href="piramida.html#4">Типичные задачи на пирамиды</a></p>
+					</div>
+
+					<h2 id="1">Понятие пирамиды</h2>
+					<p>Построим на некоторой плос-ти α произвольный многоугольник А<sub>1</sub>А<sub>2</sub>…А<sub>n</sub>.
+						Далее
+						отметим в пространстве точку Р, не принадлежащую плос-ти α. Соединив точку Р с вершинами многоуг-ка
+						получим
+						многогранник, который именуется пирамидой (в различной литературе может использоваться сокращение
+						пирам-а).</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/1-piramida-eto-mnogogrannik.webp" type="image/webp"><img
+								src="img/piramida/1-piramida-eto-mnogogrannik.webp" alt="1 piramida">
+						</picture>
+					</p>
+					<p>Та единственная точка Р, не находящаяся в одной плос-ти со всеми остальными вершинами, именуется
+						вершиной
+						пирам-ы. Многоугольник, образованный остальными вершинами – это основание пирамиды.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/2-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/2-stroenie-piramidy.webp" alt="2 piramida">
+						</picture>
+					</p>
+					<p>Основанием пирам-ы может быть многоугольник с любым количеством сторон. Если в основании лежит,
+						например,
+						пятиугольник, то и пирам-у называют пятиугольной. Если же в основании находится десятиугольник, то это
+						будет
+						уже десятиугольная пирам-а. В общем случае пирам-у, у которой в основании располагается n-угольник,
+						именуется
+						n-угольной. Ясно, что треугольная пирам-а и тетраэдр – это по сути одна и та же фигура.</p>
+					<p>Все грани пирам-ы, за исключением ее основания, именуются боковыми гранями. Понятно, что каждая
+						боковая грань –
+						это треугольник. Ребра пирамиды, выходящие из ее вершины, именуются боковыми ребрами пирамиды.</p>
+					<p>Посчитаем количество ребер, вершин и граней пирам-ы. Если она n-угольная, то у неё (n + 1) вершин (n
+						точек в
+						основании и ещё одна точка, не лежащая в основании). Также у нее (n + 1) граней, из них одна – это
+						основание, а
+						остальные n – боковые грани пирамиды (по одной на каждую сторону n-угольника). Наконец, у пирам-ы n
+						ребер
+						находятся в плос-ти основания, а ещё n ребер являются боковыми. Итого имеем 2n ребер. Теперь можно
+						убедиться,
+						что теорема Эйлера для пирам-ы выполняется:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/3-piramida.webp" type="image/webp"><img
+								src="img/piramida/3-piramida.webp" alt="3 piramida">
+						</picture>
+					</p>
+					<p>Из вершины пирам-ы можно опустить перпендикуляр на плос-ть основания. Он будет именоваться высотой
+						пирамиды.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/4-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/4-stroenie-piramidy.webp" alt="4 piramida">
+						</picture>
+					</p>
+					<p>Как и в случае с призмой, можно подсчитать площадь боковой поверхности призмы, которую обозначают как
+						S<sub>бок</sub>. Если же к ней ещё добавить и площадь основания (S<sub>осн</sub>), то в сумме
+						получится уже
+						площадь полной поверхности призмы (S<sub>полн</sub>). Эту связь между величинами можно представить в
+						виде
+						формулы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/5-piramida.webp" type="image/webp"><img
+								src="img/piramida/5-piramida.webp" alt="5 piramida">
+						</picture>
+					</p>
+					<h2 id="2">Правильная пирамида</h2>
+					<p>Особый интерес и в геометрии, и в реальной жизни представляют так называемые правильные пирамиды. Их
+						отличают
+						две особенности:</p>
+					<p>1) в их основании находится <a href="https://100urokov.ru/predmety/pravilnye-mnogougolniki"
+							target="_blank" rel="noopener noreferrer">правильный многоугольник</a>;</p>
+					<p>2) высота пирам-ы падает на основание в точке, являющейся центром этого правильного многоуг-ка.</p>
+					<p>Напомним, что центром правильного многоуг-ка считается центр описанной около него окружности, который
+						одновременно является и центром вписанной окружности.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/6-pravilnaja-piramida.webp" type="image/webp"><img
+								src="img/piramida/6-pravilnaja-piramida.webp" alt="6 piramida">
+						</picture>
+					</p>
+					<p>Действительно, опустим из вершины Р правильной пирам-ы высоту РО. Тогда О будет центром описанной
+						окружности:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/7-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/7-stroenie-piramidy.webp" alt="7 piramida">
+						</picture>
+					</p>
+					<p>Примечание. На рисунках, показывающих объемные фигуры, окружности искажают свою форму и выглядят как
+						эллипсы,
+						то есть овалы.</p>
+					<p>Построим из О радиусы ОА<sub>1</sub>, ОА<sub>2</sub>, ОА<sub>3</sub>,… Они все будут одинаковы, ведь
+						это
+						радиусы одной и той же окружности. Также заметим, что высота правильной пирамиды РО будет
+						перпендикулярна
+						каждому из этих радиусов, ведь она перпендикулярна и всей плос-ти. Это значит, что ∆РОА<sub>1</sub>,
+						∆РОА<sub>2</sub>, ∆РОА<sub>3</sub>… – прямоугольные. При этом у них есть общий катет РО, а катеты
+						ОА<sub>1</sub>, ОА<sub>2</sub>, ОА<sub>3</sub>… одинаковы. Значит, эти треугольники равны. Отсюда и
+						вытекает,
+						что их гипотенузы, то есть боковые ребра РА<sub>1</sub>, РА<sub>2</sub>, РА<sub>3</sub>…, также
+						одинаковы, ч.
+						т. д.</p>
+					<p>Заметим, что можно доказать и почти противоположное утверждение – если у пирам-ы боковые ребра
+						одинаковы, а в
+						основании находится правильный многоуг-к, то она является правильной. Для доказательства предположим,
+						что ребра
+						РА<sub>1</sub>, РА<sub>2</sub>, РА<sub>2</sub>… одинаковы. Опустим из Р высоту, которая упадет в
+						некоторую
+						точку О. Теперь соединим эту точку с вершинами А<sub>1</sub>, А<sub>2</sub>, А<sub>3</sub>… Получатся
+						прямоугольные ∆РОА<sub>1</sub>, ∆РОА<sub>2</sub>, ∆РОА<sub>3</sub>… У них есть общий катет (высота РО)
+						и
+						одинаковые гипотенузы. Значит, эти треугольники равны, и потому одинаковы отрезки ОА<sub>1</sub>,
+						ОА<sub>2</sub>, ОА<sub>3</sub>… Это значит, что точка О равноудалена от вершин многоуг-ка, и если из
+						нее
+						провести окружность радиусом ОА<sub>1</sub>, то она также пройдет через остальные вершины многоуг-ка.
+						То есть
+						эта окружность окажется описанной. Это и означает, что точка О – центр многоуг-ка, и тогда вся пирам-а
+						оказывается по определению правильной.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/8-piramida-u-kotoroj-v-osnovanii-lezhit-pravilnyj-mnogougolnik.webp"
+								type="image/webp"><img
+								src="img/piramida/8-piramida-u-kotoroj-v-osnovanii-lezhit-pravilnyj-mnogougolnik.webp"
+								alt="8 piramida">
+						</picture>
+					</p>
+					<p>Из равенства боковых ребер напрямую вытекает и тот факт, что все боковые грани правильной пирам-ы –
+						одинаковые
+						равнобедренные треугольники. Высоты, проведенные в этих равнобедренных треугольниках к основанию
+						правильной
+						пирамиды, именуются апофемами.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/9-apofema.webp" type="image/webp"><img
+								src="img/piramida/9-apofema.webp" alt="9 piramida">
+						</picture>
+					</p>
+					<p>Ещё раз уточним, что понятие апофемы применимо только к правильной пирам-е. У других пирамид тоже
+						можно на
+						боковых гранях провести высоты к основанию, но они просто не будут называться апофемами пирамиды.</p>
+					<p>Ясно, что раз в правильной пирам-е все боковые грани – равные друг другу равнобедренные треуг-ки, то и
+						их
+						высоты, то есть апофемы, одинаковы. Также можно утверждать, что каждая апофема делит ребра, на которое
+						она
+						падает, пополам, ведь высоты в равнобедренном треуг-ке – это ещё и медианы.</p>
+					<p>Апофема используется для вычисления площади боковой поверхности пирам-ы, так как существует такая
+						теорема:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/10-ploschad-bokovoj-poverhnosti.webp" type="image/webp"><img
+								src="img/piramida/10-ploschad-bokovoj-poverhnosti.webp" alt="10 piramida">
+						</picture>
+					</p>
+					<p>Докажем ее. Пусть у правильной n-угольной пирам-ы в основании находится многоуг-к со стороной а. Тогда
+						его
+						периметр Р вычисляется так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/11-piramida.webp" type="image/webp"><img
+								src="img/piramida/11-piramida.webp" alt="11 piramida">
+						</picture>
+					</p>
+					<p>Каждая боковая грань пирам-ы – это треугольник. Проведем на них апофемы, которые одновременно окажутся
+						и
+						высотами для этих треугольников. Если мы обозначим длину апофемы как d, то площадь каждой грани можно
+						рассчитать по простейшей формуле площади треугольника:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/12-piramida.webp" type="image/webp"><img
+								src="img/piramida/12-piramida.webp" alt="12 piramida">
+						</picture>
+					</p>
+					<h2 id="3">Усечённая пирамида</h2>
+					<p>Возьмем произвольную пирам-у, а далее секущую плоскость, которая будет параллельна основанию, причем
+						она будет
+						пересекать ребра РА<sub>1</sub>, РА<sub>2</sub>, РА<sub>3</sub>… в точках В<sub>1</sub>,
+						В<sub>2</sub>,
+						В<sub>3</sub>… соответственно. В результате, отбросив «верхушку» пирам-ы, мы получим новую фигуру,
+						которая
+						именуется усеченной пирамидой.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/13-ishodnaja-piramida.webp" type="image/webp"><img
+								src="img/piramida/13-ishodnaja-piramida.webp" alt="13 piramida">
+						</picture>
+					</p>
+					<p>У усеченной пирам-ы уже не одна, а две грани считаются основаниями, и они параллельны друг другу.
+						Большее из
+						них именуют нижним основанием, а меньшее – верхним основанием.</p>
+					<p>Докажем, что боковые грани любой усеченной пирам-ы – это трапеции. Действительно, обозначим плос-ть
+						верхнего
+						основания как α, нижнее основание как β, а произвольную грань как γ:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/14-proizvolnaja-gran-piramidy.webp" type="image/webp"><img
+								src="img/piramida/14-proizvolnaja-gran-piramidy.webp" alt="14 piramida">
+						</picture>
+					</p>
+					<p>Нам надо доказать, что А<sub>1</sub>А<sub>2</sub>В<sub>2</sub>В<sub>1</sub> – это трапеция.
+						Действительно,
+						прямые А<sub>1</sub>А<sub>2</sub> и В<sub>1</sub>В<sub>2</sub> не могут скрещиваться, ведь они
+						располагаются в
+						единой плос-ти γ. Не могут они и пересекаться, ведь тогда точка их пересечения была бы общей для
+						плос-тей α и
+						β, а эти плос-ти параллельны. Остается один вариант:
+						А<sub>1</sub>А<sub>2</sub>||В<sub>1</sub>B<sub>2</sub>.
+						Две другие стороны грани, А<sub>1</sub>В<sub>1</sub> и А<sub>2</sub>В<sub>2</sub>, будут пересекаться
+						в точке
+						Р, вершине исходной пирам-ы. Тогда по определению две четырехугольник
+						А<sub>1</sub>А<sub>2</sub>В<sub>2</sub>В<sub>1</sub> будет трапецией, ведь у него две стороны
+						параллельны, а
+						две другие – нет.</p>
+					<p>Отдельно отметим, что усеченная пирам-а, полученная из правильной пирам-ы, также называется
+						правильной, а
+						высоты ее боковых граней также именуются апофемами. Докажем одну теорему:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/15-bokovye-grani-pravilnoj-usechennoj-piramidy.webp"
+								type="image/webp"><img src="img/piramida/15-bokovye-grani-pravilnoj-usechennoj-piramidy.webp"
+								alt="15 piramida">
+						</picture>
+					</p>
+					<p>Действительно, пусть из правильной пирам-ы с вершиной в Р получена правильная усеченная пирамида с
+						основаниями
+						А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…A<sub>n</sub> и
+						В<sub>1</sub>В<sub>2</sub>В<sub>3</sub>…B<sub>n</sub>:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/16-pravilnaja-usechennaja-piramida.webp" type="image/webp"><img
+								src="img/piramida/16-pravilnaja-usechennaja-piramida.webp" alt="16 piramida">
+						</picture>
+					</p>
+					<p>Так как исходная пирам-а – правильная, то ее грани – равные равнобедренные треугольники, у которых
+						одинаковы
+						углы при основаниях:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/17-piramida.webp" type="image/webp"><img
+								src="img/piramida/17-piramida.webp" alt="17 piramida">
+						</picture>
+					</p>
+					<p>Мы уже знаем, что грани А<sub>1</sub>А<sub>2</sub>В<sub>2</sub>В<sub>1</sub> и
+						А<sub>2</sub>А<sub>3</sub>В<sub>3</sub>В<sub>2</sub> – трапеции. Раз у них одинаковы углы при
+						основании, то
+						можно утверждать, что эти трапеции – <a href="https://100urokov.ru/predmety/urok-2-trapeciya"
+							target="_blank" rel="noopener noreferrer">равнобедренные</a>. Это значит, что любые два боковых
+						ребра, находящиеся на одной
+						грани, одинаковы. Значит, одинаковы вообще все боковые ребра. Получается, что все боковые грани – это
+						равнобедренные трапеции с одинаковыми основаниями, боковыми сторонами и углами при основании. Этого
+						достаточно
+						для того, чтобы считать эти трапеции равными, ч. т. д.</p>
+					<p>Из этой теоремы вытекает тот факт, что стороны многоуг-ка, образующего верхнее основание, одинаковы.
+						Более
+						того, углы этого многоуг-ка равны таким же углам в нижнем основании. Например,
+						∠А<sub>1</sub>А<sub>2</sub>А<sub>3</sub> = ∠В<sub>1</sub>В<sub>2</sub>В<sub>3</sub>. Действительно, мы
+						знаем,
+						что А<sub>1</sub>А<sub>2</sub>||В<sub>1</sub>В<sub>2</sub> и
+						А<sub>2</sub>А<sub>3</sub>||B<sub>2</sub>B<sub>3</sub>, и потому стороны углов
+						∠А<sub>1</sub>А<sub>2</sub>А<sub>3</sub> = ∠В<sub>1</sub>В<sub>2</sub>В<sub>3</sub> оказываются <a
+							href="https://100urokov.ru/predmety/skreshchivayushchiesya-pryamye" target="_blank"
+							rel="noopener noreferrer">сонаправленными лучами</a>.</p>
+					<p>Так как в нижнем многоуг-ке А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…A<sub>n</sub> все углы одинаковы
+						(ведь он
+						правильный), то и в верхнем многоуг-ке В<sub>1</sub>В<sub>2</sub>В<sub>3</sub>…B<sub>n</sub> также
+						будут
+						одинаковы углы. В итоге можно утверждать, что верхнее основание усеченной пирамиды является правильным
+						многоуг-ком, также как и нижнее.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/18-v-pravilnoj-usechennoj-piramide.webp" type="image/webp"><img
+								src="img/piramida/18-v-pravilnoj-usechennoj-piramide.webp" alt="18 piramida">
+						</picture>
+					</p>
+					<p>Отметим ещё один факт. При построении секущей плос-ти пирам-а делится на две части. Нижняя из них –
+						это
+						усеченная пирам-а, а верхняя – это обычная пирам-а, меньшая исходной. Докажем, что если исходная
+						пирам-а
+						РА<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…Р<sub>n</sub> была правильной, то оставшаяся после отсечения
+						«верхушка» также будет правильной пирам-ой. Мы уже выяснили, что ее основание
+						В<sub>1</sub>В<sub>2</sub>В<sub>3</sub>…В<sub>n</sub>– правильный многоуг-к. Отрезки РА<sub>1</sub>,
+						РА<sub>2</sub>, РА<sub>3</sub>… одинаковы как боковые ребра исходной правильной пирам-ы. В свою
+						очередь отрезки
+						А<sub>1</sub>В<sub>1</sub>, А<sub>2</sub>В<sub>2</sub>, А<sub>3</sub>В<sub>3</sub> одинаковы как
+						боковые ребра
+						правильной усеченной пирам-ы. Но отсюда получается, что одинаковы также и отрезки РВ<sub>1</sub>,
+						РВ<sub>2</sub>, РВ<sub>3</sub>… Значит, в пирам-е
+						РВ<sub>1</sub>В<sub>2</sub>В<sub>3</sub>…В<sub>n</sub> в
+						основании лежит правильный многоуг-к, а ее боковые ребра одинаковы. Из этого вытекает, что эта пирам-а
+						–
+						правильная.</p>
+					<p>Ещё одна теорема позволяет вычислять площадь боковой поверхности правильной усеченной пирам-ы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/19-ploschad-bokovoj-poverhnosti-pravilnoj-usechennoj-piramidy.webp"
+								type="image/webp"><img
+								src="img/piramida/19-ploschad-bokovoj-poverhnosti-pravilnoj-usechennoj-piramidy.webp"
+								alt="19 piramida">
+						</picture>
+					</p>
+					<p>Действительно, каждая грань такой пирам-ы – это трапеция. Обозначим длину ее верхнего основания буквой
+						а, а
+						нижнего – буквой b.Тогда, если основания пирам-ы – это многоуг-ки с n сторонами, периметр этих
+						оснований будет
+						вычисляться так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/20-piramida.webp" type="image/webp"><img
+								src="img/piramida/20-piramida.webp" alt="20 piramida">
+						</picture>
+					</p>
+					<p>Теперь проведем на каждой боковой грани апофему, чья длина будет обозначаться как d. Тогда, используя
+						<a href="https://100urokov.ru/predmety/urok-4-ploshchad-mnogougolnikov" target="_blank"
+							rel="noopener noreferrer">формулы площади трапеции</a>, сможем вычислить площадь грани:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/21-piramida.webp" type="image/webp"><img
+								src="img/piramida/21-piramida.webp" alt="21 piramida">
+						</picture>
+					</p>
+					<h2 id="4">Типичные задачи на пирамиды</h2>
+					<p>Рассмотрим несколько задач, в которых фигурируют пирам-ы. Перед просмотром решения попытайтесь решить
+						их
+						самостоятельно.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Существует ли пирамида, у которой ровно 999 ребер?</strong></p>
+					<p>Решение. Если в основании пирам-ы находится n-угольник, то у нее 2n ребер. Так как n– целое число, то
+						2n будет
+						уже четным числом. То есть количество ребер у любой пирам-ы всегда четно. Поэтому не существует
+						пирам-ы с 999
+						ребрами, ведь 999 – нечетное число.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Верно ли, что всякий правильный тетраэдр одновременно является и правильной пирам-ой?
+							И
+							наоборот, является ли каждая правильная треугольная пирам-а правильным тетраэдром?</strong></p>
+					<p>Решение. Напомним, что правильный тетраэдр – это тетраэдр, у которого все ребра одинаковы. Если одну
+						из вершин
+						тетраэдра принять за вершину пирам-ы, то получится, что в ее основании равносторонний треугольник,
+						который, как
+						мы знаем, является правильным многоуг-ком. Также окажется, что все боковые ребра пирам-ы также
+						одинаковы. Это
+						значит, что она – правильная.</p>
+					<p>Теперь посмотрим на произвольную правильную треугольную пирам-у. Будет ли она обязательно правильным
+						тетраэдром? Нет, ведь ее боковые ребра могут отличаться по длине от ребер, находящихся в основании.
+						Например, в
+						основании может находиться равносторонний треуг-к со стороной 5 см, а боковое ребро правильной
+						пирамиды может
+						иметь длину 10 см. Таким образом, можно считать правильный тетраэдр лишь частным случаем правильной
+						пирам-ы.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/22-pravilnyj-tetraedr.webp" type="image/webp"><img
+								src="img/piramida/22-pravilnyj-tetraedr.webp" alt="22 piramida">
+						</picture>
+					</p>
+					<p><strong>Задание. В основании пирам-ы находится ромб со стороной 5 см.Одна из его диагоналей имеет
+							длину 8 см.
+							Высота пирам-ы имеет длину 7 см и проходит через точку, в которой пересекаются диагонали ромба.
+							Вычислите
+							длину боковых ребер.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/23-bokovye-rebra-romba.webp" type="image/webp"><img
+								src="img/piramida/23-bokovye-rebra-romba.webp" alt="23 piramida">
+						</picture>
+					</p>
+					<p>Обозначим ромб в основании как АВСD, а вершину пирам-ы буквой Р. Пусть диагонали пересекаются в точке
+						О, тогда
+						РО – высота. Также пусть диагональ АС равна 8 см. По <a
+							href="https://100urokov.ru/predmety/urok-2-trapeciya" target="_blank"
+							rel="noopener noreferrer">свойству
+							ромба</a> О будет серединой диагоналей, поэтому</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/24-piramida.webp" type="image/webp"><img
+								src="img/piramida/24-piramida.webp" alt="24 piramida">
+						</picture>
+					</p>
+					<p>Отрезок OD будет иметь ту же длину 3 см, ведь О – середина BD.</p>
+					<p>Так как высота РО перпендикулярна всем прямым в плос-ти основания, то ∆АОР, ∆ВОР, ∆СОР, ∆DOP –
+						прямоугольные, и
+						боковые ребра пирам-ы будут гипотенузами этих треугольников. Вычислим АР по теореме Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/25-piramida.webp" type="image/webp"><img
+								src="img/piramida/25-piramida.webp" alt="25 piramida">
+						</picture>
+					</p>
+					<p><strong>Задание. В основании пирам-ы лежит квадрат, а одно из ее боковых ребер перпендикулярно
+							основанию. Одна
+							из боковых граней образует с плос-тью основания угол в 45°. Длина длиннейшего ребра пирам-ы
+							составляет 12
+							см. Определите высоту пирам-ы и площадь ее боковой поверхности.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/26-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/26-stroenie-piramidy.webp" alt="26 piramida">
+						</picture>
+					</p>
+					<p>Обозначим квадрат, находящийся в основании, как АВСD, а вершину пирам-ы как Р. Пусть ребро PD
+						перпендикулярно
+						основанию. Тогда PD⊥AD и PD⊥CD. Ясно, что PD как раз и является искомой нами высотой пирам-ы.</p>
+					<p>Теперь надо понять, какие углы в пирам-е составляют 45° и какое ребро равно 12 см. Грани ADP и СDP
+						проходят
+						через перпендикуляр PDк основанию, а потому они перпендикулярны основанию. Значит, угол в 45° с
+						основанием
+						образует либо грань АВР, либо грань СВР.</p>
+					<p>Заметим, что АВ⊥AD (это смежные стороны квадрата), а AD – это проекция ребра АР на основание. Тогда по
+						<a href="https://100urokov.ru/predmety/rasstoyaniya-v-stereometrii" target="_blank"
+							rel="noopener noreferrer">теореме
+							о трех перпендикулярах</a>&nbsp;АВ⊥АР. Аналогично из того факта,
+						что
+						ВС⊥СD, вытекает, что ВС⊥СР. Также заметим, что ∆ADP и ∆СDP прямоугольные, имеют общий катет PD и
+						одинаковые
+						катеты AD и CD (это стороны квадрата). Значит, это равные треугольники, и
+					</p>
+					<p>∠PAD =&nbsp;∠PCD</p>
+					<p>Грань АВР пересекается c основанием по прямой АВ, причем AD⊥АВ и АР⊥АВ. Значит, ∠РАD – это угол между
+						гранью
+						АВР и основанием. Аналогично и ∠РСD является углом между гранью СВР и основанием. Но эти углы
+						одинаковы.
+						Значит, каждый из этих углов будет равен 45°, иначе в пирам-е не останется угла между плос-тями,
+						который мог бы
+						составлять 45°.</p>
+					<p>Ясно, что ребро АР длиннее ребра РD, ведь в прямоугольном ∆ADP АР – это гипотенуза, а РD катет (<a
+							href="https://100urokov.ru/predmety/urok-6-pryamougolnyj-treugolnik" target="_blank"
+							rel="noopener noreferrer">гипотенуза всегда длиннее катета</a>). Теперь заметим, что ∆РАВ и ∆РСВ –
+						также
+						прямоугольные, ведь АВ⊥АР и ВС⊥СР. Но в них гипотенузой является уже РВ, то есть РВ длиннее АВ, ВС, АР
+						и РС.
+						Так как отрезки AD и AC равны АВ как стороны квадрата, получаем, что именно ребро РВ – длиннейшее в
+						пирам-е, то
+						есть его длина составляет 12 см.</p>
+					<p>В прямоугольном ∆ADP∠PAD = 45°. Это значит, что ∆ADP является прямоугольным и равнобедренным, то есть
+						AD = PD.
+						Обозначим искомую нами длину РD как x. Теперь проведем диагональ BD:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/27-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/27-stroenie-piramidy.webp" alt="27 piramida">
+						</picture>
+					</p>
+					<p>Её длину можно вычислить из ∆ADB:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/28-piramida.webp" type="image/webp"><img
+								src="img/piramida/28-piramida.webp" alt="28 piramida">
+						</picture>
+					</p>
+					<p>Итак, высоту нашли, теперь нужно рассчитать боковую площадь. Но для этого предварительно найдем АР из
+						∆АРD:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/29-piramida.webp" type="image/webp"><img
+								src="img/piramida/29-piramida.webp" alt="29 piramida">
+						</picture>
+					</p>
+					<p>Такую же длину имеет и РС, ведь ∆АРD и ∆СРD равны.</p>
+					<p>Мы уже выяснили, что каждая боковая грань – прямоугольный треугольник. Зная длины катетов, легко
+						найдем площадь
+						каждой грани:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/30-piramida.webp" type="image/webp"><img
+								src="img/piramida/30-piramida.webp" alt="30 piramida">
+						</picture>
+					</p>
+					<p><strong>Задание. В правильной шестиугольной пирам-е ребро при основании равно 3 см. Высота этой
+							пирам-ы
+							составляет 4 см. Вычислите длину апофемы этой пирам-ы, а также угол, который ее боковые грани
+							образуют с
+							основанием.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/31-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/31-stroenie-piramidy.webp" alt="31 piramida">
+						</picture>
+					</p>
+					<p>Основание пирам-ы обозначим как АВСDEF, а вершину как Р. Пусть РО – высота, тогда О – центр описанной
+						окружности. Напомним, что у правильного шестиугольника радиус описанной окружности совпадает с длиной
+						его
+						стороны, то есть</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/32-piramida.webp" type="image/webp"><img
+								src="img/piramida/32-piramida.webp" alt="32 piramida">
+						</picture>
+					</p>
+					<p>Теперь надо найти угол между гранью АВР и основанием. Они пересекаются по прямой АВ. РН⊥АВ, ведь РН –
+						апофема.
+						ОН – это проекция РН на основание. Так как АВ⊥РН, то по <a
+							href="https://100urokov.ru/predmety/rasstoyaniya-v-stereometrii" target="_blank"
+							rel="noopener noreferrer">обратной теореме о трех перпендикулярах</a> и ОН⊥АВ. Значит, ∠ОНР и
+						является
+						искомым углом между гранью АВР и основанием. Для его вычисления применим тригонометрию к ∆ОНР:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/33-piramida.webp" type="image/webp"><img
+								src="img/piramida/33-piramida.webp" alt="33 piramida">
+						</picture>
+					</p>
+					<p><strong>Задание. В правильной шестиугольной пирам-е все ребра имеют длину, равную единице. Найдите
+							угол между
+							прямыми АР и </strong><strong>BD:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/34-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/34-stroenie-piramidy.webp" alt="34 piramida">
+						</picture>
+					</p>
+					<p>Решение. Для нахождения угла между АР и BD, у которых нет общей точки, можно вычислить угол между
+						прямыми,
+						которые будут им параллельны. Легко заметить, что АЕ||BD. Докажем это, рассмотрев основание пирам-ы:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/35-mnogougolniki.webp" type="image/webp"><img
+								src="img/piramida/35-mnogougolniki.webp" alt="35 piramida">
+						</picture>
+					</p>
+					<p>Каждый угол правильного шестиугольника составляет 120°. В частности, это относится к ∠F и ∠С. ∆АFЕ –
+						равнобедренный, ведь его стороны FE и AF одинаковы. Тогда и углы при основании будут одинаковыми.
+						Найдем их:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/36-piramida.webp" type="image/webp"><img
+								src="img/piramida/36-piramida.webp" alt="36 piramida">
+						</picture>
+					</p>
+					<p>Аналогично можно определить, что все углы четырехугольника АВDE прямые, то он представляет собой
+						прямоугольник.
+						Его противоположные стороны параллельны, в частности, АЕ||BD. Это означает, что искомый нами угол –
+						это ∠РАЕ:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/37-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/37-stroenie-piramidy.webp" alt="37 piramida">
+						</picture>
+					</p>
+					<p>Для его вычисления необходимо вычислить длины сторон ∆РАЕ. Ребра РА и РЕ по условию равны единице.
+						Длину ЕА
+						найдем из ∆FAE, применив теорему косинусов:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/38-piramida.webp" type="image/webp"><img
+								src="img/piramida/38-piramida.webp" alt="38 piramida">
+						</picture>
+					</p>
+					<p><strong>Задание. В правильной шестиугольной пирам-е боковые ребра имеют длину 2, а ребра в основании
+							равны 1.
+							Вычислите угол между плос-тями Р</strong><strong>FA и </strong><strong>PDE:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/39-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/39-stroenie-piramidy.webp" alt="39 piramida">
+						</picture>
+					</p>
+					<p>Решение. Сначала надо найти прямую, по которой эти две грани пересекаются. Мы видим одну их общую
+						точку – Р.
+						Продолжим ребра FA и ED до тех пор, пока они не пересекутся в некоторой точке К. Эта точка K также
+						будет общей
+						для плос-тей, проходящих через грани PFA и РЕD. Значит, они пересекаются по прямой РК:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/40-stroenie-piramidy.webp" type="image/webp"><img
+								src="img/piramida/40-stroenie-piramidy.webp" alt="40 piramida">
+						</picture>
+					</p>
+					<p>Найдем углы в ∆КЕF, помня при этом, что все в шестиугольнике АВСDEF составляют по 120°:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/41-piramida.webp" type="image/webp"><img
+								src="img/piramida/41-piramida.webp" alt="41 piramida">
+						</picture>
+					</p>
+					<p>Получили, что все углы в ∆КЕF составляют по 60°, то есть он равносторонний, и поэтому стороны KE и KF
+						одинаковы. Но также одинаковы и грани FA и DE. Отсюда получаем и равенство отрезков АК и DK:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/piramida/42-piramida.webp" type="image/webp"><img
+								src="img/piramida/42-piramida.webp" alt="42 piramida">
+						</picture>
+					</p>
+					<p>Теперь сравним ∆АРК и ∆KPD. КР – их общая сторона, АР = РD как боковые ребра правильной пирам-ы, и АК
+						= DK.
+						Получается, что эти треугольники равны.</p>
+					<p>Далее в ∆АРК опустим высоту АН. Из равенства ∆АРК и ∆KPD вытекает, что и HD будет высотой в ∆PHD, ведь
+						в равных
+						треугольниках высоты должны делить равные стороны в одном и том же отношении. Тогда по определению
+						двугранного
+						угла ∠AHD и будет искомым углом между гранями, ведь KP – линия их пересечения, АН⊥KP и DH⊥KP.</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/43-piramida.webp" type="image/webp"><img
+								src="img/piramida/43-piramida.webp" alt="43 piramida">
+						</picture>
+					</p>
+					<p>∆AKP – равнобедренный, ведь отрезки АК и АР оказались одинаковыми. Значит, АН не только высота, но и
+						медиана.
+						Поэтому</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/44-piramida.webp" type="image/webp"><img
+								src="img/piramida/44-piramida.webp" alt="44 piramida">
+						</picture>
+					</p>
+					<p>Отрезок AD окажется диаметром окружности, описанной около шестиугольника. Мы знаем, что радиус такой
+						окружности
+						равен длине стороны шестиугольника, то есть единице. Тогда диаметр будет вдвое больше:</p>
+					<p>
+						<picture>
+							<source srcset="img/piramida/45-piramida.webp" type="image/webp"><img
+								src="img/piramida/45-piramida.webp" alt="45 piramida">
+						</picture>
+					</p>
+					<p>Сегодня мы познакомились с ещё одним видом многогранника –пирамидой. Они нередко встречаются в задачах
+						ЕГЭ,
+						посвященных стереометрии. Особо часто используются правильные пирамиды, поэтому важно помнить их
+						основные
+						свойства.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

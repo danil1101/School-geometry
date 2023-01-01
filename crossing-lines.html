@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Прямые скрещивающиеся</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="crossing-lines">
+			<div class="crossing-lines__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="crossing-lines__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-3.2.webp" type="image/webp"><img
+									src="img/themes-10/content-3.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Скрещивающиеся прямые</div>
+							<div class="info__subtitle">
+								В планиметрии прямые либо пересекались, либо оказывались параллельными. В стереометрии возможен
+								ещё
+								один случай их
+								расположения.
+							</div>
+						</div>
+					</div>
+					<div class="crossing-lines__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="crossing-lines.html#1">Понятие скрещивающихся
+								прямых</a></p>
+						<p><a href="crossing-lines.html#2">Сонаправленные лучи</a></p>
+						<p><a href="crossing-lines.html#3">Угол между прямыми</a></p>
+						<p><a href="crossing-lines.html#4">Задачи на скрещивающиеся
+								прямые</a>
+						</p>
+
+					</div>
+
+					<h2 id="1">Понятие скрещивающихся прямых</h2>
+					<p>В пространстве можно построить две прямые так, что они не будут пересекаться, но и параллельными они
+						также
+						являться не будут. Для этого достаточно, чтобы прямые НЕ находились в одной плоскости. В этом случае
+						их именуют
+						скрещивающимися прямыми.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/1-chto-takoe-skreschivajuschiesja-prjamye.webp"
+								type="image/webp"><img src="img/crossing-lines/1-chto-takoe-skreschivajuschiesja-prjamye.webp"
+								alt="1 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Здесь ребра ВС и АЕ как раз лежат на двух скрещивающихся прямых. Поэтому их можно так и называют –
+						скрещивающиеся отрезки. По аналогии можно ввести понятие и скрещивающихся лучей.</p>
+					<p>Существует теорема, представляющая собой признак скрещивающихся прямых.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/2-esli-odna-iz-dvuh-prjamyh-lezhit-v-ploskosti.webp"
+								type="image/webp"><img
+								src="img/crossing-lines/2-esli-odna-iz-dvuh-prjamyh-lezhit-v-ploskosti.webp"
+								alt="2 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть две прямые, НК и РМ. Обозначим как α плос-ть, проходящую через НК и точку М.
+						Если РМ
+						пересекает α, то это означает, что М – единственная общая точка у α и РМ. Получается, что Н, К, М и Р
+						– это
+						точки в различных плос-тях, и через них нельзя провести одну плос-ть. Значит, и прямые НК и РМ –
+						скрещивающиеся.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/3-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/3-prjamye-na-ploskosti.webp" alt="3 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Таким образом, в стереометрии возможно всего три случая взаимного расположения двух прямых в
+						пространстве:</p>
+					<p>1) прямые пересекаются, и тогда они обязательно находятся в одной плос-ти;</p>
+					<p>2) прямые располагаются в одной плос-ти, но не пересекаются – случай параллельных прямых;</p>
+					<p>3) прямые находятся в разных плос-тях – случай скрещивающихся прямых.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/4-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/4-prjamye-na-ploskosti.webp" alt="4 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Докажем одну теорему:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/5-cherez-kazhduju-iz-dvuh-skreschivajuschihsja-prjamyh.webp"
+								type="image/webp"><img
+								src="img/crossing-lines/5-cherez-kazhduju-iz-dvuh-skreschivajuschihsja-prjamyh.webp"
+								alt="5 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Для доказательства возьмем произвольные скрещивающиеся прямые m и n. Отметим на n точку К и проведем
+						через К
+						прямую р, параллельную m:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/6-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/6-prjamye-na-ploskosti.webp" alt="6 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Через пересекающиеся прямые nи p можно провести единственную плос-тьα. По признаку параллельности
+						прямой и
+						плос-ти можно заключить, что m||α.</p>
+					<p>Покажем, что кроме α нет других плос-тей, проходящих через n и параллельных m. Действительно, если бы
+						такая
+						плос-ть β существовала, то р имела бы с ней общую точку К, но полностью в β она бы не могла
+						находиться, иначе α
+						и β совпадали бы. Значит, р пересекала бы β. Но тогда ее обязательно пересекала бы и m по одну из
+						свойств
+						параллельных прямых. В этом случае m и β не были бы параллельными.</p>
+					<h2 id="2">Сонаправленные лучи</h2>
+					<p>В планиметрии существует понятие сонаправленных лучей. Пусть на плос-ти есть два луча О<sub>1</sub>А и
+						О<sub>2</sub>В. Проведем прямую О<sub>1</sub>О<sub>2</sub>. Она, как и всякая прямая, разделит плос-ть
+						на две
+						полуплоскости. Для того, чтобы лучи О<sub>1</sub>А и О<sub>2</sub>В считались сонаправленными,
+						необходимо
+						выполнение двух условий:</p>
+					<p>1) они должны оказаться в одной полуплоскости;</p>
+					<p>2) они должны быть параллельными.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/7-prjamye.webp" type="image/webp"><img
+								src="img/crossing-lines/7-prjamye.webp" alt="7 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Здесь мы рассмотрели случай, когда лучи О<sub>1</sub>А и О<sub>2</sub>В находятся на разных прямых.
+						Возможен
+						частный случай, когда они располагаются на одной прямой. В таком случае для сонаправленности лучей
+						достаточно,
+						чтобы один из них полностью лежал на другом:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/8-prjamye.webp" type="image/webp"><img
+								src="img/crossing-lines/8-prjamye.webp" alt="8 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Рассмотрим теорему, касающуюся сонаправленных лучей, причем она верна не только в планиметрии, но и в
+						стереометрии.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/crossing-lines/9-esli-storony-dvuh-uglov-javljajutsja-sootvetstvenno-sonapravlennymi.webp"
+								type="image/webp"><img
+								src="img/crossing-lines/9-esli-storony-dvuh-uglov-javljajutsja-sootvetstvenno-sonapravlennymi.webp"
+								alt="9 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>В доказательстве сразу рассмотрим случай углов, располагающихся в разных плос-тях. Пусть есть углы
+						О<sub>1</sub> и О<sub>2</sub>, стороны которых образуют попарно сонаправленные лучи. На одной паре
+						лучей
+						отметим точки А<sub>1</sub> и А<sub>2</sub> так, чтобы отрезки О<sub>1</sub>А<sub>1</sub> и
+						О<sub>2</sub>А<sub>2</sub> были одинаковыми. На другой паре лучей аналогично отложим точки
+						В<sub>1</sub> и
+						В<sub>2</sub> так, чтобы одинаковыми были отрезки О<sub>1</sub>В<sub>1</sub> и
+						О<sub>2</sub>В<sub>2</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/10-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/10-prjamye-na-ploskosti.webp" alt="10 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Заметим, что лучи О<sub>1</sub>А<sub>1</sub> и О<sub>2</sub>А<sub>2</sub> как сонаправленные должны
+						располагаться в одной плос-ти, иначе они не будут параллельными. Тогда
+						О<sub>1</sub>А<sub>1</sub>А<sub>2</sub>О<sub>2</sub> – плоский четырехугольник. Отрезки
+						О<sub>1</sub>А<sub>1</sub> и О<sub>2</sub>А<sub>2</sub> параллельны и одинаковы. Это значит, что
+						О<sub>1</sub>А<sub>1</sub>А<sub>2</sub>О<sub>2</sub> – параллелограмм. Аналогично легко убедиться, что
+						параллелограммом является и четырехугольник О<sub>1</sub>В<sub>1</sub>В<sub>2</sub>О<sub>2</sub>. Это
+						значит,
+						что</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/11-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/11-skreshchivayushchiesya-pryamye.webp"
+								alt="11 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Отсюда вытекает (по свойству транзитивности), что отрезки А<sub>1</sub>А<sub>2</sub> и
+						В<sub>1</sub>В<sub>2</sub> также одинаковы и параллельны, а потому
+						А<sub>1</sub>А<sub>2</sub>В<sub>2</sub>В<sub>1</sub> – также параллелограмм. Значит, стороны
+						А<sub>1</sub>В<sub>1</sub> и А<sub>2</sub>В<sub>2</sub> одинаковы. Получается, что у
+						∆О<sub>1</sub>А<sub>1</sub>В<sub>1</sub> и ∆О<sub>2</sub>А<sub>2</sub>В<sub>2</sub> одинаковы все
+						стороны,
+						поэтому ∆О<sub>1</sub>А<sub>1</sub>В<sub>1</sub> и ∆О<sub>2</sub>А<sub>2</sub>В<sub>2</sub> равны.
+						Отсюда
+						вытекает и равенство углов ∠А<sub>1</sub>О<sub>1</sub>В<sub>1</sub> и
+						∠А<sub>2</sub>О<sub>2</sub>В<sub>2</sub>,
+						ч. т. д.</p>
+					<h2 id="3">Угол между прямыми</h2>
+					<p>Напомним, какая величина считается углом между пересекающимися прямыми. При пересечении прямых
+						образуется 4
+						угла. Зная один из них, легко вычислить и остальные углы. Понятно, что хотя бы один из углов будет не
+						превышать
+						90°. Именно такой угол и принимается за угол между прямыми:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/12-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/12-prjamye-na-ploskosti.webp" alt="12 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Теперь покажем, как определить угол между скрещивающимися прямыми. Пусть прямые m и n скрещиваются.
+						Выберем в
+						пространстве произвольную точку К. Через нее можно построить такие прямые m<sub>1</sub> и
+						n<sub>1</sub>, что
+						m<sub>1</sub>||m и n<sub>1</sub>||n. Угол между m<sub>1&nbsp;</sub>и n<sub>1</sub> как раз и
+						принимается за
+						угол между скрещивающимися прямыми m и n:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/13-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/13-prjamye-na-ploskosti.webp" alt="13 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Возникает вопрос – зависит ли величина измеренного таким образом угла от того, какая именно точка К
+						выбрана?
+						Оказывается, что не зависит, и это можно доказать. Выберем две произвольные точки К<sub>1</sub> и
+						К<sub>2</sub>. Через К<sub>1</sub> проведем прямые n<sub>1&nbsp;</sub>и m<sub>1</sub>, а через
+						К<sub>2</sub>
+						проведем n<sub>2&nbsp;</sub>и m<sub>2</sub>, которые будут соответственно параллельны исходным прямым
+						m и n.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/14-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/14-prjamye-na-ploskosti.webp" alt="14 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Так как n<sub>1</sub>||n и n<sub>2</sub>||n, то по свойству транзитивности параллельности и
+						n<sub>1</sub>||n<sub>2</sub>. Аналогично и m<sub>1</sub>||m<sub>2</sub>. Получается, что стороны углов
+						в точках
+						К<sub>1</sub> и К<sub>2</sub> соответственно сонаправлены. Значит, они одинаковы, ч. т. д.</p>
+					<h2 id="4">Задачи на скрещивающиеся прямые</h2>
+					<p>Теоретический материал закончился, осталось научиться применять полученные знания. Перед просмотром
+						решения
+						постарайтесь самостоятельно решить каждую задачу.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Точка </strong><strong>D находится вне плос-ти&nbsp;</strong><strong>∆АВС. Середины
+							отрезков
+							А</strong><strong>D, </strong><strong>BD и С</strong><strong>D обозначены буквами
+						</strong><strong>M,
+						</strong><strong>N и </strong><strong>P соответственно. Точка </strong><strong>K располагается на
+							отрезке
+						</strong><strong>BN (и не совпадает с концами этого отрезка). Определите, как относительно друг друга
+							располагаются прямые:</strong></p>
+					<p>Решение. Сначала важно построить правильный рисунок по описанию задачи:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/15-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/15-prjamye-na-ploskosti.webp" alt="15 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Теперь можно рассмотреть по отдельности каждый пункт.</p>
+					<p>а) АВ и DN. Прямая DN совпадает с прямой BD. Она в свою очередь пересекается с АВ в точке В. Значит, в
+						данном
+						случае прямые пересекаются.</p>
+					<p>б) РК и ВС. Рассмотрим плос-ть треугольника ∆ВСD. Рассматриваемые прямые как раз находятся в ней. То
+						есть они
+						уже точно не скрещиваются. Могут ли они быть параллельны? Обратите внимание на отрезок NP. Это средняя
+						линия в
+						∆ВСD, поэтому NP||ВС. Через Р может быть проведена лишь одна прямая, параллельная ВС (по аксиоме
+						параллельности), и это NP. Значит, KP пересекает ВС.</p>
+					<p>в) MN и АВ. В ∆АВDMN является средней линией, поэтому MN||АВ.</p>
+					<p>г) МР и АС. МР – это средняя линия в ∆АСD, значит, МР||АС.</p>
+					<p>д) KN и АС. Прямая KN совпадает с прямой BD. Она пересекает плос-ть АСВ, но точка пересечения (это В)
+						не
+						находится на АС. Тогда по признаку скрещивающихся прямых можно утверждать, что KN и АС скрещиваются.
+					</p>
+					<p>е) MD и ВС. MD пересекается с плос-тью АСВ в точке А. Тогда из признака скрещивающихся прямых
+						вытекает, что MD
+						и DC скрещиваются.</p>
+					<p><strong>Задание. Через точку Р, не находящуюся на прямой </strong><strong>m, проведены две различные
+							прямые, не
+							пересекающиеся с </strong><strong>m. Верно ли, что хотя бы одна из них точно скрещивается с
+						</strong><strong>m?</strong></p>
+					<p>Решение. Каждая из этих двух прямых с m не пересекается. Тогда они либо параллельны m, либо
+						скрещиваются с ней.
+						Но обе прямые параллельны m не могут быть параллельны m, ведь тогда через Р будет проведено сразу две
+						прямые,
+						параллельные m, что невозможно. Значит, хотя бы одна из прямых действительно скрещивается с m.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание.&nbsp;</strong><strong>MК и РН – скрещивающиеся прямые.Скрещиваются ли прямые МН и
+							КР?</strong>
+					</p>
+					<p>Решение. Ясно, что точки М, К, Р, Н располагаются в различных плос-тях. В противном случае, если бы
+						существовала плос-ть α, в которой находились бы М, К, Р и Н, то в α также находились бы прямые МК и
+						РН, и тогда
+						они уже по определению не были бы скрещивающимися.</p>
+					<p>Теперь рассмотрим плос-ть КРН. В ней находится прямая КР. А прямая МН ее пересекает в точке К. Тогда,
+						по
+						признаку скрещивающихся прямых, МН и КР скрещиваются.</p>
+					<p><strong>Задание. Прямые </strong><strong>m и </strong><strong>n скрещиваются. </strong><strong>M –
+							точка на
+						</strong><strong>m, N – точка на </strong><strong>n. Через </strong><strong>m и </strong><strong>N
+							проведена
+							плос-ть&nbsp;</strong><strong>α, а через </strong><strong>n и </strong><strong>M –
+							плос-ть&nbsp;</strong><strong>β. Пересекаются ли плос-ти α и β, и если да, то по какой
+							линии?</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/16-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/16-prjamye-na-ploskosti.webp" alt="16 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Посмотрим, есть ли у α и β общие точки. Плос-ть α проходит через n, то есть и через точку N тоже.
+						Плос-ть β
+						также проходит через N. Значит, N – общая точка. Аналогично можно показать, что и М – это общая точка.
+						В итоге
+						α и β пересекаются, причем на линии пересечения находятся точки M и N. Значит, именно прямая МN
+						является
+						границей этих двух плос-тей.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Известно, что </strong><strong>MНКЕ – параллелограмм, а МНРТ – трапеция (РТ – её
+							основание),
+							причем они располагаются в разных областях. Каково расположение отрезков КЕ и РТ друг относительно
+							друга.</strong></p>
+					<p>Решение. Задачу можно решить и без рисунка. Если РТ – основание трапеции, то второе основание – это
+						МН, и
+						МН||РТ. В параллелограмме МНКЕ параллельны стороны МН и КЕ, ведь они противоположные. Тогда по
+						свойству
+						транзитивности параллельности из того факта, что МН||РТ и МН||КЕ, вытекает, что и РТ||КЕ.</p>
+
+					<p><strong>Задание. Известно, что ОА и С</strong><strong>D – скрещивающиеся прямые, а
+							ОВ||</strong><strong>CD.
+							Чему равен угол между ОА и </strong><strong>CD, если</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/17-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/crossing-lines/17-prjamye-na-ploskosti.webp" alt="17 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Если CD||ОВ, то угол между CD и ОА совпадает с углом между ОВ и ОА. В задании а) он совпадет с ∠АОВ и
+						составляет 40°. В случае б) угол не может составлять 135°, так как он не должен превышать 90°. Поэтому
+						он равен
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/18-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/18-skreshchivayushchiesya-pryamye.webp"
+								alt="18 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Наконец, в случае в) он составит 90°.</p>
+					<p>Ответ: а) 40°; б) 45°; в) 90°.</p>
+					<p><strong>Задание. Дан куб, вершины которого обозначены так, как это показано на рисунке:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/19-kuby.webp" type="image/webp"><img
+								src="img/crossing-lines/19-kuby.webp" alt="19 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p><strong>Найдите угол между прямыми:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/20-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/20-skreshchivayushchiesya-pryamye.webp"
+								alt="20 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Решение. Во всех трех случаях нам даны скрещивающиеся прямые. Для вычисления угла надо найти такие
+						параллельные
+						им прямые, которые будут пересекаться.</p>
+					<p>а) AD и GH. Заметим, что GH||СD, ведь это противоположные стороны квадрата СDHG, поэтому мы можем
+						определить
+						угол между AD и CD. Другими словами, мы просто заменяем в задаче GH на CD, так как эти отрезки
+						параллельны. Так
+						как отрезки AD и CD в свою очередь являются уже смежными сторонами в квадрате АВСD, то ∠ADC, который
+						нам надо
+						найти, составляет 90°.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/21-kub.webp" type="image/webp"><img
+								src="img/crossing-lines/21-kub.webp" alt="21 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>б) BD и FG. Здесь уже уместно заменить FG на ВС. Это можно сделать, ведь FG||ВС (это стороны
+						квадрата). Тогда
+						нам необходимо вычислить ∠СВD. Он составляет 45°, ведь диагональ квадрата делит его угол пополам.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/22-kub.webp" type="image/webp"><img
+								src="img/crossing-lines/22-kub.webp" alt="22 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>в) BD и AF. Здесь есть смысл AF заменить на GD. Но для этого надо сначала показать, что
+						AF||DG.Рассмотрим
+						отрезки AD и FG. Каждый из них параллелен ВС (по свойству квадратов ABCD и ВСGH). Значит, по свойству
+						транзитивности AD||FG, то есть эти отрезки располагаются в одной плос-ти. Тогда AFGD – плоский
+						четырехугольник.
+					</p>
+					<p>Заметим, что отрезки AD и FG ещё и одинаковы, так каждый из них равен ВС (вообще в кубе все ребра
+						одинаковы).
+						Получается, что в четырехугольнике AFGD стороны AD и FG одинаковы и параллельны, а потому AFGD – <a
+							href="https://100urokov.ru/predmety/urok-1-parallelogramm-chetyryohugolniki" target="_blank"
+							rel="noopener noreferrer">параллелограмм</a>, по одному из его признаков. Отсюда и вытекает, что
+						AF||DG.</p>
+					<p>Мы поняли, искомый нами угол между прямыми равен∠BDG. Как его вычислить? Для этого надо рассмотреть
+						∆BDG. Можно
+						заметить, что он равносторонний. Действительно, отрезки BG, GD и BD – это диагонали в равных квадратах
+						ВСGH,
+						СDHG, АВСD, поэтому и сами эти диагонали также одинаковы. В любом равностороннем треугольнике все углы
+						составляют по 60°, поэтому и ∠BDG равен этому же значению, то есть 60°.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/23-kub.webp" type="image/webp"><img
+								src="img/crossing-lines/23-kub.webp" alt="23 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Ответ: а) 90°; б) 45°; в) 60°.</p>
+
+					<p><strong>Задание (стереометрическая задача из ЕГЭ). Точки А, В, С и </strong><strong>D в пространстве
+							располагаются так, что расстояния между любыми двумя из этих точек одинаковы. Можно доказать
+							(попробуйте
+							сделать это самостоятельно), что такая ситуация возможна лишь в случае, когда точки не
+							располагаются в одной
+							плос-ти. М – середина ВС, а </strong><strong>L – середина АВ. Найдите косинус угла между прямыми
+							М</strong><strong>D и </strong><strong>CL.</strong></p>
+					<p>Решение. Из условия вытекает, что ∆АВС, ∆ВСD, ∆ABD – равносторонние и притом равные друг другу.
+						Проведем в ∆АВС
+						отрезок такой отрезок MF, что MF||СL. Тогда нам необходимо вычислить ∠DMF (точнее, его косинус). Это
+						можно
+						сделать, используя <a href="https://100urokov.ru/predmety/urok-4-trigonometriya" target="_blank"
+							rel="noopener noreferrer">теорему косинусов</a> применительно к ∆MDF, но для этого сперва надо
+						найти все
+						стороны в этом треугольнике:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/crossing-lines/24-figura.webp" type="image/webp"><img
+								src="img/crossing-lines/24-figura.webp" alt="24 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Для удобства обозначим длину отрезков АВ, ВС, АС, BD, AD и CD буквой R. Так как L– середина АВ, то CL–
+						медиана
+						в ∆АВС. Но в равностороннем треугольнике она одновременно будет и высотой. Тогда ∆АСL – прямоугольный.
+						Запишем
+						для него теорему Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/25-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/25-skreshchivayushchiesya-pryamye.webp"
+								alt="25 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Аналогичным образом легко определить, что длина медианы DМ в ∆ВСD равна этому же значению:</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/26-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/26-skreshchivayushchiesya-pryamye.webp"
+								alt="26 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Теперь исследуем ∆ВСL. Так как MF||CL и М – середина ВС, то MF оказывается средней линией в ∆ВСL.
+						Значит, ее
+						длина вдвое меньше, чем у СL:</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/27-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/27-skreshchivayushchiesya-pryamye.webp"
+								alt="27 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Также из того факта, что МF – средняя линия, вытекает то, что F – середина LВ. Тогда можно вычислить
+						FB:</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/28-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/28-skreshchivayushchiesya-pryamye.webp"
+								alt="28 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Далее обратим внимание на ∆ВFD. ∠В в нем составляет 60°, ведь это одновременно и угол в равностороннем
+						∆АВD.
+						Стороны FB и BD нам известны, а потому с помощью теоремы косинусов можно вычислить и FD:</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/29-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/29-skreshchivayushchiesya-pryamye.webp"
+								alt="29 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>Теперь можно составить и для ∆МDF уравнение на основе теореме косинуса, из которого удастся выяснить
+						интересующий нас косинус ∠DMF:</p>
+					<p>
+						<picture>
+							<source srcset="img/crossing-lines/30-skreshchivayushchiesya-pryamye.webp" type="image/webp"><img
+								src="img/crossing-lines/30-skreshchivayushchiesya-pryamye.webp"
+								alt="30 skreshchivayushchiesya pryamye">
+						</picture>
+					</p>
+					<p>В ходе сегодняшнего урока мы познакомились с новым понятием – скрещивающимися прямыми. Также мы
+						узнали, как
+						вычислять угол между ними. Подобные задачи могут встречаться и на ЕГЭ.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Многогранники</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="mnogogranniki">
+			<div class="mnogogranniki__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="mnogogranniki__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-1.2.webp" type="image/webp"><img
+									src="img/themes-11/content-1.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Многогранники</div>
+							<div class="info__subtitle">
+								В стереометрии изучаются различные объемные фигуры. Простейшими из них являются многогранники.
+							</div>
+						</div>
+					</div>
+					<div class="mnogogranniki__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="mnogogranniki.html#1">Понятие многогранника</a></p>
+						<p><a href="mnogogranniki.html#2">Теорема Эйлера</a></p>
+						<p><a href="mnogogranniki.html#3">Призма</a></p>
+						<p><a href="mnogogranniki.html#4">Типичные задачи на призмы</a></p>
+					</div>
+					<h2 id="1">Понятие многогранника</h2>
+					<p>Ранее мы уже познакомились с тетраэдром и параллелепипедом. Поверхность тетраэдра состоит из 4
+						треугольников, а
+						параллелепипеда – из 6 параллелограммов. Они являются частными случаями такой фигуры, как
+						многогранник.</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/1-mnogogrannik-obemnaja-figura.webp" type="image/webp"><img
+								src="img/mnogogranniki/1-mnogogrannik-obemnaja-figura.webp" alt="1 mnogogranniki">
+						</picture>
+					</p>
+					<p>Надо понимать, что под многогранником понимают одновременно как поверхность, составленную из
+						многоуг-ков, так и
+						тот объем, который эта поверхность ограничивает. Иногда, чтобы отличать два этих понятия, используют
+						термин
+						«поверхность многогранника».</p>
+					<p>Каждый многоугольник, образующий поверхность многогранника, именуется гранью многогранника. При этом
+						предполагается, что любые две соседние грани находятся в разных плос-тях.</p>
+					<p>Многоугольники, образующие поверхность многогранника, имеют свои стороны,которые именуют ребрами
+						многогранника.
+						Вершины же этих многоуг-ков именуют вершинами многогранников. Можно утверждать, что ребра – это
+						отрезки, по
+						которым пересекаются соседние грани. В свою очередь вершины – это точки, где пересекаются соседние
+						ребра.
+						Отрезок, соединяющий две вершины, которые не принадлежат одной грани, именуется диагональю
+						многогранника. Важно
+						отметить, что каждое ребро принадлежит ровно 2 граням. Вершина принадлежит как минимум трем граням,
+						однако
+						может принадлежать и большему их числу.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/2-grani-mnogogrannika.webp" type="image/webp"><img
+								src="img/mnogogranniki/2-grani-mnogogrannika.webp" alt="2 mnogogranniki">
+						</picture>
+					</p>
+					<p>Если все точки многогранника находятся по одну сторону от любой плос-ти, проходящей через какую-либо
+						грань
+						многогранника, то он называется выпуклым. В противном случае, если через одну из граней проходит
+						плос-ть,
+						«разрезающая» многогранник на две других фигуры, многогранник именуют невыпуклым. На бытовом уровне
+						это
+						означает, что выпуклый многогранник можно поставить на ровную поверхность (например, стол) на любую
+						грань. А
+						вот у невыпуклого многогранника найдется такая грань, на которую его поставить нельзя. Покажем
+						несколько
+						примеров:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/3-nevypuklyj-mnogogrannik.webp" type="image/webp"><img
+								src="img/mnogogranniki/3-nevypuklyj-mnogogrannik.webp" alt="3 mnogogranniki">
+						</picture>
+					</p>
+					<p>На рисунке у невыпуклых многогранников красным цветом показаны плос-ти, которые рассекают
+						многогранник. На эти
+						грани не получится «поставить» многогранник – будет мешать выступающая часть. Заметим, что в выпуклом
+						многограннике всякая диагональ лежит внутри фигуры. А вот у невыпуклого многогранника можно соединить
+						вершины
+						отрезком, лежащим вне объема фигуры. Добавим, что у выпуклого многогранника каждая грань обязательно
+						является
+						выпуклым многоугольником.</p>
+					<h2 id="2">Теорема Эйлера</h2>
+					<p>У каждого многогранника можно подсчитать количество граней, вершин и ребер. Например, у тетраэдра 4
+						грани, 4
+						вершины и 6 ребер. В свою очередь у параллелепипеда уже 6 граней, 8 вершин и 12 граней. Есть ли
+						какая-то
+						взаимосвязь между этими числами?</p>
+					<p>Можно заметить, что если у тетраэдра сложить число вершин и граней, а далее вычесть из суммы
+						количество ребер,
+						то получится число 2:</p>
+					<p>4 + 4 - 6 = 2</p>
+					<p>Если выполнить такие же действия для параллелепипеда, то снова получится двойка:</p>
+					<p>6 + 8 - 12 = 2</p>
+					<p>Оказывается, это не просто совпадение. Для любого выпуклого многогранника справедлива теорема Эйлера:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/4-teorema-ejlera.webp" type="image/webp"><img
+								src="img/mnogogranniki/4-teorema-ejlera.webp" alt="4 mnogogranniki">
+						</picture>
+					</p>
+					<p>Мы не будем доказывать эту теорему, так как ее доказательство достаточно сложное. Отдельно отметим,
+						что для
+						невыпуклых многогранников эта теорема может и не выполняться.</p>
+					<p><strong>Задание. Известно, что некоторый выпуклый многогранник состоит из 20 граней и имеет 30 ребер.
+							Сколько у
+							него вершин?</strong></p>
+					<p>Решение. Запишем теорему Эйлера:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/5-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/5-mnogogranniki.webp" alt="5 mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Поверхность выпуклого многогранника составлена из 12 пятиугольников. Сколько у такого
+							многогранника ребер и вершин?</strong></p>
+					<p>Решение. У многогранника будет ровно 12 граней. Попробуем подсчитать количество ребер. Так как каждая
+						представляет собой пятиугольник, то все вместе они имеют 12•5 = 60 ребер. Однако при этом мы каждое
+						ребро
+						подсчитали дважды, ведь любое ребро принадлежит строго 2 граням. То есть на самом деле есть только
+						60:2 = 30
+						ребер. По теореме Эйлера легко подсчитаем и количество вершин:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/6-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/6-mnogogranniki.webp" alt="6 mnogogranniki">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Выпуклый многогранник имеет 8 граней, из них 4 – это четырехугольники, а ещё 4 –
+							пятиугольники. Сколько у него ребер и вершин?</strong></p>
+					<p>Решение. Как и в предыдущей задаче, снова сложим количество сторон всех граней:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/7-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/7-mnogogranniki.webp" alt="7 mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Существует ли выпуклый многогранник, каждая грань которого является
+							шестиугольником?</strong>
+					</p>
+					<p>Предположим, что такой многогранник существует, и у него Г граней. Тогда его грани имеют в сумме 6Г
+						сторон. Но
+						каждая из этих сторон будет ребром ровно для 2 граней, поэтому всего будет 3Г ребер:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/8-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/8-mnogogranniki.webp" alt="8 mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь вспомним, что в каждой вершине сходятся не менее трех ребер. Значит, если мы посчитаем все
+						ребра,
+						выходящие из каждого ребра, то получим величину, не меньшую 3В. Но, так как каждое ребро проходит
+						строго через
+						2 вершины, мы снова подсчитали ребра дважды. То есть количество ребер будет не меньше 3/2В, или 1,5В:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/9-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/9-mnogogranniki.webp" alt="9 mnogogranniki">
+						</picture>
+					</p>
+					<p>Это неравенство противоречит полученному ранее равенству Р = 3Г. Противоречие показывает, что на самом
+						деле не
+						может существовать выпуклый многогранник, каждая грань которого – шестиугольник, ч. т. д.</p>
+					<p>Примечание. Аналогично можно продемонстрировать, что не может существовать и выпуклый многогранник,
+						поверхность
+						которого состоит из многоуг-ков, каждый из которых имеет не менее 6 сторон. Другими словами, любой
+						выпуклый
+						многогранник имеет хотя бы одну грань, которая является треугольником, четырехугольником или
+						пятиугольником.
+					</p>
+					<h2 id="3">Призма</h2>
+					<p>Пусть в некоторой плос-ти α есть n-угольник с вершинами А<sub>1</sub>, А<sub>2</sub>, А<sub>3</sub>,…,
+						А<sub>n</sub>. Пусть в другой плос-ти β, которая параллельна α, есть равный ему многоуг-к
+						В<sub>1</sub>В<sub>2</sub>В<sub>3</sub>…В<sub>n</sub>, причем отрезки А<sub>1</sub>В<sub>1</sub>,
+						А<sub>2</sub>В<sub>2</sub>, А<sub>3</sub>В<sub>3</sub>…, А<sub>n</sub>В<sub>n&nbsp;</sub>параллельны
+						друг
+						другу:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/10-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/10-cilindr.webp" alt="10 mnogogranniki">
+						</picture>
+					</p>
+					<p>В результате мы получили геометрическую фигуру, которую именуют призмой. Многоуг-ки
+						А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…А<sub>n</sub> и
+						В<sub>1</sub>В<sub>2</sub>В<sub>3</sub>…В<sub>n&nbsp;</sub>именуются основаниями призмы, а все
+						остальные грани
+						– это боковые грани призмы. Можно доказать, что боковые грани – это параллелограммы. Действительно, в
+						четырехуг-ке А<sub>1</sub>А<sub>2</sub>В<sub>2</sub>В<sub>1</sub> стороны А<sub>1</sub>В<sub>1</sub> и
+						А<sub>2</sub>В<sub>2</sub> параллельны по условию. Также они равны по <a
+							href="https://100urokov.ru/predmety/parallelnost" target="_blank" rel="noopener noreferrer">теореме
+							12 из
+							этого урока</a>. Это и значит, что А<sub>1</sub>А<sub>2</sub>В<sub>2</sub>В<sub>1</sub> – это
+						параллелограмм
+						(по одному из его признаков). Тоже самое можно доказать и для остальных боковых граней. Теперь мы
+						можем
+						сформулировать определение призмы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/11-prizma-eto-mnogogrannik.webp" type="image/webp"><img
+								src="img/mnogogranniki/11-prizma-eto-mnogogrannik.webp" alt="11 mnogogranniki">
+						</picture>
+					</p>
+					<p>Ребра призмы, не принадлежащие основанию, именуются боковыми ребрами призмы. Ясно, что любые два
+						соседних ребра
+						параллельны, ведь они являются сторонами параллелограммами. Но тогда по свойству <a
+							href="https://100urokov.ru/predmety/parallelnost" target="_blank"
+							rel="noopener noreferrer">транзитивности
+							параллельности</a> получается, что вообще любые два боковых ребра параллельны. Если из какой-нибудь
+						точки
+						основания построен перпендикуляр к противоположному основанию, то он именуется высотой призмы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/12-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/12-cilindr.webp" alt="12 mnogogranniki">
+						</picture>
+					</p>
+					<p>Естественно, что высота перпендикулярна обоим основаниям. Возможна ситуация, когда высота падает не на
+						основание, а на какую-нибудь точку плос-ти основания, не находящуюся внутри него. Ясно, что все высоты
+						призмы
+						имеют одинаковую длину независимо от того, через какие точки они проведены, ведь высота по своей сути
+						– это
+						расстояние между плос-тями оснований.</p>
+					<p>Особый интерес вызывают призмы, где боковые ребра и основания перпендикулярны друг другу. Такие призмы
+						именуются прямыми. Ясно, что у них боковые грани оказываются уже не просто параллелограммами, а уже
+						прямоуг-ками. При этом любое боковое ребро одновременно является и высотой. Все остальные призмы
+						именуют
+						наклонными.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/13-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/13-cilindr.webp" alt="13 mnogogranniki">
+						</picture>
+					</p>
+					<p>Если в основании призмы находится n-угольник, то призму называют n-угольной. В частности, в основании
+						треугольной призмы лежит треуг-к, в основании десятиугольной призмы находится десятиугольник и т. д.
+						Наконец, в
+						особую группу выделяют прямые призмы, основаниями которых представляют собой правильные многоуг-ки. Их
+						так и
+						именуют – правильные призмы.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/14-pravilnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/14-pravilnaja-prizma.webp" alt="14 mnogogranniki">
+						</picture>
+					</p>
+					<p>Если сложить площадь всех граней призмы, то получится сумма, которую именуют площадью полной
+						поверхности
+						призмы. Обычно ее обозначают как S<sub>полн</sub>. Если же складываются только площади боковых граней,
+						то в
+						сумме получается площадь боковой поверхности призмы, обозначаемая как S<sub>бок</sub>. Если площадь
+						основания
+						призмы обозначить как S<sub>осн.</sub>, то справедлива будет очевидная формула:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/15-ploschad-bokovoj-poverhnosti-prjamoj-prizmy.webp"
+								type="image/webp"><img
+								src="img/mnogogranniki/15-ploschad-bokovoj-poverhnosti-prjamoj-prizmy.webp"
+								alt="15 mnogogranniki">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть прямая призма с основаниями А<sub>1</sub>А<sub>2</sub>…А<sub>n</sub> и
+						B<sub>1</sub>B<sub>2</sub>…B<sub>n</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/16-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/16-cilindr.webp" alt="16 mnogogranniki">
+						</picture>
+					</p>
+					<p>Так как ее боковые ребра перпендикулярны основаниям, то они должны быть перпендикулярны и тем ребрам,
+						которые
+						образуют основания. Это значит, каждая боковая грань – это прямоуг-к. При этом боковые ребра – это
+						одновременно
+						и высоты призмы. Тогда площадь боковых граней вычисляется так:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/17-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/17-mnogogranniki.webp" alt="17 mnogogranniki">
+						</picture>
+					</p>
+					<p>Отметим наконец, что <a href="https://100urokov.ru/predmety/tetraedr-i-parallelepiped" target="_blank"
+							rel="noopener noreferrer">параллелепипед</a> можно считать частным случаем призмы, а прямоугольный
+						параллелепипед – частным случаем прямой призмы.</p>
+					<h2 id="4">Типичные задачи на призмы</h2>
+					<p>Призмы нередко встречаются в заданиях ЕГЭ, поэтому важно уметь решать задачи, в которых используются
+						эти
+						фигуры.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Сколько диагоналей имеет </strong><strong>n-угольная призма?</strong></p>
+					<p>Решение. В любом многограннике диагональ соединяет точки, не лежащие на одной грани. Каждая вершина
+						призмы
+						принадлежит одному из оснований, причем в n-угольной призме каждому основанию принадлежат n вершин.
+					</p>
+					<p>Возьмем произвольную вершину на одном из оснований и посчитаем, сколько диагоналей из нее можно
+						провести. Если
+						соединять ее отрезками с другими вершинами, принадлежащему тому же основанию, то получатся диагонали
+						грани, но
+						не диагонали призмы (зеленые линии на рисунке):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/18-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/18-cilindr.webp" alt="18 mnogogranniki">
+						</picture>
+					</p>
+					<p>Значит, остается только провести прямые к тем вершинами, которые лежат в другом основании. Так как в
+						другом
+						основании находятся n вершин, то и отрезков будет ровно n. Однако три из них не будут диагоналями
+						(показаны на
+						рисунке синим цветом), так как будут либо являться одним из ребер призмы либо одной из диагоналей.
+						Получается,
+						что из вершины можно провести (n – 3) диагоналей. Так как в основании находятся n вершин, то всего
+						можно
+						построить n•(n– 3) диагоналей.</p>
+					<p>Ответ: n•(n – 3) диагоналей.</p>
+					<p><strong>Задание. Длина стороны правильной треугольной призмы составляет 8 см, а ее боковое ребро имеет
+							длину 6
+							см. Через сторону основания проведено сечение, которое пересекает другое основание в противолежащей
+							вершине.
+							Какова площадь этого сечения?</strong></p>
+					<p>Решение. Выполним построение по условию задачи:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/19-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/19-treugolnaja-prizma.webp" alt="19 mnogogranniki">
+						</picture>
+					</p>
+					<p>Здесь сечение проведено через ребро В<sub>1</sub>С<sub>1</sub> и противолежащую ей вершину А. Призма
+						правильная, поэтому ее основания ∆АВС и ∆А<sub>1</sub>В<sub>1</sub>С<sub>1</sub> – это равносторонние
+						треуг-ки,
+						и все их стороны равны 8 см. По определению правильная призма обязательно ещё и прямая. Тогда боковые
+						грани –
+						прямоуг-ки.</p>
+					<p>∆АВВ<sub>1</sub> – прямоугольный, с помощью теоремы Пифагора мы можем вычислить его гипотенузу
+						АВ<sub>1</sub>:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/20-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/20-mnogogranniki.webp" alt="20 mnogogranniki">
+						</picture>
+					</p>
+					<p>Аналогично можно вычислить, что и диагональ АС<sub>1</sub> также равна 10 см. Вообще в правильных
+						призмах все
+						грани – это равные друг другу прямоуг-ки, поэтому и диагонали у них одинаковы.</p>
+					<p>Длина ребра В<sub>1</sub>С<sub>1</sub> составляет 8 см. Получается, нам надо вычислить площадь
+						равнобедренного
+						∆АВ<sub>1</sub>С<sub>1</sub> с основанием 8 см и боковыми сторонами 10 см. Это можно сделать
+						множеством
+						способов. Самый простой из них заключается в использовании <a
+							href="https://100urokov.ru/predmety/urok-5-teorema-pifagora" target="_blank"
+							rel="noopener noreferrer">формулы
+							Герона</a>. Для ее применения сначала вычислим полупериметр
+						∆АВ<sub>1</sub>С<sub>1</sub>:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/21-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/21-mnogogranniki.webp" alt="21 mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. В основании призмы находится равносторонний </strong><strong>∆АВС. Ребро
+							АА<sub>1</sub>
+							образует одинаковые углы с ребрами АС и АВ. Докажите, что ребра АА<sub>1</sub> и ВС перпендикулярны
+							и что
+							СС<sub>1</sub>В<sub>1</sub>В – прямоуг-к.</strong></p>
+					<p>Решение. Выполняем построение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/22-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/22-treugolnaja-prizma.webp" alt="22 mnogogranniki">
+						</picture>
+					</p>
+					<p>По условию ∠А<sub>1</sub>АВ и ∠А<sub>1</sub>АС одинаковы. Проведем диагонали А<sub>1</sub>В и
+						А<sub>1</sub>С. В
+						итоге мы получим ∆А<sub>1</sub>АВ и А<sub>1</sub>АС. У них есть АА<sub>1</sub> – общая сторона,
+						стороны АВ и АС
+						одинаковы (ведь ∆АВС – равносторонний), а углы между ними одинаковы. Значит, ∆А<sub>1</sub>АВ и
+						А<sub>1</sub>АС
+						равны, и тогда диагонали А<sub>1</sub>В и А<sub>1</sub>С одинаковы.</p>
+					<p>Получается, что точка А<sub>1</sub> равноудалена вершин В и С. Аналогично и точка А равноудалена от В
+						и С, ведь
+						АВ и АС одинаковы. Это значит, что и А<sub>1</sub>, и А лежат на серединных перпендикулярах,
+						проведенных к
+						отрезку ВС:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/23-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/23-treugolnaja-prizma.webp" alt="23 mnogogranniki">
+						</picture>
+					</p>
+					<p>Обозначим середину ВС как Н, тогда НА<sub>1</sub> и НА – серединные перпендикулярны. То есть ВС⊥АН и
+						ВС⊥А<sub>1</sub>Н. Но это значит (<a href="https://100urokov.ru/predmety/perpendikulyarnost"
+							target="_blank" rel="noopener noreferrer">по признаку перпендикулярности прямой и плос-ти</a>), что
+						ВС перпендикулярен всей
+						плос-ти АНА<sub>1</sub>. Из этого вытекает, что ВС⊥АА<sub>1</sub>, ч. т. д.</p>
+					<p>Осталось показать, что грань СС<sub>1</sub>В<sub>1</sub>В – это прямоуг-к. Так как
+						ВВ<sub>1</sub>||АА<sub>1</sub>, и ВС⊥АА<sub>1</sub>, то и ВС⊥ВВ<sub>1</sub>. Значит в параллелограмме
+						СС<sub>1</sub>В<sub>1</sub>В (напомним, что в призме все боковые грани – параллелограммы) есть прямой
+						угол. Это
+						значит, что он является прямоуг-ком, ч. т. д.</p>
+					<p><strong>Задание. Призма АВСА<sub>1</sub>В<sub>1</sub>С<sub>1</sub> – наклонная. Известно, что АС = АВ
+							= 13 и ВС
+							= 10. Боковые ребра призмы образуют с основанием АВС угол 45°. Проекция точки А<sub>1</sub> на
+							плос-ть АВС
+							совпадает с точкой пересечения медиан в </strong><strong>∆АВС. Какова площадь грани
+							СС<sub>1</sub>В<sub>1</sub>В?</strong></p>
+					<p>Решение. Снова выполняем построение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/24-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/24-treugolnaja-prizma.webp" alt="24 mnogogranniki">
+						</picture>
+					</p>
+					<p>Здесь О – это проекция точки А<sub>1</sub> и одновременно точка пересечения медиан. H– середина
+						отрезка ВС, то
+						есть АН – как раз одна из медиан. Заметим, что так как ∆АВС равнобедренный, и ВС – это его основание,
+						то АН
+						одновременно является и высотой, то есть ∠ВНА = 90°. Раз Н – середина ВС, то ВН будет вдвое короче ВС:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/25-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/25-mnogogranniki.webp" alt="25 mnogogranniki">
+						</picture>
+					</p>
+					<p>Напомним, точка пересечения медиан <a
+							href="https://100urokov.ru/predmety/urok-7-ispolzovanie-podobiya" target="_blank"
+							rel="noopener noreferrer">делит их в отношении 2:1</a>, поэтому мы можем найти ОА:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/26-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/26-mnogogranniki.webp" alt="26 mnogogranniki">
+						</picture>
+					</p>
+					<p>Понятно, что ОА – это проекция прямой ОА на плос-ть АВС. Тогда угол между ребром АА<sub>1</sub> и
+						плос-тью АВС,
+						по условию равный 45° – это ∠ОАА<sub>1</sub>.</p>
+					<p>Из прямоугольного ∆АОА<sub>1</sub> с помощью тригонометрии мы найдем длину ребра АА<sub>1</sub>:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/27-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/27-mnogogranniki.webp" alt="27 mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь покажем, что грань СС<sub>1</sub>В<sub>1</sub>В – прямоуг-к. Ясно, что ОА<sub>1</sub>⊥ВН, ведь
+						ОА<sub>1</sub> – перпендикуляр ко всей плос-ти АВС. Но также ВН⊥АН. Значит, ВН перпендикулярен плос-ти
+						АОА<sub>1</sub>, и, в частности, перпендикулярен ребру АА<sub>1</sub>. Но тогда и ВВ<sub>1</sub>⊥ВН,
+						ведь
+						ВВ<sub>1</sub>||АА<sub>1</sub>. Значит, грань СС<sub>1</sub>В<sub>1</sub>В – прямоуг-к, ведь в ней
+						есть прямой
+						угол. Для нахождения площади прямоуг-ка надо перемножить две его смежные стороны:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/28-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/28-mnogogranniki.webp" alt="28 mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Ребро при основании правильной 6-угольной призмы имеет длину 23, а боковое ребро
+							равно 50.
+							Вычислите площадь поверхности призмы (и полную, и боковую).</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/29-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/29-cilindr.webp" alt="29 mnogogranniki">
+						</picture>
+					</p>
+					<p>Сначала найдем площадь и периметр основания. Формулы для <a
+							href="https://100urokov.ru/predmety/pravilnye-mnogougolniki" target="_blank"
+							rel="noopener noreferrer">правильных
+							многоуг-ков мы уже изучали</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/30-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/30-mnogogranniki.webp" alt="30 mnogogranniki">
+						</picture>
+					</p>
+					<p>Здесь а – сторона шестиугольника, R и r – радиусы описанной и вписанной окружности, n– число сторон
+						шестиугольника. Во второй формуле мы использовали известный факт, что длина стороны правильного
+						6-угольника
+						совпадает с радиусом описанной около него окружности.</p>
+					<p>Далее вычисляем площадь боковой поверхности:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/31-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/31-mnogogranniki.webp" alt="31 mnogogranniki">
+						</picture>
+					</p>
+					<p>Добавив к этому значению удвоенную площадь поверхности основания, найдем и полную площадь призмы:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/32-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/32-mnogogranniki.webp" alt="32 mnogogranniki">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. В правильной треугольной призме АВСА<sub>1</sub>В<sub>1</sub>С<sub>1</sub>, у которой
+							все
+							ребра одинаковы и равны единице, вычислите угол между гранью АВС и сечением
+							АСВ<sub>1</sub>:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/33-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/33-treugolnaja-prizma.webp" alt="33 mnogogranniki">
+						</picture>
+					</p>
+					<p>Решение. Вспомним, что для нахождения угла между плос-тями необходимо построить в этих плос-тях
+						перпендикуляры
+						к линии их пересечения, причем эти перпендикуляры должны падать на одну и ту же точку.</p>
+					<p>Пересекаются плос-ти АВС и АСВ<sub>1</sub> по грани АС. Заметим, что и ∆АВС, и ∆АСВ<sub>1</sub> –
+						равнобедренные, причем у них общее основание АС. Действительно, АВ = ВС, так как в основании
+						правильной призмы
+						лежит равносторонний треуг-к, а АВ<sub>1</sub> = СВ<sub>1</sub>, так как это диагонали равных граней
+						АВВ<sub>1</sub>А<sub>1</sub> и ВСС<sub>1</sub>В<sub>1</sub>.</p>
+					<p>Если мы отметим середину отрезка АС (например, точкой Н) и соединим ее с В и В<sub>1</sub>, то мы
+						получим две
+						медианы НВ и НВ<sub>1</sub>, которые одновременно будут и высотой. Это значит, что именно
+						∠ВНВ<sub>1</sub> и
+						будет искомым углом между плос-тями:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/34-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/34-treugolnaja-prizma.webp" alt="34 mnogogranniki">
+						</picture>
+					</p>
+					<p>Осталось найти ∠ВНВ<sub>1</sub>. Длину ВВ<sub>1</sub> мы уже знаем, она составляет 1.</p>
+					<p>АН вдвое короче АС:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/35-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/35-mnogogranniki.webp" alt="35 mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь заметим, что ∆НВВ<sub>1</sub> – прямоугольный, поэтому для него можно использовать
+						тригонометрию:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/36-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/36-mnogogranniki.webp" alt="36 mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Задание. Найдите угол между прямыми А<sub>1</sub></strong><strong>D и
+							С</strong><strong>D<sub>1</sub> в
+							правильной призме, показанной на рисунке:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/37-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/37-cilindr.webp" alt="37 mnogogranniki">
+						</picture>
+					</p>
+					<p><strong>Все ребра этой призмы равны единице.</strong></p>
+					<p>Решение. Сначала внимательно рассмотрим верхнее основание призмы. Так как оно представляет собой
+						правильный
+						многоуг-к, то вокруг него можно описать окружность. Обозначим центр этой окружности как О и проведем
+						радиусы к
+						вершинам:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/38-cilindr-sverhu.webp" type="image/webp"><img
+								src="img/mnogogranniki/38-cilindr-sverhu.webp" alt="38 mnogogranniki">
+						</picture>
+					</p>
+					<p>Так как в правильном шестиуг-ке радиус описанной окружности равен стороне шестиугольника, то
+						получается, что
+						∆А<sub>1</sub>ОВ<sub>1</sub>, ∆В<sub>1</sub>ОС<sub>1</sub> и ∆С<sub>1</sub>ОD<sub>1</sub> –
+						равносторонние.
+						Тогда ∠А<sub>1</sub>ОВ<sub>1</sub>, ∠B<sub>1</sub>OC<sub>1</sub> и ∠С<sub>1</sub>ОD<sub>1</sub>
+						составляют по
+						60°. Тогда ∠А<sub>1</sub>ОD<sub>1</sub> равен 180°, то есть точки А<sub>1</sub>, О и D<sub>1</sub>
+						находятся на
+						одной прямой А<sub>1</sub>D<sub>1</sub>. Также заметим, что эта прямая параллельна ребру
+						В<sub>1</sub>С<sub>1</sub>, ведь ∠D<sub>1</sub>OC<sub>1</sub>и ∠ОС<sub>1</sub>B<sub>1 </sub>являются
+						накрест
+						лежащими для этих прямых (при секущей ОС<sub>1</sub>) и при том они одинаковы. Так как отрезки
+						А<sub>1</sub>О и
+						D<sub>1</sub>O как стороны равносторонних треуг-ков равны 1, то</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/39-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/39-mnogogranniki.webp" alt="39 mnogogranniki">
+						</picture>
+					</p>
+					<p>Теперь вернемся к призме:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/40-cilindr.webp" type="image/webp"><img
+								src="img/mnogogranniki/40-cilindr.webp" alt="40 mnogogranniki">
+						</picture>
+					</p>
+					<p>Так как А<sub>1</sub>D<sub>1</sub>||В<sub>1</sub>С<sub>1</sub> и В<sub>1</sub>С<sub>1</sub>||ВС, то и
+						А<sub>1</sub>D<sub>1</sub>||ВС. Это значит, что через А<sub>1</sub>D<sub>1 </sub>и ВС можно провести
+						плос-ть, в
+						которой будут лежать и интересующие нас прямые А<sub>1</sub>В и СD<sub>1</sub>. Для нахождения угла
+						между ними
+						надо рассмотреть четырехуг-к А<sub>1</sub>D<sub>1</sub>CB. Раз А<sub>1</sub>D<sub>1</sub>||ВС, то этот
+						четырехуг-к является трапецией.</p>
+					<p>Далее найдем длину А<sub>1</sub>В. Для этого используем ∆АВА<sub>1</sub>:</p>
+					<p>
+						<picture>
+							<source srcset="img/mnogogranniki/41-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/41-mnogogranniki.webp" alt="41 mnogogranniki">
+						</picture>
+					</p>
+					<p>Аналогично из ∆СDD<sub>1 </sub>можно определить, что СD<sub>1&nbsp;</sub>имеет такую же длину. Это
+						значит, что
+						А<sub>1</sub>D<sub>1</sub>CB – равнобедренная трапеция.</p>
+					<p>Теперь рассмотрим отдельно эту трапецию, чтобы найти искомый угол:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/42-treugolnaja-prizma.webp" type="image/webp"><img
+								src="img/mnogogranniki/42-treugolnaja-prizma.webp" alt="42 mnogogranniki">
+						</picture>
+					</p>
+					<p>Опустим из вершин трапеции В и С перпендикуляры на А<sub>1</sub>D<sub>1</sub>. В итоге получим
+						прямоуг-к ВСРН,
+						где</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/43-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/43-mnogogranniki.webp" alt="43 mnogogranniki">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/mnogogranniki/44-mnogogranniki.webp" type="image/webp"><img
+								src="img/mnogogranniki/44-mnogogranniki.webp" alt="44 mnogogranniki">
+						</picture>
+					</p>
+					<p>Сегодня мы более детально изучили понятие многогранника и познакомились с новой геометрической фигурой
+						–
+						призмой. Призма довольно часто встречается в задаче С2 на ЕГЭ. Также мы узнали о теореме Эйлера, из
+						которой
+						вытекают некоторые важные факты. Один из них заключается в том, что не бывает выпуклых многогранников,
+						у
+						которых ни одна грань не является треуг-ком, четырехуг-ком или пятиуг-ком.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

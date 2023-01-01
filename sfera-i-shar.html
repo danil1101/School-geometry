@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Сфера и шар</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="sfera-i-shar">
+			<div class="sfera-i-shar__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="sfera-i-shar__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-7.2.webp" type="image/webp"><img
+									src="img/themes-11/content-7.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Сфера и шар</div>
+							<div class="info__subtitle">
+								Шар – одна из важнейших фигур не только стереометрии, но и всего естествознания, ведь Солнце,
+								Земля,
+								Луна и многие
+								другие космические объекты имеют форму шара.</div>
+						</div>
+					</div>
+					<div class="sfera-i-shar__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="sfera-i-shar.html#1">Понятие сферы и шара</a></p>
+						<p><a href="sfera-i-shar.html#2">Уравнение сферы</a></p>
+						<p><a href="sfera-i-shar.html#3">Пересечение сферы плоскостью</a></p>
+						<p><a href="sfera-i-shar.html#4">Касательная плоскость к сфере</a></p>
+						<p><a href="sfera-i-shar.html#5">Пересечение двух сфер</a></p>
+						<p><a href="sfera-i-shar.html#6">Площадь сферы</a></p>
+						<p><a href="sfera-i-shar.html#7">Вписанные и описанные сферы</a></p>
+					</div>
+
+
+					<h2 id="1">Понятие сферы и шара</h2>
+					<p>Люди постоянно сталкиваются с предметами, имеющими форму шара. В большинстве спортивных игр
+						(баскетболе,
+						большом и настольном теннисе, футболе) используются мячи, которые по форме как раз являются шарами.
+						Такую же
+						форму имеют многие фрукты – яблоки, апельсины, мандарины. Более того, известно, что Земля, другие
+						планеты и
+						звезды, большинство крупных спутников также представляют собой шары.</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/1-sfera-v-realnosti.webp" type="image/webp"><img
+								src="img/sfera-i-shar/1-sfera-v-realnosti.webp" alt="1 sfera i shar">
+						</picture>
+					</p>
+					<p>Важно отличать шар от сферы. Сферой называют только поверхность шара. Сам же шар является объемной
+						фигурой, к
+						нему относят всю часть пространства, ограниченную сферой.</p>
+					<p>Дадим строгие определения сферы и шара:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/2-chto-takoe-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/2-chto-takoe-sfera.webp" alt="2 sfera i shar">
+						</picture>
+					</p>
+					<p>Отрезок, соединяющий точку на сфере с ее центром, именуется радиусом сферы. Он же называется и
+						радиусом шара,
+						заключенного внутри этой сферы.</p>
+					<p>Проходящий через центр сферы отрезок, чьи концы принадлежат сфере, именуется диаметром сферы. Сама
+						сфера
+						считается частью шара, также как и окружность считается частью круга.Показывают шар или сферу на
+						рисунке так:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/3-centr-sfery.webp" type="image/webp"><img
+								src="img/sfera-i-shar/3-centr-sfery.webp" alt="3 sfera i shar">
+						</picture>
+					</p>
+					<p>Из определения сферы явно вытекает тот факт, что все ее радиусы одинаковы. Это в свою очередь
+						означает, что
+						центр сферы – это середина диаметра, и диаметр вдвое длиннее радиуса.</p>
+					<p>Заметим, что сфера является телом вращения. Она получается при повороте полуокружности вокруг ее
+						диаметра:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/4-sfera-poluchenija-vrascheniem.webp" type="image/webp"><img
+								src="img/sfera-i-shar/4-sfera-poluchenija-vrascheniem.webp" alt="4 sfera i shar">
+						</picture>
+					</p>
+					<h2 id="2">Уравнение сферы</h2>
+					<p>В планиметрии мы уже изучали <a href="https://100urokov.ru/predmety/urok-3-linii-na-ploskosti"
+							target="_blank" rel="noopener noreferrer">уравнения линии</a>. Так назывались ур-ния с двумя
+						переменными, каждое решение
+						которых соответствовало точке на координатной плос-ти, принадлежавшей заданной линии. Если же точка не
+						принадлежала линии, то ее координаты решением соответствующего ур-ния не являлись. В частности, нам
+						удалось
+						получить <a href="https://100urokov.ru/predmety/urok-3-linii-na-ploskosti" target="_blank"
+							rel="noopener noreferrer">уравнения прямой и окружности</a>.</p>
+					<p>Аналогично в стереометрии вводится понятие уравнения поверхности. Так как в пространстве используются
+						уже три
+						координаты (х, у и z), то ур-ния поверхности содержат три переменных. Координаты всякой точки,
+						принадлежащей
+						поверхности, будут являться решениями ур-ния этой поверхности. И наоборот, координаты точки, не
+						принадлежащей
+						поверхности, будут обращать ур-ние поверхности в неверное равенство.</p>
+					<p>Выведем ур-ние сферы. Пусть ее центр располагается в точке С с координатами (х<sub>0</sub>,
+						у<sub>0</sub>,
+						z<sub>0</sub>), а радиус обозначен как R. Возьмем произвольную точку А на сфере. По определению сферы
+						расстояние между А и С должно составлять R:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/5-sfera-v-prostranstve.webp" type="image/webp"><img
+								src="img/sfera-i-shar/5-sfera-v-prostranstve.webp" alt="5 sfera i shar">
+						</picture>
+					</p>
+					<p>Мы уже знаем <a href="https://100urokov.ru/predmety/koordinaty-v-stereometrii" target="_blank"
+							rel="noopener noreferrer">формулу для расчета расстояния</a> между А и С:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/6-uravnenie-sfery-imeet-vid.webp" type="image/webp"><img
+								src="img/sfera-i-shar/6-uravnenie-sfery-imeet-vid.webp" alt="6 sfera i shar">
+						</picture>
+					</p>
+					<p>Точки, координаты которых удовлетворяют этому неравенству, находятся от центра сферы на расстоянии
+						меньше ее
+						радиуса. Это значит, что они находятся внутри сферы, то есть принадлежат шару, чьей поверхностью
+						является
+						рассматриваемая сфера. Если же координаты точки удовлетворяют неравенству</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/7-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/7-sfera-i-shar.webp" alt="7 sfera i shar">
+						</picture>
+					</p>
+					<p>то можно утверждать, что точка находится вне пределов сферы, то есть она не принадлежит ни сфере, ни
+						шару.</p>
+					<p><strong>Задание. Напишите уравнение сферы, центр которой располагается в точке (2; – 4; 7) и чей
+							радиус равен
+							3.</strong></p>
+					<p>Решение. Здесь мы просто подставляем координаты центра сферы и ее радиус в ур-ние сферы:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/8-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/8-sfera-i-shar.webp" alt="8 sfera i shar">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Есть сфера с радиусом 9, чей центр располагается в точке О(2; 3; 4). Определите,
+							какие из
+							следующих точек будут принадлежать этой сфере: А(1; 7; – 4), В(0; 6; 10), С(– 2; – 1; 11),
+						</strong><strong>D(5; 6; 8).</strong></p>
+					<p>Решение. Сначала составляем уравнение сферы, описанной в условии:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/9-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/9-sfera-i-shar.webp" alt="9 sfera i shar">
+						</picture>
+					</p>
+					<p>Равенство неверное, значит, В не располагается на сфере (более того, раз 49 &lt; 81, то можно
+						утверждать, что
+						точка располагается внутри сферы). Далее проверяем точку С(– 2; – 1; 11):</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/10-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/10-sfera-i-shar.webp" alt="10 sfera i shar">
+						</picture>
+					</p>
+					<p><strong>Задание. Докажите, что ур-ние</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/11-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/11-sfera-i-shar.webp" alt="11 sfera i shar">
+						</picture>
+					</p>
+					<p><strong>является ур-нием сферы, после чего определите радиус этой сферы.</strong></p>
+					<p>Решение. Здесь необходимо выполнить некоторые преобразования ур-ния, чтобы оно стало похожим на ур-ние
+						сферы.
+						Для этого используем <a href="https://100urokov.ru/predmety/urok-8-umnozhenie-sokrashhennoe"
+							target="_blank" rel="noopener noreferrer">формулы квадратов суммы и разности</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/12-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/12-sfera-i-shar.webp" alt="12 sfera i shar">
+						</picture>
+					</p>
+					<h2 id="3">Пересечение сферы плоскостью</h2>
+					<p>Рассмотрим ситуацию, когда секущая плоскость α пересекает сферу. Нас в первую очередь интересует форма
+						получающегося сечения. Опустим из точки О, центра сферы, перпендикуляр ОН на секущую плос-ть (пока мы
+						рассматриваем случай, когда секущая плос-ть проходит не через О):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/13-sfera-na-ploskosti.webp" type="image/webp"><img
+								src="img/sfera-i-shar/13-sfera-na-ploskosti.webp" alt="13 sfera i shar">
+						</picture>
+					</p>
+					<p>Буквами А и В обозначим любые две точки сечения, которые принадлежат одновременно и сфере, и плос-ти
+						α. Теперь
+						сравним ∆ОНА и ∆ОНВ. Они прямоугольные, ведь ОН – перпендикуляр к α. При этом у них есть общий катет
+						ОН и
+						одинаковые гипотенузы ОА и ОВ (это радиусы одной сферы).Тогда эти ∆ОНА и ∆ОНВ одинаковы, и поэтому</p>
+					<p>AH = BH</p>
+					<p>Мы выбрали точки А и В произвольно, и они оказались равноудаленными от Н. Значит, А и В находятся на
+						одной
+						окруж-ти с центром Н. Легко показать и обратное – любая точка этой окруж-ти будет лежать и на сфере
+						(попробуйте
+						сделать этот сами). Значит, сечение имеет форму окруж-ти, причем ее центр – это основание
+						перпендикуляра,
+						проведенного из О на α.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/14-sechenie-sfery-ploskostju-imeet-formu-okruzhnosti.webp"
+								type="image/webp"><img
+								src="img/sfera-i-shar/14-sechenie-sfery-ploskostju-imeet-formu-okruzhnosti.webp"
+								alt="14 sfera i shar">
+						</picture>
+					</p>
+					<p>Обозначим длину перпендикуляра ОН буквой h, радиус сферы буквой R и радиус сечения буквой r. Тогда,
+						используя
+						теорему Пифагора, мы можем составить формулу для расчета радиуса r сечения:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/15-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/15-sfera-i-shar.webp" alt="15 sfera i shar">
+						</picture>
+					</p>
+					<p>Видно, что чем длиннее перпендикуляр h(он представляет собой расстояние от О до α), тем меньше радиус
+						сечения.
+						Тогда ясно, что наибольший радиус будет у того сечения, которое проходит через центр О. Действительно,
+						если
+						сечение проходит через О, то все его точки по определению сферы будут удалены на расстояние R от О. Но
+						уже по
+						другому определению такое множество точек – окруж-ть с центром в О и радиусом R. Плос-ть, проходящая
+						через
+						центр сферы, именуется диаметральной плоскостью, а само сечение именуют большой окружностью сферы.
+						Радиус
+						большой окруж-ти совпадает с радиусом самой сферы.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/16-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/16-sfera.webp" alt="16 sfera i shar">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Сфера с радиусом 41 пересечена плос-тью, которая находится на расстоянии 9 от центра
+							этой
+							сферы. Найдите площадь сечения.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/17-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/17-sfera.webp" alt="17 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Опустим из центра сферы О перпендикуляр ОН на секущую плос-ть, тогда по условию ОН = 9. Пусть
+						А –
+						точка на сечении, тогда ОА = 41. ∆ОНА – прямоугольный, поэтому мы можем найти радиус АН:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/18-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/18-sfera-i-shar.webp" alt="18 sfera i shar">
+						</picture>
+					</p>
+					<p>Теперь площадь сечения можно рассчитать по <a href="https://100urokov.ru/predmety/dlina-okruzhnosti"
+							target="_blank" rel="noopener noreferrer">известной формуле</a> площади круга:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/19-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/19-sfera-i-shar.webp" alt="19 sfera i shar">
+						</picture>
+					</p>
+					<p>Ответ: 1600π.</p>
+					<p><strong>Задание. Докажите, что если через три точки сферы провести окруж-ть, то все точки этой
+							окруж-ти будут
+							также принадлежать сфере.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/20-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/20-sfera.webp" alt="20 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Пусть на сфере есть точки А, В, С. Проведем через них окруж-ть L. Надо доказать, что
+						произвольная
+						точка D, принадлежащая этой окруж-ти, также будет находиться на сфере.</p>
+					<p>Через точки А, В и С можно провести единственную плос-ть АВС. Она будет секущей для сферы, ведь она
+						имеет с ней
+						как минимум три общих точки – А, В и С. Формой этого сечения будет некоторая окруж-ть L<sub>1</sub>.
+						L<sub>1&nbsp;</sub>обязательно будет проходить через А, В и С. Но через любые три точки можно провести
+						<a href="https://100urokov.ru/predmety/urok-11-okruzhnosti" target="_blank"
+							rel="noopener noreferrer">не
+							более
+							одной окружности</a>, поэтому L и L<sub>1&nbsp;</sub>совпадают. Значит, D, принадлежащая по условию
+						L, будет
+						также принадлежать и L<sub>1</sub>. Но L<sub>1</sub>– это сечение, все его точки, в том числе и D,
+						принадлежат
+						сфере, ч. т. д.
+					</p>
+					<p>Есть смысл запомнить доказанное утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/21-esli-tri-tochki-okruzhnosti-lezhat-na-sfere.webp"
+								type="image/webp"><img
+								src="img/sfera-i-shar/21-esli-tri-tochki-okruzhnosti-lezhat-na-sfere.webp"
+								alt="21 sfera i shar">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. На сфере радиусом 13 отмечены точки А, В и С так, что АВ = 6, ВС = 8 и АС = 10.
+							Каково
+							расстояние между центром сферы и плос-тью АВС?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/22-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/22-sfera.webp" alt="22 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Сначала заметим, что ∆АВС является прямоугольным, ведь его стороны удовлетворяют теореме
+						Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/23-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/23-sfera-i-shar.webp" alt="23 sfera i shar">
+						</picture>
+					</p>
+					<p>Напомним одного из свойств прямоугольного треугольника – центр окруж-ти, описанной около него,
+						совпадает с
+						серединой его гипотенузы. То есть если через точки А, В и С провести окруж-ть, то ее центр Н будет
+						серединой
+						АВ, и поэтому</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/24-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/24-sfera-i-shar.webp" alt="24 sfera i shar">
+						</picture>
+					</p>
+					<p>Теперь заметим, что эта описанная окруж-ть должна быть сечением сферы. Это значит, что ОН –
+						перпендикуляр к
+						плос-ти АВС, ведь центр сечения должен лежать на перпендикуляре к плос-ти, проведенном из О. Тогда
+						∆ОНС –
+						прямоугольный, и ОН – искомое нами расстояние. ОС – радиус сферы. Рассчитаем по теореме Пифагора ОН:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/25-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/25-sfera-i-shar.webp" alt="25 sfera i shar">
+						</picture>
+					</p>
+					<h2 id="4">Касательная плоскость к сфере</h2>
+					<p>Плос-ть, имеющая со сферой строго одну общую точку, именуется касательной плоскостью к сфере.</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/26-ploskost-kasatelnaja-k-sfere.webp" type="image/webp"><img
+								src="img/sfera-i-shar/26-ploskost-kasatelnaja-k-sfere.webp" alt="26 sfera i shar">
+						</picture>
+					</p>
+					<p>Действительно, если плос-ть касается окруж-ти, то точка касания А должна располагаться на расстоянии R
+						от
+						центра сферы О, где R– радиус сферы. Все остальные точки касательной плос-ти находятся вне пределов
+						сферы, то
+						есть должны находиться от О на расстоянии, превышающем R. Это значит, что отрезок ОА должен быть
+						кратчайшим
+						отрезком, соединяющим О и касательную плос-ть. Но мы знаем, что кратчайший отрезок между плос-тью и
+						точкой –
+						это как раз <a href="https://100urokov.ru/predmety/rasstoyaniya-v-stereometrii" target="_blank"
+							rel="noopener noreferrer">перпендикуляр</a>, опущенный из точки на плос-ть.</p>
+					<p>Справедливо и обратное утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/27-esli-radius-sfery-perpendikuljaren.webp" type="image/webp"><img
+								src="img/sfera-i-shar/27-esli-radius-sfery-perpendikuljaren.webp" alt="27 sfera i shar">
+						</picture>
+					</p>
+					<p>Доказательство. Если радиус ОА – перпендикуляр к плос-ти α, то он является кратчайшим расстоянием
+						между
+						плос-тью и центром О. Тогда все остальные точки плос-ти располагаются на большем расстоянии от О, чем
+						точка А.
+						Это значит, что они не располагаются на сфере. Значит, у сферы и плос-ти α одна общая точка А, а
+						потому α по
+						определению – касательная плос-ть.</p>
+					<p>По аналогии с касательной плос-тью существует понятие касательной прямой к сфере.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/28-kasatelnaja-prjamaja-k-sfere.webp" type="image/webp"><img
+								src="img/sfera-i-shar/28-kasatelnaja-prjamaja-k-sfere.webp" alt="28 sfera i shar">
+						</picture>
+					</p>
+					<p>Касательная к сфере обладает почти теми же свойствами, что и <a
+							href="https://100urokov.ru/predmety/urok-9-okruzhnost" target="_blank"
+							rel="noopener noreferrer">касательная
+							к окруж-ти</a>.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/29-kasatelnaja-prjamaja-k-sfere-perpendikuljarnaja.webp"
+								type="image/webp"><img
+								src="img/sfera-i-shar/29-kasatelnaja-prjamaja-k-sfere-perpendikuljarnaja.webp"
+								alt="29 sfera i shar">
+						</picture>
+					</p>
+					<p>Доказательство. Пусть m– касательная прямая к сфере с центром О. обозначим точку касания как А. Далее
+						через
+						прямую m и центр О проведем плос-ть α. Нам надо показать, что ОА⊥m:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/30-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/30-sfera.webp" alt="30 sfera i shar">
+						</picture>
+					</p>
+					<p>Плос-ть α будет диаметральной плос-тью. Сечение будет иметь форму окруж-ти с центром О и радиусом ОА.
+						Прямая m
+						будет касательной к этой окруж-ти, ведь она имеет с ней общую точку А, а второй общей точки m и
+						окруж-ть иметь
+						не могут, ведь такая бы точка была бы также общей для m и сферы, а m по определению имеет лишь одну
+						общую точку
+						со сферой. Напомним, что касательная к <a href="https://100urokov.ru/predmety/urok-9-okruzhnost"
+							target="_blank" rel="noopener noreferrer">окруж-ти перпендикулярна радиусу</a>, то есть m⊥ОА, ч. т.
+						д.</p>
+					<p>Будет верным и обратное утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/31-esli-radius-sfery-perpendikuljaren.webp" type="image/webp"><img
+								src="img/sfera-i-shar/31-esli-radius-sfery-perpendikuljaren.webp" alt="31 sfera i shar">
+						</picture>
+					</p>
+					<p>Для доказательства используем ту же картинку. Известно, что m⊥ОА, надо показать, что m– касательная к
+						сфере.
+						Проведем через пересекающиеся прямые m и ОА плос-ть α. Она снова окажется диаметральной плоскостью, и
+						снова
+						сечением будут окруж-ть с радиусом ОА. По <a href="https://100urokov.ru/predmety/urok-9-okruzhnost"
+							target="_blank" rel="noopener noreferrer">признаку касательной</a>, который мы изучали в
+						планиметрии, m–
+						касательная к этой окруж-ти, ведь m⊥ОА. То есть в плос-ти α есть лишь одна общая точка m и сферы. В
+						других
+						плос-тях у них не может быть общих точек, так как m полностью принадлежит α. В итоге у m и сферы
+						только одна
+						общая точка, а потому m– касательная к сфере, ч. т. д.</p>
+					<p>Рассмотрим ещё одно утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/32-otrezki-kasatelnyh-k-sfere.webp" type="image/webp"><img
+								src="img/sfera-i-shar/32-otrezki-kasatelnyh-k-sfere.webp" alt="32 sfera i shar">
+						</picture>
+					</p>
+					<p>Сначала разберемся с понятием отрезков касательных. Пусть из точки А, лежащей вне сферы, к ней
+						проведены две
+						касательные, а точки касания обозначены буквами В и С. Тогда АВ и АС как раз и будут отрезками
+						касательных:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/33-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/33-sfera.webp" alt="33 sfera i shar">
+						</picture>
+					</p>
+					<p>Докажем, что эти отрезки одинаковы. Для этого к точкам касания проведем радиусы ОВ и ОС. Теперь
+						сравним ∆АВО и
+						∆АСО. Они прямоугольные, ведь ОВ⊥АВ по свойству касательной, и ОС⊥АС. Гипотенуза АО у этих
+						треугольников общая,
+						а катеты ОВ и ОС – это одинаковые радиусы. Получается, что ∆АВО и ∆АСО равны, а потому отрезки АВ и АС
+						одинаковы.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Дан шар радиусом 10 см, к которому проведена касательная
+							плос-ть&nbsp;</strong><strong>α.
+							Через точку касания проведена секущая плос-ть&nbsp;</strong><strong>β, образующая с
+						</strong><strong>α угол
+							в 30°. Вычислите площадь сечения шара плос-тью&nbsp;</strong><strong>β.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/34-sfera-i-ploskost.webp" type="image/webp"><img
+								src="img/sfera-i-shar/34-sfera-i-ploskost.webp" alt="34 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Обозначим точку касания как А. Опустим из центра сферы о перпендикуляр ОН на плос-ть β. Тогда
+						отрезок
+						АН будет радиусом сечения. Так как угол между плос-тями α и β составляет 30° (на рисунке он показан
+						как ∠НАС),
+						то</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/35-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/35-sfera-i-shar.webp" alt="35 sfera i shar">
+						</picture>
+					</p>
+					<p>Ответ: 25π см<sup>2</sup>.</p>
+					<p><strong>Задание. Некоторое тело представляет собой шар, внутри которого есть полость, также имеющая
+							форму шара,
+							причем центры этих шаров совпадают. Докажите, что площадь сечения этого тела, проходящего через
+							центр шаров,
+							совпадает с площадью сечения, являющегося касательной к внутреннему шару.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/36-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/36-sfera.webp" alt="36 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Обозначим радиус большей сферы как R, а радиус меньшей (внутренней сферы) как r. Площадь
+						центрального
+						сечения в виде кольца (показано синим цветом) представляет собой разницу между площадью большого круга
+						с
+						радиусом R и малого с радиусом r:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/37-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/37-sfera-i-shar.webp" alt="37 sfera i shar">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Сфера радиусом 5 см касается каждой стороны треугольника со сторонами 13, 14 и 15 см.
+							Каково
+							расстояние между центром этой сферы и плос-тью треугольника?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/38-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/38-ploskost-cherez-sferu.webp" alt="38 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Обозначим вершины треугольника точками А, В и С. Пусть</p>
+					<p>AB = 13</p>
+					<p>AC = 14</p>
+					<p>BC = 15</p>
+					<p>Заметим, что плос-ть АВС – секущая, а само сечение имеет форму окруж-ти. Эта окруж-ть будет касаться
+						сторон
+						∆АВС, то есть она является вписанной окруж-тью. Как вычислить ее радиус НK?</p>
+					<p>Напомним одну из <a href="https://100urokov.ru/predmety/urok-11-okruzhnosti" target="_blank"
+							rel="noopener noreferrer">формул для расчета площади треугольника</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/39-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/39-sfera-i-shar.webp" alt="39 sfera i shar">
+						</picture>
+					</p>
+					<p>Площадь ∆АВС можно найти по <a href="https://100urokov.ru/predmety/urok-5-teorema-pifagora"
+							target="_blank" rel="noopener noreferrer">формуле Герона</a>. Предварительно найдем полупериметр
+						∆АВС:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/40-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/40-sfera-i-shar.webp" alt="40 sfera i shar">
+						</picture>
+					</p>
+					<h2 id="5">Пересечение двух сфер</h2>
+					<p>Пусть есть две пересекающиеся сферы с центрами в точках О<sub>1</sub> и О<sub>2</sub> с радиусами
+						R<sub>1&nbsp;</sub>и R<sub>2&nbsp;</sub>соответственно. Какую форму будет иметь линия L, по которой
+						они
+						пересекаются?</p>
+					<p>Эта линия является множеством точек, которые принадлежат как первой, так и второй сфере. Обозначим две
+						произвольные точки этой линии буквами А и В:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/41-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/41-ploskost-cherez-sferu.webp" alt="41 sfera i shar">
+						</picture>
+					</p>
+					<p>Проведем радиусы О<sub>1</sub>А, О<sub>1</sub>В, О<sub>2</sub>А и О<sub>2</sub>В. Теперь сравним
+						∆АО<sub>1</sub>О<sub>2</sub> и ∆ВО<sub>1</sub>О<sub>2</sub>. Сторона О<sub>1</sub>О<sub>2</sub> у них
+						общая, а
+						другие стороны попарно равны как радиусы сфер:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/42-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/42-sfera-i-shar.webp" alt="42 sfera i shar">
+						</picture>
+					</p>
+					<p>Получается, что ∆АО<sub>1</sub>О<sub>2</sub> и ∆ВО<sub>1</sub>О<sub>2</sub> равны. Теперь из точек А и
+						В
+						опустим высоты на прямую О<sub>1</sub>О<sub>2</sub>. Из равенства ∆АО<sub>1</sub>О<sub>2</sub> и
+						∆ВО<sub>1</sub>О<sub>2</sub> вытекает два факта:</p>
+					<ul>
+						<li>эти высоты упадут в одну точку Н;</li>
+						<li>эти высоты будут одинаковы, то есть АН = НВ.</li>
+					</ul>
+					<p>Другими словами, А и В равноудалены от Н. Получается, что точки А и В находятся на окруж-ти, центр
+						которой –
+						точка Н. Заметим, что О<sub>1</sub>О<sub>2</sub> – перпендикуляр к плоскости окружности, ведь
+						О<sub>1</sub>О<sub>2</sub>⊥АН и О<sub>1</sub>О<sub>2</sub>⊥ВН.</p>
+					<p>Точки А и В были выбраны произвольно, поэтому можно утверждать, что любые точки линии L будут
+						находиться на
+						одной окруж-ти. Докажем и обратное утверждение – любая точка, лежащая на этой окруж-ти, будет
+						принадлежать
+						линии L. Возьмем на окруж-ти какую-нибудь точку С и построим радиус НС:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/43-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/43-ploskost-cherez-sferu.webp" alt="43 sfera i shar">
+						</picture>
+					</p>
+					<p>Теперь сравним ∆О<sub>1</sub>НС и ∆О<sub>1</sub>НА. Они прямоугольные, ведь О<sub>1</sub>Н –
+						перпендикуляр к
+						плос-ти окружности. Катет О<sub>1</sub>Н у них общий, а катеты АН и НС одинаковы как радиусы окруж-ти.
+						Значит,
+						∆О<sub>1</sub>НС и ∆О<sub>1</sub>НА равны, и потому</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/44-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/44-sfera-i-shar.webp" alt="44 sfera i shar">
+						</picture>
+					</p>
+					<p>Это равенство означает, что С принадлежит сфере с центром в О<sub>1</sub>. Аналогично рассмотрев
+						∆О<sub>2</sub>НС и ∆О<sub>2</sub>НА, можно показать, что С также принадлежит и второй сфере. Тогда С
+						принадлежит пересечению этих сфер.</p>
+					<p>Итак, всякая точка линии L лежит на окруж-ти с центром Н, и наоборот, каждая точка этой окруж-ти лежит
+						на линии
+						L. Это означает, что L как раз и является этой окружностью.</p>
+					<p>Отметим ещё один факт: по <a href="https://100urokov.ru/predmety/urok-5-treugolnik-ugly-i-storony"
+							target="_blank" rel="noopener noreferrer">неравенству треугольника</a> отрезок
+						О<sub>1</sub>О<sub>2&nbsp;</sub>должен быть меньше суммы отрезков О<sub>1</sub>А и О<sub>2</sub>А, то
+						есть
+						суммы радиусов сфер.</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/45-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/45-ploskost-cherez-sferu.webp" alt="45 sfera i shar">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Сферы имеют радиусы 25 см и 29 см, а расстояние между их центрами составляет 36 см.
+							Вычислите
+							радиус окруж-ти, по которой они пересекаются.</strong></p>
+					<p>Решение. Пусть А – одна их точек сечения. Искомый радиус обозначим как АН. В итоге получим такую
+						картинку:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/46-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/46-ploskost-cherez-sferu.webp" alt="46 sfera i shar">
+						</picture>
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/47-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/47-sfera-i-shar.webp" alt="47 sfera i shar">
+						</picture>
+					</p>
+					<h2 id="6">Площадь сферы</h2>
+					<p>Сферическая поверхность, как и всякая другая ограниченная поверхность, имеет какую-то площадь.
+						Напомним, что
+						для вычисления площадей цилиндрической и конической поверхности мы строили их плоские развертки и
+						находили
+						площади уже этих разверток, используя формулы из планиметрии. Оказывается, что для сферы построить
+						такую
+						развертку невозможно. Мы не будем доказывать строго этот факт, но он известен из географии – любая
+						карта Земли,
+						которая как раз и должна быть разверткой сферической поверхности нашей планеты, является неточной и
+						сильно
+						искажает форму и размеры континентов. Если бы существовал способ построить точную развертку, то и
+						географические карты не имели бы таких искажений.</p>
+					<p>Однако вычислить площадь сферы всё же можно по известной формуле:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/48-ploschad-sfery-vychisljaetsja-po-formule.webp"
+								type="image/webp"><img src="img/sfera-i-shar/48-ploschad-sfery-vychisljaetsja-po-formule.webp"
+								alt="48 sfera i shar">
+						</picture>
+					</p>
+					<p>Сейчас мы не будем доказывать эту формулу. Отметим лишь, что для ее получения необходимо использовать
+						<a href="https://100urokov.ru/predmety/urok-7-integral-opredelennyj" target="_blank"
+							rel="noopener noreferrer">интегралы</a>.
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Какова площадь сферы с радиусом 5 см?</strong></p>
+					<p>Решение. Просто используем формулу:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/49-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/49-sfera-i-shar.webp" alt="49 sfera i shar">
+						</picture>
+					</p>
+					<p>Ответ: 100π см<sup>2</sup>.</p>
+					<h2 id="7">Вписанные и описанные сферы</h2>
+					<p>Если каждая точка многогранника лежит на поверхности сферы, то говорят, что многогранник вписан в
+						сферу. Тогда
+						сферу именуют описанной, а многогранник – вписанным.</p>
+					<p>Если же сфера касается каждой грани многогранника, то уже наоборот, сфера вписана в многогранник.
+						Тогда уже
+						сфера будет вписанной фигурой, а многогранник – описанной.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/50-opisannaja-sfera.webp" type="image/webp"><img
+								src="img/sfera-i-shar/50-opisannaja-sfera.webp" alt="50 sfera i shar">
+						</picture>
+					</p>
+					<p>Заметим, что не в каждый многогранник может быть вписанным или описанным. Например, в куб вписать
+						сферу можно,
+						а в <a href="https://100urokov.ru/predmety/dvugrannyj-ugol" target="_blank"
+							rel="noopener noreferrer">прямоугольный
+							параллелепипед</a>, измерения которого отличаются, уже
+						вписать сферу
+						не получится.</p>
+					<p>Надо отметить, что в сферу можно вписать не только в многогранник, но и другие геометрические фигуры,
+						в
+						частности конус и цилиндр. Здесь нужно уточнить (без доказательства), что если касание плос-ти и сферы
+						происходит только в одной точке, то цилиндрическая и коническая поверхности касаются сферы уже по
+						окруж-ти.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/51-sfery.webp" type="image/webp"><img
+								src="img/sfera-i-shar/51-sfery.webp" alt="51 sfera i shar">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание.&nbsp;</strong><a href="https://100urokov.ru/predmety/piramida"><strong>Правильная
+								пирамида</strong></a><strong> вписана в сферу. Докажите, высота этой пирамиды проходит через
+							центр
+							сферы.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/52-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/52-ploskost-cherez-sferu.webp" alt="52 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Опустим из центра сферы О перпендикуляр ОН на основание пирамиды. Далее возьмем произвольную
+						вершину Х
+						основания пирамиды, и соединим ее с Н отрезком ХН. По теореме Пифагора можно вычислить длину ХН
+						(радиус сферы
+						ОХ обозначим, буквой R):</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/53-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/53-sfera-i-shar.webp" alt="53 sfera i shar">
+						</picture>
+					</p>
+					<p>Получилось, что расстояние ХН не зависит от самой точки Х. То есть все вершины основания равноудалены
+						от точки,
+						то есть Н – центр описанной около основания окруж-ти. Это означает, что перпендикуляр ОН одновременно
+						является
+						высотой правильной пирамиды, ч. т. д.</p>
+					<p><strong>Задание. Вычислите радиус описанной сферы, в которую вписан </strong><a
+							href="https://100urokov.ru/predmety/pravilnye-mnogogranniki"><strong>правильный
+								тетраэдр</strong></a><strong> со стороной а.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/54-ploskost-cherez-sferu.webp" type="image/webp"><img
+								src="img/sfera-i-shar/54-ploskost-cherez-sferu.webp" alt="54 sfera i shar">
+						</picture>
+					</p>
+					<p>Решение. Правильный тетраэдр можно считать правильной треугольной пирамидой, поэтому (согласно
+						предыдущей
+						задаче) из центра сферы О можно опустить перпендикуляр на основание АВС, который упадет в точку Н –
+						центр
+						основания. Так как тетраэдр правильный, то ∆АВС – равносторонний, то есть Н – эта точка пересечения и
+						медиан, и
+						высот. Опустим из А высоту АК, она пройдет через Н. Так как АК – ещё и медиана, то</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/55-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/55-sfera-i-shar.webp" alt="55 sfera i shar">
+						</picture>
+					</p>
+					<p>Далее найдем длину АН. Вспомним, что АН – медиана, а точка пересечения медиан Н делит их в отношении
+						2:1. Это
+						значит, что</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/56-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/56-sfera-i-shar.webp" alt="56 sfera i shar">
+						</picture>
+					</p>
+					<p>Буквой R здесь обозначен радиус описанной сферы. Осталось применить теорему Пифагора к ∆АНD:</p>
+					<p>
+						<picture>
+							<source srcset="img/sfera-i-shar/57-sfera-i-shar.webp" type="image/webp"><img
+								src="img/sfera-i-shar/57-sfera-i-shar.webp" alt="57 sfera i shar">
+						</picture>
+					</p>
+					<p><strong>Задание. Докажите что вокруг любого тетраэдра можно описать сферу.</strong></p>
+					<p>Решение. Обозначим вершины произвольного тетраэдра буквами А, В, С и D. Далее на грани АВС отметим
+						точку К –
+						центр окруж-ти, описанной около ∆АВС. Аналогично на грани АВD отметим Н – центр окруж-ти, описанной
+						около ∆АВD:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/sfera-i-shar/58-okruzhnost-opisannaja-okolo-piramidy.webp" type="image/webp">
+							<img src="img/sfera-i-shar/58-okruzhnost-opisannaja-okolo-piramidy.webp" alt="58 sfera i shar">
+						</picture>
+					</p>
+					<p>Напомним, что <a href="https://100urokov.ru/predmety/urok-11-okruzhnosti" target="_blank"
+							rel="noopener noreferrer">центры описанных окружностей располагаются в той точке</a>, где
+						пересекаются
+						серединные перпендикуляры. Это значит, что если мы из К и Н опустим перпендикуляры на ребро АВ, то эти
+						перпендикуляры будут серединными, то есть они попадут в одну точку М, являющуюся серединой ребра АВ.
+					</p>
+					<p>Мы получили плос-ть НМК. Заметим, что НМК⊥АВ по <a
+							href="https://100urokov.ru/predmety/perpendikulyarnost" target="_blank"
+							rel="noopener noreferrer">признаку перпендикулярности прямой и плоскости</a>, так как
+						АВ⊥МН
+						и АВ⊥МК. Но тогда АВС⊥МНК уже по <a href="https://100urokov.ru/predmety/dvugrannyj-ugol"
+							target="_blank" rel="noopener noreferrer">признаку перпендикулярности плоскостей</a>, ведь АВС
+						проходит через АВ, являющийся
+						перпендикуляром к НМК. По той же причине и АВD⊥НМК.</p>
+					<p>Далее проведем через К перпендикуляр m к АВС. Он должен будет принадлежать НМК, ведь НМК⊥АВD.
+						Аналогично и
+						через Н проведем перпендикуляр n к АВD, который также будет принадлежать НМК.</p>
+					<p>В плос-ти НМК есть две прямые, mи n. Они либо параллельны, либо пересекаются. Но перпендикуляры к двум
+						плос-тям
+						могут быть параллельны только в случае, если сами эти плос-ти параллельны (или совпадают). Но АВС и
+						АВD
+						непараллельны и не совпадают, поэтому m и n непаралелльны, то есть они пересекаются в какой-то точке
+						О.</p>
+					<p>Покажем, что точка О равноудалена от всех вершин тетраэдра. Сравним ∆АОК и ∆СОК. Они прямоугольные,
+						ведь ОК –
+						перпендикуляр к АВС. ОК – общий катет, а катеты АК и СК одинаковы как радиусы описанной окруж-ти.
+						Значит, ∆АОК
+						и ∆СОК равны, ОА = ОС. Аналогично рассмотрев ∆АОК и ∆ВОК, приходим к выводу, что ОА = ОВ. Далее
+						рассматриваем
+						∆ОНD и ∆ОНА и получаем, что ОА = ОD. Эти три равенства все вместе означают, что О равноудалена от
+						точек А, В, С
+						и D. А это значит, что на сфере с центром О и радиусом ОА будут лежать все вершины тетраэдра, то есть
+						такая
+						сфера окажется описанной, ч. т. д.</p>
+					<p>Примечание. Несложно доказать, что описанная сфера будет единственной. Действительно, если бы около
+						тетраэдра
+						можно было описать две различных сферы, то они пересекались бы в точках А, В, С и D. Сферы
+						пересекаются по
+						окруж-ти, то есть А, В, С и D должны лежать на одной окруж-ти, но это невозможно, ведь они не
+						располагаются в
+						одной плос-ти. Значит, двух описанных сфер существовать не может.</p>
+					<p>Доказанное в задаче утверждение можно сформулировать несколько иначе:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/sfera-i-shar/59-cherez-ljubye-tochki-v-prostranstve-ne-lezhaschie-v-odnoj-ploskosti.webp"
+								type="image/webp"><img
+								src="img/sfera-i-shar/59-cherez-ljubye-tochki-v-prostranstve-ne-lezhaschie-v-odnoj-ploskosti.webp"
+								alt="59 sfera i shar">
+						</picture>
+					</p>
+					<p>Сегодня мы изучили сферу – одну из важнейших геометрических фигур. Именно сферическую форму имеют
+						звезды и
+						планеты. Жидкость, оказавшаяся в невесомости, также принимает форму шара. Важно запомнить, что сечение
+						сферы
+						имеет форму окруж-ти, и касательные к сфере обладают почти такими ми же свойствами, как и касательные
+						к
+						окруж-ти в планиметрии.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

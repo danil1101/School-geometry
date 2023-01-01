@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Стереометрия</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="stereometry">
+			<div class="stereometry__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="stereometry__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-1.2.webp" type="image/webp"><img
+									src="img/themes-10/content-1.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Введение в стереометрию</div>
+							<div class="info__subtitle">
+								В окружающем нас мире есть не только плоские, но и объемные тела. Их изучает специальный раздел
+								геометрии –
+								стереометрия.
+							</div>
+						</div>
+					</div>
+					<div class="stereometry__menu">
+						<p><strong>План:</strong></p>
+
+						<p><a href="stereometry.html#2">Основные понятия стереометрии</a></p>
+						<p><a href="stereometry.html#3">Аксиомы стереометрии</a></p>
+						<p><a href="stereometry.html#4">Простейшие следствия из аксиом
+								стереометрии</a></p>
+						<p><a href="stereometry.html#5">Задачи на использование аксиом</a></p>
+
+					</div>
+
+					<h2 id="2">Основные понятия стереометрии</h2>
+					<p>Стереометрия оперирует всеми теми понятиями, которые нам известны из планиметрии – точка,
+						прямая,
+						окружность, треугольник и т. д. Но помимо них добавляются и иные термины.</p>
+					<p>Важнейшее из основных понятий стереометрии – это плоскость. Иногда в литературе применяется
+						сокращение
+						плос-ть. Строгого определения плоскости в рамках геометрии не дают, это понятие считается
+						исходным,
+						как понятия точки или прямой в планиметрии. Лишь некоторые ее свойства косвенно указываются с
+						помощью
+						аксиом. В реальной жизни примерами плоскости являются поверхность стола или лист бумаги. Однако,
+						в
+						отличие от них, плоскость не имеет границы, она бесконечна (как и прямая). Плоскость не имеет
+						кривизны, поэтому, например, поверхность шара плоскостью не является. При изображении плоскости
+						на
+						чертежах ее обычно показывают в виде параллелограмма, при этом традиционно их обозначают
+						маленькими
+						буквами греческого алфавита, которые в планиметрии используются для обозначения углов (α, β, γ и
+						т. п.
+						):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/2-ploskost.webp" type="image/webp"><img
+								src="img/stereometry/2-ploskost.png" alt="2 stereometriya">
+						</picture>
+					</p>
+					<p>Если на плоскости проведена прямая, то она разобьет ее на две фигуры, которые именуются
+						полуплоскостями:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/3-poluploskosti.webp" type="image/webp"><img
+								src="img/stereometry/3-poluploskosti.png" alt="3 stereometriya">
+						</picture>
+					</p>
+					<p>Объемные фигуры – это часть пространства, которая отделена от остального пространства замкнутой
+						поверхностью, то есть границей. Простейший пример объемной фигуры – это куб:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/4-kub.webp" type="image/webp"><img src="img/stereometry/4-kub.png"
+								alt="4 stereometriya">
+						</picture>
+					</p>
+					<p>Поверхность куба – это 6 равных квадратов, каждый из них именуется гранью куба. Стороны этих
+						квадратов
+						– это уже ребра куба, а вершины квадратов одновременно являются и вершинами кубов.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/5-rebra-kuba.webp" type="image/webp"><img
+								src="img/stereometry/5-rebra-kuba.png" alt="5 stereometriya">
+						</picture>
+					</p>
+					<p>Обратите внимание на изображение куба. Здесь он показан немного сбоку, в результате чего
+						изображение
+						становится объемным. Однако при этом мы вынуждены искажать некоторые размеры и углы на чертеже.
+						Например, верхняя грань должна быть квадратом, но на плоском рисунке углы у этой грани прямыми
+						не
+						являются. При необходимости мы просто ставим специальный значок перпендикулярности между
+						отрезками,
+						который использовали и в планиметрии:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/6-ugly-kuba.webp" type="image/webp"><img
+								src="img/stereometry/6-ugly-kuba.png" alt="6 stereometriya">
+						</picture>
+					</p>
+
+					</p>
+					<p>Все грани куба – это многоугольники. Если у фигуры вся ее поверхность состоит лишь из
+						многоугольников,
+						то она именуется многогранником. Таким образом, куб является примером многогранника. Другими
+						примерами
+						многогранников могут служить параллелепипед, пирамида, усеченная пирамида:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/8-figury.webp" type="image/webp"><img
+								src="img/stereometry/8-figury.png" alt="8 stereometriya">
+						</picture>
+					</p>
+					<p>Более подробно различные виды многогранников будут рассматриваться позднее, тогда же им будут
+						даны и
+						их определения.</p>
+					<p>Если у объемной фигуры хоть одна поверхность не является многоугольником, то она не может
+						считаться
+						многогранником. Наиболее простыми и часто встречающимися такими фигурами являются шар, цилиндр,
+						конус.
+						Обратите внимание, что у них могут отсутствовать ребра и вершины, которые обязательно есть у
+						многогранника:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/9-cilindr-konus-shar.webp" type="image/webp"><img
+								src="img/stereometry/9-cilindr-konus-shar.png" alt="9 stereometriya">
+						</picture>
+					</p>
+					<p>Следует различать саму объемную фигуру и ее границу. Так, шар – это объемная фигура, а
+						поверхность
+						шара – это сфера.</p>
+					<h2 id="3">Аксиомы стереометрии</h2>
+					<p>Стереометрия, как и планиметрия, построена на нескольких базовых утверждениях, которые считаются
+						абсолютно очевидными и не требуют доказательств. Их называют аксиомами. Грубо говоря, аксиомы – это
+						исходные, первичные теоремы,
+						принимаемые без доказательств.</p>
+
+					<p>Сначала сформулируем две аксиомы о трех точках:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/10-dlja-ljubyh-treh-tochek.webp" type="image/webp"><img
+								src="img/stereometry/10-dlja-ljubyh-treh-tochek.png" alt="10 stereometriya">
+						</picture>
+					</p>
+					<p>Здесь приведены два различных утверждения, поэтому их принято разделять на две отличных аксиомы.
+						Для
+						простоты запоминания их можно объединить в одно утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/11-dlja-ljubyh-treh-tochek-ne-lezhaschih-na-prjamoj.webp"
+								type="image/webp"><img
+								src="img/stereometry/11-dlja-ljubyh-treh-tochek-ne-lezhaschih-na-prjamoj.png"
+								alt="11 stereometriya">
+						</picture>
+					</p>
+					<p>Другими словами, любые три точки находятся в одной плоскости. По этой причине для обозначения
+						плос-тей
+						иногда просто указывают три ее точки (важно, что они не должны принадлежать одной прямой).</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/12-ploskost.webp" type="image/webp"><img
+								src="img/stereometry/12-ploskost.png" alt="12 stereometriya">
+						</picture>
+					</p>
+					<p>Иногда используются утверждения, что три точки однозначно задают плос-ть или однозначно ее
+						определяют.
+					</p>
+					<p>Случай, когда три точки находятся на одной прямой, рассматривается отдельно и чуть ниже.</p>
+					<p>Далее сформулируем аксиому о четырех точках:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/13-suschestvujut-po-krajnej-mere-4-tochki.webp" type="image/webp">
+							<img src="img/stereometry/13-suschestvujut-po-krajnej-mere-4-tochki.png" alt="13 stereometriya">
+						</picture>
+					</p>
+
+					<p>Следующая аксиома отражает связь плос-ти и прямой:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/14-esli-dve-tochki-prjamoj-prinadlezhat-ploskosti.webp"
+								type="image/webp"><img
+								src="img/stereometry/14-esli-dve-tochki-prjamoj-prinadlezhat-ploskosti.png"
+								alt="14 stereometriya">
+						</picture>
+					</p>
+
+					<p>Напомним, что в математике есть специальный символ «∈», который показывает, что один объект
+						является
+						частью другого, то есть, принадлежит ему. Так, если прямая АВ лежит в плос-ти α, то этот факт
+						можно
+						показать записью АВ∈α.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/15-parallelogramm.webp" type="image/webp"><img
+								src="img/stereometry/15-parallelogramm.png" alt="15 stereometriya">
+						</picture>
+					</p>
+					<p>Возможен случай, когда прямая имеет с плос-тью единственную общую точку. В таких случаях принято
+						говорить, что прямая и плос-ть пересекаются:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/16-parallelogramm.webp" type="image/webp"><img
+								src="img/stereometry/16-parallelogramm.png" alt="16 stereometriya">
+						</picture>
+					</p>
+					<p>Последняя, пятая аксиома говорит о пересечении двух плос-тей.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/17-esli-dve-ploskosti-imejut-hotja-by-odnu-obschuju-tochku.webp"
+								type="image/webp"><img
+								src="img/stereometry/17-esli-dve-ploskosti-imejut-hotja-by-odnu-obschuju-tochku.png"
+								alt="17 stereometriya">
+						</picture>
+					</p>
+					<p>Действительно, сложно представить себе ситуацию, когда две плос-ти коснулись друг друга только в
+						одной
+						точке. На основе сформулированных аксиом легко доказать одно из простейших и вместе с тем
+						важнейших
+						утверждений стереометрии.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/18-esli-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/stereometry/18-esli-dve-ploskosti-peresekajutsja.png" alt="18 stereometriya">
+						</picture>
+					</p>
+					<p>Действительно, пусть у двух плос-тей, α и β, есть общая точка А. Тогда, согласно аксиоме 5, у
+						них
+						должна быть и другая общая точка, которую мы обозначим как В:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/19-ploskosti.webp" type="image/webp"><img
+								src="img/stereometry/19-ploskosti.png" alt="19 stereometriya">
+						</picture>
+					</p>
+					<p>Рассмотрим прямую АВ. По аксиоме 4 она полностью принадлежит плос-ти α, ведь α принадлежат две
+						ее
+						точки. По той же причине можно утверждать, что АВ также принадлежит и β. Таким образом, АВ –
+						общая
+						прямая для α и β.</p>
+					<p>Но нам надо также показать, что никакая другая точка в пространстве не является общей для α и β.
+						Действительно, пусть существует ещё и некоторая точка С, которая НЕ лежит на АВ, но является
+						общей для
+						α и β. Это означало бы, что через А, В и С проведены две различные плос-ти (α и β). Это
+						противоречит
+						аксиоме 2, поэтому такая точка С не существует, ч. т. д.</p>
+					<p>Вернемся к аксиомам 1 и 2. В них говорилось о 3 точках, причем отдельно оговаривалось, что они
+						не
+						должны принадлежать одной прямой. Теперь нам ясна причина этой оговорки. Только что доказанная
+						теорема
+						показывает, что через прямую (а значит, и через любые 3 ее точки) может проходить не одна, а как
+						минимум 2 плос-ти. В дальнейшем мы покажем, что на самом деле через прямую можно провести
+						бесконечное
+						число плос-тей.</p>
+					<h2 id="4">Простейшие следствия из аксиом стереометрии</h2>
+					<p>На основе аксиом можно доказать несколько простых теорем стереометрии.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/20-cherez-prjamuju-i-tochku.webp" type="image/webp"><img
+								src="img/stereometry/20-cherez-prjamuju-i-tochku.png" alt="20 stereometriya">
+						</picture>
+					</p>
+					<p>Доказательство. Возьмем произвольную прямую m и точку C, которая НЕ принадлежит m. Далее отметим
+						на m
+						две любые точки и обозначим их как А и В:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/21-ploskost.webp" type="image/webp"><img
+								src="img/stereometry/21-ploskost.png" alt="21 stereometriya">
+						</picture>
+					</p>
+					<p>По аксиоме 1 через А, В, С можно провести некоторую плос-ть α. По аксиоме 4 прямая m будет
+						принадлежать α. Тем самым мы показали, что существует плос-ть, проходящая через m и C.
+						Единственность
+						этой плос-ти вытекает уже из аксиомы 2, ведь через А, В и С нельзя провести две различных
+						плос-ти, ч.
+						т. д.</p>
+					<p>Иногда доказанный факт формулируют иначе: прямая и точка, не находящаяся на прямой, однозначно
+						определяют проходящую через них плос-ть. То есть, указав прямую и точку, можно одновременно
+						указать на
+						ту плос-ть, которая задается ими.</p>
+					<p>&nbsp;</p>
+					<p>Переходим к следующей теореме.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/22-cherez-ljubuju-prjamuju-mozhno-provesti.webp" type="image/webp">
+							<img src="img/stereometry/22-cherez-ljubuju-prjamuju-mozhno-provesti.png" alt="22 stereometriya">
+						</picture>
+					</p>
+					<p>Отметим на произвольной прямой m точки А и В. Далее выберем ещё две точки в пространстве C и D,
+						причем
+						такие, что А, В, С и D не находятся в одной плос-ти. Тогда у нас есть плос-ти АВС и АВD, которые
+						пересекаются по прямой АВ:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/23-perpendikuljarnye-ploskosti.webp" type="image/webp"><img
+								src="img/stereometry/23-perpendikuljarnye-ploskosti.png" alt="23 stereometriya">
+						</picture>
+					</p>
+					<p>Теперь соединим С и D прямой. Прямая CD состоит из бесконечного количества точек. Через каждую
+						из них
+						можно провести единственную плос-ть, которая будет проходить через АВ. Так как точек бесконечно
+						много,
+						то и плос-тей будет бесконечно много. Осталось лишь показать, что никакие две таких плос-ти не
+						будут
+						совпадать, то есть все они различны.</p>
+					<p>Действительно, пусть две таких плос-ти совпадают, то есть на самом деле являются одной плос-тью.
+						Тогда
+						получается, что эта единая плоскость проходит через две точки прямой СD. Тогда, по аксиоме 4,
+						вся
+						прямая СD принадлежит этой плос-ти, в том числе и сами точки С и D. Но плос-ть проходит также
+						через А
+						и В. То есть получится, что А, В, С и D входят в состав одной плос-ти, а это не так. Это
+						противоречие
+						означает, что на самом деле все плоскости, проходящие через разные точки прямой CD, будут
+						различны, ч.
+						т. д.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/24-dve-ploskosti.webp" type="image/webp"><img
+								src="img/stereometry/24-dve-ploskosti.png" alt="24 stereometriya">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p>Рассмотрим ещё одну теорему:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/stereometry/25-cherez-ljubye-dve-peresekajuschiesja-prjamye-mono-provesti-ploskost.webp"
+								type="image/webp"><img
+								src="img/stereometry/25-cherez-ljubye-dve-peresekajuschiesja-prjamye-mono-provesti-ploskost.png"
+								alt="25 stereometriya">
+						</picture>
+					</p>
+					<p>Пусть пересекаются прямые m и n. Обозначим точку их пересечения как А. Также выберем на m
+						некоторую
+						точку В, а на n – точку C. Мы можем построить плос-ть α через точки А, В и C, и она будет
+						единственной. Так как и А, и В принадлежат α, то и вся прямая m ей принадлежит (аксиома 4).
+						Аналогично
+						и прямая n находится на плос-ти α. То есть α как раз и является плос-тью, о которой говорится в
+						теореме. Никакая другая плос-ть не будет содержать обе прямые m и n, ведь в противном случае она
+						проходила бы через точки А, В и С, то есть совпадала бы с α.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/26-ploskost-i-prjamye.webp" type="image/webp"><img
+								src="img/stereometry/26-ploskost-i-prjamye.png" alt="26 stereometriya">
+						</picture>
+					</p>
+					<p>Эта теорема также говорит о том, что две пересекающиеся прямые однозначно определяют проходящую
+						через
+						них плос-ть.</p>
+
+					<h2 id="5">Задачи на использование аксиом</h2>
+					<p>Простейшие задачи стереометрии по большей части не требуют проведения расчетов и использования
+						формул,
+						однако приходится использовать строгие логические умозаключения. Чаще всего они сводятся к
+						доказательству довольно очевидных утверждений.</p>
+					<p>Примечание. Попытайтесь перед просмотром решения задач самостоятельно их решить.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Точки </strong><strong>M, </strong><strong>N, Р, К не лежат на одной прямой.
+							Могут ли
+							прямые </strong><strong>MN и РК пересекаться?</strong></p>
+					<p>Решение. Если бы MN и РК пересекались бы, то через эти прямые можно было бы провести плос-ть.
+						Эта
+						плоскость содержала бы все точки прямых, в том числе M, N, Р и К. Но эти точки по условию не
+						могут
+						принадлежать одной прямой. Значит, MN и РК не пересекаются.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Есть 4 точки, из которых три принадлежат одной прямой. Могут ли эти точки не
+							лежать
+							на единой плоскости?</strong></p>
+					<p>Решение. Пусть точки Р, К, М находятся на единой прямой РК, а Н – ещё одна точка. Если Н также
+						лежит
+						на РК, то мы можем построить бесконечно много плос-тей, проходящих через РК, и каждая из них
+						будет
+						содержать все эти четыре точки. Если же Н не принадлежит РК, то всё равно через РК и Н можно
+						провести
+						плос-ть, но на этот раз единственную. И эта плос-ть также будет содержать в точки Р, К, М и Н. В
+						любом
+						случае получается, что эти точки находятся на одной плос-ти.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Через пересекающиеся прямые </strong><strong>m и </strong><strong>n проведена
+							плоскость α. Верно ли, что любая прямая </strong><strong>h, пересекающая </strong><strong>m и
+						</strong><strong>n в различных точках, будет также принадлежать </strong><strong>α?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/27-ploskost-i-prjamye.webp" type="image/webp"><img
+								src="img/stereometry/27-ploskost-i-prjamye.png" alt="27 stereometriya">
+						</picture>
+					</p>
+					<p>Решение. Пусть прямая h пересекает m и n в точках В и C соответственно. Раз эти точки
+						принадлежат
+						прямым m и n, то они принадлежат и плос-ти α. Получается, что две точки прямой h (В и С)
+						находятся на
+						α. Тогда, по аксиоме 4, и вся прямая h также находится на α. То есть утверждение,
+						сформулированное в
+						условии задачи, верно.</p>
+
+					<p><strong>Задание. Три прямые проходят через общую точку </strong><strong>M. Верно ли, что они
+							находятся
+							в одной плоскости?</strong></p>
+					<p>Решение. Неверно, они могут как находиться, так и не находиться в одной плоскости. Оба случая
+						проиллюстрируем примерами. Пусть есть точки М, Р, К и Н, причем они одной плос-ти не
+						принадлежат.
+						Тогда прямые МР, МК, МН пересекаются в М, но находятся в одной плос-ти. Если же мы выберем точки
+						М, Р,
+						К, Н так, чтобы они находились на единой плос-ти, то прямые МР, МК, МН пересекутся в М и будут
+						принадлежать одной плос-ти.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/28-ploskost-i-prjamye.webp" type="image/webp"><img
+								src="img/stereometry/28-ploskost-i-prjamye.png" alt="28 stereometriya">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Плос-ти </strong><strong>α и </strong><strong>β не пересекаются. Прямая
+						</strong><strong>m пересекает α. Докажите, что она также пересекает и β.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/29-ploskost-i-prjamye.webp" type="image/webp"><img
+								src="img/stereometry/29-ploskost-i-prjamye.png" alt="29 stereometriya">
+						</picture>
+					</p>
+					<p>Решение. Сразу скажем, что эта задача сложнее предыдущих, и ее решение неочевидно. Дадим
+						подсказку:
+						при решении стереометрических задач можно использовать и аксиомы планиметрии, в том числе и
+						знаменитую
+						<a href="https://100urokov.ru/predmety/urok-4-parallelnye-pryamye" target="_blank"
+							rel="noopener noreferrer">аксиому о параллельных прямых</a>.
+					</p>
+					<p>&nbsp;</p>
+					<p>Теперь приведем решение. Пусть m пересекает α в точке А. Отметим на β произвольную точку С.
+						Теперь мы
+						можем провести ещё одну плос-ть γ через прямую m и точку C:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/30-ploskost-i-prjamye.webp" type="image/webp"><img
+								src="img/stereometry/30-ploskost-i-prjamye.png" alt="30 stereometriya">
+						</picture>
+					</p>
+					<p>Плос-ти γ и β имеют общую точку С. Значит, они пересекаются по некоторой прямой k. У плос-тей γ
+						и α
+						есть общая точка А, поэтому и они пересекаются по некоторой прямой n.</p>
+					<p>Теперь проанализируем расположение прямых n и k. Они не могут пересекаться, ведь тогда бы точка
+						их
+						пересечения была общей для α и β, а они не пересекаются. Также n и k лежат в одной плос-ти.
+						Тогда n и
+						k по <a href="https://100urokov.ru/predmety/urok-4-parallelnye-pryamye" target="_blank"
+							rel="noopener noreferrer">определению параллельны</a>.</p>
+					<p>Напомним, что по аксиоме параллельности через точку на плос-ти может быть проведена лишь одна
+						прямая,
+						параллельная заданной прямой. В частности, через точку А мы можем провести только одну прямую,
+						параллельную k. Такая прямая уже проведена – это n. Тогда вторая прямая, проходящая через А (это
+						как
+						раз m) либо совпадает с n, либо пересекает k. Совпадать с n она не может, ведь в этом случае m
+						будет
+						полностью принадлежать плос-ти α, а она по условию лишь пересекает ее. Значит, m должна пересечь
+						k в
+						некоторой точке В. Эта точка В принадлежит прямой k, а значит, находится и на плос-ти β. Тем
+						самым мы
+						показали, что m и β пересекаются в точке В.</p>
+					<p>Для полноты доказательства надо ещё показать, что m имеет ровно одну общую точку с В.
+						Действительно,
+						если бы была ещё одна общая точка, то по аксиоме 4 вся прямая m находилась бы на β. Тогда и
+						точка А
+						оказалась бы на β, то есть она стала бы общей точкой α и β, но таких общих точек по условию не
+						существует, ч. т. д.</p>
+					<p><strong>Задание. Четыре точки в пространстве выбраны так, что никакая прямая, проходящая через
+							две из
+							этих точек не пересекается с прямой, проходящей через другие две точки. Могут ли эти четыре
+							точки
+							находиться на одной плос-ти?</strong></p>
+					<p>Решение. Предположим, что есть точки М, Р, К и Н, удовлетворяющие условию задачи и находящиеся
+						на
+						одной плос-ти. Ясно, что никакие три из этих точек не принадлежат одной прямой. Тогда мы можем
+						построить четырехугольник МРКН.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/stereometry/31-ploskost-i-prjamye.webp" type="image/webp"><img
+								src="img/stereometry/31-ploskost-i-prjamye.png" alt="31 stereometriya">
+						</picture>
+					</p>
+					<p>Прямые МР и КН по условию не должны пересекаться, то есть они параллельны. Аналогично
+						параллельны МН и
+						РК. Значит, МРКН – <a href="https://100urokov.ru/predmety/urok-1-parallelogramm-chetyryohugolniki"
+							target="_blank" rel="noopener noreferrer">параллелограмм</a> по его определению. Но в
+						параллелограмме пересекаются диагонали МК и РН, а по условию и эти прямые не должны
+						пересекаться.
+						Получили противоречие. Из него вытекает, что М, Р, К и Н НЕ могут находиться на одной плоскости.
+					</p>
+					<p>В ходе сегодняшнего урока мы познакомились с понятием стереометрии. Именно этот раздел геометрии
+						мы
+						будем изучать в течение 10 и 11 класса. Мы узнали о пяти основных стереометрических аксиомах
+						следствиях из них. Использование аксиом в учебном процессе не только позволяет понять геометрию,
+						но и
+						развивает навыки строгого логического мышления, так необходимые в современном мире.</p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

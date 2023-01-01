@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Двугранный угол</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="dvugrannyj-ugol">
+			<div class="dvugrannyj-ugol__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="dvugrannyj-ugol__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-7.2.webp" type="image/webp"><img
+									src="img/themes-10/content-7.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Двугранный угол</div>
+							<div class="info__subtitle">
+								Напомним, что в планиметрии углом называют фигуру, состоящую из точки и двух лучей, выходящих из
+								нее.
+								Сама точка
+								именуется вершиной угла, а лучи – сторонами угла. По аналогии в стереометрии рассматривается
+								схожая
+								фигура – двугранный
+								угол. Он состоит из двух полуплоскостей, которые исходят из одной прямой. Каждая из этих
+								полуплоскостей именуется гранью
+								двугранного угла, а их общая прямая – это ребро двугранного угла.
+
+							</div>
+						</div>
+					</div>
+					<div class="dvugrannyj-ugol__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="dvugrannyj-ugol.html#1">Понятие двугранного угла и угла между
+								плоскостями</a>
+						</p>
+						<p><a href="dvugrannyj-ugol.html#2">Перпендикулярность плоскостей</a></p>
+						<p><a href="dvugrannyj-ugol.html#3">Прямоугольный параллелепипед</a></p>
+						<p><a href="dvugrannyj-ugol.html#4">Трехгранный угол</a></p>
+						<p><a href="dvugrannyj-ugol.html#5">Многогранный угол</a></p>
+						<p><a href="dvugrannyj-ugol.html#6">Типичные задачи на углы между
+								плоскостями</a></p>
+
+					</div>
+					<h2 id="1">Понятие двугранного угла и угла между плоскостями</h2>
+					<p>Напомним, что в планиметрии углом называют фигуру, состоящую из точки и двух лучей, выходящих из нее.
+						Сама
+						точка именуется вершиной угла, а лучи – сторонами угла.</p>
+					<p>По аналогии в стереометрии рассматривается схожая фигура – двугранный угол. Он состоит из двух
+						полуплоскостей,
+						которые исходят из одной прямой. Каждая из этих полуплоскостей именуется гранью двугранного угла, а их
+						общая
+						прямая – это ребро двугранного угла.</p>
+
+					<p style="text-align: center;"><strong>
+							<picture>
+								<source srcset="img/dvugrannyj-ugol/1-chto-takoe-dvugrannyj-ugol.webp" type="image/webp"><img
+									src="img/dvugrannyj-ugol/1-chto-takoe-dvugrannyj-ugol.webp" alt="1 dvugrannii ugol">
+							</picture>
+						</strong></p>
+					<p>Для обозначения двугранного угла достаточно указать две точки на его ребре, а также ещё по одной точке
+						на
+						каждой грани. Например, на следующем рисунке показан угол САВD:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/2-dvugrannyj-ugol-v-ploskosti.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/2-dvugrannyj-ugol-v-ploskosti.webp" alt="2 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Двугранные углы часто встречаются в обычной жизни. Например, его образуют двухскатные крыши домов. В
+						стереометрии двугранные угла можно найти в любом многограннике.</p>
+					<p>Двугранные углы можно измерять. Для этого надо выбрать произвольную точку на ребре угла и на каждой
+						грани
+						построить перпендикуляр, проходящий через эту точку. Через эти два перпендикуляра можно построить
+						единственную
+						плоскость. Угол между двумя перпендикулярами и принимается за величину двугранного угла.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/3-dvugrannyj-ugol-v-ploskosti.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/3-dvugrannyj-ugol-v-ploskosti.webp" alt="3 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Отдельно отметим, что плоскость, проходящая через перпендикуляры (на рисунке выше это γ)
+						перпендикулярна ребру
+						угла АВ. Это вытекает из <a href="https://100urokov.ru/predmety/perpendikulyarnost" target="_blank"
+							rel="noopener noreferrer">признака перпендикулярности прямой и плоскости</a>. Действительно, АВ⊥ВС
+						и АВ⊥BD,
+						поэтому и АВ⊥γ. Построенный угол ∠СBD называют линейным углом двугранного угла.</p>
+					<p>Понятно, что в каждом двугранном угле можно построить сколько угодно линейных углов:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/4-dvugrannyj-ugol-v-ploskosti.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/4-dvugrannyj-ugol-v-ploskosti.webp" alt="4 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Здесь помимо ∠ВСD построены линейные углы ∠В’С’D’ и ∠В’’С’’D’’. Однако все эти углы имеют одинаковую
+						градусную
+						меру. Сравним, например, ∠ВСD и ∠В’С’D’. Так как BD⊥AB и B’D’⊥АВ, то BD||B’D’. Аналогично можно прийти
+						к
+						выводу, что ВС||B’C’. Получаем, что стороны углов ∠ВСD и ∠В’С’D’ – это <a
+							href="https://100urokov.ru/predmety/skreshchivayushchiesya-pryamye" target="_blank"
+							rel="noopener noreferrer">сонаправленные лучи</a>, а потому ∠ВСD и ∠В’С’D’ одинаковы.</p>
+					<p>Двугранные углы, как и обычные углы, можно разделить на острые (их градусная мера меньше 90°), прямые
+						(они в
+						точности равны 90°) и тупые (которые больше 90°).</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/5-dvugrannyj-ugol-v-ploskosti.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/5-dvugrannyj-ugol-v-ploskosti.webp" alt="5 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Если две плоскости пересекаются, то они образуют сразу 4 двугранных угла. Если среди них есть острый
+						угол, то
+						его величина считается углом между плоскостями. Если же все образуется 4 прямых двугранных угла, то
+						угол между
+						плоскостями принимается равным 90°.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/6-dvugrannyj-ugol-v-ploskosti.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/6-dvugrannyj-ugol-v-ploskosti.webp" alt="6 dvugrannii ugol">
+						</picture>
+					</p>
+					<h2 id="2">Перпендикулярность плоскостей</h2>
+					<p>В частном случае, когда угол составляет 90°, говорят, что пересекающиеся плоскости перпендикулярны.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/7-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/7-dve-ploskosti-peresekajutsja.webp" alt="7 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Перпендикулярны друг другу пол и стены в доме, смежные грани кубика, стенки коробки. Существует особый
+						признак
+						перпендикулярности плоскостей.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/8-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/8-dve-ploskosti-peresekajutsja.webp" alt="8 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Действительно, пусть плоскости α и β пересекаются по линии n, и в β есть такая прямая m, что m⊥α.
+						Тогда m и n
+						должны пересекаться в какой-нибудь точке К. Проведем в плоскости α через К прямую р, перпендикулярную
+						n. Ясно,
+						что m⊥р, ведь m⊥α. Получается, угол между m и р как раз и является углом между плоскостями α и β, ведь
+						m⊥n и
+						р⊥n. И этот угол равен 90°, ведь m⊥p, ч т. д.</p>
+					<p>Из доказанного признака вытекает следующее утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/9-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/9-dve-ploskosti-peresekajutsja.webp" alt="9 dvugrannii ugol">
+						</picture>
+					</p>
+					<h2 id="3">Прямоугольный параллелепипед</h2>
+					<p>Ранее мы <a href="https://100urokov.ru/predmety/tetraedr-i-parallelepiped" target="_blank"
+							rel="noopener noreferrer">уже узнали</a> про параллелепипед. Это фигура с 6 гранями, каждая из
+						которых
+						представляет собой параллелограмм. Особый интерес представляет его частный случай – прямоугольный
+						параллелепипед.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/10-prjamougolnyj-parallelepiped.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/10-prjamougolnyj-parallelepiped.webp" alt="10 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Такую форму имеют многие шкафы, другие предметы мебели, коробки для обуви, небоскребы. Изображают
+						прямоугольный
+						параллелепипед так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/11-parallelepiped.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/11-parallelepiped.webp" alt="11 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Для обозначения вершин параллелепипеда применяют латинские буквы. Очень часто для вершин одной грани
+						используют
+						4 буквы без индекса (на рисунке выше это А, В, С, D), а другие 4 вершины обозначают такими же буквами,
+						но с
+						нижним индексом 1: А<sub>1</sub>, B<sub>1</sub>, C<sub>1</sub> и D<sub>1</sub>. При этом одноименные
+						вершины
+						(например, А и А<sub>1</sub>) находятся на одном ребре, которое располагается на рисунке вертикально.
+					</p>
+					<p>Докажем некоторые свойства прямоугольного параллелепипеда.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/12-u-prjamougolnogo-parallelepipeda.webp" type="image/webp">
+							<img src="img/dvugrannyj-ugol/12-u-prjamougolnogo-parallelepipeda.webp" alt="12 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Например, ребро АD пересекается с гранями АВВ<sub>1</sub>А<sub>1</sub> и CDD<sub>1</sub>C<sub>1</sub>.
+						Значит,
+						оно перпендикулярно этим граням (точнее говоря, оно перпендикулярно плоскостям, проходящим через эти
+						грани).
+						Действительно, AD⊥DC, ведь ∠ADC является углом в прямоугольнике АВСD и потому он прямой. Аналогично и
+						AD⊥DD<sub>1</sub>, ведь и ADD<sub>1</sub>A<sub>1</sub> – прямоугольник. Получается, что ребро AD
+						перпендикулярно 2 прямым в грани CDD<sub>1</sub>C<sub>1</sub> (которые при этом пересекаются), и
+						потому оно
+						перпендикулярно и всей грани. То же самое можно продемонстрировать для любого ребра прямоугольного
+						параллелепипеда и любой грани, которую она пересекает.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/13-1-u-prjamougolnogo-parallelepipeda_edited.webp"
+								type="image/webp"><img
+								src="img/dvugrannyj-ugol/13-1-u-prjamougolnogo-parallelepipeda_edited.webp"
+								alt="13 dvugrannii ugol">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/13-2-u-prjamougolnogo-parallelepipeda.webp" type="image/webp">
+							<img src="img/dvugrannyj-ugol/13-2-u-prjamougolnogo-parallelepipeda.webp"
+								alt="13 2 u prjamougolnogo parallelepipeda">
+						</picture>
+					</p>
+					<p>Эти грани пересекаются по ребру А<sub>1</sub>D<sub>1</sub>. Этому ребру в свою очередь перпендикулярны
+						ребра
+						АА<sub>1</sub> и А<sub>1</sub>В<sub>1</sub>, лежащие в гранях ADD<sub>1</sub>A<sub>1</sub> и
+						A<sub>1</sub>D<sub>1</sub>C<sub>1</sub>B<sub>1</sub>. Значит, ∠АА<sub>1</sub>В<sub>1</sub> и будет
+						углом между
+						этими гранями. Но он составляет 90°, то есть грани перпендикулярны, ч. т. д.</p>
+					<p>Хотя у прямоугольного параллелепипеда есть 12 граней, многие из них имеют одинаковую длину. Поэтому
+						для
+						описания размеров этой фигуры достаточно указать только три параметра. Обычно их называют длиной,
+						шириной и
+						высотой:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/14-parallelepiped-vysota-dlina.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/14-parallelepiped-vysota-dlina.webp" alt="14 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Эти параметры также называют измерениями прямоугольного параллелепипеда. Зная их, можно вычислить
+						длину
+						диагонали прямоугольного параллелепипеда. Для этого используется следующая теорема:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/15-kvadrat-diagonali-prjamougolnogo-parallelepipeda.webp"
+								type="image/webp"><img
+								src="img/dvugrannyj-ugol/15-kvadrat-diagonali-prjamougolnogo-parallelepipeda.webp"
+								alt="15 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть прямоугольный параллелепипед
+						АВСDA<sub>1</sub>B<sub>1</sub>C<sub>1</sub>D<sub>1</sub>. Назовем ребро AD его длиной, АВ – шириной, а
+						ВВ<sub>1</sub> – высотой. Пусть необходимо найти длину диагонали В<sub>1</sub>D:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/16-parallelepiped.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/16-parallelepiped.webp" alt="16 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Сначала построим отрезок BD и рассмотрим ∆ABD. Он прямоугольный, и потому для него верна теорема
+						Пифагора:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/17-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/17-dvugrannii-ugol.webp" alt="17 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Теперь перейдем к ∆В<sub>1</sub>ВD. Так как ребро BB<sub>1</sub> перпендикулярно грани ABCD, то
+						∠В<sub>1</sub>ВD – прямой. Тогда и ∆В<sub>1</sub>ВD – прямоугольный, а потому и для него можно
+						записать теорему
+						Пифагора:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/18-v-prjamougolnom-parallelepipede-vse-diagonali-ravny.webp"
+								type="image/webp"><img
+								src="img/dvugrannyj-ugol/18-v-prjamougolnom-parallelepipede-vse-diagonali-ravny.webp"
+								alt="18 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Дополнительно отметим уже известный нам факт, что тот прямоугольный параллелепипед, у которого все
+						стороны
+						одинаковы, именуется кубом. Можно дать и такое определение куба:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/19-kub-parallelepiped.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/19-kub-parallelepiped.webp" alt="19 dvugrannii ugol">
+						</picture>
+					</p>
+					<h2 id="4">Трехгранный угол</h2>
+					<p>Выберем в пространстве произвольную точку K. Далее из нее проведем три луча КА, КВ и КС так, чтобы они
+						не
+						находились в одной плоскости:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/20-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/20-dve-ploskosti-peresekajutsja.webp" alt="20 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>В результате мы получили фигуру, которую именуют трехгранным углом. Она состоит их трех плоских углов:
+						∠АКС,
+						∠АКВ и ∠ВКС. Эти углы так и называются – плоские углы трехгранного угла. Сам же трехгранный угол
+						обозначают
+						четырьмя буквами: КАВС. Обратите внимание, что через каждую пару лучей КА, КВ и КС можно провести
+						плоскость.
+						Таким образом, название «трехгранный» угол показывает, что в точке К сходятся три грани. Чаще всего в
+						стереометрии такой угол возникает при рассмотрении вершин тетраэдра, в котором есть сразу четыре
+						трехгранных
+						угла:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/21-v-trehgrannom-ugle-odin-iz-ploskih-uglov.webp"
+								type="image/webp"><img
+								src="img/dvugrannyj-ugol/21-v-trehgrannom-ugle-odin-iz-ploskih-uglov.webp"
+								alt="21 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Доказательство. Пусть в пространстве из точки D выходят лучи AD, BD и CD. Важно понимать, что мы можем
+						свободно
+						«передвигать» точки А, В и С по лучам, и величина плоских углов при этом меняться не будет. Если среди
+						плоских
+						углов нет наибольшего, то теорема очевидно выполняется. Поэтому надо рассмотреть лишь случай, когда
+						один из
+						углов – наибольший. Пусть им будет ∠BDC:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/22-naibolshij-iz-ploskih-uglov.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/22-naibolshij-iz-ploskih-uglov.webp" alt="22 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Это возможно сделать, ведь ∠BDC &gt; AD, поэтому внутри ∠BDC можно провести луч DK. Далее «сместим»
+						точку А на
+						луче АD так, чтобы DK = AD. Естественно, что при этом плоские углы трехгранного угла никак не
+						изменятся, также
+						как останется верным равенство</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/23-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/23-dvugrannii-ugol.webp" alt="23 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Сравним ∆ADC и ∆DKC. У них есть общая сторона DC, одинаковы стороны DK и AD, а также совпадают углы
+						между ними.
+						Значит, эти треугольники равны, и тогда можно записать, что:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/24-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/24-dvugrannii-ugol.webp" alt="24 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Теперь сравним ∆ABD и ∆DBK. У них BD – общая сторона, а DK = AD. При этом BK &lt; AB. В таком случае
+						против
+						меньшей стороны будет лежать меньший угол (смотри примечание после доказательства), то есть</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/25-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/25-dvugrannii-ugol.webp" alt="25 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Именно это неравенство и необходимо было доказать.</p>
+					<p>Примечание. В ходе доказательства было использовано утверждение, что если у двух треугольников две
+						стороны
+						одинаковы, в третьи стороны отличаются, то против меньшей третьей стороны будет располагаться меньший
+						угол:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/26-treugolniki.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/26-treugolniki.webp" alt="26 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Это утверждение часто не рассматривается в курсе планиметрии, поэтому есть смысл доказать его
+						отдельно.
+						Действительно, пусть есть ∆АВС и ∆А’B’C’, АС = А’C’ и АВ = A’B’, а СВ &lt; C’B’. Надо показать, что ∠А
+						&lt;∠A’.
+						Для этого выразим стороны СВ и C’B’ (а точнее говоря, их квадраты) с помощью <a
+							href="https://100urokov.ru/predmety/urok-4-trigonometriya" target="_blank"
+							rel="noopener noreferrer">теоремы
+							косинусов</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/27-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/27-dvugrannii-ugol.webp" alt="27 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Из последнего неравенства на основе <a href="https://100urokov.ru/predmety/urok-4-trigonometriya"
+							target="_blank" rel="noopener noreferrer">определения косинуса для углов из интервала от 0° до
+							180°</a>
+						вытекает, что и</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/28-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/28-dvugrannii-ugol.webp" alt="28 dvugrannii ugol">
+						</picture>
+					</p>
+					<h2 id="5">Многогранный угол</h2>
+					<p>Возможен случай, когда из одной точки в пространстве выходят не три, а большее количество лучей,
+						причем
+						образуемые ими углы не располагаются в единой плоскости. Такая фигура именуется многогранным углом.
+						Трехгранный
+						угол можно считать его частным случаем. Также его частными случаями будут четырехгранный угол,
+						пятигранный
+						угол, шестигранный угол и т. д.</p>
+					<p>Более наглядна следующая демонстрация многогранного угла. Построим на плоскости α произвольный
+						многоугольник.
+						Далее выберем какую-нибудь точку вне плоскости α и соединим ее с вершинами многоугольника с помощью
+						лучей. При
+						этом у нас как раз получится многогранный угол. Если, например, в качестве многоугольника мы
+						использовали
+						пятиугольник, то и получим мы пятигранный угол:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/29-postroenie-piramidy-na-ploskosti.webp" type="image/webp">
+							<img src="img/dvugrannyj-ugol/29-postroenie-piramidy-na-ploskosti.webp" alt="29 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Важно отметить, что в данном случае состоит многогранный угол именно из лучей КА<sub>1</sub>,
+						КА<sub>2</sub>,
+						КА<sub>3</sub>…, а не из одноименных отрезков. То есть многогранный угол – это ни в коем случае не
+						многогранник
+						КА<sub>1</sub>А<sub>2</sub>А<sub>3</sub>А<sub>4</sub>А<sub>5</sub>, у него есть только одна вершина –
+						точка К.
+						Многогранник КА<sub>1</sub>А<sub>2</sub>А<sub>3</sub>А<sub>4</sub>А<sub>5</sub> – это пирамида, такая
+						фигура
+						изучается в курсе стереометрии чуть позже. Многоугольник
+						А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>А<sub>4</sub>А<sub>5</sub> – это сечение многогранного угла.
+						Углы
+						∠А<sub>1</sub>КА<sub>2</sub>, ∠А<sub>2</sub>КА<sub>3</sub>, ∠А<sub>3</sub>КА<sub>4</sub>… – это
+						плоские углы
+						многогранного угла.</p>
+					<p>Заметим, что на исходный многоугольник на плоскости может быть как выпуклым, так и невыпуклым.
+						Соответственно и
+						многогранный угол может быть как выпуклым, так и невыпуклым:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/30-postroenie-piramid.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/30-postroenie-piramid.webp" alt="30 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Так как любой треугольник – это выпуклый многоугольник, то и любой трехгранный угол является выпуклым.
+						В
+						выпуклом угле все его точки лежат по одну сторону от любой плоскости, проходящей, через какие-нибудь
+						два
+						смежных луча угла. Вообще любое сечение многогранного угла представляет собой выпуклый многоугольник.
+					</p>
+					<p>Докажем важное утверждение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/31-v-mnogogrannom-ugle-summa-vseh-ploskih-uglov.webp"
+								type="image/webp"><img
+								src="img/dvugrannyj-ugol/31-v-mnogogrannom-ugle-summa-vseh-ploskih-uglov.webp"
+								alt="31 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Для доказательства возьмем произвольный многогранный угол и проведем в нем сечение
+						А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…А<sub>n</sub>, которое будет являться выпуклым
+						многоугольником:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/32-1-postroenie-piramidy_edited.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/32-1-postroenie-piramidy_edited.webp" alt="32 dvugrannii ugol"
+								style="display: block; margin-left: auto; margin-right: auto;">
+						</picture>
+					</p>
+					<p style="text-align: justify;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/32-2-postroenie-piramidy_edited.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/32-2-postroenie-piramidy_edited.webp"
+								alt="32 2 postroenie piramidy edited">
+						</picture>
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/33-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/33-dvugrannii-ugol.webp" alt="33 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>В последнем равенстве в каждой скобке стоят по два плоских угла в тех трехгранных углах, вершины
+						которых
+						совпадают с вершинами многоугольника А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…А<sub>n</sub>. В
+						предыдущей
+						теореме мы выяснили, что эта сумма меньше третьего плоского угла, то есть</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/34-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/34-dvugrannii-ugol.webp" alt="34 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>В правой части в скобках стоит сумма углов выпуклого n-угольника
+						А<sub>1</sub>А<sub>2</sub>А<sub>3</sub>…А<sub>n</sub>. Она, как мы знаем, <a
+							href="https://100urokov.ru/predmety/urok-1-parallelogramm-chetyryohugolniki">составляет</a> 180°•(n
+						– 2), то
+						есть</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/35-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/35-dvugrannii-ugol.webp" alt="35 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Последнее неравенство и необходимо было доказать.</p>
+					<h2 id="6">Типичные задачи на углы между плоскостями</h2>
+					<p>В школьной практике почти не встречаются задачи с многогранными углами, поэтому достаточно понимания и
+						двугранного угла.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. У тетраэдра </strong><strong>ABCD все ребра одинаковы. Найдите величину двугранного
+							угла между
+							плоскостями АВС и АС</strong><strong>D.</strong></p>
+					<p>Решение. Отметим на ребре АС точку М, которая является его серединой:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/36-piramida.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/36-piramida.webp" alt="36 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Заметим, что плоскости АВС и АСD пересекаются по прямой АС. Раз все ребра тетраэдра одинаковы, то ∆АВС
+						и ∆АСD –
+						равносторонние. DM и BM – это медианы в ∆АВС и ∆АСD соответственно, ведь M – середина АС. Но раз
+						треугольники
+						равносторонние, то они одновременно являются и высотами, то есть BM⊥AC и DM⊥АС. Тогда ∠DMB как раз и
+						представляет собой линейный угол двугранного угла BАСD. То есть именно его значение нам и надо
+						вычислить (если,
+						конечно, он окажется не больше 90°).</p>
+					<p>Пусть ребра тетраэдра имеют длину а. Тогда АМ вдвое короче. Найдем из прямоугольного ∆АМD длину MD:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/37-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/37-dvugrannii-ugol.webp" alt="37 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/38-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/38-dvugrannii-ugol.webp" alt="38 dvugrannii ugol">
+						</picture>
+					</p>
+					<p><strong>Задание. Двугранный угол равен φ, меньший 90°. На одной из его граней отмечена точка К,
+							которая
+							находится на расстоянии </strong><strong>d от другой грани. Каково расстояние между точкой К и
+							ребром
+							двугранного угла?</strong></p>
+					<p>Решение. Пусть угол образован плоскостями α и β. Опустим из K два перпендикуляра – один на плоскость β
+						в точку
+						Н, а другой на линию пересечения плоскостей в точку Р:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/39-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/39-dve-ploskosti-peresekajutsja.webp" alt="39 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>По условию задачи ∠НРК = φ, а HK = d. Нам же надо найти РК. Это можно сделать, применив определение
+						синуса к
+						∆РНК:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/40-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/40-dvugrannii-ugol.webp" alt="40 dvugrannii ugol">
+						</picture>
+					</p>
+					<p><strong>Задание. Верно ли, что плоскость, пересекающая две параллельные плоскости, образует с ними
+							одинаковые
+							углы?</strong></p>
+					<p>Решение. Пусть есть параллельные друг другу плоскости α и β, а пересекает их плоскость γ. Линию
+						пересечения α и
+						γ обозначим как n, и такую же линию для β и γ обозначим как m:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/41-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/41-dve-ploskosti-peresekajutsja.webp" alt="41 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Заметим, что m и n располагаются в одной плоскости γ и при этом не пересекаются, в противном случае у
+						α и β
+						нашлась бы общая точка, которой быть не должно. Значит, m||n.</p>
+					<p>Далее проведем в γ прямую р, перпендикулярную n. Раз m||n и р⊥n, то и р⊥m. То есть р – общий
+						перпендикуляр для
+						m и n.</p>
+					<p>Далее в α через точку пересечения n и p проведем прямую k, перпендикулярную n. Ясно, что k||β. После
+						уже через
+						точку пересечения m и p построим такую прямую k’, что k||k’:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/42-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/42-dve-ploskosti-peresekajutsja.webp" alt="42 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Так как k||β и k||k’, то прямая k’ будет принадлежать плоскости β (<a
+							href="https://100urokov.ru/predmety/parallelnost" target="_blank" rel="noopener noreferrer">по
+							теореме 6 из
+							этого урока</a>). Так как k||k’, m||n и n⊥k, то по теореме о сонаправленных лучах можно утверждать,
+						что и
+						m⊥k’. Тогда углы, отмеченные на рисунке синим цветом – это и есть линейные углы двугранных углов. Они
+						одинаковы, так как являются соответственными при секущей р и параллельных прямых k и k’. Если же
+						двугранные
+						углы равны, то одинаковы и углы между плоскостями, ч. т. д.</p>
+					<p>Примечание. Доказанный факт можно сформулировать в виде теоремы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/43-ploskost-peresekajuschaja-parallelnye-ploskosti.webp"
+								type="image/webp"><img
+								src="img/dvugrannyj-ugol/43-ploskost-peresekajuschaja-parallelnye-ploskosti.webp"
+								alt="43 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Она может быть использована при решении некоторых сложных задач.</p>
+					<p><strong>Задание. В прямоугольном </strong><strong>∆АВС АВ и АС – катеты с длиной 7 и 24
+							соответственно. Через
+							гипотенузу проведена плоскость </strong><strong>β, образующая с плоскостью АВС угол 30°. Каково
+							расстояние
+							между точкой А и плоскостью </strong><strong>β?</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/44-dve-ploskosti-peresekajutsja.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/44-dve-ploskosti-peresekajutsja.webp" alt="44 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Опустим из А перпендикуляр АН на β. Это и будет искомое нами расстояние. Также в ∆АВС построим высоту
+						AD.
+						Заметим, что раз АН⊥β, то по определению и АН⊥HD. Можно сказать, что HD – это проекция AD на β. Раз
+						прямая ВС
+						перпендикулярна наклонной AD, то она одновременно будет перпендикулярна и наклонной HD по<a
+							href="https://100urokov.ru/predmety/rasstoyaniya-v-stereometrii" target="_blank"
+							rel="noopener noreferrer">
+							обратной теореме о трех перпендикулярах</a>.</p>
+					<p>Плоскости АВС и β пересекаются по прямой ВС, АD⊥ВС и HD⊥BC. Получается, что ADH – это как раз угол
+						между АВС и
+						β, и по условию он составляет 30°.</p>
+					<p>По теореме Пифагора вычислим гипотенузу ВС:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/45-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/45-dvugrannii-ugol.webp" alt="45 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Теперь перейдем к ∆AHD. Он также прямоугольный (∠Н = 90°). Используем для него тригонометрию:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/46-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/46-dvugrannii-ugol.webp" alt="46 dvugrannii ugol">
+						</picture>
+					</p>
+					<p><strong>Задание. Известны измерения прямоугольного параллелепипеда. Его длина составляет 90 см, ширина
+							– 20 см,
+							а высота – 60 см. Какова длина диагонали такого параллелепипеда?</strong></p>
+					<p>Решение. Обозначим измерения буквами а, b, с, а диагональ буквой d. Достаточно просто воспользоваться
+						формулой:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/47-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/47-dvugrannii-ugol.webp" alt="47 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Далее рассмотрим несколько задач, в которых надо найти угол между плоскостями, находящимися в кубе с
+						ребром,
+						чья длина составляет единицу.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Вычислите угол между гранью </strong><strong>ADHЕ и сечением
+							А</strong><strong>BGН:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/48-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/48-ploskosti-v-kube.webp" alt="48 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. Заметим, что сечение АВGH содержит прямую АВ. Но АВ – это перпендикуляр к АЕНD. Если АВGH
+						содержит
+						перпендикуляр к ADH, то эти две плоскости перпендикулярны, и угол между ними составляет 90°.</p>
+					<p>Ответ: 90°.</p>
+					<p><strong>Задание. Определите угол между гранью </strong><strong>ADHE и сечением
+						</strong><strong>ADGF:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/49-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/49-ploskosti-v-kube.webp" alt="49 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. Две рассматриваемые плоскости пересекаются по ребру AD. Ребра DH и AD перпендикулярны как
+						стороны
+						квадрата. Так как AD – это перпендикуляр к грани СDHG, то AD⊥DG. Получается, что ∠HDG – это и есть
+						искомый
+						угол. Его величина равна 45°, ведь это угол между диагональю квадрата и его стороной.</p>
+					<p>Ответ: 45°.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Вычислите угол между сечениями АВ</strong><strong>GH и
+						</strong><strong>EFCD:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/50-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/50-ploskosti-v-kube.webp" alt="50 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. Пересекаются эти две плоскости по прямой KP, где K и P – точки пересечения диагоналей
+						квадратов BFGH и
+						AEHD. Докажем, что отрезки KG и KC перпендикулярны KP.</p>
+					<p>Действительно, рассмотрим четырехугольник АВGH. Ребра АВ и GH перпендикулярны граням AEHD и BFGH,
+						поэтому все
+						углы в АВGH – прямые, то есть это прямоугольник и BG||AH. Теперь рассмотрим четырехугольник АВKP.
+						Стороны BK и
+						AP параллельны и равны как половины равных отрезков BG и AH. Значит, BKAP – параллелограмм. Но в нем
+						есть
+						прямые углы ∠В и ∠А, поэтому BKAP – прямоугольник. Аналогично можно показать, что и KGHP –
+						прямоугольник. Это и
+						приводит к выводу о том, что KG⊥KP и PH⊥KP. Поэтому ∠СKG и является искомым углом между сечениями. Он
+						является
+						углом между диагоналями квадрата, то есть равен 90°.</p>
+					<p>Ответ: 90°.</p>
+					<p><strong>Задание. Найдите угол между сечением </strong><strong>AFH и гранью
+						</strong><strong>AEHD:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/51-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/51-ploskosti-v-kube.webp" alt="51 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. Обозначим середину диагонали AH буквой K. Докажем ∠EKF – искомый нами угол:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/52-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/52-ploskosti-v-kube.webp" alt="52 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Действительно, плоскости AHD и AFH пересекаются по прямой AH. EK – медиана в равнобедренном ∆AEH с
+						основанием
+						AH, поэтому она также является и высотой, то есть EK⊥AH. AF и FH – диагонали в равных квадратах ABFE и
+						EFGH,
+						поэтому эти диагонали одинаковы. Значит, ∆AFH – равнобедренный, и поэтому его медиана FK также
+						перпендикулярна
+						основанию AH. Получается, что ∠EKF и является искомым. Вычислить его можно из ∆EKF.</p>
+					<p>Сначала найдем длину EK. В прямоугольном ∆AEK ∠KAE составляет 45° (угол между диагональю и стороной
+						квадрата),
+						поэтому</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/53-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/53-dvugrannii-ugol.webp" alt="53 dvugrannii ugol">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите угол между гранью </strong><strong>BCGF и сечением
+						</strong><strong>AFH:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/54-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/54-ploskosti-v-kube.webp" alt="54 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. Вспомним, что в предыдущей задаче мы уже вычислили угол между гранью АЕHD и тем же сечением
+						АFH. Но
+						грани AEHD и BCFG параллельны, поэтому АFH должна пересекаться их под одним и тем же углом. Поэтому
+						ответ этой
+						задачи совпадает с ответом к предыдущей задаче.</p>
+					<p>Ответ: ≈ 54,74°.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Чему равен угол между сечениями АС</strong><strong>H и
+						</strong><strong>AFGH?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/55-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/55-ploskosti-v-kube.webp" alt="55 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. Пусть диагонали СН и DG пересекаются в точке К. Точка K будет принадлежать обоим сечениям,
+						как и точка
+						А. Значит, сечения пересекаются по линии АК. Проведем в сечении AFGH через точку K прямую,
+						перпендикулярны АК и
+						пересекающую FG в какой-то точке Р (позже мы убедимся, что прямая действительно должна пересекать
+						отрезок FG):
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/56-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/56-ploskosti-v-kube.webp" alt="56 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Докажем, что ∠CPK и является углом между сечениями. Мы специально провели РК так, что РК⊥АК. Теперь
+						посмотрим
+						на ∆АСН. Он равносторонний, ведь его стороны АС, СН и DH – это диагонали равных квадратов (граней
+						куба). Прямая
+						АК – медиана, ведь K – точка пересечения диагоналей квадрата СDHG, которая делит диагонали пополам. Но
+						раз ∆АСН
+						равносторонний, то его медиана – это ещё и высота, то есть АК⊥РК. Итак, АК⊥СК и АК⊥РК, поэтому ∠CPK –
+						это угол
+						между сечениями. Для его вычисления необходимо найти все стороны в ∆РСК и далее применить теорему
+						косинусов.
+					</p>
+					<p>Проще всего найти СК. ∆СKD – прямоугольный (∠К = 90°), а ∠СDK составляет 45° (угол между стороной и
+						диагональю
+						в квадрате). Тогда можно записать, что</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/57-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/57-dvugrannii-ugol.webp" alt="57 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Отдельно отметим, что отрезки GK и KD имеют такую же длину, ведь диагонали в квадрате (а значит и их
+						половины)
+						одинаковы.</p>
+					<p>Для нахождения РК покажем отдельно плоскость AFG, то есть красное сечение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/58-parallelogramm.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/58-parallelogramm.webp" alt="58 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Обозначим ∠KAD как φ. Тогда ∠АКD будет составлять 90 – φ. Углы ∠АКD, ∠АKP и ∠PKG в сумме дают 180°,
+						что
+						позволяет найти ∠PKG:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/59-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/59-dvugrannii-ugol.webp" alt="59 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Получилось, что у ∆АКD и ∆PKG есть по два одинаковых угла (φ и 90°). Значит, они <a
+							href="https://100urokov.ru/predmety/urok-6-podobnye-treugolniki" target="_blank"
+							rel="noopener noreferrer">подобны</a>. Составим такую пропорцию:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/60-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/60-dvugrannii-ugol.webp" alt="60 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Теперь можно вернуться ко всему кубу и найти отрезок РС. Здесь снова можно применить теорему Пифагора,
+						но уже к
+						∆PCG:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/61-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/61-dvugrannii-ugol.webp" alt="61 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Теперь для ∆PCK мы можем записать теорему косинусов</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/62-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/62-dvugrannii-ugol.webp" alt="62 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Неожиданно мы доказали, что два построенных сечения перпендикулярны друг другу. Прийти к этому выводу
+						можно
+						было и иначе. Достаточно было бы показать, что прямая CH – это перпендикуляр к сечению AFGD.
+						Попробуйте сделать
+						это самостоятельно.</p>
+					<p>Ответ: 90°.</p>
+					<p><strong>Задание. Вычислите угол между сечениями </strong><strong>BDHF и
+						</strong><strong>ADGF:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/63-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/63-ploskosti-v-kube.webp" alt="63 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Решение. У сечений общими являются точки F и D. Значит, именно по прямой FD они пересекаются.</p>
+					<p>Опустим в синей сечении BDHF перпендикуляр на FD, который упадет в некоторую точку K:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/64-ploskosti-v-kube.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/64-ploskosti-v-kube.webp" alt="64 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Докажем, что отрезок GK также перпендикулярен FD. Действительно, BK – это высота в ∆BDF. Но ∆BDF и
+						∆GDF равны,
+						ведь они одинаковы все три стороны (FD – общая сторона, BF и FG – ребра куба, BD и DG – диагонали на
+						гранях
+						куба). В равных треугольниках высоты должны делить стороны на равные отрезки, поэтому высота,
+						опущенная из G на
+						FD, также разделит FD на отрезки FK и KD. То есть она просто упадет в точку K. Это и значит, что KG –
+						высота.
+						Получается, что нам надо вычислить ∠BKG.</p>
+					<p>Сначала найдем длину диагоналей BD и BG. Можно применить теорему Пифагора для ∆BFG:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/65-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/65-dvugrannii-ugol.webp" alt="65 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>KG имеет ту же длину, ведь KG и BK – одинаковые высоты в равных треугольниках ∆BDF и ∆GDF.</p>
+					<p>Теперь используем теорему косинусов для ∆BKG:</p>
+					<p>
+						<picture>
+							<source srcset="img/dvugrannyj-ugol/66-dvugrannii-ugol.webp" type="image/webp"><img
+								src="img/dvugrannyj-ugol/66-dvugrannii-ugol.webp" alt="66 dvugrannii ugol">
+						</picture>
+					</p>
+					<p>Мы вычислили двугранный угол, но он оказался больше 90°. Это значит, угол между плоскостями равен не
+						120°, а
+						180° – 120°, то есть 60°.</p>
+					<p>Ответ: 60°.</p>
+					<p>Сегодня мы познакомились с понятием двугранного угла, научились вычислять углы между плоскостями. В
+						частном
+						случае вместо вычисления угла можно просто доказать перпендикулярность плоскостей.</p>
+					<p>&nbsp;</p>
+
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

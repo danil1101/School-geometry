@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Объем сложных тел</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="obem-slozhnyh-tel">
+			<div class="obem-slozhnyh-tel__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="obem-slozhnyh-tel__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-9.2.webp" type="image/webp"><img
+									src="img/themes-11/content-9.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Объем сложных тел</div>
+							<div class="info__subtitle">
+								Изучим особенности вычисления объема различных тел с помощью интеграла
+							</div>
+						</div>
+					</div>
+					<div class="obem-slozhnyh-tel__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="obem-slozhnyh-tel.html#1">Вычисление объема тела с помощью интеграла</a>
+						</p>
+						<p><a href="obem-slozhnyh-tel.html#2">Вычисление объема тел вращения</a></p>
+						<p><a href="obem-slozhnyh-tel.html#3">Объем наклонной призмы</a></p>
+						<p><a href="obem-slozhnyh-tel.html#4">Объем пирамиды</a></p>
+						<p><a href="obem-slozhnyh-tel.html#5">Объем конуса</a></p>
+						<p><a href="obem-slozhnyh-tel.html#6">Объем шара</a></p>
+						<p><a href="obem-slozhnyh-tel.html#7">Шаровой сегмент</a></p>
+						<p><a href="obem-slozhnyh-tel.html#8">Площадь сферы</a></p>
+					</div>
+
+
+					<h2 id="1">Вычисление объема тела с помощью интеграла</h2>
+					<p>Пусть у нас есть произвольная фигура, расположенная между двумя параллельными плоскостями:</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/1-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/1-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="1 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Как найти ее объем? Поступим следующим образом. Проведем прямую, перпендикулярную этим плоскостям. Эта
+						прямая
+						будет осью координат х. Пусть одна из плоскостей пересекает эту ось в точке а, а другая – в точке b.
+						Таким
+						образом, на координатной прямой появляется отрезок [a; b]. Далее разобьем этот отрезок на n равных
+						отрезков,
+						длина каждого из них будет равна величина ∆х. Обозначим концы этих отрезков как х<sub>0</sub>,
+						х<sub>1</sub>,
+						х<sub>2</sub>…, х<sub>n</sub>, причем точке х<sub>0</sub> будет совпадать с точкой а, а точка
+						х<sub>n</sub>
+						– с
+						точкой b. Ниже показано такое построение для n = 10:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/2-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/2-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="2 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Далее через полученные точки проведем сечения, параллельные двум плоскостям, ограничивающим фигуру.
+						Площадь
+						сечения, проходящую через точку с номером i, обозначим как S(x<sub>i</sub>). Эти плоскости рассекут
+						тело на
+						n
+						других тел. Обозначим объем тела, заключенного между сечениями с площадями S(x<sub>i</sub>) и
+						S(x<sub>i</sub><sub>+1</sub>) как V(x<sub>i</sub>). Можно приближенно считать, что эти тела имеют
+						форму
+						прямых
+						цилиндров (напомним, что в <a href="https://100urokov.ru/predmety/cilindr-i-konus"
+							target="_blank">общем
+							случае
+							цилиндром</a> необязательно считается фигура, основанием которой является круг, основание может
+						иметь и
+						любую другую форму). Высота всех этих цилиндров будет равна величине ∆х. Тогда объем V(x<sub>i</sub>)
+						может
+						быть приближенно рассчитан так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/3-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/3-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="3 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Общий же объем исследуемой фигуры будет суммой объемов этих прямых цилиндров:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/4-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/4-obem-slozhnyh-tel.webp" alt="4 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Здесь знак ∑ означает сумму i слагаемых, каждое из которых равно величине S(x<sub>i</sub>)•∆х. Ясно,
+						что чем
+						больше мы возьмем число n, тем точнее будет полученная нами формула. Поэтому будет увеличивать число n
+						до
+						бесконечности, тогда приближенная формула станет точной:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/5-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/5-obem-slozhnyh-tel.webp" alt="5 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>В правой части стоит предел суммы бесконечного числа слагаемых. Мы уже сталкивались с такими
+						пределами,
+						когда
+						изучали <a href="https://100urokov.ru/predmety/urok-7-integral-opredelennyj"
+							target="_blank">определенный
+							интеграл</a> в курсе алгебры. Так как х<sub>0</sub> = a, а число х<sub>n-1</sub> при бесконечном
+						увеличении
+						n приближается к числу х<sub>n</sub>, то есть к b, то можно записать следующее:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/6-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/6-obem-slozhnyh-tel.webp" alt="6 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Здесь S(x) – это некоторая функция, которая устанавливает зависимость между площадью сечения объемной
+						фигуры
+						и
+						координатой х, указывающей расположение этого сечения. Данная формула позволяет вычислять объем с
+						помощью
+						интеграла.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/7-dlja-vychislenija-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/7-dlja-vychislenija-obema-tela-s-pomoschju-integrala.webp"
+								alt="7 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Итак, для вычисления объема тела необходимо:</p>
+					<p>1) выбрать в пространстве какую-то удобную ось координат Ох;</p>
+					<p>2) найти площадь произвольного сечения фигуры, проходящей перпендикулярно оси Ох через некоторую
+						координату
+						х;
+					</p>
+					<p>3) найти значение чисел а и b – координат сечений, ограничивающих тело в пространстве;</p>
+					<p>4) выполнить интегрирование.</p>
+					<p>Понятно, что сразу понять, как используется эта формула, тяжело. Поэтому рассмотрим простой пример.
+					</p>
+					<p><strong>Задание. Фигура расположена в пространстве между двумя плоскостями, перпендикулярными оси Ох,
+							причем
+							координаты этих сечений равны 1 и 2. Каждое сечение фигуры с координатой х является квадратом,
+							причем его
+							сторона равна величине 1/х. Найдите объем тела.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/8-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/8-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="8 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. В данной задаче ось Ох уже проведена. Известны и числа а и b – это 1 и 2, ведь именно
+						плоскости,
+						проходящие через точки х =1 и х = 2, ограничивают исследуемое тело. Теперь найдем площадь
+						произвольного
+						сечения
+						с координатой х. Так как оно является квадратом со стороной 1/х, то его площадь будет квадратом этой
+						стороны:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/9-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/9-obem-slozhnyh-tel.webp" alt="9 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="2">Вычисление объема тел вращения</h2>
+					<p>Телом вращения называют тело, которое может быть получено вращением какой-то плоской фигуры
+						относительно
+						некоторой оси вращения. Например, цилиндр получают вращением прямоугольника вокруг одной из его
+						сторон, а
+						усеченный конус – вращением прямоугольной трапеции вокруг боковой стороны, перпендикулярной основанию.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/10-tela-vraschenija.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/10-tela-vraschenija.webp" alt="10 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>В задачах на вычисление объемов таких тел ось координат Ох уже задана естественным образом – это ось
+						вращения
+						тела. Ясно, что каждое сечение тела, перпендикулярное оси вращения, будет являться кругом.</p>
+					<p>Рассмотрим случай, когда вокруг оси Ох поворачивают график некоторой функции у = f(x), ограниченный
+						прямыми
+						х =
+						а и у = b. Тогда получится тело, сечениями которого являются круги, причем их радиусы будут равны
+						величине
+						f(x). Напомним, что <a href="https://100urokov.ru/predmety/dlina-okruzhnosti" target="_blank">площадь
+							круга</a>
+						вычисляют по формуле:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/11-1-esli-telo-vraschenija-polucheno-vrascheniem_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/11-1-esli-telo-vraschenija-polucheno-vrascheniem_edited.webp"
+								alt="11 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/11-2-esli-telo-vraschenija-polucheno-vrascheniem_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/11-2-esli-telo-vraschenija-polucheno-vrascheniem_edited.webp"
+								alt="11 2 esli telo vraschenija polucheno vrascheniem edited">
+						</picture>
+					</p>
+					<p>Рассмотрим, как на практике используется эта формула.</p>
+					<p><strong>Задание. Объемное тело получено вращением ветви параболы</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/12-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/12-obem-slozhnyh-tel.webp" alt="12 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p><strong>вокруг оси Ох. Оно ограничено плоскостями х = 0 и х = 4. Каков объем такой фигуры?</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/13-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/13-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="13 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. Здесь пределами интегрирования, то есть числами а и b, будут 0 и 4. Используем формулу для
+						тела
+						вращения:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/14-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/14-obem-slozhnyh-tel.webp" alt="14 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="3">Объем наклонной призмы</h2>
+					<p>Теперь, используя методы интегрирования, мы можем составить формулы для вычисления объема некоторых
+						фигур.
+						Начнем с треугольной наклонной призмы.</p>
+					<p>Пусть есть треугольная призма АВСА<sub>2</sub>В<sub>2</sub>С<sub>2</sub>. Проведем ось Ох так, чтобы
+						точка О
+						располагалась в плоскости АВС. Пусть Ох пересечет плоскость А<sub>2</sub>В<sub>2</sub>С<sub>2</sub> в
+						некоторой
+						точке О<sub>2</sub>. Тогда отрезок ОО<sub>2</sub> будет высотой призмы, ведь он окажется
+						перпендикулярным к
+						обоим основаниям.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/15-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/15-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="15 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Обозначим длину высоты ОО<sub>2</sub> буквой h. Далее докажем, что всякое сечение
+						А<sub>1</sub>В<sub>1</sub>С<sub>1</sub> призмы, перпендикулярное оси Ох, будет равно ∆АВС.
+						Действительно,
+						если
+						АВС⊥ОО<sub>2</sub> и А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>⊥ОО<sub>2</sub>, то
+						АВС||А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>. Прямые АВ и А<sub>1</sub>В<sub>1</sub> принадлежат одной
+						грани
+						АВВ<sub>2</sub>А<sub>1</sub>, но не пересекаются, ведь они находятся в параллельных плоскостях.
+						Аналогично
+						АС||А<sub>1</sub>С<sub>1</sub> и ВС||В<sub>1</sub>С<sub>1</sub>. Теперь посмотрим на четырехугольник
+						АВВ<sub>1</sub>А<sub>1</sub>. АВ||A<sub>1</sub>В<sub>1</sub> и АА<sub>1</sub>||ВВ<sub>1</sub>. Тогда
+						АВВ<sub>1</sub>А<sub>1</sub> по определению является параллелограммом. Это означает, что отрезки АВ и
+						А<sub>1</sub>В<sub>1</sub> одинаковы. Аналогично доказывается, что одинаковы отрезки АС и
+						А<sub>1</sub>С<sub>1</sub>, а также ВС и В<sub>1</sub>С<sub>1</sub>. Но тогда одинаковы и ∆АВС и
+						∆А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>.</p>
+					<p>Итак, площади всех сечений одинаковы и равны площади основания призмы. Обозначим ее как S. Так как S
+						не
+						зависит
+						от координаты, то интегрирование будет выглядеть так:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/16-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/16-obem-slozhnyh-tel.webp" alt="16 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Итак, объем треугольной наклонной призмы – это произведение площади ее основания на высоту. Теперь
+						рассмотрим
+						произвольную призму, в чьем основании находится n-угольник. Такой n-угольник можно разбить на
+						треугольные
+						призмы с общей высотой h и площадями оснований S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub>, …</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/17-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/17-vychislenie-obema-tela-s-pomoschju-integrala.webp"
+								alt="17 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Тогда площадь S основания всей призмы будет суммой этих чисел:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/18-1-obem-naklonnoj-prizmy-raven-proizvedeniju_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/18-1-obem-naklonnoj-prizmy-raven-proizvedeniju_edited.webp"
+								alt="18 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/18-2-obem-naklonnoj-prizmy-raven-proizvedeniju_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/18-2-obem-naklonnoj-prizmy-raven-proizvedeniju_edited.webp"
+								alt="18 2 obem naklonnoj prizmy raven proizvedeniju edited">
+						</picture>
+					</p>
+					<p><strong>Задание. Основание призмы – это треугольник со сторонами 10, 10 и 12. Боковое ребро имеет
+							длину 8 и
+							образует с основанием угол в 60°. Вычислите объем призмы.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/19-vychislenie-obema-prizmy.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/19-vychislenie-obema-prizmy.webp" alt="19 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. Пусть в основании призмы АВСА<sub>1</sub>В<sub>1</sub>С<sub>1</sub> лежит ∆АВС со сторонами
+						АВ = 12
+						и
+						АС = ВС = 10. Его площадь можно найти разными способами, но быстрее всего применить <a
+							href="https://100urokov.ru/predmety/urok-5-teorema-pifagora" target="_blank">формулу Герона</a>.
+						Сначала
+						найдем полупериметр ∆АВС:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/20-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/20-obem-slozhnyh-tel.webp" alt="20 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Далее надо найти высоту призмы. Опустим из точки В<sub>1</sub> перпендикуляр В<sub>1</sub>О на
+						плоскость
+						АВС.
+						Тогда в прямоугольном ∆ОВВ<sub>1</sub> ∠В = 60° (по условию задачи и по <a
+							href="https://100urokov.ru/predmety/rasstoyaniya-v-stereometrii" target="_blank">определению угла
+							между
+							плоскостью и прямой</a>). Зная длину бокового ребра ВВ<sub>1</sub>, найдем высоту ОВ<sub>1</sub>:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/21-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/21-obem-slozhnyh-tel.webp" alt="21 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="4">Объем пирамиды</h2>
+					<p>Для начала рассмотрим <a href="https://100urokov.ru/predmety/piramida" target="_blank">треугольную
+							пирамиду</a>. Вершину пирамиды примем за начало координат точку О, а ось Ох проведем
+						перпендикулярно
+						основанию, причем ось будет направлена от вершины пирамиды к основанию.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/22-vychislenie-obema-prizmy.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/22-vychislenie-obema-prizmy.webp" alt="22 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Пусть ось Ох пересечет основание АВС в точке М. Тогда ОМ – это высота, чью длину мы обозначим как h.
+					</p>
+					<p>Далее построим сечение А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>, параллельное АВС. Это сечение
+						пересечется с
+						ОМ
+						в точке ОМ<sub>1</sub>. Тогда ОМ<sub>1</sub> – это координата х, характеризующая расположение сечения
+						А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>.</p>
+					<p>Осталось составить выражение для площади ∆А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>. Так как
+						АВ||A<sub>1</sub>B<sub>1</sub>, то ∠АВО и ∠А<sub>1</sub>В<sub>1</sub>О одинаковы как <a
+							href="https://100urokov.ru/predmety/urok-4-parallelnye-pryamye" target="_blank">соответственные
+							углы</a>.
+						Тогда у ∆АВО и ∆А<sub>1</sub>В<sub>1</sub>О есть два равных угла (ведь ∠АОВ у них общий), а потому эти
+						треугольники подобны по <a href="https://100urokov.ru/predmety/urok-6-podobnye-treugolniki"
+							target="_blank">первому
+							признаку подобия</a>. Это означает, что</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/23-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/23-obem-slozhnyh-tel.webp" alt="23 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Надо как-то найти значение коэффициента k, который, очевидно, как-то зависит от переменной х.
+						Рассмотрим
+						теперь
+						∆ОМВ и ∆ОМ<sub>1</sub>В<sub>1</sub>. Они прямоугольные, ведь ОМ перпендикулярен плоскостям этих
+						треугольников.
+						Также у них есть общий угол ∠ОВМ. Значит, они подобны, и поэтому</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/24-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/24-obem-slozhnyh-tel.webp" alt="24 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Итак, если пирамида имеет высоту h и площадь основания S, то объем пирамиды равен:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/25-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/25-obem-slozhnyh-tel.webp" alt="25 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Выведенная нами формула справедлива для треугольной пирамиды. Однако если в основании пирамиды лежит
+						произвольный многоугольник, то, разбив этот многоугольник на треугольники, мы разобьем и пирамиду на
+						несколько
+						треугольных пирамид. У них будет общая высота h и площади оснований S<sub>1</sub>, S<sub>2</sub>,
+						S<sub>3</sub>…, которые в сумме составляют площадь многоугольника S.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/26-vychislenie-obema-prizmy.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/26-vychislenie-obema-prizmy.webp" alt="26 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Объем треугольных пирамид рассчитывается по выведенной нами формуле:</p>
+					<p>
+						<picture>
+							<source
+								srcset="img/obem-slozhnyh-tel/27-1-obem-piramidy-raven-odnoj-treti-ot-proizvedenija_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/27-1-obem-piramidy-raven-odnoj-treti-ot-proizvedenija_edited.webp"
+								alt="27 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/obem-slozhnyh-tel/27-2-obem-piramidy-raven-odnoj-treti-ot-proizvedenija_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/27-2-obem-piramidy-raven-odnoj-treti-ot-proizvedenija_edited.webp"
+								alt="27 2 obem piramidy raven odnoj treti ot proizvedenija edited">
+						</picture>
+					</p>
+					<p><strong>Задание. В основании пирамиды высотой 15 лежит квадрат со стороной 4. Вычислите ее
+							объем.</strong>
+					</p>
+					<p>Решение. Сначала находим площадь основания. Для этого надо сторону квадрата умножить саму на себя:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/28-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/28-obem-slozhnyh-tel.webp" alt="28 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p><strong>Задание. В кубе
+							АВС</strong><strong>DA<sub>1</sub>В<sub>1</sub>С<sub>1</sub></strong><strong>D<sub>1</sub> отмечены
+							точки
+							Е
+							и </strong><strong>F – середины ребер ВС и </strong><strong>CD соответственно. Во сколько раз объем
+							пирамиды
+							С<sub>1</sub></strong><strong>EFC меньше объема куба? </strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/29-kub.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/29-kub.webp" alt="29 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. Обозначим длину ребра куба буквой а. Тогда его объем рассчитывается так:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/30-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/30-obem-slozhnyh-tel.webp" alt="30 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p><strong>Задание. Отрезок </strong><strong>MN перпендикулярен плоскости пятиугольника
+							АВС</strong><strong>DE.
+							Точка </strong><strong>K, принадлежащая этой плоскости, делит отрезок </strong><strong>MN в
+							отношении
+							2:1.
+							Во сколько раз объем пирамиды </strong><strong>MABCDE больше объема пирамиды
+						</strong><strong>NABCDE?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/31-vychislenie-obema-prizmy.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/31-vychislenie-obema-prizmy.webp" alt="31 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. Запишем формулы для объемов этих пирамид. При этом учтем, что MK – высота для MABCDE, а NK –
+						это
+						высота для NABCDE.</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/32-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/32-obem-slozhnyh-tel.webp" alt="32 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Далее рассмотрим такую фигуру, как усеченная пирамида. Ясно, что ее объем можно вычислить, если из
+						объема
+						исходной пирамиды вычесть объем отсеченной верхушки.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/33-vychislenie-obema-prizmy.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/33-vychislenie-obema-prizmy.webp" alt="33 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Снова рассмотрим пирамиду ОАВС, через которую проведено сечение
+						А<sub>1</sub>В<sub>1</sub>С<sub>1</sub>,
+						параллельное основанию.</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/34-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/34-obem-slozhnyh-tel.webp" alt="34 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Обозначим площадь нижнего основания пирамиды как S<sub>2</sub>, а площадь верхнего основания – как
+						S<sub>1</sub>. Далее высоту усеченной пирамиды (отрезок ММ<sub>1</sub>) обозначим как h. Мы уже
+						выяснили
+						ранее,
+						что основания АВС и А<sub>1</sub>В<sub>1</sub>С<sub>1</sub> – это подобные треугольники, причем
+						коэффициент
+						их
+						подобия k равен отношению высот ОМ и ОМ<sub>1</sub>. Тогда можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/35-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/35-obem-slozhnyh-tel.webp" alt="35 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Далее используем <a href="https://100urokov.ru/predmety/urok-7-masshtab-sootnoshenie-chisel"
+							target="_blank">основное
+							свойство пропорции</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/36-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/36-obem-slozhnyh-tel.webp" alt="36 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Далее числитель дроби мы раскладываем на множители, используя <a
+							href="https://100urokov.ru/predmety/urok-8-umnozhenie-sokrashhennoe" target="_blank">формулу
+							разности
+							кубов</a>:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/37-1-obem-usechennoj-piramidy_edited.webp" type="image/webp">
+							<img src="img/obem-slozhnyh-tel/37-1-obem-usechennoj-piramidy_edited.webp"
+								alt="37 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/37-2-obem-usechennoj-piramidy_edited.webp" type="image/webp">
+							<img src="img/obem-slozhnyh-tel/37-2-obem-usechennoj-piramidy_edited.webp"
+								alt="37 2 obem usechennoj piramidy edited">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Основаниями усеченной пирамиды являются квадраты со сторонами 9 см и 5 см, а высота
+							пирамиды
+							составляет 6 см. Найдите ее объем.</strong></p>
+					<p>Сначала вычислим площади оснований:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/38-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/38-obem-slozhnyh-tel.webp" alt="38 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="5">Объем конуса</h2>
+					<p>Рассмотрим <a href="https://100urokov.ru/predmety/cilindr-i-konus" target="_blank">конус</a> с высотой
+						h и
+						радиусом основания R. Совместим начало координат с вершиной конуса и направим ось Ох в сторону
+						основания
+						конуса. Тогда она пересечет основание в какой-то точке М c координатой h. Далее через точку
+						М<sub>1</sub> на
+						оси Ох, имеющей координату х, проведем сечение, перпендикулярное оси Ох. Это сечение будет
+						окружностью.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/39-vychislenie-obema-konusa.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/39-vychislenie-obema-konusa.webp" alt="39 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Также построим образующую ОА, которая будет проходить через сечение в точке А<sub>1</sub>. Теперь
+						сравним
+						∆ОАМ
+						и ∆ОА<sub>1</sub>М<sub>1</sub>. Они прямоугольные, и у них есть общий угол ∠АОМ. Это значит, что они
+						подобны, и
+						поэтому справедливо отношение:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/40-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/40-obem-slozhnyh-tel.webp" alt="40 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Полученную формулу можно переписать в другом виде так, чтобы она содержала площадь основания, причем
+						она
+						будет
+						похожа на аналогичную формулу для пирамиды:</p>
+					<p>
+						<picture>
+							<source
+								srcset="img/obem-slozhnyh-tel/41-1-obem-konusa-mozhet-byt-vychislen-po-formulam_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/41-1-obem-konusa-mozhet-byt-vychislen-po-formulam_edited.webp"
+								alt="41 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source
+								srcset="img/obem-slozhnyh-tel/41-2-obem-konusa-mozhet-byt-vychislen-po-formulam_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/41-2-obem-konusa-mozhet-byt-vychislen-po-formulam_edited.webp"
+								alt="41 2 obem konusa mozhet byt vychislen po formulam edited">
+						</picture>
+					</p>
+					<p><strong>Задание. Радиус конуса – 8 см, а его высота составляет 12 см. Определите его объем.</strong>
+					</p>
+					<p>Решение. Здесь надо просто применить выведенную формулу:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/42-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/42-obem-slozhnyh-tel.webp" alt="42 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. В сосуде, имеющем форму перевернутого конуса, вода доходит до уровня,
+							соответствующего 2/3
+							высоты сосуда. При этом ее объем составляет 192 мл. Каков объем всего сосуда?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/43-vychislenie-obema-konusa.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/43-vychislenie-obema-konusa.webp" alt="43 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. В задаче фигурируют два конуса. Один из них – это сам сосуд, а второй – его часть,
+						заполненная
+						водой.
+						При выведении формулы объема мы уже выяснили, что радиусы таких конусов пропорциональны их высотам:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/44-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/44-obem-slozhnyh-tel.webp" alt="44 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Мы уже заметили, что формулы для объема пирамида и конуса идентичны. По сути, конус можно
+						рассматривать как
+						особый случай пирамиды, у которой в основании лежит не многоугольник, а окружность. Аналогично и
+						усеченный
+						конус можно считать особым случаем усеченной пирамиды, а поэтому для расчета его объема можно
+						применять
+						такую
+						же формулу:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/45-obem-usechennogo-konusa-vychisljaetsja.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/45-obem-usechennogo-konusa-vychisljaetsja.webp"
+								alt="45 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p><strong>Задание. Вычислите объем усеченного конуса с высотой 9 и радиусами оснований 7 и 4.</strong>
+					</p>
+					<p>Решение. Сначала находим площади оснований:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/46-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/46-obem-slozhnyh-tel.webp" alt="46 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="6">Объем шара</h2>
+					<p>Пришло время разобраться и с таким телом, как <a href="https://100urokov.ru/predmety/sfera-i-shar"
+							target="_blank">шар</a>. Здесь можно использовать тот же метод интегрирования, что и в случае с
+						конусом и
+						пирамидой. Но можно поступить и иначе – использовать выведенную нами для тел вращения формулу</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/47-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/47-obem-slozhnyh-tel.webp" alt="47 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Шар как раз является телом вращения. Он получается при вращении полуокружности вокруг диаметра, на
+						который
+						эта
+						дуга опирается.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/48-obem-shara.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/48-obem-shara.webp" alt="48 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Напомним известное нам <a href="https://100urokov.ru/predmety/urok-3-linii-na-ploskosti"
+							target="_blank">уравнение
+							окружности</a>, чей центр совпадает с началом координат:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/49-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/49-obem-slozhnyh-tel.webp" alt="49 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Здесь надо уточнить, что если у получившейся функции впереди записан знак «+», то ее график
+						соответствует
+						полуокружности, находящейся над осью Ох. Если же используется знак «–», то получается уже нижняя
+						полуокружность, расположенная под осью Ох:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/50-krug-na-ploskosti.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/50-krug-na-ploskosti.webp" alt="50 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>В принципе мы можем поворачивать любую из этих полуокружностей вокруг Ох, но мы выберем верхнюю
+						полуокружность.
+						Заметим, что эта дуга начинается в точке х = – R и заканчивается в точке х = R, эти числа будут
+						пределами
+						интегрирования. Тогда объем шара равен:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/51-1-obem-shara-vychisljaetsja_edited.webp"
+								type="image/webp"><img src="img/obem-slozhnyh-tel/51-1-obem-shara-vychisljaetsja_edited.webp"
+								alt="51 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/51-2-obem-shara-vychisljaetsja_edited.webp"
+								type="image/webp"><img src="img/obem-slozhnyh-tel/51-2-obem-shara-vychisljaetsja_edited.webp"
+								alt="51 2 obem shara vychisljaetsja edited">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите объем шара с радиусом 6.</strong></p>
+					<p>Решение. Подставляем радиус из условия в формулу:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/52-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/52-obem-slozhnyh-tel.webp" alt="52 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. В цилиндр вписан шар. Во сколько раз объем цилиндра больше объема такого
+							шара?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/53-obem-cilindra-bolshe-obema-shara.webp" type="image/webp">
+							<img src="img/obem-slozhnyh-tel/53-obem-cilindra-bolshe-obema-shara.webp"
+								alt="53 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. Ясно, что так как шар вписан в цилиндр, то радиусы этих тел одинаковы. Обозначим этот радиус
+						как R.
+						Также ясно, что раз шар касается оснований цилиндра, то расстояние между ними (то есть высота
+						цилиндра)
+						равно
+						двум радиусам шара:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/54-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/54-obem-slozhnyh-tel.webp" alt="54 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="7">Шаровой сегмент</h2>
+					<p>Когда плоскость проходит через шар, она рассекает его на две фигуры, которые именуются шаровым
+						сегментом.
+						Если
+						из центра шара О провести радиус ОА длиной R в направлении плоскости сечения, который перпендикулярен
+						этой
+						плоскости, то он пересечет ее какой-то точке В. Длину отрезка АВ называют высотой шарового сегмента и
+						обозначают буквой h:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/55-opredelenie-obema-shara.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/55-opredelenie-obema-shara.webp" alt="55 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Ясно, что при этом отрезок ОВ – это расстояние от секущей плоскости (или от основания сегмента) до
+						центра
+						шара,
+						причем этот отрезок имеет длину R –h.</p>
+					<p>Можно считать, что шаровой сегмент, как и шар, получается при вращении дуги окружности вокруг оси Ох.
+						Однако
+						если сам шар при этом ограничен плоскостями x = R и х = – R, то сегмент ограничен другими плоскостями:
+						х = R
+						и
+						х = R – h. Это значит, что его объем можно вычислить с помощью интеграла также, как и объем шара,
+						отличаться
+						будет лишь нижний предел интегрирования:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/56-1-obem-sharovogo-segmenta_edited.webp" type="image/webp">
+							<img src="img/obem-slozhnyh-tel/56-1-obem-sharovogo-segmenta_edited.webp"
+								alt="56 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/56-2-obem-sharovogo-segmenta_edited.webp" type="image/webp">
+							<img src="img/obem-slozhnyh-tel/56-2-obem-sharovogo-segmenta_edited.webp"
+								alt="56 2 obem sharovogo segmenta edited">
+						</picture>
+					</p>
+					<p>Заметим, что шар можно рассматривать как шаровой сегмент, чья высота вдвое больше его радиуса. И
+						действительно,
+						если в выведенную формулу мы подставим значение h = 2R, то получим уже известную нам формулу объема
+						шара.
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите объем шарового сегмента высотой 6, если он отсечен от шара радиусом
+							15.</strong>
+					</p>
+					<p>Решение. Используем выведенную формулу:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/57-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/57-obem-slozhnyh-tel.webp" alt="57 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Диаметр шара разделили на три равных отрезка. Через концы этих отрезков провели
+							секущие
+							плоскости, перпендикулярные диаметру. Чему равен объем тела, заключенного между этими двумя
+							плоскостями
+							(оно
+							называется шаровым слоем), если радиус шара обозначен буквой </strong><strong>R?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/58-obem-shara.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/58-obem-shara.webp" alt="58 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Решение. Ясно, что для вычисления объема шарового слоя достаточно вычесть из объема шара объемы двух
+						шаровых
+						сегментов, образующихся при проведении секущих плоскостей. Так как они разделили диаметр на три
+						одинаковых
+						отрезка, то высота этих сегментов будет в три раза меньше диаметра шара:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/59-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/59-obem-slozhnyh-tel.webp" alt="59 obem slozhnyh tel">
+						</picture>
+					</p>
+					<h2 id="8">Площадь сферы</h2>
+					<p>В предыдущих уроках мы уже узнали формулу для вычисления <a
+							href="https://100urokov.ru/predmety/sfera-i-shar" target="_blank">площади сферы</a>, однако тогда
+						мы ее
+						не доказывали. Однако теперь мы можем ее доказать,
+						используя формулу объема шара. Но сначала напомним саму формулу:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/60-ploschad-sfery-vychisljaetsja.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/60-ploschad-sfery-vychisljaetsja.webp" alt="60 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Впишем сферу в многогранник с n гранями. Ясно, что расстояние от граней этого многогранника до центра
+						сферы
+						равно радиусы сферы R. Далее построим пирамиды, чьи вершины находятся в центре сферы, а основания –
+						это
+						грани
+						многогранника. Заметим, что такие пирамиды будут иметь одинаковые высоты длиной R.</p>
+					<p>Обозначим площади граней многогранника как S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub>,…S<sub>n</sub>.
+						Тогда
+						объемы пирамид, построенных на этих гранях, вычисляются так:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/61-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/61-obem-slozhnyh-tel.webp" alt="61 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Заметим, что в сумме эти объемы дают объем всего многогранника, а сумма площадей S<sub>1</sub>,
+						S<sub>2</sub>,
+						S<sub>3</sub>,…S<sub>n</sub> – это площадь всей его поверхности. Тогда можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/62-1-obem-mnogogrannika-v-kotoryj-vpisana-sfera_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/62-1-obem-mnogogrannika-v-kotoryj-vpisana-sfera_edited.webp"
+								alt="62 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/62-2-obem-mnogogrannika-v-kotoryj-vpisana-sfera_edited.webp"
+								type="image/webp"><img
+								src="img/obem-slozhnyh-tel/62-2-obem-mnogogrannika-v-kotoryj-vpisana-sfera_edited.webp"
+								alt="62 2 obem mnogogrannika v kotoryj vpisana sfera edited">
+						</picture>
+					</p>
+					<p>Теперь начнем неограниченно уменьшать размеры граней многогранника. Тогда число n будет расти, объем
+						многогранника будет приближаться к объему шара, а площадь многогранника – к площади к сфере. Тогда и
+						доказанное
+						равенство можно будет записать так:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/63-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/63-obem-slozhnyh-tel.webp" alt="63 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p><strong>Задание. Необходимо изготовить закрытый сосуд с заранее заданным объемом </strong><strong>V.
+							Предлагается два варианта формы этого сосуда – шар и куб. Так как поверхность сосуда покрывается
+							очень
+							дорогой краской, то необходимо выбрать вариант с меньшей площадью поверхности. Какую форму для
+							сосуда
+							следует выбрать?</strong></p>
+					<p>Решение. Обозначим радиус шара как R, а ребро куба как а. Тогда можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/64-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/64-obem-slozhnyh-tel.webp" alt="64 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Теперь надо выяснить, какое из полученных значений больше. Для этого поделим площадь куба на площадь
+						сферы.
+						Если получится число, большее единицы, то площадь куба больше:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem-slozhnyh-tel/65-obem-slozhnyh-tel.webp" type="image/webp"><img
+								src="img/obem-slozhnyh-tel/65-obem-slozhnyh-tel.webp" alt="65 obem slozhnyh tel">
+						</picture>
+					</p>
+					<p>Получившееся число больше единицы, ведь 6 больше числа π, равного 3,1415926… Значит, и площадь куба
+						больше,
+						а
+						потому необходимо выбрать сосуд, имеющий форму шара.</p>
+					<p>Ответ: шар.</p>
+					<p>Примечание. Более сложными математическими методами можно доказать, что если второй сосуд имеет не
+						форму
+						куба,
+						а вообще любую форму, отличную от шара, то всё равно следует выбирать именно сосуд в форме шара. То
+						есть из
+						всех поверхностей, ограничивающих определенный объем, именно сфера имеет наименьшую площадь. Этот факт
+						имеет
+						и
+						физическое следствие – капли дождя и мыльные пузыри стремятся принять форму шара, также как и любые
+						жидкости,
+						находящиеся в невесомости.</p>
+					<p>Итак, мы научились вычислять объемы таких тел, как конус, пирамида, шар, призма. Также помощью
+						интегрирования
+						можно находить объемы и ещё более сложных тел, если мы можем составить функцию, описывающую площадь их
+						сечения.
+					</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

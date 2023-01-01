@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Параллельнсть</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="parallelism">
+			<div class="parallelism__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="parallelism__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-2.2.webp" type="image/webp"><img
+									src="img/themes-10/content-2.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Параллельность в пространстве</div>
+							<div class="info__subtitle">
+								В курсе планиметрии мы изучали параллельные прямые. В стереометрии же используются ещё и
+								параллельные
+								плоскости.
+							</div>
+						</div>
+					</div>
+					<div class="parallelism__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="parallelism.html#1">Параллельные прямые в пространстве</a></p>
+						<p><a href="parallelism.html#2">Параллельность трех прямых в пространстве</a>
+						</p>
+						<p><a href="parallelism.html#3">Параллельность прямой и плоскости</a></p>
+						<p><a href="parallelism.html#4">Параллельность плоскостей</a></p>
+
+					</div>
+					<h2 id="1">Параллельные прямые в пространстве</h2>
+					<p> Сформулируем определение параллельных прямых, которое используется в
+						стереометрии.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//1-dve-prjamye-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//1-dve-prjamye-v-prostranstve.webp" alt="1 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Для обозначения параллельности прямых используется специальный символ «||». В частности, запись а||b
+						означает, что а и b – это параллельные прямые.</p>
+					<p>Рассмотрим для наглядности пример.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//2-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//2-prjamye-na-ploskosti.webp" alt="2 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>На этом рисунке m||n. В свою очередь пары прямых р и m, р и n непараллельны, ведь у них есть общая
+						точка. Прямые h и nтакже непараллельны, но по другой причине – они находятся в разных плос-тях (такие
+						прямые называют скрещивающимися).</p>
+					<p>Напомним, что в геометрии параллельными могут быть не только прямые, но также отрезки и лучи. Для
+						параллельности отрезков требуется, чтобы они находились на параллельных прямых. Аналогичное правило
+						действует и в отношении лучей.</p>
+					<p>Докажем одну довольно простую теорему (для удобства мы будем их нумеровать, чтобы потом ссылаться на
+						их номера).</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//3-teorema-cherez-ljubuju-tochku-v-prostranstve.webp"
+								type="image/webp"><img
+								src="img/parallelism//3-teorema-cherez-ljubuju-tochku-v-prostranstve.webp"
+								alt="3 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Действительно, пусть в пространстве есть прямая m и точка А. Мы уже знаем, что через них можно
+						провести плос-ть. Обозначим ее буквой α.</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//4-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//4-prjamye-na-ploskosti.webp" alt="4 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>По аксиоме параллельности мы можем через А провести единственную прямую n, параллельную m, причем n
+						будет находиться в α. Любая другая прямая в плос-ти α, проходящая через А, не может быть параллельной
+						m, это будет противоречить аксиоме параллельности. Любая прямая, проходящая через А и не находящаяся в
+						α, также не будет параллельна m, ведь в противном случае она по определению параллельности находилась
+						бы с m в одной плос-ти, и тем самым получилось бы, что через m и А проведены две различные плос-ти, а
+						это невозможно.</p>
+					<p>Заметим ещё один очевидный факт.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//5-teorema-cherez-dve-parallelnye-prjamye.webp" type="image/webp">
+							<img src="img/parallelism//5-teorema-cherez-dve-parallelnye-prjamye.webp"
+								alt="5 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Существование такой плос-ти прямо вытекает из определения параллельности. Но нам надо показать, что
+						эта плос-ть – единственная. Пусть есть прямые m и n, причем m||n. Отметим на m точку Р, а на n точки Н
+						и К:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//6-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//6-prjamye-na-ploskosti.webp" alt="6 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Если бы через m и n можно было провести более одной плос-ти, то каждая из них проходила бы через точки
+						Р, Н и К. Однако через них можно провести лишь единственную плос-ть. Значит, и через m и n проходит
+						лишь одна плос-ть, ч. т. д.</p>
+					<p>Доказанная теорема показывает, что параллельные прямые однозначно определяют (или задают) плос-ть,
+						проведенную через них.</p>
+					<p>Докажем ещё одну теорему.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//7-teorema-esli-odna-iz-dvuh-parallelnyh-prjamyh.webp"
+								type="image/webp"><img
+								src="img/parallelism//7-teorema-esli-odna-iz-dvuh-parallelnyh-prjamyh.webp"
+								alt="7 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Доказательство. Пусть есть прямые m и n, и m||n. Прямая m пересекает плос-ть α некоторой точке М. Нам
+						надо показать, что и n пересекает α. Проведем через m и nплос-ть β (это можно сделать по теор. 2).
+						Точка M как часть прямой m будет ей принадлежать. Но она же принадлежит и α. Значит, у α и β есть
+						общая точка, то есть они пересекаются. Тогда у них должна быть и общая прямая, которую мы обозначим
+						буквой h:&nbsp;</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//8-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//8-prjamye-na-ploskosti.webp" alt="8 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Точка М должна находиться на прямой h, то есть m и h пересекаются в ней.Значит, h пересекает и прямую
+						n. В противном случае получилось бы, чтобы через M проведено две прямые, h и m, каждая из которых была
+						бы параллельна n. А это невозможно по теор. 1. Обозначим точку пересечения n и h буквой N. Оно будет
+						общей для n и α.</p>
+					<p>Осталось лишь показать, что других общих точек у n и α нет. Действительно, если бы такая точка была,
+						то вся прямая n должна бы принадлежать β. Тогда n стала бы общей прямой α и β, то есть совпала бы с
+						р.Но р пересекается с m, а n – нет, то есть на самом деле это различные прямые. Получается, что α и n
+						имеют единственную общую точку N, ч. т. д.</p>
+					<h2 id="2">Параллельность трех прямых в пространстве</h2>
+					<p>Напомним, что в планиметрии параллельные прямые обладали так называемым свойством транзитивности: если
+						m||nи m||р, то и n||р. Оказывается, что это правило верно и в более общем случае, когда прямые
+						находятся в пространстве, а не на единой плос-ти.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//9-svojstvo-tranzitivnosti.webp" type="image/webp"><img
+								src="img/parallelism//9-svojstvo-tranzitivnosti.webp" alt="9 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Это утверждение иногда именуют признаком параллельности прямых.</p>
+					<p>Доказательство. Пусть в пространстве располагаются прямые m,n и р, и р||n, а р||m. Надо доказать, что
+						также m||n. То есть надо продемонстрировать, что m и n находятся в одной плос-ти, но не пересекаются.
+						Отметим на n некоторую точку K и проведем через&nbsp; K и m плос-ть α.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//10-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//10-prjamye-na-ploskosti.webp" alt="10 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Раз n и α имеют общую точку К, то либо n пересекает α, либо n полностью лежит в α. Предположим, что n
+						и α пересекаются. Тогда с α также пересекается и р, ведь р||n(по теор. 3). Из этого вытекает (по всё
+						той же теор. 3), что и m пересекает α, а это не так. Значит, n полностью находиться в α. Получается,
+						что n и m в одной плос-ти.</p>
+					<p>Осталось показать, что n и m НЕ пересекаются. Действительно, если бы они пересеклись, то через точку
+						их пересечения проходило бы сразу две прямых, параллельных р, что невозможно (по теор. 1). Значит, n и
+						m НЕ пересекаются, а потому представляют собой пару параллельных прямых, ч. т. д.</p>
+					<p>Теперь мы можем рассмотреть одну интересную задачу.</p>
+					<p><strong>Задание. В пространстве выбраны произвольные точки М, К, Н и Р, находящиеся в разных плос-тях.
+							Далее отметили середины отрезков:</strong></p>
+					<p><strong>А – середина МК</strong></p>
+					<p><strong>В – середина КН</strong></p>
+					<p><strong>С – середина НР</strong></p>
+					<p><strong>D – середина РМ</strong></p>
+					<p><strong>Докажите, что эти середины находятся в одной плос-ти, и четырехугольник АВС</strong><strong>D
+							– это параллелограмм.</strong></p>
+					<p>Решение. Напомним, что мы уже сталкивались с&nbsp;похожей задачей, когда рассматривали так называемый
+						параллелограмм
+						Вариньона. Здесь разница в том, что точки М, К, Н, Р находятся в разных плос-тях.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//11-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//11-prjamye-na-ploskosti.webp" alt="11 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Сначала рассмотрим ∆НКР. В нем ВС – это средняя линия, ведь она соединяет середины НК и НР. Значит,
+						ВС||РК. В ∆КМР средней линией будет являться AD, и поэтому AD|| КР. По свойству транзитивности (теор.
+						4) мы можем заключить, что ВС||АD. Это уже показывает, что эти два отрезка, а значит и их точки А, В,
+						С и D, находятся в одной плос-ти, и потому АВСD– плоский четырехугольник.</p>
+					<p>Далее рассмотрим ∆РМН. Его средняя линия – это СD, поэтому CD||НМ. Аналогично из ∆КНМ можно получить,
+						что АВ||НМ. Отсюда вытекает (по теор. 4), что CD||АВ. В итоге мы получили, что у четырехугольника АВСD
+						противоположные стороны параллельны, и поэтому он по определению представляют собой параллелограмм.
+					</p>
+					<h2 id="3">Параллельность прямой и плоскости</h2>
+					<p>Ранее мы изучили два случая взаимного расположения прямой и плос-ти. Первый случай возникает, если
+						прямая с плос-тью имеют две общие точки. Тогда, по одной из аксиом стереометрии, вся прямая находиться
+						в плос-ти.</p>
+					<p>Второй случай возникает, если прямая и плос-ть имеют строго одну общую точку. Тогда говорят, что они
+						пересекаются.</p>
+					<p>Но возможен и третий случай – прямая и плос-ть вовсе не имеют общих точек. Тогда говорят, что прямая
+						параллельна плоскости.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//12-esli-prjamaja-i-ploskost-ne-imejut-obschih.webp"
+								type="image/webp"><img src="img/parallelism//12-esli-prjamaja-i-ploskost-ne-imejut-obschih.webp"
+								alt="12 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Для иллюстрации этого примера рассмотрим обычный куб:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//13-kub.webp" type="image/webp"><img
+								src="img/parallelism//13-kub.webp" alt="13 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Здесь плос-ть, проходящая через нижнюю грань АЕНD, параллельна отрезкам ВС, СG, GF и BF.</p>
+					<p>Существует теорема, которая представляет собой признак параллельности прямой и плоскости.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//14-priznak-parallelnosti-prjamoj-i-ploskosti.webp"
+								type="image/webp"><img src="img/parallelism//14-priznak-parallelnosti-prjamoj-i-ploskosti.webp"
+								alt="14 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть плос-ть α и прямая m, не лежащая в ней. Также в αесть такая прямая n, что
+						m||n. Тогда через mbn можно провести некоторую плос-ть β (по теор. 2):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//15-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//15-prjamye-na-ploskosti.webp" alt="15 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Так как n принадлежит обеим плос-тям, и α, и β, то она является их границей.Предположим, что у α и m
+						есть хотя бы одна общая точка К. Тогда эта точка будет общей для α и β, то есть она будет находиться
+						на их границе – прямой n. Но тогда получится, что в К пересекаются n и m. Это противоречие, из
+						которого вытекает, что ни одной общей точки у α и m быть не может. Это как раз и значит, что они
+						параллельны, ч. т. д.</p>
+					<p>Интересно, верно ли обратное утверждение? Вытекает ли из параллельности прямой m и плос-ти α тот факт,
+						что в плос-ти обязательно найдется прямая, параллельная m? Оказывается, что да, и это легко
+						продемонстрировать.</p>
+					<p>Возьмем такую прямую m и плос-ть α, что m||α. Далее выберем на α любую точку K и проведем через нее
+						такую прямую n, что n||m (по теор. 1):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//16-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//16-prjamye-na-ploskosti.webp" alt="16 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Раз n проходит через К, то она уже имеет общую точку с α. Тогда возможны лишь два варианта: либо n
+						пересекает α, либо лежит в ней. Но вариант с пересечением на самом деле невозможен, ведь в этом случае
+						и m также должна пересекать α (по теор. 3), а это не так. Значит, n полностью находиться на α.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//17-esli-prjamaja-i-ploskost-parallelny.webp" type="image/webp">
+							<img src="img/parallelism//17-esli-prjamaja-i-ploskost-parallelny.webp"
+								alt="17 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>В результате мы показали, что в α обязательно есть прямая, параллельная m. Более того, немного
+						усложнив наши рассуждения, мы покажем, что таких прямых существует бесконечно много! Продолжим наше
+						построение и проведем через К ещё одну прямую р, находящуюся в α. Она состоит из бесконечного
+						количества различных точек. Через каждую из них мы можем провести прямую, параллельную n и лежащую в α
+						(по аксиоме параллельности):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//18-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//18-prjamye-na-ploskosti.webp" alt="18 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>В силу свойства транзитивности (теор. 3) каждая такая прямая окажется параллельной не только n, но и
+						m.</p>
+					<p><strong>&nbsp;</strong></p>
+					<p>Вернемся к примеру с кубиком:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//19-kub.webp" type="image/webp"><img
+								src="img/parallelism//19-kub.webp" alt="19 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Мы уже говорили, что ребра ВС, СG, GF и FB параллельны грани АЕНD. Теперь мы можем строго доказать
+						этот факт. Сначала напомним, что у куба каждая грань – это квадрат, а у него, в свою очередь,
+						параллельны противоположные стороны. Например, АЕFB – квадрат, поэтому BF||АЕ. Но прямая АЕ находится
+						в плос-ти АЕН. Так как плос-ть АЕН содержит прямую АЕ, параллельную BF, то BF||АЕН (по теор. 5).
+						Аналогичное доказательство можно привести и для трех других ребер верхней грани ВСGF.</p>
+					<p>Докажем ещё пару важных теорем.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//20-esli-ploksoti-peresekajutsja-po-prjamoj.webp"
+								type="image/webp"><img src="img/parallelism//20-esli-ploksoti-peresekajutsja-po-prjamoj.webp"
+								alt="20 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Проиллюстрируем теорему картинкой:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//21-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//21-prjamye-na-ploskosti.webp" alt="21 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Доказать теорему очень просто. Прямые р и m находятся в одной плос-ти α. Если бы они пересекались в
+						некоторой точке N, то она была бы общей для прямой m и плос-ти β, ведь р полностью находится в β. Но
+						этой невозможно, ведь m||β. Значит, и р||m.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//22-esli-prjamye-pararellny-a-prjamaja-takzhe-parallelna.webp"
+								type="image/webp"><img
+								src="img/parallelism//22-esli-prjamye-pararellny-a-prjamaja-takzhe-parallelna.webp"
+								alt="22 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Действительно, если прямые m, n и плос-ть α соответствуют условиям теоремы, то n не может пересекать
+						α, иначе и m также ее пересекало бы (по теор. 3). Значит, остаются только те два варианта, которые
+						упомянуты в теореме.&nbsp;</p>
+					<p>Теперь мы можем ознакомиться с некоторыми задачами. Перед просмотром решения попытайтесь
+						самостоятельно их решить.</p>
+					<p><strong>Задание. Верно ли, что все прямые, пересекающие две параллельные
+							прямые&nbsp;</strong><strong>m и </strong><strong>n, находятся в одной и той же плос-ти?</strong>
+					</p>
+					<p>Решение.m и n как параллельные прямые лежат в единственной плос-ти α (теор. 2). Любая прямая,
+						пересекающая m и n в каких-то точках M и N, уже имеет с α две общие точки – как раз M и N. Значит, она
+						целиком принадлежит α. Таким образом, любые прямые, пересекающие m и n, будут располагаться в одной и
+						той же плос-ти α.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Две смежные стороны параллелограмма пересекают плос-ть&nbsp;</strong><strong>α.
+							Каково взаимное положение этой плос-ти и двух других сторон этого параллелограмма?</strong></p>
+					<p>Решение. Пусть в параллелограмме МНРК c α пересекаются стороны МН и НР. По определению параллелограмма
+						МН||РК, а НР||КМ. Если одна из двух параллельных прямых пересекает плос-ть, то и другая делает то же
+						самое (по теор. 3). Поэтому РК и КМ ведут себя также, как МН и НР, то есть также пересекают α.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Через </strong><strong><a href="https://100urokov.ru/predmety/urok-2-trapeciya"
+								target="_blank" rel="noopener noreferrer">среднюю линию
+								трапеции</a>&nbsp;</strong><strong>проведена плос-ть&nbsp;</strong><strong>α. Могут ли основания
+							трапеции пересечь эту же плос-ть?</strong></p>
+					<p>Решение. Основания трапеции параллельны ее средней линии. Если бы они пересекли α, то и средняя линия
+						обязательно пересекала бы α (по теор. 3), а это не так. Значит, основания никак не могут пересечься с
+						α.</p>
+					<p><strong>Задание. В пространстве через концы отрезка АВ и его середину (оно обозначается буквой М)
+							построены параллельные прямые. Они пересекают плос-ть</strong><strong>α в точках А<sub>1</sub>,
+							В<sub>1</sub> и М<sub>1</sub> соответственно. Известно, что А<sub>1</sub>А = 5, В<sub>1</sub>В = 7.
+							Отрезок АВ с плос-тью не пересекается. Вычислите длину ММ<sub>1</sub>.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//23-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//23-prjamye-na-ploskosti.webp" alt="23 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Через параллельные прямые АА<sub>1</sub> и ММ<sub>1</sub> можно провести единственную плос-ть β (теор.
+						2). Прямая АВ имеет с β две минимум две общие точки – А и М. Значит, она полностью лежит в β, и тогда
+						точка В также принадлежит β. Аналогично можно показать, что в β находятся прямая
+						А<sub>1</sub>В<sub>1</sub> и точка ВВ<sub>1</sub>. Наконец, и прямая ВВ<sub>1</sub> располагается в β
+						(по двум точкам – В и В<sub>1</sub>). Тем самым мы можем утверждать, что АВВ<sub>1</sub>А<sub>1</sub>
+						– плоский четырехугольник, а именно трапеция, ведь ее основания АА<sub>1</sub> и ВВ<sub>1</sub>
+						параллельны. ММ<sub>1</sub> будет средней линией в этой трапеции (так как она проходит через одну
+						середину и боковой стороны и параллельна основаниям, в 8 классе мы выясняли, что этого достаточно для
+						того, чтобы считать ММ<sub>1</sub> средней линией.).</p>
+					<p><a href="https://100urokov.ru/predmety/urok-7-ispolzovanie-podobiya" target="_blank"
+							rel="noopener noreferrer">Длина средней линии</a> находится так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//24-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//24-parallelnost-v-prostranstve.webp" alt="24 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Ответ: 6.</p>
+					<p><strong>Задание. Решите предыдущую задачу в случае, если отрезок АВ и плос-ть&nbsp;</strong><strong>α
+							пересекаются.</strong></p>
+					<p>Решение. Аналогично предыдущей задаче мы можем показать, что все точки, фигурирующие в задаче,
+						находятся в одной плос-ти β. Пусть АВ пересекается с α в некоторой точке С. Она будет общей для
+						плос-тей α и β и потому будет находиться на их границе, то есть на прямой А<sub>1</sub>В<sub>1</sub>.
+						Изобразим отдельно плос-ть β не в пространстве, а в плоском виде, без искажения:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//25-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//25-prjamye-na-ploskosti.webp" alt="25 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Теперь нам надо просто решить планиметрическую задачу и найти ММ<sub>1</sub>.
+						∆АА<sub>1</sub>С,∆ВВ<sub>1</sub>С и ∆ММ<sub>1</sub>С подобны, ведь ∠ВСВ<sub>1</sub> и ∠А<sub>1</sub>СА
+						одинаковы как вертикальные углы, а</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//26-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//26-parallelnost-v-prostranstve.webp" alt="26 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Для дальнейших рассуждений нам потребуется ещё один факт: М<sub>1</sub> – это середина
+						А<sub>1</sub>В<sub>1</sub>. Он вытекает из <a
+							href="https://100urokov.ru/predmety/urok-1-parallelogramm-chetyryohugolniki" target="_blank"
+							rel="noopener noreferrer">теоремы Фалеса</a>. Действительно, на прямой АВ отмечены одинаковые
+						отрезки АМ и МВ (ведь М – середина АВ). Через их концы проведены параллельные прямые, которые, по
+						теореме Фалеса, на любой другой прямой также отсекут равные отрезки. То есть можно записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/parallelism//27-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//27-parallelnost-v-prostranstve.webp" alt="27 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>У подобных треугольников ∆∆АА<sub>1</sub>С и ∆ММ<sub>1</sub>С стороны пропорциональны, поэтому мы
+						можем записать:</p>
+					<p>
+						<picture>
+							<source srcset="img/parallelism//28-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//28-parallelnost-v-prostranstve.webp" alt="28 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Ответ: 1.</p>
+					<p><strong>Задание. </strong><strong>m и </strong><strong>n – прямые, не находящиеся в одной плос-ти.
+							Существует ли прямая такая прямая р, что р||</strong><strong>m и р||</strong><strong>m?</strong>
+					</p>
+					<p>Решение. Предположим, что р существует. Тогда она будет одновременно параллельна и m,и n. По свойству
+						транзитивности (теор. 4) получается, что прямые m и n должны быть также параллельны друг другу. Но это
+						невозможно, ведь они находятся в различных плос-тях. Из этого противоречия вытекает, что прямая р на
+						самом деле не может существовать.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Докажите, что прямая, параллельная каждой из двух пересекающихся плос-тей,
+							обязательно будет параллельна и линии их пересечения.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//29-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//29-prjamye-na-ploskosti.webp" alt="29 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Пусть есть прямая m, плос-ти α и β, и m||α, m||β. Также пусть α и β пересекаются по прямой n. Отметим
+						на n произвольную точку K. Далее проведем через К прямую, параллельную m (используя теор. 1), и
+						обозначим ее как р. Каково будет положение р относительно плос-тей α и β? Ни одну из этих плос-тей она
+						пересекать не может, ведь тогда бы такую плос-ть пересекала бы и m (по теор. 3). Также р не может быть
+						параллельна плос-тям, ведь она уже имеет с ними общую точку. Остается один вариант – она полностью
+						находится и в α, и в β. Но это значит, что р – общая прямая для α и β, то есть она совпадает с n. В
+						итоге получилось, что n||m, ч. т. д.</p>
+					<h2 id="4">Параллельность плоскостей</h2>
+					<p>В стереометрии параллельными могут быть не только две прямые, но и две плоскости.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//30-dve-ploskosti-nazyvajutsja-parallelnymi.webp"
+								type="image/webp"><img src="img/parallelism//30-dve-ploskosti-nazyvajutsja-parallelnymi.webp"
+								alt="30 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>В реальной жизни параллельны друг другу пол и потолок в квартире, противоположные грани кубика, задняя
+						и передняя стенка шкафа.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//31-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//31-prjamye-na-ploskosti.webp" alt="31 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Существует признак параллельности плоскостей.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//32-priznak-parallelnosti-ploskostej.webp" type="image/webp"><img
+								src="img/parallelism//32-priznak-parallelnosti-ploskostej.webp"
+								alt="32 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Докажем этот признак. Пусть есть плос-ти α и β, и в α находятся прямые m и n, пересекающиеся в точке
+						К. В свою очередь в β находятся прямые α<sub>1</sub> и β<sub>1</sub>, их общая точка – это
+						К<sub>1</sub>. При этом m||m<sub>1&nbsp;</sub>и n||n<sub>1</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//33-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//33-prjamye-na-ploskosti.webp" alt="33 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Возможны два варианта: либо α и β пересекаются по некоторой прямой р, либо они параллельны. Рассмотрим
+						вариант с пересечением. Заметим, что m и n параллельны плос-ти β (по теор. 5), ведь в β находятся
+						параллельные им прямые. В таком случае и m, и n должны быть параллельны линии пересечения α и β, то
+						есть прямой р (по теор. 7). Но тогда получится, что через точку К проведены сразу две прямые,
+						параллельные р. Это невозможно (по теор. 1). Противоречие показывает, что на самом деле α и β не могут
+						пересекаться, то есть они параллельны, ч. т. д.</p>
+					<p>Оказывается, что свойство транзитивности распространяется и на параллельные плос-ти:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//34-svojstvo-tranzitivnosti.webp" type="image/webp"><img
+								src="img/parallelism//34-svojstvo-tranzitivnosti.webp" alt="34 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Действительно, пусть есть три плос-ти α, β и γ, причем α||γ и β||γ. Надо продемонстрировать, что α||β.
+						Для этого отметим на γ произвольную точку K и проведем через нее пересекающиеся прямые m и n. Далее
+						отметим в α точку К<sub>1</sub>, через которую построим прямые m<sub>1&nbsp;</sub>и n<sub>1</sub>,
+						причем так, чтобы m||m<sub>1&nbsp;</sub>и n||n<sub>1</sub> (это возможно по теор. 1). Аналогично через
+						точку К<sub>2</sub>, находящуюся на β, построим прямые m<sub>2&nbsp;</sub>и n<sub>2</sub> так, чтобы
+						m||m<sub>2&nbsp;</sub>и n||n<sub>2</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//35-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//35-prjamye-na-ploskosti.webp" alt="35 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Легко заметить, что в силу свойства транзитивности (теор. 4) m<sub>1</sub>||m<sub>2</sub>, а
+						n<sub>1</sub>||n<sub>2</sub>. Тогда получится, что в α и β есть пересекающиеся прямые, параллельные
+						друг другу. Этого достаточно для того, чтобы считать α и β параллельными плос-тями (по теор. 9), ч. т.
+						д.</p>
+					<p>Довольно очевиден следующий факт:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//36-cherez-ljubuju-tochku-v-prostranstve.webp" type="image/webp">
+							<img src="img/parallelism//36-cherez-ljubuju-tochku-v-prostranstve.webp"
+								alt="36 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Докажем это. Возьмем плос-ть α и некоторую точку К, не находящуюся на α. Далее в α проведем
+						какие-нибудь две пересекающиеся прямые m и n. Ясно, что мы можем через К провести такие прямые
+						m<sub>1&nbsp;</sub>и n<sub>1</sub>, что m<sub>1</sub>||m и n<sub>1</sub>||n (по теор. 1). Но любые две
+						пересекающиеся прямые уже задают плос-ть. То есть мы можем провести плос-ть β через m<sub>1</sub>и
+						n<sub>1</sub>. По признаку параллельности плос-тей (теор. 9) получаем, что α||β:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//37-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//37-prjamye-na-ploskosti.webp" alt="37 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Осталось доказать, что через К нельзя провести ещё одну плос-ть γ, параллельную α. Действительно, если
+						бы такая плос-ть γ существовала бы, то в силу свойства транзитивности (теор. 10) она была бы
+						параллельна и β. Но у β и γ есть общая точка K, то есть они не параллельны. Значит, плос-ть γ не
+						существует, ч. т. д.</p>
+					<p>Существует два свойства параллельных плос-тей. Сформулируем их и докажем:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//38-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//38-prjamye-na-ploskosti.webp" alt="38 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>В самом деле, если плос-ть γ пересекает плос-ти α и β, и α||β, то линии их пересечения не могут
+						пересечься, ведь в противном случае у α и β будет общая точка. При этом линии пересечения находятся в
+						одной плос-ти γ. Значит, они параллельны, ч. т. д.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//39-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//39-prjamye-na-ploskosti.webp" alt="39 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Действительно, пусть параллельные плос-ти α и β пересекаются параллельными прямыми АD и ВС, причем А и
+						В находятся на β, а С и D– на α. Тогда через AD и ВС можно провести плос-ть γ (по теор. 2), и прямые
+						АВ и CD окажутся линиями пересечения:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//40-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//40-prjamye-na-ploskosti.webp" alt="40 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Рассмотрим четырехугольник АВСD. АВ||CD(по теор. 11), а АD||ВС. Получается, что АВСD – это
+						параллелограмм. Но у параллелограмма одинаковы противоположные стороны, поэтому AD = ВС, ч. т. д.</p>
+					<p>Рассмотрим несколько задач про параллельные плос-ти.</p>
+					<p><strong>Задание. Докажите, что противоположные грани куба параллельны. </strong></p>
+					<p>Решение. Построим куб и обозначим его вершины.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//41-kub.webp" type="image/webp"><img
+								src="img/parallelism//41-kub.webp" alt="41 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Покажем, что нижняя и верхняя грань (то есть плос-ти АЕН и ВFG) параллельны. Заметим, что в нижней
+						грани располагаются пересекающиеся прямые АЕ и АD, а в верхней грани – также пересекающиеся прямые BF
+						и ВС. При этом АЕ||BF (это противоположные стороны квадрата АЕFB) и AD||ВС (это уже стороны в квадрате
+						АВСD). Из этого вытекает (по теор. 9), что АЕН||BFG, ч. т. д.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Даныплос-ти α и β, α||β. Верно ли, что любая прямая, находящаяся в α, будет
+							параллельна β?</strong></p>
+					<p>Решение. Плос-ти α и β не имеют ни одной общей точки. Значит, и любая прямая, располагающаяся в α,
+						также не может иметь общих точек с β. А это как раз и значит, что прямая и плос-ть параллельны. То
+						есть утверждение в условии задачи верно.</p>
+					<p><strong>Задание. </strong><strong>MNPQ и </strong><strong>MNGF – параллелограммы, находящиеся в разных
+							плос-тях. Докажите, что </strong><strong>PQFG – это также параллелограмм.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//42-treugolniki-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//42-treugolniki-na-ploskosti.webp" alt="42 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Так как MNPQ и MNGF – параллелограммы, то MN||FG и MN||QP. По свойству транзитивности (теор. 4)
+						получаем, что и QP||FG.</p>
+					<p>Также из свойств параллелограмма вытекает, что стороны MN и FG одинаковы, как и стороны MN и QP. Тогда
+						должны быть одинаковы отрезки QP и FG:&nbsp;</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//43-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//43-parallelnost-v-prostranstve.webp" alt="43 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Итак, в четырехугольнике PQFG стороны FG и PQ одновременно и параллельны, и равны. Тогда по одному из
+						<a href="https://100urokov.ru/predmety/urok-1-parallelogramm-chetyryohugolniki" target="_blank"
+							rel="noopener noreferrer">признаков параллелограмма</a>&nbsp;PQFG оказывается именно этой фигурой,
+						ч. т. д.
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Отрезки А<sub>1</sub>А<sub>2</sub>, В<sub>1</sub>В<sub>2</sub>,
+							С<sub>1</sub>С<sub>2</sub> пересекаются в точке М, являющейся серединой каждого из этих отрезков.
+							При этом отрезки не находятся в одной плос-ти. Верно ли, что плос-ти
+							А<sub>1</sub>В<sub>1</sub>С<sub>1</sub> и А<sub>2</sub>В<sub>2</sub>С<sub>2</sub>
+							параллельны?</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//44-piramidy.webp" type="image/webp"><img
+								src="img/parallelism//44-piramidy.webp" alt="44 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Сравним ∆А<sub>1</sub>В<sub>1</sub>М и ∆А<sub>2</sub>В<sub>2</sub>М. ∠В<sub>1</sub>МА<sub>1</sub> и
+						∠А<sub>2</sub>М одинаковы, ведь они вертикальные. По условию также одинаковы стороны, прилегающие кэти
+						углам: В<sub>1</sub>М и В<sub>2</sub>М; А<sub>1</sub>М и А<sub>2</sub>М. Отсюда вытекает, что
+						∆А<sub>1</sub>В<sub>1</sub>М и ∆А<sub>2</sub>В<sub>2</sub>М равны.</p>
+					<p>Равенство ∆А<sub>1</sub>В<sub>1</sub>М и ∆А<sub>2</sub>В<sub>2</sub>М означает, что одинаковы углы
+						∠А<sub>1</sub>В<sub>1</sub>М и А<sub>2</sub>В<sub>2</sub>М. Но эти углы являются накрест лежащими для
+						прямых А<sub>1</sub>В<sub>1</sub> и А<sub>2</sub>В<sub>2</sub>, если В<sub>1</sub>В<sub>2</sub>
+						рассматривать как секущую. Из равенства накрест лежащих углов делаем вывод о том, что отрезки
+						А<sub>1</sub>В<sub>1</sub> и А<sub>2</sub>В<sub>2</sub> параллельны.</p>
+					<p>Аналогичным образом, сравнивая ∆А<sub>1</sub>С<sub>1</sub>М и ∆А<sub>2</sub>С<sub>2</sub>М, приходим к
+						выводу и о параллельности отрезков А<sub>1</sub>С<sub>1</sub> и А<sub>2</sub>С<sub>2</sub>. В итоге
+						получается, что в плос-тях А<sub>1</sub>В<sub>1</sub>С<sub>1</sub> и
+						А<sub>2</sub>В<sub>2</sub>С<sub>2</sub> есть пары пересекающихся отрезков, которые соответственно
+						параллельны: А<sub>1</sub>В<sub>1</sub>||А<sub>2</sub>В<sub>2</sub> и
+						А<sub>1</sub>С<sub>1</sub>||А<sub>2</sub>С<sub>2</sub>. Отсюда делаем вывод, что плос-ти
+						А<sub>1</sub>В<sub>1</sub>С<sub>1</sub> и А<sub>2</sub>В<sub>2</sub>С<sub>2&nbsp;</sub>параллельны (по
+						теор. 9).</p>
+					<p><strong>Задание. На плос-ти&nbsp;</strong><strong>α построен </strong><strong>∆</strong><strong>MPK.
+							Через его вершины проведены параллельные друг другу прямые, которые пересекли другую
+							плос-ть&nbsp;</strong><strong>β в точках М<sub>1</sub>, Р<sub>1</sub> и К<sub>1</sub>
+							соответственно. Известно, что </strong><strong>α||</strong><strong>β. Докажите, что
+						</strong><strong>∆МРК и </strong><strong>∆М<sub>1</sub>Р<sub>1</sub>К<sub>1</sub> равны.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//45-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//45-prjamye-na-ploskosti.webp" alt="45 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Ясно, что точки М, К, М<sub>1</sub>, К<sub>1</sub> находятся в единой плос-ти, ведь они располагаются
+						на параллельных прямых. То есть МКК<sub>1</sub>М<sub>1</sub> – это плоский четырехугольник. Попытаемся
+						определить его тип.</p>
+					<p>Отрезки ММ<sub>1</sub> и М<sub>1</sub>К<sub>1</sub> параллельны по условию, но они также и одинаковы,
+						согласно одному из свойств параллельных плос-тей (теор. 12). Тогда МКК<sub>1</sub>М<sub>1</sub> – это
+						параллелограмм по его признаку. Но в параллелограмме одинаковы противоположные стороны, поэтому
+						отрезки МК и М<sub>1</sub>К<sub>1</sub> равны.</p>
+					<p>Аналогично рассматривая параллелограммы МРР<sub>1</sub>М<sub>1</sub> и РКК<sub>1</sub>Р<sub>1</sub>,
+						мы приходим к выводу о равенстве отрезков МР и М<sub>1</sub>Р<sub>1</sub>, РК и
+						Р<sub>1</sub>К<sub>1</sub>. Тогда ∆МРК и ∆М<sub>1</sub>Р<sub>1</sub>К<sub>1</sub> оказываются равными
+						по 3 одинаковым сторонам, ч. т. д.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Из точки </strong><strong>H в пространстве проведены три прямые, пересекающие
+							плос-ть&nbsp;</strong><strong>α в точках </strong><strong>M, Р, К, а другую
+							плос-ть&nbsp;</strong><strong>β в точках М<sub>1</sub>, Р<sub>1</sub>, К<sub>1</sub>. Известно, что
+						</strong><strong>α||</strong><strong>β и точки М, Р, К образуют треугольник. Докажите, что
+						</strong><strong>∆МРК и </strong><strong>∆М<sub>1</sub>Р<sub>1</sub>К<sub>1</sub> подобны.</strong>
+					</p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//46-prjamye-na-ploskosti.webp" type="image/webp"><img
+								src="img/parallelism//46-prjamye-na-ploskosti.webp" alt="46 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Ясно, что отрезки МК м М<sub>1</sub>К<sub>1</sub> находятся в единой плос-ти, задаваемой
+						пересекающимися отрезками НК и НМ. При этом прямые МК и М<sub>1</sub>К<sub>1</sub> не могут пересечься
+						(ведь они располагаются в параллельных плос-тях). Значит, МК||М<sub>1</sub>К<sub>1</sub>. Аналогично
+						можно показать, что МР||М<sub>1</sub>Р<sub>1</sub> и РК||Р<sub>1</sub>К<sub>1</sub>.</p>
+					<p>Теперь рассмотрим ∆НМК и ∆НМ<sub>1</sub>К<sub>1</sub>. У них есть общий ∠МНК, а ∠НМК и
+						∠НМ<sub>1</sub>К<sub>1</sub> одинаковы как соответственные углы при параллельных МК и
+						М<sub>1</sub>К<sub>1</sub> и их секущей НМ<sub>1</sub>. Значит, ∆НМК и ∆НМ<sub>1</sub>К<sub>1</sub>
+						подобны. Выразим их коэффициент подобия:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/parallelism//47-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//47-parallelnost-v-prostranstve.webp" alt="47 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Аналогично можно убедиться, что подобны ∆НМ<sub>1</sub>Р<sub>1</sub> и ∆НМР;
+						∆НР<sub>1</sub>К<sub>1</sub> и ∆НРК. Причем их коэффициенты подобия будут такие же, как у пары ∆∆НМК и
+						∆НМ<sub>1</sub>К<sub>1</sub>. Так, для ∆НМ<sub>1</sub>Р<sub>1</sub> и ∆НМР можно написать</p>
+					<p>
+						<picture>
+							<source srcset="img/parallelism//48-parallelnost-v-prostranstve.webp" type="image/webp"><img
+								src="img/parallelism//48-parallelnost-v-prostranstve.webp" alt="48 parallelnost v prostranstve">
+						</picture>
+					</p>
+					<p>Получили, что все стороны ∆МРК и ∆М<sub>1</sub>Р<sub>1</sub>К<sub>1</sub> пропорциональны друг другу.
+						Согласно <a href="https://100urokov.ru/predmety/urok-6-podobnye-treugolniki" target="_blank"
+							rel="noopener noreferrer">третьему признаку подобия</a> мы можем заключить, что ∆МРК и
+						∆М<sub>1</sub>Р<sub>1</sub>К<sub>1</sub> подобны, ч. т. д.</p>
+					<p>В ходе сегодняшнего урока мы расширили понятие параллельности, распространив ее на прямые в
+						пространстве и плос-ти. Параллельность тех или иных геометрических объектов постоянно встречается как
+						в реальной жизни, так и в задачах. Особенно важно запомнить изученные нами признаки параллельности
+						(теор. 5 и 9).</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

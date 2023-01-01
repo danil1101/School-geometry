@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Тетраэдр и параллелепипед</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="tetrahedron">
+			<div class="tetrahedron__container">
+				<div class="grade-10-content__back"><a href="grade-10.html">10 класс</a></div>
+				<div class="tetrahedron__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-10/content-4.2.webp" type="image/webp"><img
+									src="img/themes-10/content-4.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Тетраэдр и параллелепипед</div>
+							<div class="info__subtitle">Существует огромное количество разнообразных объемных фигур. Но самыми
+								простыми среди них являются тетраэдр и
+								параллелепипед.
+							</div>
+						</div>
+					</div>
+					<div class="tetrahedron__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="https://100urokov.ru/predmety/tetraedr-i-parallelepiped#1">Тетраэдр</a></p>
+						<p><a href="https://100urokov.ru/predmety/tetraedr-i-parallelepiped#2">Параллелепипед</a></p>
+						<p><a href="https://100urokov.ru/predmety/tetraedr-i-parallelepiped#3">Построение сечений</a></p>
+
+					</div>
+
+					<h2 id="1">Тетраэдр</h2>
+					<p>Пусть в пространстве есть точки М, Н, К, которые образуют ∆МНК и, таким образом, задают плоскость.
+						Отметим в
+						пространстве ещё одну точку Р, которая НЕ находится в плоскости МНК. Если мы соединим Р с вершинами
+						∆МНК, то
+						получится объемная фигура. Её как раз именуют тетраэдром. Можно дать несколько различных определений
+						тетраэдра,
+						мы остановимся на следующем:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/1-chto-takoe-tetraedr.webp" type="image/webp"><img
+								src="img/tetrahedron/1-chto-takoe-tetraedr.webp" alt="1 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Такое название связано с тем, что в древнегреческом языке слово «тетра» означает «четыре». У тетраэдра
+						ровно 4
+						грани и ровно 4 вершины. Приведем пример тетраэдра:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/2-postroenie-tetraedra.webp" type="image/webp"><img
+								src="img/tetrahedron/2-postroenie-tetraedra.webp" alt="2 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Легко увидеть, что гранями тетраэдра являются треугольники, в данном случае это ∆МРН, ∆МКР, ∆МНК и
+						∆РКН. Иногда
+						одну из граней выделяют особенно и называют ее основанием тетраэдра. В этом случае три остальные грани
+						именуют
+						боковыми гранями тетраэдра.</p>
+					<p>Легко видеть, что есть всего 6 ребер тетраэдра. Действительно, назовем ∆МКН основанием тетраэдра. Оно,
+						как и
+						всякий треугольник, имеет 3 стороны. Ещё три ребра – это отрезки, соединяющие каждую из трех вершин
+						∆МКН с
+						точкой Р. Перечислим грани, показанные на рисунке: МК, КН, МН, МР, НР и КР.</p>
+					<p>Заметим, что каждое ребро пересекается с четырьмя другими ребрами, и лишь с одним ребром скрещивается.
+						Пары
+						скрещивающихся ребер именуют противоположными ребрами. На рисунке противоположны друг другу грани РК и
+						МН, МК и
+						РН, МР и КН.</p>
+					<p>Тетраэдр называют простейшим многогранником. Действительно, у него всего 4 вершины, а меньшего
+						количества
+						вершин у многогранника быть не может (ведь любые три точки располагаются в одной плоскости). В этом
+						тетраэдр во
+						многом похож на треугольник – простейший из многоугольников. Как и треугольник, тетраэдр является
+						очень жесткой
+						конструкцией, поэтому его нередко используют в технике. Встречается тетраэдр и во многих научных
+						дисциплинах, в
+						том числе и в физике. Так, кристаллическая решетка алмаза, наиболее твердого материала на Земле,
+						состоит из
+						множества тетраэдров.</p>
+					<p>Наконец, отметим, есть особый, так называемый правильный тетраэдр. Его особенность заключается в том,
+						что все
+						его ребра имеют одинаковую длину.</p>
+					<p>Рассмотрим несколько задач.</p>
+					<p><strong>Задание. Известно, что в тетраэдре АВС</strong><strong>D:</strong></p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/3-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/3-tetraedr-i-parallelepiped.webp" alt="3 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p><strong>Найдите длины ребер АВ, ВС и АС этого тетраэдра, а также площадь </strong><strong>∆АВС. Ответы
+							округлите с точностью до целых.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/4-postroenie-tetraedra.webp" type="image/webp"><img
+								src="img/tetrahedron/4-postroenie-tetraedra.webp" alt="4 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Неизвестные стороны можно вычислить, применяя <a
+							href="https://100urokov.ru/predmety/urok-4-trigonometriya" target="_blank"
+							rel="noopener noreferrer">теорему косинусов</a> для каждой грани тетраэдра. Запишем ее
+						для
+						∆ADB:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/5-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/5-tetraedr-i-parallelepiped.webp" alt="5 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Далее используем ∆ADC. Так как ∠ADC = 90°, то вместо теоремы косинусов можно записать ее частный
+						случай –
+						теорему Пифагора:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/6-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/6-tetraedr-i-parallelepiped.webp" alt="6 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Осталось найти площадь ∆АВС. Так как нам известны длины всех его сторон, то удобнее всего
+						воспользоваться <a href="https://100urokov.ru/predmety/urok-5-teorema-pifagora" target="_blank"
+							rel="noopener noreferrer">формулой Герона</a>. Напомним, что для ее использования надо
+						предварительно
+						рассчитать полупериметр треугольника:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/7-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/7-tetraedr-i-parallelepiped.webp" alt="7 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p><strong>Задание. На ребрах АВ и АС тетраэдра </strong><strong>ABCD отмечены их середины – точки
+						</strong><strong>M и </strong><strong>N соответственно. Верно ли, что плоскость </strong><strong>BCD и
+							прямая&nbsp;</strong><strong>MN параллельны?</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/8-postroenie-tetraedra.webp" type="image/webp"><img
+								src="img/tetrahedron/8-postroenie-tetraedra.webp" alt="8 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Так как отрезок MN соединяет середины сторона АС и АВ, то он является средней линией в ∆АВС. Это
+						значит, что
+						NM||ВС. Получается, что в плоскости ВСD есть прямая, параллельная NM. Ранее мы изучали теорему,
+						согласно
+						которой из этого факта следует, что MN либо параллельна BCD, либо полностью находится в ней. Очевидно,
+						что MN
+						не располагается в BCD, ведь в противном случае в BCD полностью находились бы прямые АС и АВ (в том
+						числе и
+						точка А), а по определению тетраэдра А находиться в плоскости BCD не может. Значит, остается один
+						вариант – NM
+						и BCD параллельны.</p>
+					<p><strong>Задание. Верно ли, что плоскость, проходящая через середины трех ребер тетраэдра, обязательно
+							будет
+							параллельна одной из граней тетраэдра?</strong></p>
+					<p>Решение. Обозначим вершины тетраэдра буквами М, Н, К, Р. Пусть плоскость будет проходить по точкам N,
+						T и L,
+						которые являются серединами ребер MP, HP и КР соответственно:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/9-postroenie-tetraedra.webp" type="image/webp"><img
+								src="img/tetrahedron/9-postroenie-tetraedra.webp" alt="9 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Ясно, что плоскость NTL пересекает как минимум три грани: РМН, РНК и РКМ, то есть она может быть
+						параллельна
+						только грани МНК.</p>
+					<p>Заметим, что TL – это средняя линия в ∆НРК, а NT – средняя линия в ∆РМН. Поэтому TL||НК и NT||МН.</p>
+					<p>Получается, что в плоскостях NTL и МНК есть по две пересекающихся прямых, которые попарно параллельны.
+						В NTL
+						ими являются NTи TL, а в МНК– МН и НК. Напомним, что по признаку параллельности плоскостей этого факта
+						как раз
+						достаточно, чтобы NTL и МНК считались параллельными плоскостями. То есть утверждение, приведенное в
+						условии
+						задачи, верно.</p>
+					<h2 id="2">Параллелепипед</h2>
+					<p>Построим в плоскости параллелограмм АВСD. Далее через каждую его вершину проведем прямые, которые
+						пересекут
+						плоскость параллелограмма и при этом будут параллельны. Отложим на каждой такой прямой точки
+						А<sub>1</sub>,
+						В<sub>1</sub>, С<sub>1</sub> и D<sub>1</sub> так, чтобы все они находись по одну сторону от плоскости
+						АВСD и
+						выполнялось равенство:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/10-postroenie-kuba.webp" type="image/webp"><img
+								src="img/tetrahedron/10-postroenie-kuba.webp" alt="10 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Заметим, что в таком случае четырехугольники АА<sub>1</sub>D<sub>1</sub>D,
+						АВВ<sub>1</sub>А<sub>1</sub>,
+						ВСС<sub>1</sub>В<sub>1</sub> и СDD<sub>1</sub>C<sub>1&nbsp;</sub>будут параллелограммами, ведь у
+						каждого из них
+						две противоположные стороны одинаковы и параллельны. Также можно убедиться, что отрезки
+						А<sub>1</sub>D<sub>1&nbsp;</sub>и В<sub>1</sub>С<sub>1</sub> тоже параллельны и одинаковы по свойству
+						транзитивности:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/11-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/11-tetraedr-i-parallelepiped.webp" alt="11 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Это значит, что и А<sub>1</sub>D<sub>1</sub>C<sub>1</sub>B<sub>1</sub>– параллелограмм. Получается,
+						что мы
+						смогли построить многогранник с 6 гранями, каждая из которых является параллелограммом. Такой
+						многогранник
+						именуется параллелепипедом.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/12-chto-takoe-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/12-chto-takoe-parallelepiped.webp" alt="12 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Легко подсчитать, что у параллелепипеда ровно 8 вершин и 12 ребер. Если у граней параллелепипеда есть
+						общее
+						ребро, то их называют смежными гранями. В противном случае грани именуются противоположными. Также
+						противоположными могут быть и вершины параллелепипеда, если они не находятся на одной грани. Так, в
+						приведенном
+						выше примере противоположны вершины А и С<sub>1</sub>, В и D<sub>1</sub>, C и А<sub>1</sub>, D и
+						B<sub>1</sub>.
+					</p>
+					<p>Существуют также и диагонали параллелепипеда. Это прямые, соединяющие его противоположные вершины:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/13-postroenie-kuba.webp" type="image/webp"><img
+								src="img/tetrahedron/13-postroenie-kuba.webp" alt="13 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Иногда в параллелепипеде выбирают две противоположные грани и называют их основаниями параллелепипеда.
+						В таком
+						случае остальные четыре грани именуются боковыми гранями.</p>
+					<p>&nbsp;</p>
+					<p>Сформулируем важное свойство параллелепипеда.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/14-protivopolozhnye-grani-parallelepipeda.webp" type="image/webp">
+							<img src="img/tetrahedron/14-protivopolozhnye-grani-parallelepipeda.webp"
+								alt="14 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Действительно, рассмотрим параллелепипед АВСDА<sub>1</sub>В<sub>1</sub>С<sub>1</sub>D<sub>1</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/15-postroenie-kuba.webp" type="image/webp"><img
+								src="img/tetrahedron/15-postroenie-kuba.webp" alt="15 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Сравним грани АВВ<sub>1</sub>А<sub>1</sub> и CDD<sub>1</sub>C<sub>1</sub>. СD||АВ как стороны в
+						параллелограмме
+						АВСD, а DD<sub>1</sub>||А<sub>1</sub>A уже как стороны в параллелограмме АА<sub>1</sub>D<sub>1</sub>D.
+						По
+						признаку параллельности плоскостей выходит, что грани АВВ<sub>1</sub>А<sub>1</sub> и
+						CDD<sub>1</sub>C<sub>1</sub> параллельны, ведь они содержат пересекающиеся прямые (СDи
+						DD<sub>1&nbsp;</sub>в
+						CDD<sub>1</sub>C<sub>1</sub>, АВ и АА<sub>1</sub> в АВВ<sub>1</sub>А<sub>1</sub>), которые друг другу
+						попарно
+						параллельны.</p>
+					<p>Теперь продемонстрируем, что эти грани ещё и равны. Отрезки АВ и СD одинаковы, так как входят в состав
+						параллелограмма АВСD. По той же причине одинаковы и отрезки АА<sub>1</sub> и DD<sub>1</sub> (они
+						находятся в
+						другом параллелограмме, в АА<sub>1</sub>D<sub>1</sub>D). Также одинаковы ∠СDD<sub>1&nbsp;</sub>и
+						∠ВАА<sub>1</sub>, так как у этих углов стороны являются сонаправленными лучами. Равенства двух сторон
+						и
+						находящегося между ними угла достаточно для доказательства равенства параллелограммов
+						АВВ<sub>1</sub>А<sub>1</sub> и CDD<sub>1</sub>C<sub>1</sub>, ч. т. д.</p>
+					<p>&nbsp;</p>
+					<p>Второе важное свойство параллелепипеда связано с его диагоналями.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/16-vse-diagonali-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/16-vse-diagonali-parallelepipeda.webp" alt="16 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Доказательство.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/17-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/17-postroenie-parallelepipeda.webp" alt="17 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Всего в параллелепипеде есть 4 диагонали. Докажем сначала утверждение только для двух диагоналей,
+						например, для
+						А<sub>1</sub>С и В<sub>1</sub>D. Рассмотрим четырехугольник А<sub>1</sub>В<sub>1</sub>СD. Две его
+						стороны,
+						А<sub>1</sub>В<sub>1</sub> и СD, равны и параллельны третьему отрезку – D<sub>1</sub>C<sub>1</sub>.
+						Тогда, по
+						свойству транзитивности, можно утверждать, что они также параллельны и равны друг другу. Значит,
+						А<sub>1</sub>В<sub>1</sub>СD – параллелограмм, причем А<sub>1</sub>С и В<sub>1</sub>D – его диагонали.
+						<a href="https://100urokov.ru/predmety/urok-1-parallelogramm-chetyryohugolniki" target="_blank"
+							rel="noopener noreferrer">Но мы знаем</a>, что диагонали параллелограмма пересекаются, а точка их
+						пересечения (обозначим ее как О) делит их пополам.
+					</p>
+					<p>Теперь возьмем диагонали В<sub>1</sub>D и, например, АС<sub>1</sub>. Аналогично и для них можно
+						доказать, что у
+						них есть общая точка, делящая их пополам (для этого надо рассмотреть параллелограмм
+						В<sub>1</sub>С<sub>1</sub>D<sub>1</sub>A).Но мы уже знаем, что В<sub>1</sub>D<sub>1&nbsp;</sub>делится
+						пополам
+						точкой О. Значит, именно она – общая для В<sub>1</sub>Dи АС<sub>1</sub>.</p>
+					<p>Наконец, рассмотрим также диагонали В<sub>1</sub>D и ВD<sub>1</sub>. И снова для них можно показать
+						(используя
+						параллелограмм BDD<sub>1</sub>B<sub>1</sub>), что они пересекаются в точке, делящей их пополам. И
+						снова этой
+						точкой будет О. Получается, что все четыре диагонали проходят через О, которая является для каждой из
+						них
+						серединой, ч. т. д.</p>
+					<p><strong>Задание. Сумма длин всех ребер в параллелепипеде
+							АВС</strong><strong>DА<sub>1</sub>В<sub>1</sub>С<sub>1</sub></strong><strong>D<sub>1</sub>
+							составляет 120
+							см. Известно, что ВС больше АВ в 1,25 раза, а ВВ<sub>1</sub> больше ВС в 1,2 раза. Найдите длину
+							каждого
+							ребра данного параллелепипеда.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/18-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/18-postroenie-parallelepipeda.webp" alt="18 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Заметим важный факт – хотя у параллелепипеда 12 ребер, их длины принимают всего три различных
+						значения.
+						Действительно, по свойству параллелограммов, являющихся его гранями, мы можем записать равенства:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/19-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/19-tetraedr-i-parallelepiped.webp" alt="19 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Таким образом, сумма трех взаимно пересекающихся ребер (например, АВ, ВС и ВВ<sub>1</sub>) будет ровно
+						в 4 раза
+						меньше суммы длин всех ребер:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/20-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/20-tetraedr-i-parallelepiped.webp" alt="20 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Используя условие задачи, выразим длины ВС и ВВ<sub>1</sub> через АВ:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/21-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/21-tetraedr-i-parallelepiped.webp" alt="21 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p><strong>Задание. В параллелепипеде
+							АВС</strong><strong>DА<sub>1</sub>В<sub>1</sub>С<sub>1</sub></strong><strong>D<sub>1</sub> отметили
+							точки М,
+							М<sub>1</sub>, </strong><strong>N и </strong><strong>N<sub>1</sub>, которые являются серединами АВ,
+							А<sub>1</sub>В<sub>1</sub>, С</strong><strong>D и С<sub>1</sub></strong><strong>D<sub>1</sub>
+							соответственно. Докажите, что многогранник
+							МВ</strong><strong>NDM<sub>1</sub>B<sub>1</sub>N<sub>1</sub>D<sub>1</sub>– это также
+							параллелепипед.</strong></p>
+					<p>Решение.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/22-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/22-postroenie-parallelepipeda.webp" alt="22 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Заметим, что ребра АВ, СD, А<sub>1</sub>В<sub>1</sub> и С<sub>1</sub>D<sub>1&nbsp;</sub>одинаковы.
+						Значит,
+						одинаковы и их половины:</p>
+					<p>
+						<picture>
+							<source srcset="img/tetrahedron/23-tetraedr-i-parallelepiped.webp" type="image/webp"><img
+								src="img/tetrahedron/23-tetraedr-i-parallelepiped.webp" alt="23 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Отрезки ND и N<sub>1</sub>D<sub>1&nbsp;</sub>лежат на параллельных ребрах СD и
+						С<sub>1</sub>D<sub>1</sub>,
+						значит, они сами параллельны. Если учесть, что они ещё и одинаковы, то получается, что
+						DNN<sub>1</sub>D<sub>1</sub> – параллелограмм. Аналогично МВ||DN, МВ||М<sub>1</sub>В<sub>1</sub> и
+						М<sub>1</sub>В<sub>1</sub>||N<sub>1</sub>D<sub>1</sub>, поэтому четырехугольники МВND,
+						МВВ<sub>1</sub>М<sub>1</sub> и М<sub>1</sub>В<sub>1</sub>N<sub>1</sub>D<sub>1</sub>–
+						параллелограммы.Теперь нам
+						осталось показать, что грани М<sub>1</sub>D<sub>1</sub>DМи В<sub>1</sub>N<sub>1</sub>NB– тоже
+						параллелограммы.
+					</p>
+					<p>Отметим, что ММ<sub>1</sub> = ВВ<sub>1</sub> (из параллелограмма МВВ<sub>1</sub>М<sub>1</sub>) и
+						ВВ<sub>1</sub>
+						= DD<sub>1</sub> (это параллельные грани параллелепипеда), поэтому отрезки ММ<sub>1</sub> и
+						DD<sub>1&nbsp;</sub>одинаковы. Также они и параллельны, так как ММ<sub>1</sub>||ВВ<sub>1&nbsp;</sub>и
+						ВВ<sub>1</sub>||DD<sub>1</sub>. Это значит, что М<sub>1</sub>D<sub>1</sub>DМ – параллелограмм.
+						Аналогично,
+						сравнивая NN<sub>1</sub>и ВВ<sub>1</sub> с отрезком DD<sub>1</sub>, можно показать, что и
+						В<sub>1</sub>N<sub>1</sub>NB– параллелограмм. В итоге получается, что у многогранника
+						MBNDМ<sub>1</sub>B<sub>1</sub>N<sub>1</sub>D<sub>1</sub> каждая из 6 граней – параллелограмм. То он по
+						определению является параллелепипедом, ч. т. д.</p>
+					<h2 id="3">Построение сечений</h2>
+					<p>Любую объемную фигуру можно условно «разрезать» на две части, если провести через нее плоскость. Такая
+						плоскость, проходящая через объемную фигуру, называется секущей плоскостью.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/24-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/24-postroenie-piramidy.webp" alt="24 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>При пересечении плоскости и объемной фигуры образуется какая-нибудь плоская фигура, ее называют
+						сечением. На
+						рисунке выше сечение – это ∆NTL. Ещё раз отметим разницу между понятиями «секущая плоскость» и
+						«сечение».
+						Плоскость – это безграничная фигура, то есть она не имеет границ. Сечение же – это плоская фигура,
+						имеющая
+						границы.<br> Один из вопросов, который исследует стереометрия – это форма сечений тех или иных фигур.
+					</p>
+					<p>Секущая плоскость пересекается с каждой гранью многогранника по отрезку, причем концы этих отрезков
+						располагаются на ребрах многогранника. В результате сечение тетраэдра, параллелепипеда и вообще любого
+						многогранника представляет собой плоский многоугольник. В тетраэдре всего 4 грани, поэтому его сечение
+						не может
+						иметь более 4 сторон. Другими словами, сечение тетраэдра – это либо четырехугольник, либо треугольник.
+						У
+						параллелепипеда уже шесть граней, а потому его сечения также могут быть даже шестиугольниками.</p>
+					<p>Важно уметь строить сечения, зная лишь несколько общих точек объемной фигуры и секущей плоскости. В
+						случае
+						многогранников достаточно просто найти все общие точки секущей плоскости и ребер, после чего их надо
+						соединить
+						отрезками. Заметим, что каждая сторона сечения должна находиться на одной из граней многогранника.
+						Если с
+						учетом этого ограничения построить сечение не получается, это значит, что сечение пересекает ещё
+						какие-то ребра
+						многогранника, и соответствующие точки пересечения надо найти. Рассмотрим несколько примеров задач на
+						построение сечений.</p>
+					<p><strong>Задание. Постройте сечение тетраэдра АВС</strong><strong>D, проходящее через точки
+						</strong><strong>M,
+						</strong><strong>N и </strong><strong>P:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/25-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/25-postroenie-piramidy.webp" alt="25 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Решение. Мы уже имеем три точки сечения. Однако просто соединить их нельзя, ведь точки M и P находятся
+						на
+						разных гранях. Значит, надо найти ещё одну общую точку сечения, находящуюся на каком-нибудь ребре.</p>
+					<p>Заметим, что плоскость MNP имеет с плоскостью BCD две общие точки – N и P. Значит, они пересекаются по
+						прямой
+						NP. Это значит, что если прямая ВС пересекается с NP, то эта точка пересечения будет принадлежать
+						секущей
+						плоскости. Продолжим ВС и NP, они пересекутся в некоторой точке Е, которая, как мы только что
+						выяснили,
+						находится на секущей плоскости:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/26-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/26-postroenie-piramidy.webp" alt="26 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Е находится на ВС, а ВС – это часть плоскости АВС. Значит, точка Е располагается на плоскости АВС. С
+						другой
+						стороны, и М находится на АВC. Получается, что у прямой ЕМ две точки принадлежат плоскости АВС, а
+						потому она
+						вся принадлежит АВС. Тогда мы можем найти ее точку пересечения с прямой АС, просто продлив прямую ЕМ:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/27-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/27-postroenie-piramidy.webp" alt="27 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Здесь мы обозначили точку пересечения ЕМ и АС буквой К. В итоге мы можем построить сечение MNPK, ведь
+						каждая
+						сторона этого многоугольника будет принадлежать одной из граней тетраэдра:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/28-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/28-postroenie-piramidy.webp" alt="28 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>На картинке слева показано сечение MNPK. Именно это построение и необходимо выполнить, решая данную
+						задачу.
+						Справа для наглядности показан исходный тетраэдр, от которого секущая плоскость «отсекла» лишнее.
+						Правую
+						картинку строить при решении подобных задач не надо, она показана только для наглядности.</p>
+					<p>Заметим, что в этой задаче нам в качестве исходных данных были указаны три точки секущей плоскости, и
+						этого
+						хватило для построения сечения. Действительно, одна из аксиом стереометрии говорит, что три точки
+						(если это не
+						точки одной прямой) однозначно определяют плоскость, поэтому, зная только три точки, с помощью
+						построений можно
+						найти и все остальные точки.</p>
+					<p><strong>Задание. В тетраэдре АВС</strong><strong>D на грани АВ</strong><strong>D отмечена точка М.
+							Постройте
+							такое сечение тетраэдра, которое проходит через М и при этом параллельно грани АВС.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/29-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/29-postroenie-piramidy.webp" alt="29 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Решение. Секущая плоскость и плоскость АВС параллельны, при этом они пересекаются третьей плоскостью
+						АВD.
+						Тогда, по одной из изученных нами теорем, линии их пересечения с ABD будут параллельны. То есть чтобы
+						построить
+						отрезок, по которому секущая плоскость и грань ABD пересекаются, надо просто провести через M отрезок,
+						параллельный ребру АВ:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/30-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/30-postroenie-piramidy.webp" alt="30 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Удалось получить две точки, Q и P, которые лежат на гранях. Теперь, чтобы найти линию пересечения
+						секущей
+						плоскости и грани АСD, надо провести через Р отрезок, параллельный АС. В итоге на грани CD мы получим
+						ещё одну
+						точку K:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/31-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/31-postroenie-piramidy.webp" alt="31 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Теперь у нас есть три точки сечения, при этом все отрезки, соединяющие их, лежат на гранях тетраэдра.
+						Значит,
+						мы уже можем построить сечение:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/32-postroenie-piramidy.webp" type="image/webp"><img
+								src="img/tetrahedron/32-postroenie-piramidy.webp" alt="32 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Обратите внимание, что отрезок QK также получился параллельным ребру СD, что говорит о правильности
+						построения.
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Постройте сечение параллелепипеда, проходящее через точки </strong><strong>M,
+						</strong><strong>N и </strong><strong>P, отмеченные на его гранях:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/33-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/33-postroenie-parallelepipeda.webp" alt="33 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Решение. Здесь у задачи очень простое решение. Точки M, N, Р уже можно соединить так, что все
+						соединяющие их
+						отрезки будут находиться на гранях. Значит, никаких других точек искать не надо:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/34-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/34-postroenie-parallelepipeda.webp" alt="34 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Решите предыдущую задачу, но при другом расположении точек М, </strong><strong>N и
+							Р:</strong>
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/35-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/35-postroenie-parallelepipeda.webp" alt="35 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Решение. Для начала мы можем построить отрезки MN и MР, по которым секущая плоскость пересекает грани
+						АВВ<sub>1</sub>А<sub>1</sub> и ВСС<sub>1</sub>В<sub>1</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/36-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/36-postroenie-parallelepipeda.webp" alt="36 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Напомним, что противоположные грани у параллелепипеда параллельны. Поэтому и отрезки, которые
+						образуются при их
+						пересечении с секущей плоскостью, также должны быть параллельными. Значит, мы можем через N провести
+						отрезок,
+						параллельный MP, а через Р– отрезок, параллельный MN:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/37-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/37-postroenie-parallelepipeda.webp" alt="37 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Теперь мы можем соединить KH (ведь K и H находятся на одной грани АВСD) и получить искомое сечение:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/38-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/38-postroenie-parallelepipeda.webp" alt="38 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p><strong>Задание. Решите предыдущую задачу при следующем расположении точек </strong><strong>M,
+						</strong><strong>N и </strong><strong>P:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/39-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/39-postroenie-parallelepipeda.webp" alt="39 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Решение. На первом шаге мы можем построить отрезки MN и РМ. Секущая плоскость и плоскость
+						АВВ<sub>1</sub>А<sub>1</sub> пересекаются по прямой РМ. Найдем вспомогательную точку Е, в которой с РМ
+						пересекается. Эта точка Е должна находиться в плоскости нижней грани АВСD, также она принадлежит
+						секущей
+						плоскости:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/40-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/40-postroenie-parallelepipeda.webp" alt="40 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Так как верхняя и нижняя грани параллельны, то должны быть параллельны и линии их пересечения с
+						секущей
+						плоскостью. Но мы уже знаем, что секущая плоскость проходит через Е. Значит, линии пересечения секущей
+						плоскости и нижней грани проходит через Е и параллельна MN. Этой информации достаточно для ее
+						построения:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/41-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/41-postroenie-parallelepipeda.webp" alt="41 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>В результате нам удалось найти ещё две точки Q и F. Далее через F проводим отрезок, параллельный РМ:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/42-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/42-postroenie-parallelepipeda.webp" alt="42 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>В итоге мы получили 6 точек, которых достаточно для построения сечения:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/43-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/43-postroenie-parallelepipeda.webp" alt="43 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p><strong>Задание. В параллелепипеде
+							АВС</strong><strong>AА<sub>1</sub>В<sub>1</sub>С<sub>1</sub></strong><strong>D<sub>1</sub> отрезок
+							АС – это
+							диагональ грани АВС</strong><strong>D, а </strong><strong>BD<sub>1</sub> – диагональ
+							параллелепипеда.
+							Постройте сечение, проходящее через АС и при этом параллельное диагонали
+						</strong><strong>BD<sub>1</sub>.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/44-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/44-postroenie-parallelepipeda.webp" alt="44 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Решение. Проведем на нижней грани диагональ BD. Она пересечется с АС в некоторой точке О:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/45-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/45-postroenie-parallelepipeda.webp" alt="45 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Теперь мы можем в плоскости BDD<sub>1&nbsp;</sub>построить через точку О прямую, параллельную
+						BD<sub>1</sub>.
+						Так как в этой же плоскости находится и DD<sub>1</sub>, то DD<sub>1&nbsp;</sub>обязательно пересечется
+						с этой
+						прямой в какой-нибудь точке H:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/46-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/46-postroenie-parallelepipeda.webp" alt="46 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>Теперь проанализируем расположение плоскости АНСи диагонали BD<sub>1</sub>. Так как
+						BD<sub>1</sub>||ОН, а ОН
+						полностью принадлежит АНС, то получается, что BD<sub>1</sub>||АНС. При этом АНС проходит через
+						диагональ АС.
+						Значит, АНС удовлетворяет условиям задачи и является искомым сечением:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/tetrahedron/47-postroenie-parallelepipeda.webp" type="image/webp"><img
+								src="img/tetrahedron/47-postroenie-parallelepipeda.webp" alt="47 tetraedr i parallelepiped">
+						</picture>
+					</p>
+					<p>В рамках сегодняшнего урока мы познакомились с простейшими объемными фигурами – тетраэдром и
+						параллелепипедом.
+						Также мы узнали о сечениях и способах их построения.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>

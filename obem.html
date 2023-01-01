@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta name="description" content="Проект Geometry представляет собой универсальную шпаргалку для учеников 7-11
+	      классов. Ответы на все интересющие Вас вопросы уже ждут на данном сайте." />
+	<title>Объем</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?_v=20221120214955"></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221120214955">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo">Geometry</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="grade-7-9.html" class="menu__link">7-9 классы</a></li>
+							<li class="menu__item"><a href="grade-10.html" class="menu__link">10 класс</a></li>
+							<li class="menu__item"><a href="grade-11.html" class="menu__link">11 класс</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
+				});
+
+				$('.scrollup').click(function () {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 600);
+					return false;
+				});
+
+			});
+		</script>
+		<a href="#" class="scrollup">Наверх</a>
+		<div class="obem">
+			<div class="obem__container">
+				<div class="grade-11-content__back"><a href="grade-11.html">11 класс</a></div>
+				<div class="obem__body">
+					<div class="info__block">
+						<div class="info__img">
+							<picture>
+								<source srcset="img/themes-11/content-8.2.webp" type="image/webp"><img
+									src="img/themes-11/content-8.2.png" alt="">
+							</picture>
+						</div>
+						<div class="info__text">
+							<div class="info__title">Объем</div>
+							<div class="info__subtitle">Каждая фигура в стереометрии ограничивает определенную часть
+								пространства.
+								Для количественного измерения этого
+								пространства используется величина, известная как объем.</div>
+						</div>
+					</div>
+					<div class="obem__menu">
+						<p><strong>План урока:</strong></p>
+						<p><a href="obem.html#1">Понятие объема</a></p>
+						<p><a href="obem.html#2">Свойства объема</a></p>
+						<p><a href="obem.html#3">Объем куба и прямоугольного параллелепипеда</a></p>
+						<p><a href="obem.html#4">Объем прямой призмы</a></p>
+						<p><a href="obem.html#5">Объем цилиндра</a></p>
+					</div>
+
+
+					<h2 id="1">Понятие объема</h2>
+					<p>Понятие объема появилось у человечества задолго до того, как геометрия оформилась как строгая наука.
+						Многие
+						вещества и товары, такие как зерно, рис и вода, необходимо хранить и транспортировать в различных
+						упаковках
+						(сосуды, бочки, ящики, контейнеры). При этом разные емкости могут вместить разное количество товаров.
+						Например,
+						пусть есть бочка, имеющая форму цилиндра, и контейнер, выглядящий как прямоугольный параллелепипед:
+					</p>
+
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/1-bochka.webp" type="image/webp"><img src="img/obem/1-bochka.webp"
+								alt="1 obem">
+						</picture>
+					</p>
+					<p>Предположим, что в бочку можно поместить 5 кг пшеницы, а в контейнер помещается уже 15 кг пшеницы, то
+						есть в
+						контейнер можно положить в 3 раза больше пшеницы, чем в бочку. Можно сказать, что вместимость
+						контейнера втрое
+						больше вместимости бочки. Однако измерять вместимость емкости с помощью массы пшеницы, помещаемой в
+						него,
+						неудобно, ведь в них можно класть и другие вещества. Мы можем положить в емкости что-нибудь более
+						тяжелое,
+						например сухой песок. Тогда в бочку может влезть уже 10 кг песка, а в контейнер – 30 кг. И снова
+						получается,
+						что вместимость контейнера втрое больше, хотя масса вещества увеличилась.</p>
+					<p>Именно для измерения вместимости и было введено понятие объема. Если в одну упаковку помещается вдвое
+						больше
+						товаров, чем во вторую упаковку, то и объем у нее будет вдвое больше. С древнейших времен замечено,
+						что
+						отношение объемов двух сосудов не зависит от того вещества, которое в них хранят. Например, если в
+						один сосуд
+						помещается в 5 раз больше риса, чем в другой сосуд, то в него также будет помещаться в 5 раз больше
+						воды, в 5
+						раз больше песка, в 5 раз больше нефти и т. д. Таким образом, в практическом смысле объем – это
+						количественная
+						характеристика вместимости тех или иных упаковок.</p>
+					<p>В рамках стереометрии изучаются не реальные сосуды, а абстрактные тела. Каждое из них занимает
+						определенную
+						часть пространства, большую или меньшую. Объем используется для измерения этих частей пространства.
+						Для
+						обозначения объема используется латинская буква V.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/2-obem-kolichestvennaja-harakteristika.webp" type="image/webp"><img
+								src="img/obem/2-obem-kolichestvennaja-harakteristika.webp" alt="2 obem">
+						</picture>
+					</p>
+					<p>Для измерения объема необходима единица измерения. Условно принимается, что куб, чьим ребром является
+						единичный
+						отрезок, имеет объем, равный единице. Такой куб именуется единичным. Заметим, что грани единичного
+						куба – это
+						<a href="https://100urokov.ru/predmety/urok-3-ploshchad" target="_blank">единичные квадраты</a>.
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/3-edinichnyj-kub.webp" type="image/webp"><img
+								src="img/obem/3-edinichnyj-kub.webp" alt="3 obem">
+						</picture>
+					</p>
+					<p>В случае, когда длина ребра куба является безразмерной величиной, то объем также будет безразмерной
+						величиной.
+						Если же указана единица измерения длины, то объем куба будет измеряться этой же единицей, к которой
+						приписано
+						слово «кубический». Например, если ребро куба равно 1 м, то объем куба будет равен 1 кубическому
+						метру, или 1
+						м<sup>3</sup>. Объем куба с ребром 1 мм будет составлять 1 мм<sup>3</sup> и т. д.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/4-edinichnyj-kub.webp" type="image/webp"><img
+								src="img/obem/4-edinichnyj-kub.webp" alt="4 obem">
+						</picture>,
+					</p>
+					<h2 id="2">Свойства объема</h2>
+					<p>Свойства объема во многом совпадают со <a href="https://100urokov.ru/predmety/urok-3-ploshchad"
+							target="_blank">свойствами площади</a>. Ясно, что у равных тел будут одинаковы и объемы.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/5-ravnye-tela-imejut-ravnye-obemy.webp" type="image/webp"><img
+								src="img/obem/5-ravnye-tela-imejut-ravnye-obemy.webp" alt="5 obem">
+						</picture>
+					</p>
+					<p>Второе свойство объема связано с тем, что он является аддитивной величиной. Это значит, что если тело
+						можно
+						разбить на несколько тел, то его объем будет равен сумме объемов этих тел.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/6-esli-telo-sostavleno-iz-neskolkih-tel.webp" type="image/webp"><img
+								src="img/obem/6-esli-telo-sostavleno-iz-neskolkih-tel.webp" alt="6 obem">
+						</picture>
+					</p>
+					<p>Это свойство аддитивности объема уже позволяет решать некоторые стереометрические задачи.</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Тело состоит из цилиндра объемом 12 см<sup>3</sup> и конуса объемом 4 см<sup>3</sup>.
+							Каков
+							объем этого тела?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/7-konus-i-cilindr.webp" type="image/webp"><img
+								src="img/obem/7-konus-i-cilindr.webp" alt="7 obem">
+						</picture>
+					</p>
+					<p>Решение. Здесь надо просто сложить объемы цилиндра и конуса, чтобы найти общий объем всей фигуры:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/8-obem.webp" type="image/webp"><img src="img/obem/8-obem.webp"
+								alt="8 obem">
+						</picture>
+					</p>
+					<p>Ответ: 16 см<sup>3</sup>.</p>
+					<p><strong>Задание. Найдите объем фигуры, показанной на рисунке:</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/9-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/9-poisk-obema-figury.webp" alt="9 obem">
+						</picture>
+					</p>
+					<p>Решение. Данную фигуру несложно разбить на три единичных куба:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/10-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/10-poisk-obema-figury.webp" alt="10 obem">
+						</picture>
+					</p>
+					<p>Тогда объем тела будет равен сумме объемов трех единичных кубов, то есть трем:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/11-obem.webp" type="image/webp"><img src="img/obem/11-obem.webp"
+								alt="11 obem">
+						</picture>
+					</p>
+					<p>Ответ: 3.</p>
+					<p><strong>Задание. Вычислите объем фигуры, получающейся при рассечении куба плоскостью, проходящей через
+							два его
+							ребра.</strong></p>
+					<p>Решение. Ясно, что такая секущая плоскость будет делить куб на две равные фигуры (иначе просто не
+						удастся
+						провести плоскость через два ребра):</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/12-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/12-poisk-obema-figury.webp" alt="12 obem">
+						</picture>
+					</p>
+					<p>Также понятно, что два получившихся многогранника равны друг другу. Обозначим объем каждого из них как
+						V. Тогда
+						в сумме их объем должен быть равен 1, ведь вместе эти фигуры образуют единичный куб. Это позволяет
+						составить
+						уравнение, из которого можно вычислить величину V:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/13-obem.webp" type="image/webp"><img src="img/obem/13-obem.webp"
+								alt="13 obem">
+						</picture>
+					</p>
+					<h2 id="3">Объем куба и прямоугольного параллелепипеда</h2>
+					<p>Докажем важную вспомогательную теорему:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/14-esli-dva-prjamougolnyh-parallelepipeda-imejut-ravnye-osnovanija.webp"
+								type="image/webp"><img
+								src="img/obem/14-esli-dva-prjamougolnyh-parallelepipeda-imejut-ravnye-osnovanija.webp"
+								alt="14 obem">
+						</picture>
+					</p>
+					<p>Действительно, пусть у двух параллелепипедов одинаковы основания. Тогда их можно совместить. Пусть
+						общим
+						основанием будет АВСD, а высотами параллелепипедов будут отрезки АР и АК, причем АР &lt;АК. Объем
+						меньшего
+						параллелепипеда с высотой АР обозначим как V<sub>Р</sub>, а большего – как V<sub>K</sub>:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/15-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/15-poisk-obema-figury.webp" alt="15 obem">
+						</picture>
+					</p>
+					<p>Нам надо доказать, что объемы фигур пропорциональны их высотам:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/16-obem.webp" type="image/webp"><img src="img/obem/16-obem.webp"
+								alt="16 obem">
+						</picture>
+					</p>
+					<p>Для начала рассмотрим случай, когда отношение высот является рациональным числом. Это означает, что
+						существует
+						некоторая дробь m/n, такая, что</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/17-obem.webp" type="image/webp"><img src="img/obem/17-obem.webp"
+								alt="17 obem">
+						</picture>
+					</p>
+					<p>где m и n – натуральные числа. Тогда разобьем отрезок АК как раз на n равных отрезков. В этом случае
+						отрезок АР
+						будет состоять в точности из m таких отрезков. Далее через концы отрезков проведем плоскости,
+						параллельные
+						основанию:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/18-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/18-poisk-obema-figury.webp" alt="18 obem">
+						</picture>
+					</p>
+					<p>В результате мы получили n равных параллелепипедов («пластин»), которые все вместе образуют большой
+						параллелепипед объемом V<sub>K</sub>. Поэтому объем одной такой пластины равен величине
+						V<sub>K</sub>/n:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/19-obem.webp" type="image/webp"><img src="img/obem/19-obem.webp"
+								alt="19 obem">
+						</picture>
+					</p>
+					<p>Итак, мы доказали теорему для случая, когда отношение высот является рациональным числом. Теперь
+						перейдем к
+						более сложному случаю, когда это отношение представляет собой <a
+							href="https://100urokov.ru/predmety/chisla-i-ih-vidy" target="_blank">иррациональное число</a>.
+						Здесь можно
+						рассуждать от противного. Предположим, что теорема ошибочна, тогда для каких-нибудь двух
+						параллелепипедов
+						отношение их объемов будет равно не отношению их высот, а какому-то другому числу k:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/20-obem.webp" type="image/webp"><img src="img/obem/20-obem.webp"
+								alt="20 obem">
+						</picture>
+					</p>
+					<p>Это значит, что k либо меньше, либо больше, чем отношение АР/АК. Рассмотрим случай, когда k&lt; АР/АК
+						(случай,
+						когда k&gt; АР/АК, рассматривается аналогичным образом). Тогда возьмем какое-нибудь рациональное число
+						R,
+						находящееся между числами k и АР/АК:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/21-obem.webp" type="image/webp"><img src="img/obem/21-obem.webp"
+								alt="21 obem">
+						</picture>
+					</p>
+					<p>(Примечание. Здесь мы неявно используем утверждение, которое можно доказать в рамках алгебры – между
+						любыми
+						двумя различными действительными числами располагается хотя бы одно рациональное число).</p>
+					<p>Умножим это неравенство на длину АК:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/22-obem.webp" type="image/webp"><img src="img/obem/22-obem.webp"
+								alt="22 obem">
+						</picture>
+					</p>
+					<p>Построим параллелепипеды с общим основанием АВСD и высотами АК и АР, а также с высотой АЕ = R•АК. Так
+						как R•АК
+						&lt; АР, то точка Е будет лежать между А и Р:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/23-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/23-poisk-obema-figury.webp" alt="23 obem">
+						</picture>
+					</p>
+					<p>Объем параллелепипеда с высотой АЕ обозначим как V<sub>Е</sub>. Ясно, что</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/24-obem.webp" type="image/webp"><img src="img/obem/24-obem.webp"
+								alt="24 obem">
+						</picture>
+					</p>
+					<p>ведь число k не может быть одновременно и больше, и меньше R. Полученное противоречие означает, что
+						исходное
+						предположение об ошибочности теоремы неверно, и на самом деле она справедлива, ч. т. д.</p>
+					<p>Теперь с помощью доказанной теоремы можно вывести известную ещё из младших классов формулу для расчета
+						объема
+						прямоугольного параллелепипеда.Пусть измерения прямоугольного параллелепипеда являются числами а, b и
+						c.
+						Построим:</p>
+					<ul>
+						<li>единичный куб;</li>
+						<li>параллелепипед с габаритами а, 1, 1 с объемом V<sub>1</sub>;</li>
+						<li>параллелепипед с габаритами а, b, 1 с объемом V<sub>2</sub>;</li>
+						<li>параллелепипед с габаритами а, b, c с объемом V.</li>
+					</ul>
+					<p>Тогда можно последовательно вычислить их объемы. Объем первого параллелепипеда будет в а раз больше
+						объема
+						единичного куба, то есть он будет равен а. Объем второго параллелепипеда будет больше ещё в bраз, а
+						третьего –
+						ещё в с раз:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/25-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/25-poisk-obema-figury.webp" alt="25 obem">
+						</picture>
+					</p>
+					<p>Соответственно, для расчета объема параллелепипеда используется формула</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/26-obem-prjamougolnogo-parallelepipeda.webp" type="image/webp"><img
+								src="img/obem/26-obem-prjamougolnogo-parallelepipeda.webp" alt="26 obem">
+						</picture>
+					</p>
+					<p>Иногда эту формулу формулируют несколько иначе: объем параллелепипеда – это произведение площади его
+						основания
+						на длину высоты, перпендикулярной этому основанию.</p>
+					<p><strong>Задание. Три смежных ребра прямоугольного параллелепипеда имеют длины 9, 4 и 7 см. Каков объем
+							параллелепипеда?</strong></p>
+					<p>Решение. Здесь надо просто перемножить габариты параллелепипеда:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/27-obem.webp" type="image/webp"><img src="img/obem/27-obem.webp"
+								alt="27 obem">
+						</picture>
+					</p>
+					<p>Ответ: 252 см<sup>3</sup>.</p>
+					<p>&nbsp;</p>
+					<p>Куб можно рассматривать как прямоугольный параллелепипед с одинаковыми измерениями. Поэтому для
+						вычисления его
+						объема надо умножить ребро куба само на себя дважды, то есть возвести его в куб.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/28-obem-kuba-raven-kubu.webp" type="image/webp"><img
+								src="img/obem/28-obem-kuba-raven-kubu.webp" alt="28 obem">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Вычислите объем куба с ребром 8 метров.</strong></p>
+					<p>Решение. Просто возводим сторону ребро куба в третью степень:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/29-obem.webp" type="image/webp"><img src="img/obem/29-obem.webp"
+								alt="29 obem">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Если ребро куба увеличить на 2 дм, то его объем вырастет на 98 дм<sup>3</sup>. Какова
+							длина
+							ребра этого куба</strong>?</p>
+					<p>Решение. Обозначим длину ребра буквой х. Тогда объем куба будет составлять х<sup>3</sup> дм. Если
+						ребро
+						увеличить на 2 дм, то оно будет иметь длину х + 2 дм, и тогда объем куба будет равен уже (х +
+						2)<sup>3</sup>
+						дм. Условие задачи можно записать в виде уравнения:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/30-obem.webp" type="image/webp"><img src="img/obem/30-obem.webp"
+								alt="30 obem">
+						</picture>
+					</p>
+					<p>Это квадратное уравнение имеет два корня, 3 и (– 5), что можно проверить с помощью <a
+							href="https://100urokov.ru/predmety/urok-4-kvadratnye-uravneniya" target="_blank">теоремы
+							Виета</a>. Корень
+						х = – 5 не имеет геометрического смысла, поэтому остается ответ х = 3.</p>
+					<p>Ответ: 3 дм.</p>
+					<p>&nbsp;</p>
+					<p>Далее рассмотрим перевод единиц измерения объема. Например, как перевести 1 м<sup>3</sup> в кубические
+						сантиметры? Рассмотрим куб с ребром 1 м. Ясно, что его объем будет равен 1 м<sup>3</sup>. С другой
+						стороны,
+						можно сказать, что длина ребра этого куба составляет 100 см:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/31-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/31-poisk-obema-figury.webp" alt="31 obem">
+						</picture>
+					</p>
+					<p>Тогда объем этого куба можно посчитать так:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/32-obem.webp" type="image/webp"><img src="img/obem/32-obem.webp"
+								alt="32 obem">
+						</picture>
+					</p>
+					<p>Аналогично можно переводить и другие единицы измерения.</p>
+					<h2 id="4">Объем прямой призмы</h2>
+					<p>Рассмотрим сначала прямую призму, в чьем основании располагается прямоугольный треугольник. Ее можно
+						достроить
+						до прямоугольного параллелепипеда:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/33-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/33-poisk-obema-figury.webp" alt="33 obem">
+						</picture>
+					</p>
+					<p>Ясно, что объем параллелепипеда будет вдвое больше объема исходной призмы, ведь он состоит из двух
+						таких призм.
+						Аналогично и площадь основания у параллелепипеда будет вдвое больше. Обозначим площадь основания
+						призмы буквой
+						S, а ее высоту как h, тогда площадь основания параллелепипеда будет 2S, а его объем составит 2S•h.
+						Тогда объем
+						призмы будет вдвое меньше, то есть он окажется равным S•h.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/34-obem-prjamoj-prizmy.webp" type="image/webp"><img
+								src="img/obem/34-obem-prjamoj-prizmy.webp" alt="34 obem">
+						</picture>
+					</p>
+					<p>Далее рассмотрим прямую призму, в основании которой лежит уже произвольный треугольник. Проведем в
+						этом
+						треугольнике высоту, которая упадет на противоположную сторону (такую высоту всегда можно провести).
+						Далее
+						через эту высоту проведем плоскость, перпендикулярную основанию. В результате мы разделим призму на
+						две прямых
+						призмы, в основании каждой из которых будет лежать прямоугольный треугольник:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/35-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/35-poisk-obema-figury.webp" alt="35 obem">
+						</picture>
+					</p>
+					<p>Пусть площади получившихся прямоугольных треугольников обозначены как S<sub>1</sub>и S<sub>2</sub>, а
+						общая
+						площадь основания исходной призмы – это S. Мы можем вычислить объемы этих призм:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/36-obem-prjamoj-prizmy-v-osnovanii-kotoroj.webp" type="image/webp"><img
+								src="img/obem/36-obem-prjamoj-prizmy-v-osnovanii-kotoroj.webp" alt="36 obem">
+						</picture>
+					</p>
+					<p>Теперь, наконец, рассмотрим прямую призму, чье основание – произвольный многоугольник. Этот
+						многоугольник можно
+						разбить на несколько треугольников с площадями S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub>…, а призма
+						соответственно будет разбита на несколько треугольных призм с объемами V<sub>1</sub>, V<sub>2</sub>,
+						V<sub>3&nbsp;</sub>и. т. д.</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/37-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/37-poisk-obema-figury.webp" alt="37 obem">
+						</picture>
+					</p>
+					<p>Объем каждой треугольный призмы мы можем рассчитать:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/38-obem-prjamoj-prizmy-raven-proizvedeniju.webp" type="image/webp"><img
+								src="img/obem/38-obem-prjamoj-prizmy-raven-proizvedeniju.webp" alt="38 obem">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Все ребра правильной шестиугольной призмы одинаковы, их длина обозначена буквой а.
+							Найдите
+							объем такой призмы.</strong></p>
+					<p>Решение. Сначала необходимо найти площадь основания призмы, то есть площадь правильного
+						шестиугольника.
+						Напомним формулы для правильных многоугольников, изученные ещё в <a
+							href="https://100urokov.ru/predmety/pravilnye-mnogougolniki" target="_blank">девятом классе</a>:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/39-obem.webp" type="image/webp"><img src="img/obem/39-obem.webp"
+								alt="39 obem">
+						</picture>
+					</p>
+					<p>Для вычисления объема надо лишь умножить полученную площадь на высоту призмы, а она также равна а:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/40-obem.webp" type="image/webp"><img src="img/obem/40-obem.webp"
+								alt="40 obem">
+						</picture>
+					</p>
+					<p><strong>Задание. В кубе
+							АВС</strong><strong>DА<sub>1</sub>В<sub>1</sub>С<sub>1</sub></strong><strong>D<sub>1</sub> через
+							середины
+							ребер С</strong><strong>D и </strong><strong>BC проведено сечение, параллельное ребру
+							СС<sub>1</sub>. Это
+							сечение отсекает от куба треугольную призму, чей объем равен 19. Найдите объем куба.</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/41-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/41-poisk-obema-figury.webp" alt="41 obem">
+						</picture>
+					</p>
+					<p>Решение. Ясно, что и куб, и треугольная призма будут прямыми призмами, причем у них одинаковая высота
+						СС<sub>1</sub>. Тогда можно утверждать, что отношение их объемов равно отношению площадей их
+						оснований:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/42-obem.webp" type="image/webp"><img src="img/obem/42-obem.webp"
+								alt="42 obem">
+						</picture>
+					</p>
+					<p>Пусть сторона АВ имеет длину а. Тогда площадь квадрата АВСD будет составлять а<sup>2</sup>. Отрезки ЕС
+						и FC
+						будут вдвое короче АВ, то есть их длина составляет a/2. ∆EFC – прямоугольный, и его площадь может быть
+						рассчитана как половина произведения его катетов:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/43-obem.webp" type="image/webp"><img src="img/obem/43-obem.webp"
+								alt="43 obem">
+						</picture>
+					</p>
+					<h2 id="5">Объем цилиндра</h2>
+					<p>Цилиндр не получится разбить на несколько призм, поэтому для вычисления его объема используется другой
+						метод.
+						Впишем цилиндр в правильную n-угольную призму. Одновременно построим и другую правильную n-угольную
+						призму,
+						которая сама будет вписана в цилиндр. Объем вписанной призмы обозначим как V<sub>в</sub>, а объем
+						описанной
+						призмы как V<sub>о</sub>. Объем самого цилиндра – это V<sub>ц</sub>. При этом высоты всех трех фигур
+						одинаковы:
+					</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/44-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/44-poisk-obema-figury.webp" alt="44 obem">
+						</picture>
+					</p>
+					<p>Ясно, что объем вписанной призмы меньше объема цилиндра, а тот в свою очередь меньше объема описанной
+						призмы:
+					</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/45-obem.webp" type="image/webp"><img src="img/obem/45-obem.webp"
+								alt="45 obem">
+						</picture>
+					</p>
+					<p>Теперь будем неограниченно увеличивать число n. При этом площади S<sub>в</sub> и S<sub>о</sub> будут
+						стремиться
+						к площади основания цилиндра, равной величине πr<sup>2</sup>, где r– радиус основания цилиндра. Это
+						возможно
+						лишь в том случае, если справедливо равенство</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/46-obem-cilindra-raven-proizvedeniju-ploschadi.webp" type="image/webp">
+							<img src="img/obem/46-obem-cilindra-raven-proizvedeniju-ploschadi.webp" alt="46 obem">
+						</picture>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Задание. Найдите объем цилиндра с высотой 5 см и радиусом 6 см.</strong></p>
+					<p>Решение. Сначала находим площадь основания:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/47-obem.webp" type="image/webp"><img src="img/obem/47-obem.webp"
+								alt="47 obem">
+						</picture>
+					</p>
+					<p><strong>Задание. Известно, что высота цилиндра вдвое больше его радиуса, а объем цилиндра равен
+							54</strong><strong>π. Найдите радиус цилиндра.</strong></p>
+					<p>Решение. Обозначим радиус цилиндра буквой х. Тогда по условию высота будет вдвое больше, то есть она
+						составит
+						2х. Вычислим объем цилиндра:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/48-obem.webp" type="image/webp"><img src="img/obem/48-obem.webp"
+								alt="48 obem">
+						</picture>
+					</p>
+					<p>Ответ: 3.</p>
+					<p><strong>Задание. Труба изготовлена из металла с плотностью 11,4 г/см<sup>3</sup>. Внутренний диаметр
+							трубы
+							равен 13 мм, а ее стенка имеет толщину 4 мм. Длина трубы – 25 метров. Какова ее масса?</strong></p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/49-poisk-obema-figury.webp" type="image/webp"><img
+								src="img/obem/49-poisk-obema-figury.webp" alt="49 obem">
+						</picture>
+					</p>
+					<p>Решение. Для расчета массы необходимо сперва вычислить объем трубы. Ясно, что если к объему трубы
+						прибавить
+						объем внутреннего отверстия, то в итоге получится объем большого цилиндра, чей диаметр равен наружному
+						диаметру
+						трубы:</p>
+					<p style="text-align: center;">
+						<picture>
+							<source srcset="img/obem/50-obem.webp" type="image/webp"><img src="img/obem/50-obem.webp"
+								alt="50 obem">
+						</picture>
+					</p>
+					<p>Легко найти объем отверстия, ведь оно имеет форму цилиндра. Его радиус вдвое меньше диаметра, то есть
+						он равен
+						13/2 = 6,5 мм. При расчете важно не забыть перевести высоту в миллиметры:</p>
+					<p>
+						<picture>
+							<source srcset="img/obem/51-obem.webp" type="image/webp"><img src="img/obem/51-obem.webp"
+								alt="51 obem">
+						</picture>
+					</p>
+					<p>Сегодня мы узнали о такой характеристике тел, как объем. Если объем куба и прямоугольного
+						параллелепипеда мы
+						умели находить ещё в средней школе, то определять объем цилиндра и прямой призмы мы научились только
+						сейчас.
+						Однако все эти случаи по сути одинаковы – надо перемножить высоту фигуры и площадь ее основания. В
+						будущем мы
+						научимся вычислять объемы более сложных фигур – пирамиды, конуса, шара.</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu">
+					<div class="footer__body">
+						<div class="footer__logo">
+							<a href="index.html"><span>Geometry</span></a>
+
+						</div>
+
+
+						<div class="footer__text">
+							<a href="https://licey34.kuz-edu.ru/">МБОУ "Лицей № 34"</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20221120214955"></script>
+</body>
+
+</html>
