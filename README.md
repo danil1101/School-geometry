@@ -1,1 +1,1 @@
-# shool-geometry
+# Shool-geometry
